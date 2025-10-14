@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>artist</title>
+    <style>
+        body {
+            padding: 0 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 25px;
+            text-align: center;
+        }
+
+        /* This is the container for the images */
+        .image-row {
+            display: flex; /* This is the key! It turns the container into a flexible row. */
+            gap: 15px;     /* Creates a 15px space BETWEEN each image. Super easy! */
+        }
+
+        /* This styles ALL the images inside the container */
+        .image-row img {
+            flex: 1;           /* Tells each image to grow and take up an equal share of the space. */
+            width: 100%;       /* Works with flex: 1 to ensure images fill the space. */
+            height: 290px;     /* Sets a consistent height for all images. */
+            object-fit: cover; /* IMPORTANT: This prevents your images from stretching and looking distorted. It will crop the image to fit the space, like a background image. */
+        }
+    </style>
 </head>
 <body>
+    <h1>Stray Kids</h1>
+
+    <div class="image-row">
+        <img src="images/skz1.jpg" alt="Stray Kids Img1">
+        <img src="images/skz2.avif" alt="Stray Kids Img2">
+        <img src="images/skz3.jpg" alt="Stray Kids Img3">
+    </div>
+
+    <p>Short biography</p>
+
+    <ol>
+        <li>Falling Up (Korean ver.)</li>
+        <li>Runners</li>
+        <li>idk yet</li>
+    </ol>
+
+    <a href="#" target="_blank">
+        <img class="ig" src="images/ig.webp" alt="Instagram" height="30">
+    </a>
+
+    <a href="#" target="_blank">
+        <img class="x" src="images/x.png" alt="X" height="30">
+    </a>
+
+    <a href="#" target="_blank">
+        <img class="fb" src="images/fb.webp" alt="Facebook" height="30">
+    </a>
+
+    <a href="#" target="_blank">
+        <img class="yt" src="images/yt.png" alt="YouTube" height="30">
+    </a>
+
+    <a href="#" target="_blank">
+        <img class="fans" src="images/fans.png" alt="Fans" height="30">
+    </a>
     
+    <a class="website" href="https://straykids.jype.com/" target="blank">Stray Kids Official Website</a>
 </body>
 </html>
