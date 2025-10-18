@@ -7,28 +7,36 @@
     <style>
         body {
             padding: 0 70px;
+            color: rgb(228, 228, 228);
+            background-image: linear-gradient(to bottom, rgb(10, 10, 10), rgb(61, 0, 0), rgb(149, 1, 1));
+            background-attachment: fixed;
         }
 
         h1 {
             font-size: 56px;
+            font-family: Verdana;
             margin: 25px;
             text-align: center;
         }
 
         h2 {
             font-size: 32px;
+            font-family: Verdana;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 
         h3 {
             font-size: 24px;
+            font-family: Verdana;
             text-align: center;
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
+            font-family: Arial;
             text-align: center;
+            line-height: 1.3;
             padding: 10px 0px 45px 0px;
         }
 
@@ -43,13 +51,14 @@
             width: 100%;       /* Works with flex: 1 to ensure images fill the space. */
             height: 290px;     /* Sets a consistent height for all images. */
             object-fit: cover; /* Prevents images from stretching. It will crop the image to fit the space, like a background image. */
+            filter: drop-shadow(0 2px 4px rgb(10, 10, 10));
         }
 
         .song-row {
             display: flex;
             justify-content: center;
             gap: 50px;
-            margin-bottom: 110px;
+            margin-bottom: 90px;
         }
 
         .song-item {
@@ -58,8 +67,27 @@
             align-items: center; /* This is the crucial line that centers the image horizontally */
         }
 
+        .song-item img {
+            filter: drop-shadow(0 2px 4px rgb(10, 10, 10));
+        }
+
         a {
             text-decoration: none;
+        }
+
+        a.website {
+            font-family: Arial;
+            font-size: 14px;
+            background-color: rgb(10, 10, 10);
+            color: rgb(240, 240, 240);
+            padding: 10px 25px;
+            border-radius: 50px;
+            filter: drop-shadow(0 2px 4px rgb(10, 10, 10));
+        }
+
+        a.website:hover {
+            color: rgb(255, 0, 0);
+            filter: drop-shadow(0 4px 8px rgb(10, 10, 10));
         }
 
         .links {
@@ -67,7 +95,7 @@
             flex-direction: column; /* Stacks the items top-to-bottom */
             align-items: center;
             gap: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .icons {
@@ -77,6 +105,11 @@
 
         .icons img {
             height: 30px;
+            filter: drop-shadow(0 2px 4px rgb(10, 10, 10));
+        }
+
+        .icons img:hover {
+            filter: drop-shadow(0 4px 8px rgb(10, 10, 10));
         }
 
     </style>
@@ -143,7 +176,7 @@
             </a>
         </div>
     
-        <a href="https://straykids.jype.com/" target="blank">Stray Kids Official Website</a>
+        <a class="website" href="https://straykids.jype.com/" target="_blank">Stray Kids Official Website</a>
     </div>
 </body>
 </html>
