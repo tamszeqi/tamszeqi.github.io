@@ -6,28 +6,79 @@
     <title>artist</title>
     <style>
         body {
-            padding: 0 80px;
+            padding: 0 70px;
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 56px;
             margin: 25px;
             text-align: center;
         }
 
-        /* This is the container for the images */
-        .image-row {
-            display: flex; /* This is the key! It turns the container into a flexible row. */
-            gap: 15px;     /* Creates a 15px space BETWEEN each image. Super easy! */
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
-        /* This styles ALL the images inside the container */
+        h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 0px 45px 0px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
         .image-row img {
             flex: 1;           /* Tells each image to grow and take up an equal share of the space. */
             width: 100%;       /* Works with flex: 1 to ensure images fill the space. */
             height: 290px;     /* Sets a consistent height for all images. */
-            object-fit: cover; /* IMPORTANT: This prevents your images from stretching and looking distorted. It will crop the image to fit the space, like a background image. */
+            object-fit: cover; /* Prevents images from stretching. It will crop the image to fit the space, like a background image. */
         }
+
+        .song-row {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 110px;
+        }
+
+        .song-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* This is the crucial line that centers the image horizontally */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column; /* Stacks the items top-to-bottom */
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icons img {
+            height: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -39,34 +90,60 @@
         <img src="images/skz3.jpg" alt="Stray Kids Img3">
     </div>
 
-    <p>Short biography</p>
+    <p>Stray Kids is a K-Pop boy group that debuted in 2018 under JYP Entertainment, with the leader Bang Chan having hand-picked every member, which are Lee Know, Changbin, Hyunjin, HAN, Felix, Seungmin and I.N. Having a subdivision of producers called '3RACHA' consisting of Bang Chan, Changbin, and HAN, Stray Kids have self-produced their way from humble beginnings to the very top of the industry, and became the first ever K-Pop group in history to achieve 7 consecutive wins on the Billboard 200 chart as of the year 2025.
+    <br><br>
+    They are the pioneers who have redefined the boundaries of K-Pop music and culture with their innovative concepts and unique "noise", standing by the belief that being different isn't being wrong. While their music has built a loyal fanbase called 'STAY', their loyalty is mostly built on their love for the tight-knit family bond between the members. The members of Stray Kids are each other's biggest supporters, as they share the same goal of achieving even greater heights and reciprocating their love for the STAYs all over the globe, just as their slogan goes:
+    <br><br>
+    'STRAY KIDS EVERYWHERE ALL AROUND THE WORLD. YOU MAKE STRAY KIDS STAY'</p>
 
-    <ol>
-        <li>Falling Up (Korean ver.)</li>
-        <li>Runners</li>
-        <li>idk yet</li>
-    </ol>
+    <div>
+        <h2>Personal Favourite Artist Works:</h2>
 
-    <a href="#" target="_blank">
-        <img class="ig" src="images/ig.webp" alt="Instagram" height="30">
-    </a>
+        <div class="song-row">
 
-    <a href="#" target="_blank">
-        <img class="x" src="images/x.png" alt="X" height="30">
-    </a>
+            <div class="song-item">
+                <h3>3. Phoenix</h3>
+                <img src="images/song3.webp" alt="Song Cover 3" height="200px">
+            </div>
 
-    <a href="#" target="_blank">
-        <img class="fb" src="images/fb.webp" alt="Facebook" height="30">
-    </a>
+            <div class="song-item">
+                <h3>1. Falling Up (Korean ver.)</h3>
+                <img src="images/song1.webp" alt="Song Cover 1" height="300px">
+            </div>
 
-    <a href="#" target="_blank">
-        <img class="yt" src="images/yt.png" alt="YouTube" height="30">
-    </a>
+            <div class="song-item">
+                <h3>2. Runners</h3>
+                <img src="images/song2.jpg" alt="Song Cover 2" height="200px">
+            </div>
 
-    <a href="#" target="_blank">
-        <img class="fans" src="images/fans.png" alt="Fans" height="30">
-    </a>
+        </div>
+
+    </div>
+
+    <div class="links">
+        <div class="icons">
+            <a href="https://www.instagram.com/realstraykids" target="_blank">
+                <img src="images/ig.webp" alt="Instagram">
+            </a>
+
+            <a href="https://x.com/Stray_Kids" target="_blank">
+                <img src="images/x.png" alt="X">
+            </a>
+
+            <a href="https://www.facebook.com/JYPEStrayKids?_rdc=1&_rdr#" target="_blank">
+                <img src="images/fb.webp" alt="Facebook">
+            </a>
+
+            <a href="https://www.youtube.com/c/StrayKids" target="_blank">
+                <img src="images/yt.png" alt="YouTube">
+            </a>
+
+            <a href="https://app.fans/community/StrayKids/artist" target="_blank">
+                <img src="images/fans.png" alt="Fans">
+            </a>
+        </div>
     
-    <a class="website" href="https://straykids.jype.com/" target="blank">Stray Kids Official Website</a>
+        <a href="https://straykids.jype.com/" target="blank">Stray Kids Official Website</a>
+    </div>
 </body>
 </html>
