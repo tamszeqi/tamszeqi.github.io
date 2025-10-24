@@ -8,67 +8,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* 我在班上自己研究到很惨 */
         body {
-            background-color: rgb(250, 243, 240);
+            background-color: rgb(246, 245, 239);
             font-family: 'Oxygen', sans-serif;
             font-size: 16px;
-            padding: 20px 107px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 105px;
         }
 
-        h1 {
+        .text {
+            padding: 10px 20px;
+            line-height: 26px;
+        }
+
+        .text h1 {
             font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 15px;
             color: rgb(26, 36, 33);
         }
 
-        p {
-            line-height: 26px;
+        .text p {
             color: rgb(103, 102, 98);
         }
 
         .container {
             display: flex;
-            justify-content: center;
             gap: 30px;
-            margin: auto;
         }
 
-        .container div {
-            padding: 30px;
+        .section {
             background-color: white;
-            border-radius: 10px;
-            width: 33.33%;
-            margin: auto;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1; /* makes all the images equal in size */
         }
 
-        div img {
+        .sectionimg {
+            background-size: cover;
+            background-position: center;
             border-radius: 10px;
             width: 100%;
-            display: block; /* Ensures the image behaves correctly within the flexbox item */
+            padding-top: 80%; /* aspect ratio */
+        }
+
+        .img1 {
+            background-image: url('images/fb1.jpg');
+        }
+
+        .img2 {
+            background-image: url('images/fb2.jpg');
+        }
+
+        .img3 {
+            background-image: url('images/fb3.jpg');
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div>
-            <img src="images/fb1.jpg" alt="img1">
+        <div class="section">
+            <div class="sectionimg img1"></div>
             <div class="text">
                 <h1>Residential projects</h1>
                 <p>We build sustainable and modern homes for comfortable living.</p>
             </div>
         </div>
-        <div>
-            <img src="images/fb2.jpg" alt="img2">
+        <div class="section">
+            <div class="sectionimg img2"></div>
             <div class="text">
                 <h1>Commercial spaces</h1>
                 <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
             </div>
         </div>
-        <div>
-            <img src="images/fb3.jpg" alt="img3">
+        <div class="section">
+            <div class="sectionimg img3"></div>
             <div class="text">
                 <h1>Infrastructure works</h1>
                 <p>We develop strong, reliable infrastructure for growing communities.</p>
