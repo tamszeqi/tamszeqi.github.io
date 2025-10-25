@@ -53,10 +53,12 @@
         }
 
         .phone {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             color: rgb(26, 36, 33);
             font-weight: 700;
             line-height: 22px;
-            margin: 12px;
             white-space: nowrap;
             transition: color 0.3s ease;
         }
@@ -83,6 +85,7 @@
         .contact {
             display: flex;
             align-items: center;
+            gap: 15px;
         }
 
         .menubar {
@@ -112,8 +115,10 @@
             <img src="images/logo-light-retina.png" alt="logo" height="35">
         </div>
         <div class="contact">
-            <img src="images/phone-icon.svg" alt="phone icon" width="20">
-            <a class="phone" href="#">555-123-4567</a>
+            <a class="phone" href="#">
+                <img src="images/phone-icon.svg" alt="phone icon" width="20">
+                <div>555-123-4567</div>
+            </a>
             <a class="hamburger" href="#">
                 <img src="images/menu-icon.svg" alt="menu icon" width="24">
             </a>
@@ -132,8 +137,10 @@
             <a href="#">Contact</a>
         </div>
         <div class="contact">
-            <img src="images/phone-icon.svg" alt="phone icon" width="20">
-            <a class="phone" href="#">555-123-4567</a>
+            <a class="phone" href="#">
+                <img src="images/phone-icon.svg" alt="phone icon" width="20">
+                <div>555-123-4567</div>
+            </a>
             <a class="button" href="#">Contact</a>
         </div>
     </div>
