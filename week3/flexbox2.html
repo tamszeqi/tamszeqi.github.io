@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(246, 245, 239);
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            margin: auto; /* makes the white thingy touch the edges */
+        }
+
+        .header3 {
+            background-color: white;
+            padding: 0px 70px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menubar a {
+            color: rgb(26, 36, 33);
+            line-height: 24px;
+            white-space: nowrap; /* so that the alphabets won't separate into different rows when the screen size changes */
+            transition: color 0.3s ease;
+        }
+
+        a.services {
+            color: rgb(249, 97, 43);
+        }
+
+        .menubar a:hover {
+            color: rgb(249, 97, 43);
+        }
+
+        .phone {
+            color: rgb(26, 36, 33);
+            font-weight: 700;
+            line-height: 22px;
+            margin: 12px;
+            white-space: nowrap;
+            transition: color 0.3s ease;
+        }
+
+        .phone:hover {
+            color: rgb(100, 100, 99);
+        }
+
+        .button {
+            color: white;
+            font-size: 14px;
+            line-height: 19px;
+            background-color: rgb(249, 97, 43);
+            border-radius: 7px;
+            padding: 12px 17px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(224 88 39);
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .menubar {
+            display: flex;
+            gap: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header3">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-light-retina.png" alt="logo" height="35">
+            </div>
+            <div class="menubar">
+                <a href="#">Home</a>
+                <a class="services" href="#">Services</a>
+                <a href="#">Work</a>
+                <a href="#">Project Details</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="contact">
+                <div class="icon">
+                    <img src="images/phone-icon.svg" alt="phone icon" width="20">
+                </div>
+                <a class="phone" href="#">555-123-4567</a>
+                <a class="button" href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
