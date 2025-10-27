@@ -40,7 +40,6 @@
         .menubar a {
             color: rgb(26, 36, 33);
             line-height: 24px;
-            white-space: nowrap; /* so that the alphabets won't separate into different rows when the screen size changes */
             transition: color 0.3s ease;
         }
 
@@ -90,6 +89,7 @@
 
         .menubar {
             display: flex;
+            white-space: nowrap; /* so that the alphabets won't separate into different rows when the screen size changes */
             gap: 30px;
         }
 
