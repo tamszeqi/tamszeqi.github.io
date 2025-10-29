@@ -4,8 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>usecase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1250px;
+            margin: 50px auto;
+        }
+
+        body {
+            font-family: Space Grotesk, sans-serif;
+            color: #191A23;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #191A23;
+        }
+
+        .menubar {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            white-space: nowrap;
+        }
+
+        .request {
+            padding: 15px 30px;
+            border: 1px solid #191A23;
+            border-radius: 14px;
+        }
+
+        .usecases {
+            background-color: #B9FF66;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="page">
+        <div class="container header">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="menubar">
+                <div>
+                    <a href="#">About us</a>
+                </div>
+                <div>
+                    <a href="#">Services</a>
+                </div>
+                <div class="usecases">
+                    <a href="#">Use Cases</a>
+                </div>
+                <div>
+                    <a href="#">Pricing</a>
+                </div>
+                <div>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="request">
+                    <a href="#">Request a quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="container contents">
+            <div class="phone">
+                <img src="phone-desktop.png" alt="phone image">
+            </div>
+            <div class="title1">
+                <h1>Proven Success Stories</h1>
+            </div>
+            <div class="text">
+                <p>See how our innovative digital marketing strategies have transformed businesses. Whether through SEO, PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the successes and envision what we can achieve together.</p>
+            </div>
+        </div>
+        <div class="container featured">
+            <div class="text">
+                <div class="title2">
+                    <h2>Featured Success Story</h2>
+                </div>
+                <div class="title3">
+                    <h3>Scaling Success for a Leading E-Commerce Brand</h3>
+                </div>
+                <div class="text">
+                    <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase visibility, drive traffic, and boost sales.</p>
+                </div>
+                <div class="read">
+                    <a href="#">
+                        <img src="images/read.png" alt="read icon">
+                    </a>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="box">
+                    <div class="percentage">
+                        <h2>200%</h2>
+                    </div>
+                    <div class="text">
+                        <p>increase in organic traffic</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="percentage">
+                        <h2>150%</h2>
+                    </div>
+                    <div class="text">
+                        <p>rise in online sales</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="percentage">
+                        <h2>75%</h2>
+                    </div>
+                    <div class="text">
+                        <p>reduction in cost-per-click (CPC)</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="percentage">
+                        <h2>300%</h2>
+                    </div>
+                    <div class="text">
+                        <p>improvement in conversion rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
