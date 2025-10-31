@@ -4,8 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(rgb(5, 1, 21, 0.7),rgb(5, 1, 21, 0.7)), url('images/background.jpg');
+            background-repeat: repeat-x;   /* Repeat horizontally */
+            background-size: auto 100%;    /* Fit vertically, width is automatic */
+            min-height: 100vh;             /* Image sticks to the bottom */
+            color: rgb(240, 240, 240);
+            font-size: 18px;
+            font-family: 'Jura', sans-serif;
+            margin: auto;
+        }
+
+        .contents {
+            max-width: 1800px;
+            margin: auto;
+            padding: 0 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 120px;
+            max-width: 1800px;
+            margin: auto;
+        }
+
+        .header {
+            background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.0));
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo img {
+            max-width: 50px;
+            width: 100%;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .links img {
+            max-width: 40px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+        }
+
+        .bio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .bio h1, .bio h2, .bio p {
+            margin: 0;
+        }
+        
+        .profile img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: rgb(157, 253, 199);
+            font-size: 48px;
+        }
+
+        h2 {
+            color: rgb(97, 210, 180);
+            font-size: 24px;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 20px auto; /* Centers the paragraph block horizontally */
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgb(97, 210, 180);
+            flex: 1 1 250px; /* Flexbox sizing: Grow (1), Shrink (1), with a base size of 250px */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .exercise {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .box h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .week img {
+            width: 100%;
+            max-width: 25px;
+            position: relative;
+            top: -3px;
+        }
+
+        .week {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container header">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="links">
+            <div>
+                <a href="https://discord.com/users/london_choco_roll" target="_blank">
+                    <img src="images/discord.png" alt="discord">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/thatother37_potatoes/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/@poteetopopeepogames" target="_blank">
+                    <img src="images/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="bio">
+            <div class="profile">
+                <img src="images/profile.jpg" alt="profile">
+            </div>
+            <h1>Tam Sze Qi</h1>
+            <h2>Web Publishing</h2>
+            <p>Hi, I'm Tam Sze Qi, a student in Digital Media from Dasein Academy of Art. I love writing stories and listening to music. Welcome to my personal page.</p>
+        </div>
+        <div class="container exercise">
+            <div class="box">
+                <div class="week">
+                    <div>
+                        <img src="images/check.png" alt="check">
+                    </div>
+                    <div>
+                        <h2>Week 1</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week1/exe1.html" target="_blank">
+                        Exercise 1
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week1/exe2.html" target="_blank">
+                        Exercise 2
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="week">
+                    <div>
+                        <img src="images/check.png" alt="check">
+                    </div>
+                    <div>
+                        <h2>Week 2</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week2/button.html" target="_blank">
+                        Exercise 1
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week2/self-intro.html" target="_blank">
+                        Exercise 2
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week2/artist.html" target="_blank">
+                        Exercise 3
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="week">
+                    <div>
+                        <img src="images/check.png" alt="check">
+                    </div>
+                    <div>
+                        <h2>Week 3</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week3/flexbox1.html" target="_blank">
+                        Exercise 1
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week3/flexbox2.html" target="_blank">
+                        Exercise 2
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week3/flexbox3.html" target="_blank">
+                        Exercise 3
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="week">
+                    <div>
+                        <img src="images/check.png" alt="check">
+                    </div>
+                    <div>
+                        <h2>Week 4</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week4/menu.html" target="_blank">
+                        Exercise 1
+                    </a>
+                </div>
+                <div>
+                    <a href="https://tamszeqi.github.io/week4/usecase.html" target="_blank">
+                        Exercise 2
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="links">
+            <div>
+                <a href="https://discord.com/users/london_choco_roll" target="_blank">
+                    <img src="images/discord.png" alt="discord">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/thatother37_potatoes/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/@poteetopopeepogames" target="_blank">
+                    <img src="images/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div>
+            <p>© 2025 Tam Sze Qi. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
