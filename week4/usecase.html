@@ -83,7 +83,7 @@
         }
 
         h1, h2, h3, p {
-            margin: auto;
+            margin: 0;
         }
 
         .illustration {
@@ -104,6 +104,11 @@
             padding: 90px 30px 40px 80px;
             gap: 30px;
             position: relative;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
         }
 
         .text {
@@ -135,6 +140,11 @@
             max-width: 30px;
         }
 
+        .read img {
+            width: 100%;
+            max-width: 40px;
+        }
+
         .read a {
             display: flex;
             align-items: center;
@@ -148,7 +158,7 @@
         .boxes {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 30px;
             width: 100%;
         }
 
@@ -164,7 +174,7 @@
             color: #191A23;
         }
 
-        @media screen and (min-width: 815px) { /* desktop */
+        @media screen and (min-width: 950px) { /* desktop */
 
             .container {
                 margin: 60px 120px;
@@ -199,43 +209,69 @@
             .title {
                 grid-column: 2;
                 align-self: center;
-                margin: 0;
             }
 
             .paragraph {
                 grid-column: 2;
                 align-self: start;
-                margin: 0;
-            }
-
-            .featured {
-                padding: 70px;
-                gap: 50px;
             }
 
             .mobile-featured {
                 display: none;
             }
 
+            .featured {
+                padding: 70px;
+                flex-direction: row;
+                gap: max(10px, 6.25vw); /* 90px */
+            }
+
+            .text {
+                gap: max(40px, 3.47vw);
+            }
+
             .desktop-featured {
                 background-color: #B9FF66;
                 color: #191A23;
                 border-radius: 8px;
-                padding: 0 5px;
+                padding: 0 10px;
+                width: fit-content; /* ensure background fits text */
+            }
+
+            .left-column {
+                gap: max(40px, 3.47vw);
+                flex: 1; /* allow column to take up half the space */
+            }
+
+            .boxes {
+                flex: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .box {
+                padding: 25% 20px; /* the height becomes proportional to the responsive width */
             }
 
         }
 
-        @media screen and (max-width: 815px) { /* mobile */
+        @media screen and (max-width: 950px) { /* mobile */
+
             .logo {
                 max-width: 150px;
             }
             .menubar, .desktop-featured {
                 display: none;
             }
+
+            .left-column {
+                display: contents; /* Make the left-column container 'disappear' for layout purposes, promoting its children to become direct items of .featured */
+            }
+
             .read {
                 order: 3;
             }
+
         }
 
     </style>
@@ -277,7 +313,7 @@
             <h1 class="title">Proven Success Stories</h1>
             <div class="illustration">
                 <picture> <!-- allows you to provide multiple sources for an image -->
-                    <source media="(min-width: 815px)" srcset="images/illustration-desktop.png">
+                    <source media="(min-width: 950px)" srcset="images/illustration-desktop.png">
                     <img src="images/illustration-mobile.png" alt="illustration">
                 </picture>
             </div>
@@ -287,26 +323,28 @@
         </div>
 
         <div class="container featured">
-            <div class="mobile-featured">
-                <img src="images/star.png" alt="star">
-                <h3>FEATURED</h3>
-            </div>
-            <div class="desktop-featured">
-                <h2>Featured Success Story</h2>
-            </div>
-            <div class="text">
-                <div>
-                    <h3>Scaling Success for a Leading E-Commerce Brand</h3>
+            <div class="left-column">
+                <div class="mobile-featured">
+                    <img src="images/star.png" alt="star">
+                    <h3>FEATURED</h3>
                 </div>
-                <div>
-                    <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase visibility, drive traffic, and boost sales.</p>
+                <div class="desktop-featured">
+                    <h2>Featured Success Story</h2>
                 </div>
-            </div>
-            <div class="read">
-                <a href="#">
-                    <img src="images/read.png" alt="read">
-                    <p>Read</p>
-                </a>
+                <div class="text">
+                    <div>
+                        <h3>Scaling Success for a Leading E-Commerce Brand</h3>
+                    </div>
+                    <div>
+                        <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase visibility, drive traffic, and boost sales.</p>
+                    </div>
+                </div>
+                <div class="read">
+                    <a href="#">
+                        <img src="images/read.png" alt="read">
+                        <p>Read</p>
+                    </a>
+                </div>
             </div>
             <div class="boxes">
                 <div class="box">
