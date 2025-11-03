@@ -12,13 +12,12 @@
             font-family: 'Space Grotesk', sans-serif;
             color: #191A23;
         }
-
+        
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 40px 120px;
-            gap: max(20px, 2.5vw);
+            margin: 60px 120px;
         }
 
         .header {
@@ -39,7 +38,8 @@
         }
 
         .logo {
-            min-width: 50px; 
+            min-width: 50px;
+            margin-right: 20px;
         }
 
         .logo img {
@@ -70,7 +70,7 @@
         .success {
             flex-direction: column;
             text-align: left;
-            gap: max(5px, 1.67vw);
+            gap: max(5px, 2.604vw);
             font-size: max(16px, 1.4vw);
         }
 
@@ -80,78 +80,119 @@
             margin: auto;
         }
 
+        p {
+            margin: auto;
+        }
+
         .illustration {
             max-width: 600px;
+            min-width: 50px;
         }
 
         .illustration img {
             width: 100%;
         }
 
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 815px) {
+
+            h1 {
+                font-size: max(32px, 4.17vw);
+            }
+
+            p {
+                font-size: max(16px, 1.3vw);
+            }
+
             .hamburger {
                 display: none;
             }
 
+            .success {
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* fractional unit, take all available width and divide into half */
+                gap: 0px 60px;
+                padding: 40px 70px;
+                background-color: #F3F3F3;
+                border-radius: 50px;
+            }
+            
+            .illustration {
+                grid-column: 1;
+                grid-row: 1 / 3; /* take up both rows */
+            }
+
+            .title {
+                grid-column: 2;
+                align-self: center;
+                margin: 0;
+            }
+
+            .paragraph {
+                grid-column: 2;
+                align-self: start;
+                margin: 0;
+            }
         }
 
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 815px) {
             .logo {
-                max-width: 150px; 
+                max-width: 150px;
             }
             .menubar {
                 display: none;
             }
             .container {
-                padding: 20px;
+                margin: 30px 20px;
             }
         }
 
     </style>
 </head>
 <body>
-    <div class="container header">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo">
+    <div class="page">
+        <div class="container header">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="menubar">
+                <div>
+                    <a href="#">About us</a>
+                </div>
+                <div>
+                    <a href="#">Services</a>
+                </div>
+                <div>
+                    <a class="usecases" href="#">Use Cases</a>
+                </div>
+                <div>
+                    <a href="#">Pricing</a>
+                </div>
+                <div>
+                    <a href="#">Blog</a>
+                </div>
+                <div>
+                    <a class="request" href="#">Request a quote</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <a href="#">
+                    <img src="images/menu.png" alt="menu icon">
+                </a>
+            </div>
         </div>
-        <div class="menubar">
-            <div>
-                <a href="#">About us</a>
-            </div>
-            <div>
-                <a href="#">Services</a>
-            </div>
-            <div>
-                <a class="usecases" href="#">Use Cases</a>
-            </div>
-            <div>
-                <a href="#">Pricing</a>
-            </div>
-            <div>
-                <a href="#">Blog</a>
-            </div>
-            <div>
-                <a class="request" href="#">Request a quote</a>
-            </div>
-        </div>
-        <div class="hamburger">
-            <a href="#">
-                <img src="images/menu.png" alt="menu icon">
-            </a>
-        </div>
-    </div>
 
-    <div class="container success">
-        <h1 class="title">Proven Success Stories</h1>
-        <div class="illustration">
-            <picture> <!-- allows you to provide multiple sources for an image -->
-                <source media="(min-width: 1025px)" srcset="images/illustration-desktop.png">
-                <img src="images/illustration-mobile.png" alt="illustration">
-            </picture>
+        <div class="container success">
+            <h1 class="title">Proven Success Stories</h1>
+            <div class="illustration">
+                <picture> <!-- allows you to provide multiple sources for an image -->
+                    <source media="(min-width: 815px)" srcset="images/illustration-desktop.png">
+                    <img src="images/illustration-mobile.png" alt="illustration">
+                </picture>
+            </div>
+            <p class="paragraph">
+                See how our innovative digital marketing strategies have transformed businesses. Whether through SEO, PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the successes and envision what we can achieve together.
+            </p>
         </div>
-        <p class="paragraph">
-            See how our innovative digital marketing strategies have transformed businesses. Whether through SEO, PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the successes and envision what we can achieve together.
-        </p>
     </div>
 </body>
 </html>
