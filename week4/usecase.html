@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 60px 120px;
+            margin: 25px 10px;
         }
 
         .header {
@@ -74,13 +74,15 @@
             font-size: max(16px, 1.4vw);
         }
 
-        h1 {
-            font-size: max(40px, 4.17vw);
+        h1, h2, h3 {
             font-weight: 500;
-            margin: auto;
         }
 
-        p {
+        h1 {
+            font-size: max(43px, 4.17vw); /*60px*/
+        }
+
+        h1, h2, h3, p {
             margin: auto;
         }
 
@@ -93,7 +95,80 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 815px) {
+        .featured {
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #191A23;
+            border-radius: 50px;
+            color: #F3F3F3;
+            padding: 90px 30px 40px 80px;
+            gap: 30px;
+            position: relative;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        h2 {
+            font-size: max(36px, 2.78vw); /*40px*/
+        }
+
+        h3 {
+            font-size: max(26px, 2.08vw); /*30px*/
+        }
+
+        .mobile-featured {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: #B9FF66;
+            position: absolute; /* takes the element out of the normal flow */
+            top: 35px;
+            left: 30px;
+        }
+
+        .mobile-featured img {
+            width: 100%;
+            max-width: 30px;
+        }
+
+        .read a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .read p {
+            color: #B9FF66;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .box {
+            background-color: #F3F3F3;
+            padding: 30px;
+            border-radius: 25px;
+            flex: 1 1 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: #191A23;
+        }
+
+        @media screen and (min-width: 815px) { /* desktop */
+
+            .container {
+                margin: 60px 120px;
+            }
 
             h1 {
                 font-size: max(32px, 4.17vw);
@@ -132,17 +207,34 @@
                 align-self: start;
                 margin: 0;
             }
+
+            .featured {
+                padding: 70px;
+                gap: 50px;
+            }
+
+            .mobile-featured {
+                display: none;
+            }
+
+            .desktop-featured {
+                background-color: #B9FF66;
+                color: #191A23;
+                border-radius: 8px;
+                padding: 0 5px;
+            }
+
         }
 
-        @media screen and (max-width: 815px) {
+        @media screen and (max-width: 815px) { /* mobile */
             .logo {
                 max-width: 150px;
             }
-            .menubar {
+            .menubar, .desktop-featured {
                 display: none;
             }
-            .container {
-                margin: 30px 20px;
+            .read {
+                order: 3;
             }
         }
 
@@ -195,22 +287,26 @@
         </div>
 
         <div class="container featured">
-            <div>
+            <div class="mobile-featured">
                 <img src="images/star.png" alt="star">
-            </div>
-            <div>
                 <h3>FEATURED</h3>
             </div>
-            <div>
+            <div class="desktop-featured">
                 <h2>Featured Success Story</h2>
             </div>
             <div class="text">
                 <div>
-                    <h2>Scaling Success for a Leading E-Commerce Brand</h2>
+                    <h3>Scaling Success for a Leading E-Commerce Brand</h3>
                 </div>
                 <div>
                     <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase visibility, drive traffic, and boost sales.</p>
                 </div>
+            </div>
+            <div class="read">
+                <a href="#">
+                    <img src="images/read.png" alt="read">
+                    <p>Read</p>
+                </a>
             </div>
             <div class="boxes">
                 <div class="box">
@@ -244,12 +340,6 @@
                     <div>
                         <p>improvement in conversion rate</p>
                     </div>
-                </div>
-                <div class="read">
-                    <a href="#">
-                        <img src="images/read.png" alt="read">
-                        <p>Read</p>
-                    </a>
                 </div>
             </div>
         </div>
