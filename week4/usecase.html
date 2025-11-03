@@ -11,8 +11,6 @@
         body {
             font-family: 'Space Grotesk', sans-serif;
             color: #191A23;
-            font-size: 1.3vw; /* Use vw for a fluid font size that shrinks with the screen */
-            line-height: 1.4;
         }
 
         .container {
@@ -20,19 +18,28 @@
             justify-content: space-between;
             align-items: center;
             padding: 40px 120px;
-            gap: 2.5vw;
+            gap: max(20px, 2.5vw);
+        }
+
+        .header {
+            font-size: max(14px, 1.3vw);  /* viewport width for fluid size, max chooses larger number in the () */
+            line-height: 1.4;
         }
 
         .menubar {
             display: flex;
             align-items: center;
-            gap: 2.5vw;
+            gap: max(20px, 2.5vw);
             white-space: nowrap;
         }
 
         a {
             text-decoration: none;
             color: #191A23;
+        }
+
+        .logo {
+            min-width: 50px; 
         }
 
         .logo img {
@@ -46,23 +53,52 @@
         }
 
         .request {
-            padding: 1.4vw 2.4vw;
+            padding: max(14px, 1.4vw) max(24px, 2.4vw);
             border: 1px solid #191A23;
             border-radius: 14px;
         }
 
-        .hamburger img {
-            width: 100%;
+        .hamburger {
+            min-width: 10px;
             max-width: 24px;
         }
 
-        @media screen and (min-width: 430px) {
+        .hamburger img {
+            width: 100%;
+        }
+
+        .success {
+            flex-direction: column;
+            text-align: left;
+            gap: max(5px, 1.67vw);
+            font-size: max(16px, 1.4vw);
+        }
+
+        h1 {
+            font-size: max(40px, 4.17vw);
+            font-weight: 500;
+            margin: auto;
+        }
+
+        .illustration {
+            max-width: 600px;
+        }
+
+        .illustration img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1025px) {
             .hamburger {
                 display: none;
             }
+
         }
 
-        @media screen and (max-width: 430px) {
+        @media screen and (max-width: 1025px) {
+            .logo {
+                max-width: 150px; 
+            }
             .menubar {
                 display: none;
             }
@@ -74,35 +110,48 @@
     </style>
 </head>
 <body>
-    <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
+    <div class="container header">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="menubar">
+            <div>
+                <a href="#">About us</a>
             </div>
-            <div class="menubar">
-                <div>
-                    <a href="#">About us</a>
-                </div>
-                <div>
-                    <a href="#">Services</a>
-                </div>
-                <div>
-                    <a class="usecases" href="#">Use Cases</a>
-                </div>
-                <div>
-                    <a href="#">Pricing</a>
-                </div>
-                <div>
-                    <a href="#">Blog</a>
-                </div>
-                <div>
-                    <a class="request" href="#">Request a quote</a>
-                </div>
+            <div>
+                <a href="#">Services</a>
             </div>
-            <div class="hamburger">
-                <a href="#">
-                    <img src="images/menu.png" alt="menu icon">
-                </a>
+            <div>
+                <a class="usecases" href="#">Use Cases</a>
+            </div>
+            <div>
+                <a href="#">Pricing</a>
+            </div>
+            <div>
+                <a href="#">Blog</a>
+            </div>
+            <div>
+                <a class="request" href="#">Request a quote</a>
             </div>
         </div>
+        <div class="hamburger">
+            <a href="#">
+                <img src="images/menu.png" alt="menu icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="container success">
+        <h1 class="title">Proven Success Stories</h1>
+        <div class="illustration">
+            <picture> <!-- allows you to provide multiple sources for an image -->
+                <source media="(min-width: 1025px)" srcset="images/illustration-desktop.png">
+                <img src="images/illustration-mobile.png" alt="illustration">
+            </picture>
+        </div>
+        <p class="paragraph">
+            See how our innovative digital marketing strategies have transformed businesses. Whether through SEO, PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the successes and envision what we can achieve together.
+        </p>
+    </div>
 </body>
 </html>
