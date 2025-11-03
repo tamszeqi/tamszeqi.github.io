@@ -15,17 +15,17 @@
             line-height: 1.4;
         }
 
-        .container, .menubar {
+        .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .container {
             padding: 40px 120px;
+            gap: 2.5vw;
         }
 
         .menubar {
+            display: flex;
+            align-items: center;
             gap: 2.5vw;
             white-space: nowrap;
         }
@@ -56,18 +56,18 @@
             max-width: 24px;
         }
 
-        @media screen and (min-width: 770px) {
+        @media screen and (min-width: 430px) {
             .hamburger {
                 display: none;
             }
         }
 
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 430px) {
             .menubar {
                 display: none;
             }
-            .hamburger {
-                display: flex;
+            .container {
+                padding: 20px;
             }
         }
 
@@ -98,8 +98,8 @@
                     <a class="request" href="#">Request a quote</a>
                 </div>
             </div>
-            <div>
-                <a class="hamburger" href="#">
+            <div class="hamburger">
+                <a href="#">
                     <img src="images/menu.png" alt="menu icon">
                 </a>
             </div>
