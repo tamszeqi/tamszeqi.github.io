@@ -1,0 +1,23 @@
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+  --primary: #B9FF66;
+  --secondary: #191A23;
+  --tertiary: #F3F3F3;
+  --font-base: "Space Grotesk", sans-serif;
+}
