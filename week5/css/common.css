@@ -30,20 +30,30 @@ a {
 body {
     font-family: var(--font-base);
     color: var(--secondary);
-    line-height: 1.458vw;
-    /* 28px */
 }
 
 h1,
 h2,
 h3 {
     font-weight: 500;
-    line-height: 100%;
+}
+
+h1 {
+    font-size: clamp(43px, 4.17vw, 60px);
+}
+
+h2 {
+    font-size: clamp(36px, 2.78vw, 40px);
+}
+
+h3 {
+    font-size: clamp(26px, 2.08vw, 30px);
 }
 
 p {
-    font-size: max(14px, 0.833vw);
+    font-size: clamp(14px, 1.39vw, 20px);
     font-weight: 400;
+    line-height: 28px;
 }
 
 /* === SITEWIDE ELEMENTS  === */
@@ -56,6 +66,7 @@ p {
 
 .header {
     font-size: clamp(16px, 1.67vw, 20px);
+    /* minimum, preferred, maximum */
 }
 
 .logo {
@@ -108,8 +119,7 @@ p {
         max-width: 150px;
     }
 
-    .menubar,
-    .desktop-featured {
+    .menubar {
         display: none;
     }
 
