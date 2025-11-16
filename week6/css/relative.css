@@ -23,27 +23,27 @@ div {
     padding-top: 80%;
 }
 
-.img1 {
+.ducks {
     background-image: url('../images/ducks.jpg');
 }
 
-.img2 {
+.oranges {
     background-image: url('../images/oranges.jpg');
 }
 
-.img3 {
+.city {
     background-image: url('../images/city.jpg');
 }
 
-.img4 {
+.fight {
     background-image: url('../images/fight.jpeg');
 }
 
-.img5 {
+.girl {
     background-image: url('../images/girl.png');
 }
 
-.img6 {
+.street {
     background-image: url('../images/street.jpg');
 }
 
