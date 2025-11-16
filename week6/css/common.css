@@ -99,6 +99,27 @@ p {
     width: 100%;
 }
 
+/* === SUBMENUS === */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #B9FF66;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.submenu a {
+    display: block;
+	padding: 5px;
+}
+
+.menuitem:hover .submenu {
+    display: block;
+}
+
+
 /* DESKTOP */
 @media screen and (min-width: 950px) {
 
@@ -109,6 +130,8 @@ p {
     .hamburger {
         display: none;
     }
+
+    
 
 }
 
