@@ -48,7 +48,7 @@ body {
 
 p {
     margin: 0;
-    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem); /* default length (the rem part) but can also stretch and compress smoothly (the vw part) */
 }
 
 p.title {

@@ -23,7 +23,7 @@
 .companies {
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: clamp(10px, 0.69vw, 10px) clamp(30px, 6.94vw, 100px);
+    gap: clamp(5px, 0.69vw, 10px) clamp(30px, 6.94vw, 100px);
 }
 
 .companies a {
@@ -45,6 +45,14 @@
         flex-direction: column;
         gap: clamp(20px, 2.78vw, 40px);
         align-items: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .companies {
+        gap: clamp(5px, 0.69vw, 10px) clamp(30px, 6.94vw, 60px);
     }
 
 }
