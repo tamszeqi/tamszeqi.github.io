@@ -1,11 +1,12 @@
 body {
     text-align: center;
-    margin: 20px 80px;
+    margin: 30px 80px;
+    font-family: sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: rgb(0, 200, 0);
+    color: #5da966;
 }
 
 div {
@@ -14,19 +15,47 @@ div {
     justify-content: center;
 }
 
-img {
-    width: 100%;
+.sectionimg {
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    aspect-ratio: 5 / 4;
+    width: 100%;
+    padding-top: 80%;
+}
+
+.img1 {
+    background-image: url('../images/ducks.jpg');
+}
+
+.img2 {
+    background-image: url('../images/oranges.jpg');
+}
+
+.img3 {
+    background-image: url('../images/city.jpg');
+}
+
+.img4 {
+    background-image: url('../images/fight.jpeg');
+}
+
+.img5 {
+    background-image: url('../images/girl.png');
+}
+
+.img6 {
+    background-image: url('../images/street.jpg');
 }
 
 .contents {
+    align-items: start;
     width: 100%;
-    gap: 30px;
+    gap: 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container {
-    width: 33.33%;
     flex-direction: column;
     margin-top: 10px;
 }
@@ -34,21 +63,66 @@ img {
 .box {
     display: flex;
     flex-direction: column;
-    background-color: rgb(240, 240, 240);
+    background-color: #f6f7fc;
     padding: 5px 20px;
     border-radius: 10px;
     position: relative;
     top: -50px;
+    width: 75%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
 }
 
 h1 {
+    font-size: clamp(24px, 2.5vw, 32px);
+    color: #4e4e4e;
     margin: 0;
 }
 
 p {
+    font-size: clamp(14px, 1.3vw, 16px);
+    color: #717173;
     max-width: 600px;
+    line-height: 1.5;
 }
 
 .box p {
     max-width: 300px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1175px) {
+
+    .box {
+        min-height: 160px;
+    }
+
+    .container {
+        width: calc(33.33% - 30px)
+    }
+
+}
+
+@media screen and (max-width: 1175px) {
+
+    .box {
+        min-height: 155px;
+    }
+
+    .container {
+        width: calc(50% - 30px)
+    }
+
+}
+
+@media screen and (max-width: 805px) {
+
+    .box {
+        min-height: 0;
+    }
+
+    .container {
+        width: calc(100% - 30px)
+    }
+
 }
