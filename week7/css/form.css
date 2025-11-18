@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: clamp(1.25rem, 3.33vw, 2.5rem) 0; /* 20px <-> 40px */
+    background-color: rgb(12, 12, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 1vw, 1.1rem); /* Fluid base font size for the form */
+    line-height: 1.5;
+}
+
+.registration {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.25rem, 4vw, 2.5rem) clamp(1.25rem, 6vw, 3.75rem); /* 20px-40px top/bottom, 20px-60px left/right */
+    border-radius: 20px;
+    gap: clamp(1rem, 2vw, 1.25rem); /* 16px <-> 20px */
+}
+
+.fillform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 3vw, 1.56rem) clamp(0.625rem, 1.5vw, 0.93rem); /* Row: 16px-25px, Col: 10px-15px */
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 15rem;
+    border: 2px solid grey;
+    border-radius: 50px;
+    padding: clamp(0.625rem, 2vw, 0.93rem) clamp(0.93rem, 4vw, 1.875rem); /* 10px-15px top/bottom, 15px-30px left/right */
+}
+
+.bio {
+    width: 100%;
+}
+
+.submitform {
+    margin-top: clamp(1.25rem, 3vw, 1.56rem); /* 20px <-> 25px */
+}
+
+.submitform input {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 50px;
+    padding: clamp(0.625rem, 2vw, 0.93rem) clamp(0.93rem, 4vw, 1.875rem); /* Same padding as .box */
+}
+
+input, textarea, select {
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none; /* Removes default browser outline on focus */
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 5vw, 2.75rem); /* Scales between ~28px and ~44px */
+}
+
+p {
+    margin: 0;
+}
