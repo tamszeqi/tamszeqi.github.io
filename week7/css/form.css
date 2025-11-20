@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: clamp(1.25rem, 3.33vw, 2.5rem) 0; /* 20px <-> 40px */
-    background-color: rgb(12, 12, 88);
+    background-color: rgb(5, 5, 59);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 1 15rem;
-    border: 2px solid grey;
+    border: 2px solid rgb(18, 18, 140);
     border-radius: 50px;
     padding: clamp(0.625rem, 2vw, 0.93rem) clamp(0.93rem, 4vw, 1.875rem); /* 10px-15px top/bottom, 15px-30px left/right */
 }
@@ -44,12 +44,15 @@ body {
 }
 
 .submitform input {
-    background-color: grey;
+    background-color: rgb(18, 18, 140);
     color: white;
     font-weight: bold;
-    background-color: grey;
     border-radius: 50px;
     padding: clamp(0.625rem, 2vw, 0.93rem) clamp(0.93rem, 4vw, 1.875rem); /* Same padding as .box */
+}
+
+.submitform input:hover {
+    background-color: rgb(43, 176, 141);
 }
 
 input, textarea, select {
