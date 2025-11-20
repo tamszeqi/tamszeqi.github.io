@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
     margin: clamp(1.25rem, 3.33vw, 2.5rem) 0; /* 20px <-> 40px */
-    background-color: rgb(5, 5, 59);
+    background-image: linear-gradient(to bottom, rgb(10, 10, 10), rgb(5, 5, 59), rgb(18, 18, 140));
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
