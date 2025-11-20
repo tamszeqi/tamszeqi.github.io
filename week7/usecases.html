@@ -17,7 +17,8 @@
                 <img src="images/logo.png" alt="logo">
             </a>
         </div>
-        <div class="menubar">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+	    <nav class="menu" id="mobile-menu">
             <div class="menuitem">
                 <a href="#">About us</a>
                 <div class="submenu">
@@ -43,15 +44,10 @@
             <div>
                 <a href="#">Blog</a>
             </div>
-            <div>
+            <div class="requestbutton">
                 <a class="request" href="#">Request a quote</a>
             </div>
-        </div>
-        <div class="hamburger">
-            <a href="#">
-                <img src="images/menu.png" alt="menu icon">
-            </a>
-        </div>
+        </nav>
     </div>
 
     <div class="container success">
@@ -129,6 +125,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+                menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
+
 </body>
 
 </html>
