@@ -1,0 +1,146 @@
+/* === GOOGLE FONTS === */
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    /* BRAND */
+    --primary: #FFECBD;
+    --secondary: #470000;
+    --tertiary: #899064;
+
+    /* BACKGROUND */
+    --normal: #FFECBD;
+    --dark: #F4E3B4;
+    --light: #FFFFF0;
+
+    /* STATE */
+    --success: #98BE6A;
+    --warning: #CCAE5A;
+    --error: #C84444;
+
+    /* BUTTON */
+    --pri-default: #470000;
+    --pri-hover: #822E2E;
+    --pri-focus: #2B0000;
+    --sec-default: #899064;
+    --sec-hover: #BAC389;
+    --sec-focus: #585F33;
+
+    /* NEUTRALS */
+    --black: #1D1D1D;
+    --grey-dark: #858178;
+    --grey-light: #CDC4BC;
+    --white: #FFFFFF;
+
+    /* FONTS */
+    --heading: "Abril Fatface", serif;
+    --text: "Poppins", sans-serif;
+}
+
+/* === GLOBAL TYPOGRAPHY  === */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading);
+}
+
+body, p {
+    font-family: var(--text);
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 115.2px;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+h3 {
+    font-size: 48px;
+    line-height: 57.6px;
+}
+
+h4 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+p.big {
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+p.small {
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+p.bold {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 700;
+}
+
+/* === SITEWIDE ELEMENTS  === */
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+
+
+}
