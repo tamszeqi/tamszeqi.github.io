@@ -1,0 +1,247 @@
+/* === GOOGLE FONTS === */
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 170px;
+    color: var(--black);
+    background-color: var(--light);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    /* BRAND */
+    --primary: #FFECBD;
+    --secondary: #470000;
+    --tertiary: #899064;
+
+    /* BACKGROUND */
+    --normal: #FFECBD;
+    --dark: #F4E3B4;
+    --light: #FFFFF0;
+
+    /* STATE */
+    --success: #98BE6A;
+    --warning: #CCAE5A;
+    --error: #C84444;
+
+    /* BUTTON */
+    --pri-default: #470000;
+    --pri-hover: #822E2E;
+    --pri-active: #2B0000;
+    --sec-default: #899064;
+    --sec-hover: #BAC389;
+    --sec-active: #585F33;
+
+    /* NEUTRALS */
+    --black: #1D1D1D;
+    --grey-dark: #858178;
+    --grey-light: #CDC4BC;
+    --white: #FFFFFF;
+
+    /* FONTS */
+    --heading: "Abril Fatface", serif;
+    --text: "Poppins", sans-serif;
+}
+
+/* === GLOBAL TYPOGRAPHY  === */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading);
+}
+
+body, p {
+    font-family: var(--text);
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 115.2px;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+h3 {
+    font-size: 48px;
+    line-height: 57.6px;
+}
+
+h4 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+p.subtitle {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+p.bold {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 700;
+}
+
+p.small {
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+/* === SITEWIDE ELEMENTS  === */
+/* BUTTONS */
+button {
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-family: var(--text);
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--light)
+}
+
+.b-brown {
+    background-color: var(--pri-default);
+}
+
+.b-brown:hover {
+    background-color: var(--pri-hover);
+}
+
+.b-brown:active {
+    background-color: var(--pri-active);
+}
+
+.b-green {
+    background-color: var(--sec-default);
+}
+
+.b-green:hover {
+    background-color: var(--sec-hover);
+}
+
+.b-green:active {
+    background-color: var(--sec-active);
+}
+
+.b-white {
+    background-color: var(--light);
+    border: 4px solid var(--sec-default);
+}
+
+.b-white:hover {
+    border: 4px solid var(--sec-hover);
+}
+
+.b-white:active {
+    border: 4px solid var(--sec-active);
+}
+
+.tb {
+    padding: 0;
+    background-color: transparent;
+    font-family: var(--text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.tb.brown {
+    color: var(--pri-default)
+}
+
+.tb.brown:hover {
+    color: var(--pri-hover)
+}
+
+.tb.brown:active {
+    color: var(--pri-active)
+}
+
+.tb.green {
+    color: var(--sec-default)
+}
+
+.tb.green:hover {
+    color: var(--sec-hover)
+}
+
+.tb.green:active {
+    color: var(--sec-active)
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+
+
+}

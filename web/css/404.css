@@ -1,0 +1,10 @@
+.error-page-header {
+    background-image: url(../images/404header.png);
+}
+
+.error-page-content {
+    background-image: url(../images/404bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
