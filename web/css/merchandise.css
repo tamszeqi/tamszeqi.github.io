@@ -12,3 +12,11 @@
 .b-green {
     align-self: flex-end;
 }
+
+.greenmug {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
