@@ -112,7 +112,12 @@ h6 {
     line-height: 28.8px;
 }
 
-p.big {
+p.subtitle {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p.bodytext {
     font-size: 16px;
     line-height: 22.4px;
 }
