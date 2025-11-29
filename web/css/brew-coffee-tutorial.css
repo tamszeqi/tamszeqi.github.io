@@ -1,13 +1,29 @@
+.small,
+.category {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--tertiary);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
 /*Section 1*/
 div.section1 {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 img.relative {
     position: relative;
     left: -180px;
     height: 750px;
+    z-index: -1;
 }
 
 div.textblock {
@@ -23,20 +39,40 @@ div.preparation {
     display: flex;
     flex-direction: row;
     gap: 3%;
+    margin-top: 10px;
 }
 
 div.equipment,
 div.coffeebean {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
     width: 50%;
 }
 
-/*Section 2*/
+div.textgrp {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/**Section 2*/
+
+/*advertisement*/
 div.advertisement {
     display: flex;
     flex-direction: row;
     background-color: var(--tertiary);
     gap: 5%;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 div.ad-text {
@@ -51,5 +87,102 @@ img.coffeebean {
     box-sizing: border-box;
 }
 
+/*Title*/
+div.method h3 {
+    margin-bottom: 60px;
+}
+
+/*Tutorial Steps*/
+div.method,
+div.methodstep {
+    display: flex;
+    flex-direction: row;
+}
+
+div.step-by-step {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.titleblock {
+    width: 60%;
+}
+
+div.number-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.number-base {
+    background-color: var(--tertiary);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+div.number-base h5 {
+    color: var(--light);
+}
+
+div.stepsection1,
+div.stepsection2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+div.methodstep {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
 /*Section 3*/
+div.section3 {
+    text-align: center;
+}
+
+div.section3 h3 {
+    margin-bottom: 32px;
+}
+
+div.testimonial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8C799;
+    border-radius: 30px;
+    padding: 70px;
+    gap: 5%;
+}
+
+div.t-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 50px;
+}
+
+img.deco {
+    width: 100px;
+    height: 5px;
+}
+
+img.quotation {
+    width: 10%;
+}
+
+div.person {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /*Media Query*/
