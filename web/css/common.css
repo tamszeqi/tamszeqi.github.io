@@ -408,6 +408,34 @@ button {
     top: -20px;
 }
 
+/* BANNER */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    gap: 5%;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+}
+
+.banner h5, .banner p {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.banner-img {
+    width: 30%;
+    border-radius: 30px 0 0 30px;
+}
+
 /* DESKTOP */
 @media screen and (min-width: 768px) {
 
