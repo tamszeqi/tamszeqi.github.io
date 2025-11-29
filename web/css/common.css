@@ -240,6 +240,41 @@ header {
     display: none;
 }
 
+/* HEADER TITLE */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 490px;
+    background-image: linear-gradient(var(--black-50), var(--black-50)); /*url('../images/header-pagename.jpg')*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 25px;
+}
+
+.title h3 {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumbs .small {
+    color: var(--white);
+}
+
+p.small.home {
+    color: var(--grey-light);
+}
+
 /* FOOTER */
 
 
