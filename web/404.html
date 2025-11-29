@@ -12,24 +12,32 @@
 <body>
     <header>
         <div class="nav-left">
-            <img src="images/logo-white.png" alt="white-logo">
+            <a href="index.html">
+                <img class="logo" src="images/logo-white.png" alt="white-logo">
+            </a>
         </div>
 
         <nav class="nav-center" id="mobile-menu">
             <!-- Home -->
-            <div class="menu-item"><a href="index.html">Home</a></div>
+            <div class="menu-item home"><a class="item" href="index.html">Home</a></div>
             <!-- Coffee -->
             <div class="menu-item">
-                <a href="#">Coffee</a>
+                <div class="item">
+                    <a href="#">Coffee</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
                 <div class="submenu">
-                    <a href="brewcoffeetutorial.html">Brew Coffee Tutorial</a>
-                    <a href="kopidiamreserve.html">KopiDiam Reserve</a>
-                    <a href="ethicalsourcing.html">Ethical Sourcing</a>
+                    <a href="brew-coffee-tutorial.html">Brew Coffee Tutorial</a>
+                    <a href="kopidiam-reserve.html">KopiDiam Reserve</a>
+                    <a href="ethical-sourcing.html">Ethical Sourcing</a>
                 </div>
             </div>
             <!-- Menu -->
             <div class="menu-item">
-                <a href="#">Menu</a>
+                <div class="item">
+                    <a href="#">Menu</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
                 <div class="submenu">
                     <a href="drinks.html">Drinks</a>
                     <a href="foods.html">Foods</a>
@@ -38,16 +46,22 @@
             </div>
             <!-- Deals -->
             <div class="menu-item">
-                <a href="#">Deals</a>
+                <div class="item">
+                    <a href="#">Deals</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
                 <div class="submenu">
                     <a href="rewards.html">Rewards</a>
                     <a href="join-now.html">Join now</a>
                     <a href="mobile-order-and-pay.html">Mobile Order & Pay</a>
                 </div>
             </div>
-            <!-- Careers -->
+            <!-- Career -->
             <div class="menu-item">
-                <a href="#">Career</a>
+                <div class="item">
+                    <a href="#">Career</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
                 <div class="submenu">
                     <a href="working-at-kopidiam.html">Working at KopiDiam</a>
                     <a href="our-team.html">Our Team</a>
@@ -55,7 +69,10 @@
             </div>
             <!-- About -->
             <div class="menu-item">
-                <a href="#">About</a>
+                <div class="item">
+                    <a href="#">About</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
                 <div class="submenu">
                     <a href="our-story.html">Our Story</a>
                     <a href="stores.html">Stores</a>
@@ -66,26 +83,31 @@
         <div class="nav-right">
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <a href="search">
-                <img src="images/search.png" alt="search-icon">
+                <img class="search-icon" src="images/search.png" alt="search-icon">
             </a>
-            <p class="bold">+6012-345 6789</p>
+            <p>+6012-345 6789</p>
         </div>
     </header>
 
-    <div class="error-page-header">
-        <h3>Error Page</h3>
-        <p class="small">HOME</p>
-        <img src="images/arrow-side.png" alt="arrow side">
-        <p class="small">ERROR 404</p>
+    <div class="title">
+        <div class="error-page-header">
+            <h3>Error Page</h3>
+            <p class="small">HOME</p>
+            <img src="images/arrow-side.png" alt="arrow-side">
+            <p class="small">ERROR 404</p>
+        </div>
     </div>
-    <div class="error-page-content">
-        <img src="images/404.png" alt="404">
-        <p class="bodytext">The page you are looking for was moved, removed, renamed or never existed.</p>
-        <div class="search-bar">
-            <input type="text">
-            <a href="search-icon">
-                <img src="images/search.png" alt="search-icon">
-            </a>
+
+    <div class="wrapper">
+        <div class="error-page-content">
+            <img src="images/404.png" alt="404">
+            <p class="bodytext">The page you are looking for was moved, removed, renamed or never existed.</p>
+            <div class="search-bar">
+                <input type="text">
+                <a href="search-icon">
+                    <img src="images/search.png" alt="search-icon">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -122,7 +144,7 @@
                 </div>
 
                 <div class="footer-logo">
-                    <img src="images/logo-green.png" alt="KopiDiam Logo">
+                    <img class="logo" src="images/logo-green.png" alt="KopiDiam Logo">
                 </div>
             </div>
             <!-- middle column -->

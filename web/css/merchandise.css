@@ -1,0 +1,22 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.point {
+    display: flex;
+    margin: 50px 0px 10px 0px;
+    gap: 150px;
+}
+
+.b-green {
+    align-self: flex-end;
+}
+
+.greenmug {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}

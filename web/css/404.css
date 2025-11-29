@@ -1,5 +1,9 @@
 .error-page-header {
     background-image: url(../images/404header.png);
+    background-size: 100% 300px, cover;
+    background-position: top center, center;
+    background-repeat: no-repeat, no-repeat;
+    min-height: 100vh;
 }
 
 .error-page-content {
@@ -7,4 +11,25 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px;
+}
+
+.error-page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.error-page-header img {
+    width: 14px;
+    height: auto;
+    opacity: 0.9;
 }
