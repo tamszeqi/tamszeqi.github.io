@@ -1,0 +1,55 @@
+/*Section 1*/
+div.section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+img.relative {
+    position: relative;
+    left: -180px;
+    height: 750px;
+}
+
+div.textblock {
+    display: flex;
+    flex-direction: column;
+}
+
+img.icon {
+    width: 20%;
+}
+
+div.preparation {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+div.equipment,
+div.coffeebean {
+    width: 50%;
+}
+
+/*Section 2*/
+div.advertisement {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    gap: 5%;
+    border-radius: 10px;
+}
+
+div.ad-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+}
+
+img.coffeebean {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/*Section 3*/
+/*Media Query*/
