@@ -1,5 +1,6 @@
 .title {
     background-image: url('../images/header-merchandise.jpg');
+    background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-merchandise.jpg');
 }
 
 .wrapper1 {
