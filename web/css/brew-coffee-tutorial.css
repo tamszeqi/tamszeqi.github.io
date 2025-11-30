@@ -185,4 +185,17 @@ div.person {
     gap: 10px;
 }
 
-/*Media Query*/
+/**Media Query*/
+/*big screen*/
+@media (max-width: 1280px) {}
+
+
+@media(max-width:768px) {}
+
+
+/*margin adjustment*/
+@media(max-width: 1420px) {
+    .wrapper {
+        margin: 0px, 0px;
+    }
+}
