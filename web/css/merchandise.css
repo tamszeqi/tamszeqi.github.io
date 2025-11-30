@@ -7,6 +7,13 @@
     padding: 0px 170px 100px 170px;
 }
 
+.section1 {
+    background-image: url('../images/grass.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: bottom left;
+}
+
 .section1 h3 {
     text-align: center;
     background-color: #D8C799;
@@ -51,6 +58,13 @@
 
 .clothes img {
     width: 33%;
+}
+
+.section2 {
+    background-image: url('../images/grass2.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: bottom left;
 }
 
 .section2 p {
