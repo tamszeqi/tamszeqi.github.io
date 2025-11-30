@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/404.css">
 </head>
 
-<body>
+<body id="page-top">
     <header>
         <div class="nav-left">
             <a href="index.html">
@@ -116,36 +116,31 @@
         <div class="footer-top">
             <!-- top section: slogan+button -->
             <h5>Escape the Noise, Enjoy the Coffee</h5>
-            <a href="#" class="nearest-store-btn">FIND OUR NEAREST STORE</a>
+            <button class="b-green">FIND OUR NEAREST STORE</button>
         </div>
         <hr class="footer-divider">
-
         <!-- middle section -->
         <div class="footer-content">
             <!-- left column -->
-            <div class="footer-contact">
-                <div class="contact-item">
-                    <img src="images/location.png" alt="location-icon">
-                    <p>Lot G-12, KLCC</p>
+            <div class="footer-left">
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <img src="images/location.png" alt="location-icon">
+                        <p>Lot G-12, KLCC</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="email-icon">
+                        <p>info@kopidiam.my</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phone.png" alt="phone-icon">
+                        <p>+6012-345 6789</p>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <img src="images/email.png" alt="email-icon">
-                    <p>info@kopidiam.my</p>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/phone.png" alt="phone-icon">
-                    <p>+6012-345 6789</p>
-                </div>
-
                 <div class="footer-socials">
-                    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-                    <a href="#"><img src="images/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-                </div>
-
-                <div class="footer-logo">
-                    <img class="logo" src="images/logo-green.png" alt="KopiDiam Logo">
+                    <a class="footer-social-link" href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    <a class="footer-social-link" href="#"><img src="images/instagram.png" alt="instagram"></a>
+                    <a class="footer-social-link" href="#"><img src="images/facebook.png" alt="facebook"></a>
                 </div>
             </div>
             <!-- middle column -->
@@ -172,10 +167,15 @@
                 </div>
             </div>
         </div>
-        <!-- bottom right -->
-        <div class="footer-bottom">
-            <p>Copyright © 2024 KopiDiam. All Rights Reserved.</p>
-            <p class="back-to-top">BACK TO TOP</p>
+        <!-- bottom -->
+        <div class="footer-bottom-left">
+            <div class="footer-logo">
+                <img class="logo" src="images/logo-green.png" alt="KopiDiam Logo">
+            </div>
+            <p class="small">Copyright © 2024 KopiDiam. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+            <a class="small back-to-top" href="#page-top">BACK TO TOP</a>
         </div>
     </footer>
 
@@ -193,7 +193,6 @@
                 toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
             }
         });
-
     </script>
 </body>
 
