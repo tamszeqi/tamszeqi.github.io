@@ -1,45 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
 .title {
     background-image: url('../images/header-contact-us.jpg');
 }
 
-/* 第一section*/
+/* === 第一个 section: Get In Touch === */
 .getintouch {
     display: flex;
     gap: 88px;
-    padding: 60px 0px;
+    margin-bottom: 140px;
+    justify-content: flex-start;
 }
 
+/* 图片 */
 .getintouch .coffeeboy {
     width: 864px;
     height: 787px;
 }
 
+/* 文字内容 */
+.touchcontent {
+    margin-top: 120px;
+    width: 400px;
+}
+
+/* h3 间距 */
 .touchcontent h3 {
     margin: 10px 0 20px;
 }
 
+/* subtitle 间距 */
 .subtitle {
     margin-bottom: 30px;
 }
 
+/* social 栏 */
 .social {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-
+/* 每个 socialbox */
 .socialbox {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 45px;
 }
 
+.socialbox p {
+    line-height: 1.3;
+}
+
+/* social 图标 */
 .socialbox img {
     width: 75px;
     height: 58px;
 }
+
 
 
 /* ====== DROP A LINE GREEN BOX ====== */
@@ -47,44 +70,60 @@
     max-width: 1082px;
     background-color: #899064;
     padding: 70px 0;
-    text-align: center;
+    margin: auto;
     border-radius: 20px;
 }
 
 .greenupper {
-    width: 70%;
     margin: auto;
-    color: white;
+    margin-bottom: 12px;
 }
 
 .contact-form {
     max-width: 976px;
-    margin: auto;
+    text-align: left;
+    margin-left: 55px;
 }
 
-.form-row input,
 .form-row textarea {
     width: 100%;
     padding: 12px 15px;
-    margin-bottom: 15px;
+    margin-bottom: 23px;
     border-radius: 6px;
     border: none;
 }
 
+.form-row input {
+    width: 100%;
+    padding: 12px 60px;
+    margin-bottom: 23px;
+    border-radius: 6px;
+    border: none;
+}
 
 .fr-row button {
     margin-top: 10px;
-    cursor: pointer;
 }
 
+/* 名字和 Email 平分一行 */
+.form-row.name-email {
+    display: flex;
+    gap: 11px;
+}
 
-
+.form-row.name-email input {
+    padding: 12px 15px;
+    box-sizing: border-box;
+}
 
 
 /* ====== FAQ SECTION ====== */
 .faq {
     padding: 80px 0px;
-
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .boxquestion {
@@ -93,12 +132,20 @@
 
 /* FAQ item */
 .question {
+    text-align: left;
+}
+
+.questionbox {
     background-color: #D8C799;
     padding: 16px;
-    margin: 10px 0;
-    border-radius: 6px;
-    text-align: left;
-    border: 1px solid;
+    margin: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.answer {
+    background-color: #FFFFF0;
+    border-radius: 10px;
+    border: none;
 }
