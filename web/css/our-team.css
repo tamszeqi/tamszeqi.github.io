@@ -1,0 +1,3 @@
+.title {
+    background-image:  linear-gradient(var(--black-50), var(--black-50)), url('../images/header-our-team.jpg');
+}

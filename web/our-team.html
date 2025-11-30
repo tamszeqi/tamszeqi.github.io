@@ -7,7 +7,181 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/our-team.css">
 </head>
-<body>
+<body id="page-top">
+    <header>
+        <div class="nav-left">
+            <a href="index.html">
+                <img class="logo" src="images/logo-white.png" alt="white-logo">
+            </a>
+        </div>
+
+        <nav class="nav-center" id="mobile-menu">
+            <!-- Home -->
+            <div class="menu-item home"><a class="item" href="index.html">Home</a></div>
+            <!-- Coffee -->
+            <div class="menu-item">
+                <div class="item">
+                    <a href="#">Coffee</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
+                <div class="submenu">
+                    <a href="brew-coffee-tutorial.html">Brew Coffee Tutorial</a>
+                    <a href="kopidiam-reserve.html">KopiDiam Reserve</a>
+                    <a href="ethical-sourcing.html">Ethical Sourcing</a>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu-item">
+                <div class="item">
+                    <a href="#">Menu</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
+                <div class="submenu">
+                    <a href="drinks.html">Drinks</a>
+                    <a href="foods.html">Foods</a>
+                    <a href="merchandise.html">Merchandise</a>
+                </div>
+            </div>
+            <!-- Deals -->
+            <div class="menu-item">
+                <div class="item">
+                    <a href="#">Deals</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
+                <div class="submenu">
+                    <a href="rewards.html">Rewards</a>
+                    <a href="join-now.html">Join now</a>
+                    <a href="mobile-order-and-pay.html">Mobile Order & Pay</a>
+                </div>
+            </div>
+            <!-- Career -->
+            <div class="menu-item">
+                <div class="item">
+                    <a href="#">Career</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
+                <div class="submenu">
+                    <a href="working-at-kopidiam.html">Working at KopiDiam</a>
+                    <a href="our-team.html">Our Team</a>
+                </div>
+            </div>
+            <!-- About -->
+            <div class="menu-item">
+                <div class="item">
+                    <a href="#">About</a>
+                    <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
+                </div>
+                <div class="submenu">
+                    <a href="our-story.html">Our Story</a>
+                    <a href="stores.html">Stores</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-right">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <a href="search">
+                <img class="search-icon" src="images/search.png" alt="search-icon">
+            </a>
+            <p>+6012-345 6789</p>
+        </div>
+    </header>
+
+    <div class="title">
+        <h3>Our Team</h3>
+        <div class="breadcrumbs">
+            <p class="small home">HOME</p>
+            <img src="images/arrow-side.png" alt="arrow-side">
+            <p class="small">OUR TEAM</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <!-- top section: slogan+button -->
+            <h5>Escape the Noise, Enjoy the Coffee</h5>
+            <button class="b-green">FIND OUR NEAREST STORE</button>
+        </div>
+        <hr class="footer-divider">
+        <!-- middle section -->
+        <div class="footer-content">
+            <!-- left column -->
+            <div class="footer-left">
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <img src="images/location.png" alt="location-icon">
+                        <p>Lot G-12, KLCC</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="email-icon">
+                        <p>info@kopidiam.my</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phone.png" alt="phone-icon">
+                        <p>+6012-345 6789</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a class="footer-social-link" href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    <a class="footer-social-link" href="#"><img src="images/instagram.png" alt="instagram"></a>
+                    <a class="footer-social-link" href="#"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+            <!-- middle column -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Our Story</a>
+                    <a href="#">Ethical Sourcing</a>
+                    <a href="#">KopiDiam Reserve</a>
+                    <a href="#">Join Our Team</a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="#">Find a Store</a>
+                    <a href="#">Full Menu</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Foods</a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="#">Rewards Program</a>
+                    <a href="#">Mobile Order & Pay</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="footer-bottom-left">
+            <div class="footer-logo">
+                <img class="logo" src="images/logo-green.png" alt="KopiDiam Logo">
+            </div>
+            <p class="small">Copyright © 2024 KopiDiam. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+            <a class="small back-to-top" href="#page-top">BACK TO TOP</a>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
     
 </body>
 </html>
