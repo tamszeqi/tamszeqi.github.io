@@ -63,7 +63,7 @@
 .section2 {
     background-image: url('../images/grass2.png');
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 550px;
     background-position: bottom left;
 }
 
@@ -73,12 +73,18 @@
 
 .wrapper2 {
     padding: 100px 170px 100px 0px;
+    background-image: url('../images/flower.png');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: bottom right;
 }
 
 .section3 {
     display: flex;
     align-items: center;
     gap: 100px;
+
+
 }
 
 .redmug {
