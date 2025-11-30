@@ -86,12 +86,13 @@
             <p>+6012-345 6789</p>
         </div>
     </header>
+
     <div class="wrapper">
         <!-- 第一个section -->
         <div class="getintouch">
-            <!-- coffeeboy -->
+            <img src="images/coffeeboy.png" alt="coffeeboy" class="coffeeboy">
             <div class="touchcontent">
-                <p class="bold">CONTACT US</p>
+                <p class="category">CONTACT US</p>
                 <h3>Get In Touch</h3>
                 <p class="subtitle">We'd love to hear from you! Get in touch and let's share the taste of Malaysia
                     together.</p>
@@ -116,16 +117,33 @@
         </div>
         <!-- 第二个section -->
         <div class="Greenbox">
-            <div class="greencontainer">
+            <div class="greenupper">
                 <h5>Drop Us a Line</h5>
                 <p>Your email address will not be published. Required fields are marked *</p>
-                <!-- form -->
-                <form class="greenform">
-                    <input type="text" placeholder="Your Name *" required>
-                    <input type="email" placeholder="Your Email *" required>
-                    <input type="text" placeholder="Website">
-                    <textarea placeholder="Your Message..." rows="4"></textarea>
-                    <button class="b-brown" type="submit">SEND</button>
+            </div>
+            <!-- form -->
+            <div class="form">
+                <form class="contact-form">
+                    <!-- 名字和 Email 一行 -->
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <!-- wangzhan -->
+                    <div class="form-row">
+                        <input type="url" name="website" placeholder="Website">
+                    </div>
+
+                    <!-- message -->
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Your message" rows="5"></textarea>
+                    </div>
+
+                    <!-- button -->
+                    <div class="form-row">
+                        <button class="b-brown" type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -133,7 +151,7 @@
         <!-- 第三个section -->
         <div class="faq">
             <div class="faqcontainer">
-                <p class="bold">NEED HELP?</p>
+                <p class="category">NEED HELP?</p>
                 <h3>Top 10 Most Popular FAQ's</h3>
                 <p class="subtitle">
                     We are experts in Malaysian flavours. Our team combines years of culinary experience with a deep

@@ -1,4 +1,104 @@
-.questionbox {
-    border-radius: 10px;
+.title {
+    background-image: url('../images/header-contact-us.jpg');
+}
+
+/* 第一section*/
+.getintouch {
+    display: flex;
+    gap: 88px;
+    padding: 60px 0px;
+}
+
+.getintouch .coffeeboy {
+    width: 864px;
+    height: 787px;
+}
+
+.touchcontent h3 {
+    margin: 10px 0 20px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.socialbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.socialbox img {
+    width: 75px;
+    height: 58px;
+}
+
+
+/* ====== DROP A LINE GREEN BOX ====== */
+.Greenbox {
+    max-width: 1082px;
+    background-color: #899064;
+    padding: 70px 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.greenupper {
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+.contact-form {
+    max-width: 976px;
+    margin: auto;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.fr-row button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ====== FAQ SECTION ====== */
+.faq {
+    padding: 80px 0px;
+
+}
+
+.boxquestion {
+    margin-top: 40px;
+}
+
+/* FAQ item */
+.question {
     background-color: #D8C799;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: left;
+    border: 1px solid;
+    border: none;
+    cursor: pointer;
 }
