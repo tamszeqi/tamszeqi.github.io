@@ -39,6 +39,14 @@ body {
     border-radius: 30px;
 }
 
+.dark {
+    background-color: var(--dark);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
 html {
     scroll-behavior: smooth;
 }
