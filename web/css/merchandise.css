@@ -15,7 +15,7 @@
 
 .point {
     display: flex;
-    margin: 50px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
     gap: 150px;
 }
 
@@ -29,6 +29,7 @@
 }
 
 .greenmug {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -44,6 +45,7 @@
 
 .clothes {
     display: flex;
+    margin-top: 10px;
 }
 
 .clothes img {
