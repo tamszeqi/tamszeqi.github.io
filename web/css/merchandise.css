@@ -2,7 +2,9 @@
     background-image: url('../images/header-merchandise.jpg');
 }
 
-
+.wrapper1 {
+    padding: 0px 170px 100px 170px;
+}
 
 .section1 h3 {
     text-align: center;
