@@ -36,7 +36,16 @@ body {
 }
 
 .wrapper {
-    margin: 0 170px;
+    padding: 100px 170px;
+    border-radius: 30px;
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.normal {
+    background-color: var(--normal);
 }
 
 html {
