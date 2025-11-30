@@ -2,6 +2,8 @@
     background-image: url('../images/header-merchandise.jpg');
 }
 
+
+
 .section1 h3 {
     text-align: center;
     background-color: #D8C799;
@@ -37,11 +39,6 @@
     width: 50%;
 }
 
-.section2 {
-    margin-top: 80px;
-    padding: 50px;
-    background: #FFECBD;
-}
 
 .clothes {
     display: flex;
