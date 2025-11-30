@@ -23,7 +23,8 @@
     gap: 150px;
 }
 
-.b-green {
+.section1 .b-green,
+.section2 .b-green {
     margin-left: auto;
     display: block;
 }
@@ -53,4 +54,18 @@
 
 .section2 p {
     margin-top: 50px;
+}
+
+.wrapper2 {
+    padding: 100px 170px 100px 0px;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.redmug {
+    width: 45%;
 }
