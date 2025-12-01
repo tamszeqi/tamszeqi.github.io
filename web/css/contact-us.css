@@ -13,6 +13,7 @@
     /* 给他可以两派 */
     justify-content: flex-start;
     /* 靠左 */
+    margin-bottom: 100px;
 }
 
 /* 图片 */
@@ -69,13 +70,11 @@
 
 /* 第二个section */
 .Greenbox {
-    max-width: 882px;
-    /* 表格的大小跟随figma */
     background-color: #899064;
-    padding: 65px 40px 35px 40px;
+    padding: 65px 45px 35px 40px;
     margin: auto;
     border-radius: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /* 文字整体 */
@@ -101,10 +100,9 @@
 
 /* form的section */
 .contact-form {
-    max-width: 976px;
-    /* 限制大小跟随figma */
     text-align: left;
     margin: auto;
+    width: 100%
 }
 
 /* style 里面的东西 */
@@ -155,7 +153,7 @@
     flex-wrap: wrap;
     text-align: left;
     margin-bottom: 40px;
-    padding: 0px 60px 80px 60px;
+
 }
 
 .faqcontainer {
@@ -168,7 +166,7 @@
     cursor: pointer;
 }
 
-.questionbox {
+.questionbox p {
     color: var(--black);
 }
 
@@ -215,6 +213,8 @@ p.subtitle {
         align-items: center;
         text-align: center;
         padding: 20px;
+
+
     }
 
     .coffeeboy {
@@ -224,6 +224,7 @@ p.subtitle {
     .touchcontent {
         width: 100%;
         margin-top: 0;
+
     }
 
     .socialbox {
@@ -237,7 +238,7 @@ p.subtitle {
 
     /* ============ SECTION 2: FORM ============ */
     .Greenbox {
-        max-width: 500px;
+        width: 100%;
         padding: 50px 10px 20px 10px;
         margin-bottom: 100px;
     }
@@ -266,6 +267,7 @@ p.subtitle {
         align-items: center;
         margin: auto;
         margin-bottom: 30px;
+        padding: 0px;
     }
 
     .subtitle {
@@ -279,15 +281,19 @@ p.subtitle {
     }
 
     .question {
-        width: 85%;
-
+        width: 100%;
     }
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 775px) {
+    .touchcontent {
+        margin-left: -150px;
+
+    }
 
     .coffeeboy {
+        width: 600px;
         height: auto;
     }
 
@@ -295,5 +301,9 @@ p.subtitle {
     /* FAQ 两栏保持 */
     .question {
         width: calc(50% - 15px);
+    }
+
+    .boxquestion {
+        margin-bottom: 5px;
     }
 }
