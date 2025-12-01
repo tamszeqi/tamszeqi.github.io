@@ -7,10 +7,6 @@
 .getintouch {
     display: flex;
     /* 给他可以两派 */
-    gap: 88px;
-    /* content跟照片的间距 */
-
-    /* 跟section 2的距离 */
     justify-content: flex-start;
     /* 靠左 */
 }
@@ -73,7 +69,7 @@
     max-width: 1082px;
     /* 表格的大小跟随figma */
     background-color: #899064;
-    padding: 70px 0;
+    padding: 65px 0px;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 110px;
@@ -84,18 +80,18 @@
     align-items: flex-start;
     margin-bottom: 12px;
     margin-left: 55px;
-    margin-top: -45px;
+    margin-top: -35px;
 }
 
 /* 针对h5和p换颜色因为common css 另外还set空间*/
 .greenupper h5 {
     color: var(--white);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .greenupper p {
     color: var(--white);
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 /*  */
@@ -164,7 +160,6 @@
     color: var(--black);
 }
 
-/* 默认隐藏答案 */
 .answer {
     color: var(#858178);
     background-color: #FFFFF0;
@@ -174,10 +169,6 @@
 
 }
 
-/* 展开时显示 */
-.question.active .answer {
-    display: block;
-}
 
 
 
