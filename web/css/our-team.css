@@ -4,27 +4,31 @@
 
 .intro {
     display: flex;
-    gap: clamp(40px, 7.6vw, 110px);
-    align-items: center;
+    align-items: stretch;
+    gap: clamp(20px, 6vw, 115px);
+}
+
+.image {
+    width: 40%;
+    flex-shrink: 1;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.intro .group {
+    width: 50%;
+    flex-shrink: 1;
+    max-width: none; 
 }
 
 .group p:not(.small) {
     margin-bottom: clamp(15px, 1.7vw, 25px);
 }
 
-.image {
-    width: 100%;
-    max-width: clamp(300px, 45vw, 650px);
-    object-fit: cover;
-}
-
 .statsbar {
     justify-content: flex-start;
-    column-gap: clamp(15px, 4vw, 100px);
-}
-
-.deco {
-    position: absolute;
+    gap: clamp(15px, 4vw, 100px);
 }
 
 .leaf1 {
@@ -35,6 +39,11 @@
 .leaf2 {
     top: 820px;
     right: -5px;
+}
+
+.teammate, .section2 .group {
+    position: relative;
+    z-index: 2;
 }
 
 .section2 {
@@ -57,6 +66,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: clamp(40px, 5.5vw, 80px) clamp(30px, 7vw, 100px);
+    padding: 0 clamp(20px, 12vw, 170px);
 }
 
 .teammate {
@@ -199,8 +209,8 @@
 
 .s3 {
     display: flex;
+    align-items: stretch;
     gap: clamp(40px, 8vw, 115px);
-    align-items: center;
     padding: clamp(50px, 7vw, 100px) 0;
 }
 
