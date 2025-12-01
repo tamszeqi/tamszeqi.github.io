@@ -6,6 +6,7 @@ body {
 
 .title {
     background-image: url('../images/header-contact-us.jpg');
+    background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-contact-us.jpg');
 }
 
 /* === 第一个 section: Get In Touch === */
@@ -18,9 +19,11 @@ body {
 }
 
 /* 图片 */
-.getintouch .coffeeboy {
+.coffeeboy {
     width: 864px;
     height: 787px;
+    position: relative;
+    left: -200px;
 }
 
 /* 文字内容 */
@@ -78,6 +81,11 @@ body {
 .greenupper {
     margin: auto;
     margin-bottom: 12px;
+    text-align: center;
+}
+
+.greenupper h5 {
+    color: var(--white);
 }
 
 .contact-form {
