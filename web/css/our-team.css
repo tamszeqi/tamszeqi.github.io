@@ -4,6 +4,7 @@
 
 .intro {
     display: flex;
+    justify-content: center;
     align-items: stretch;
     gap: clamp(20px, 6vw, 115px);
 }
@@ -17,9 +18,10 @@
 }
 
 .intro .group {
-    width: 50%;
+    width: auto;
     flex-shrink: 1;
-    max-width: none; 
+    max-width: none;
+    align-self: center;
 }
 
 .group p:not(.small) {
@@ -41,7 +43,7 @@
     right: -5px;
 }
 
-.teammate, .section2 .group {
+.block, .inquiries, .teammate, .section2 .group {
     position: relative;
     z-index: 2;
 }
@@ -209,9 +211,17 @@
 
 .s3 {
     display: flex;
+    justify-content: center;
     align-items: stretch;
     gap: clamp(40px, 8vw, 115px);
     padding: clamp(50px, 7vw, 100px) 0;
+}
+
+.s3 .group {
+    width: auto;
+    flex-shrink: 1;
+    max-width: none;
+    align-self: center;
 }
 
 .checklist {
@@ -240,4 +250,13 @@
 .checklist .check p {
     margin: 0;
     width: 100%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+    .intro, .s3 {
+        flex-direction: column;
+    }
+
 }
