@@ -9,7 +9,7 @@
     /* 给他可以两派 */
     gap: 88px;
     /* content跟照片的间距 */
-    margin-bottom: 70px;
+
     /* 跟section 2的距离 */
     justify-content: flex-start;
     /* 靠左 */
@@ -139,29 +139,39 @@
 
 
 
-/* === FAQ SECTION === */
+/* === 第三个section === */
 .boxquestion {
+    /* 整体的asjust */
     display: flex;
-    flex-wrap: wrap;
+    /* 让他两排 */
     gap: 15px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.faqcontainer {
+    text-align: center;
 }
 
 .question {
     width: calc(50% - 15px);
-    background-color: var(--primary);
-    border: 1px solid var(--grey-light);
-    border-radius: 6px;
+    /* 每个共享一半再去掉gap的数目 */
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     padding: 15px 20px;
+    background-color: #D8C799;
+    color: var(--black);
 }
 
 /* 默认隐藏答案 */
 .answer {
-    display: none;
-    background-color: var(--white);
+    color: var(#858178);
+    background-color: #FFFFF0;
     padding: 15px 20px;
-    border-top: 1px solid var(--grey-light);
-    color: var(--grey-dark);
+    border: none;
+    border-radius: 10px;
+
 }
 
 /* 展开时显示 */
