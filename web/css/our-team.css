@@ -1,3 +1,232 @@
 .title {
     background-image:  linear-gradient(var(--black-50), var(--black-50)), url('../images/header-our-team.jpg');
 }
+
+.intro {
+    display: flex;
+    gap: clamp(40px, 7.6vw, 110px);
+    align-items: center;
+}
+
+.group p:not(.small) {
+    margin-bottom: clamp(15px, 1.7vw, 25px);
+}
+
+.image {
+    width: 100%;
+    max-width: clamp(300px, 45vw, 650px);
+    object-fit: cover;
+}
+
+.statsbar {
+    justify-content: flex-start;
+    column-gap: clamp(15px, 4vw, 100px);
+}
+
+.deco {
+    position: absolute;
+}
+
+.leaf1 {
+    top: -100px;
+    left: -5px;
+}
+
+.leaf2 {
+    top: 820px;
+    right: -5px;
+}
+
+.section2 {
+    margin: 0 clamp(-170px, -12vw, -20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(50px, 7vw, 100px) 0 clamp(100px, 23.6vw, 340px) 0;
+    position: relative;
+}
+
+.section2 .group {
+    text-align: center;
+    max-width: clamp(320px, 52vw, 750px);
+}
+
+.full-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(40px, 5.5vw, 80px) clamp(30px, 7vw, 100px);
+}
+
+.teammate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.teammate-photo {
+    width: clamp(280px, 22.5vw, 325px);
+    aspect-ratio: 9 / 10;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.yenxin {
+    background-image: url(../images/angyenxin.png);
+}
+
+.szeqi {
+    background-image: url(../images/tamszeqi.png);
+}
+
+.elisha {
+    background-image: url(../images/ongelishabeiwei.png);
+}
+
+.jiaxuan {
+    background-image: url(../images/yapjiaxuan.png);
+}
+
+.zhilin {
+    background-image: url(../images/chongzhilin.png);
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    min-width: clamp(250px, 19.8vw, 285px);
+    gap: clamp(5px, 0.7vw, 10px);
+    padding: clamp(15px, 1.7vw, 25px);
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: clamp(-40px, -2.8vw, -30px);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.block-group {
+    position: relative;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    text-align: center;
+    padding: clamp(30px, 4.5vw, 65px) clamp(20px, 3.5vw, 50px) clamp(40px, 5.2vw, 75px) clamp(20px, 3.5vw, 50px);
+    width: 100%;
+    border-radius: 30px;
+    margin-top: clamp(-205px, -14.2vw, -100px);
+}
+
+.block .logo {
+    margin-bottom: clamp(20px, 2.4vw, 35px);
+}
+
+.block h3 {
+    color: var(--white);
+    margin-bottom: clamp(10px, 1vw, 15px);
+}
+
+.block p {
+    color: var(--white);
+    max-width: clamp(300px, 45vw, 650px);
+    margin-bottom: clamp(25px, 3.5vw, 50px);
+}
+
+.inquiries-card {
+    position: absolute;
+    top: clamp(-23px, -1.6vw, -10px);
+    right: clamp(-65px, -4.5vw, -20px);
+}
+
+.inquiries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.diagonal {
+    position: relative;
+}
+
+.inquiry-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    left: clamp(15px, 2.4vw, 35px);
+}
+
+.inquiry-icon {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: clamp(40px, 3.5vw, 50px);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: clamp(10px, 1.4vw, 20px);
+}
+
+.inquiry-icon img {
+    width: clamp(25px, 2.4vw, 35px);
+}
+
+.inquiry-info h6 {
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.inquiry-info p {
+    color: var(--white);
+}
+
+.section3 {
+    padding: 0 clamp(20px, 12vw, 170px);
+    border-radius: 30px 30px 0 0;
+}
+
+.s3 {
+    display: flex;
+    gap: clamp(40px, 8vw, 115px);
+    align-items: center;
+    padding: clamp(50px, 7vw, 100px) 0;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.check-icon-wrapper {
+    width: clamp(30px, 2.8vw, 40px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--normal);
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checklist .check p {
+    margin: 0;
+}

@@ -10,24 +10,35 @@
 </head>
 
 <body>
-    <!-- body text -->
-    <p>test</p>
+    <div class="wrapper">
+        <!-- body text -->
+        <p>test</p>
 
-    <!-- buttons -->
-    <button class="b-green">Testing</button>
-    <button class="tb green">Testing</button>
+        <!-- buttons -->
+        <button class="b-green">Testing</button>
+        <button class="tb green">Testing</button>
 
-    <div class="wrapper dark">
-        <!-- text group -->
-        <div class="group">
-            <p class="small">Testing</p>
-            <h4>TESTING</h4>
-            <p>Testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing.</p>
-            <button class="b-green">Testing</button>
-        </div>
+        <!-- overlay colour over another
+        .section1 {
+            margin: 0 -170px;
+        }
+        .section2 {
+            padding: 0 170px;
+            border-radius: 30px 30px 0 0;
+        }
+        -->
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper section2 normal">
+        <div class="wrapper section1 dark">
+            <!-- text group -->
+            <div class="group">
+                <p class="small">Testing</p>
+                <h4>TESTING</h4>
+                <p>Testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing.</p>
+                <button class="b-green">Testing</button>
+            </div>
+        </div>
         <!-- stats bar -->
         <div class="statsbar">
             <div class="stats">
@@ -60,6 +71,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

@@ -80,6 +80,32 @@ div.intro {
 
 /**Section 2*/
 /*banner*/
+.banner {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    gap: 5%;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+}
+
+.banner h5,
+.banner p {
+    color: var(--white);
+}
+
+.banner-img {
+    width: 30%;
+    border-radius: 30px 0 0 30px;
+}
+
 div.banner-img-container {
     background-image: url(../images/coffeebeans-bct.jpg);
     background-repeat: none;
