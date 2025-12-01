@@ -28,7 +28,7 @@
 /* 右边的内容 */
 .touchcontent {
     margin-top: 120px;
-    width: 400px;
+
 }
 
 /* h3 */
@@ -66,26 +66,23 @@
     /* icon高度跟宽度跟随figma */
 }
 
-.socialbox img {
-    display: block;
-}
 
 /* 第二个section */
 .Greenbox {
-    max-width: 1082px;
+    max-width: 882px;
     /* 表格的大小跟随figma */
     background-color: #899064;
-    padding: 65px 0px 40px 0px;
+    padding: 65px 40px 35px 40px;
     margin: auto;
     border-radius: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 200px;
 }
 
 /* 文字整体 */
 .greenupper {
     align-items: flex-start;
     margin-bottom: 12px;
-    margin-left: 55px;
+    margin-left: 5px;
     margin-top: -35px;
 }
 
@@ -107,7 +104,7 @@
     max-width: 976px;
     /* 限制大小跟随figma */
     text-align: left;
-    margin-left: 55px;
+    margin: auto;
 }
 
 /* style 里面的东西 */
@@ -142,6 +139,14 @@
 
 
 /* === 第三个section === */
+.questionbox {
+    background-color: #D8C799;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+
 .boxquestion {
     /* 整体的asjust */
     display: flex;
@@ -149,6 +154,8 @@
     gap: 15px;
     flex-wrap: wrap;
     text-align: left;
+    margin-bottom: 40px;
+    padding: 0px 60px 80px 60px;
 }
 
 .faqcontainer {
@@ -158,17 +165,16 @@
 .question {
     width: calc(50% - 15px);
     /* 每个共享一半再去掉gap的数目 */
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
-    padding: 15px 20px;
-    background-color: #D8C799;
+}
+
+.questionbox {
     color: var(--black);
 }
 
 .answer {
     color: var(#858178);
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -187,6 +193,12 @@ img.deco-right {
     z-index: -1;
 }
 
+p.subtitle {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -194,12 +206,10 @@ img.deco-right {
 
     /* title header */
     .title {
-        height: 180px;
-        background-size: cover;
-        background-position: center;
+        text-align: center;
+        margin: auto;
     }
 
-    /* ============ SECTION 1: GET IN TOUCH ============ */
     .getintouch {
         flex-direction: column;
         align-items: center;
@@ -208,11 +218,7 @@ img.deco-right {
     }
 
     .coffeeboy {
-        width: 100%;
-        height: auto;
-        position: static;
-        left: 0;
-        margin-bottom: 20px;
+        display: none;
     }
 
     .touchcontent {
@@ -231,18 +237,20 @@ img.deco-right {
 
     /* ============ SECTION 2: FORM ============ */
     .Greenbox {
-        padding: 40px 20px;
-        margin-bottom: 60px;
+        max-width: 500px;
+        padding: 50px 10px 20px 10px;
+        margin-bottom: 100px;
     }
 
     .greenupper {
-        margin-left: 0;
-        text-align: center;
+        margin-left: 10px;
+        text-align: flex-start;
     }
 
     .contact-form {
-        margin-left: 0;
-        width: 100%;
+        text-align: flex-start;
+        width: 90%;
+        align-items: center;
     }
 
     /* name + email 改为上下 */
@@ -255,85 +263,34 @@ img.deco-right {
     .boxquestion {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
-    .question {
-        width: 100%;
+    .subtitle {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
-    /* footer 调整 */
-    footer {
+    .questionbox {
         text-align: center;
     }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-bottom-right {
-        margin-top: 20px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    /* Get in touch */
-    .coffeeboy {
-        width: 400px;
-        height: auto;
-        left: -40px;
-    }
-
-    .touchcontent {
-        width: 300px;
-        margin-top: 60px;
-    }
-
-    /* form */
-    .Greenbox {
-        padding: 50px 40px;
-    }
-
-    .greenupper {
-        margin-left: 0;
-    }
-
-    .contact-form {
-        margin-left: 0;
-    }
-
-    /* FAQ 两栏 */
     .question {
-        width: calc(50% - 10px);
+        width: 85%;
+
     }
 }
-
 
 
 @media (min-width: 1024px) {
 
-    .getintouch {
-        display: flex;
-        align-items: flex-start;
-    }
-
     .coffeeboy {
-        width: 864px;
         height: auto;
-        left: -180px;
     }
 
-    .touchcontent {
-        width: 400px;
-    }
 
     /* FAQ 两栏保持 */
     .question {
