@@ -1,3 +1,10 @@
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
 .title {
     background-image: linear-gradient(to top,
             var(--black-50),
@@ -72,7 +79,6 @@
 .Greenbox {
     background-color: #899064;
     padding: 65px 45px 35px 40px;
-    margin: auto;
     border-radius: 20px;
     margin-bottom: 100px;
 }
@@ -238,6 +244,7 @@ p.subtitle {
 
     /* ============ SECTION 2: FORM ============ */
     .Greenbox {
+        position: relative;
         width: 100%;
         padding: 50px 10px 20px 10px;
         margin-bottom: 100px;
@@ -284,6 +291,49 @@ p.subtitle {
         width: 100%;
     }
 }
+
+/* ============ DECO ============ */
+/*flower size*/
+div.deco {
+    width: 20%;
+}
+
+div.leaf2 {
+    top: 470px;
+    right: -10px;
+    z-index: -1;
+    width: 15%;
+}
+
+/*mid flower*/
+div.deco.leaf1.mid {
+    left: 0px;
+    bottom: -950px;
+    z-index: -1;
+    width: 20%;
+}
+
+div.deco.leaf2.mid {
+    top: 1150px;
+    right: 0px;
+    width: 20%;
+}
+
+/*lst flower*/
+div.deco.leaf1.lst {
+    bottom: -1950px;
+    left: 5px;
+    z-index: 1;
+    width: 30%;
+}
+
+div.deco.leaf2.lst {
+    top: 2050px;
+    right: 5px;
+    z-index: 1;
+    width: 20%;
+}
+
 
 
 @media (min-width: 775px) {
