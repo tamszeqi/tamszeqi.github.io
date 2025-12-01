@@ -25,7 +25,7 @@
 }
 
 .group p:not(.small) {
-    margin-bottom: clamp(15px, 1.7vw, 25px);
+    margin-bottom: clamp(20px, 2vw, 25px);
 }
 
 .statsbar {
@@ -257,6 +257,20 @@
 
     .intro, .s3 {
         flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .deco {
+        width: 30%;
+    }
+
+    .companies {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: clamp(20px, 3vw, 40px);
     }
 
 }

@@ -206,7 +206,7 @@ header {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: clamp(8px, 2.5vw, 15px);
 }
 
 .nav-right p {
@@ -219,6 +219,7 @@ header {
     text-transform: uppercase;
     padding: 12px clamp(2px, 0.5vw, 10px) 12px clamp(2px, 1vw, 15px);
     font-size: clamp(12px, 1.1vw, 16px);
+    cursor: pointer;
 }
 
 .menu-item.home .item {
@@ -231,36 +232,6 @@ header {
 
 .nav-right a {
     min-width: 40px;
-}
-
-.submenu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    padding: 12px 15px;
-    gap: 15px;
-    background-color: var(--tertiary);
-    border-radius: 0 10px 10px 10px;
-}
-
-.menu-item:hover {
-    .submenu {
-        display: flex;
-    }
-
-    .item {
-        background-color: var(--tertiary);
-        border-radius: 10px 10px 0 0;
-    }
-
-    .arrow-down {
-        transform: rotate(180deg);
-    }
-}
-
-.menu-item.home:hover .item {
-    border-radius: 10px;
-    padding: 12px 15px;
 }
 
 .menu-toggle {
@@ -545,19 +516,156 @@ button {
     object-fit: contain;
 }
 
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    .submenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        padding: 12px 15px;
+        gap: 15px;
+        background-color: var(--tertiary);
+        border-radius: 0 10px 10px 10px;
+    }
+
+    .menu-item:hover {
+        .submenu {
+            display: flex;
+        }
+
+        .item {
+            background-color: var(--tertiary);
+            border-radius: 10px 10px 0 0;
+        }
+
+        .arrow-down {
+            transform: rotate(180deg);
+        }
+    }
+
+    .menu-item.home:hover .item {
+        border-radius: 10px;
+        padding: 12px 15px;
+    }
+}
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
 
-    .nav-center, .nav-right a, .nav-right p {
-        display: none;
+    .wrapper {
+        padding: clamp(30px, 6vw, 50px) clamp(20px, 3vw, 30px);
     }
+
+    /* HEADER */
+    header {
+        justify-content: space-between;
+        padding: clamp(5px, 1.5vw, 10px) clamp(15px, 4vw, 30px);
+        background: transparent;
+    }
+
+    header::before { /* paint the ghost box Brown/Black, stretch it to fill the header size, and tuck it between the Logo and the Menu */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-50);
+        z-index: -1;
+    }
+
+    .nav-center {
+    	display: none;
+    	flex-direction: column;
+    	background-color: var(--tertiary);
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	text-align: center;
+    	z-index: -2;
+        padding: clamp(80px, 12vh, 100px) 0;
+        height: 100vh;
+        overflow-y: auto;
+	}
+
+	.nav-center.active {
+    	display: flex;
+	}
 
     .menu-toggle {
         display: block;
+        cursor: pointer;
+        font-size: 25px;
+        z-index: 1001;
     }
 
-    header {
-        justify-content: space-between;
+    .nav-right p {
+        display: none;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .item {
+        color: var(--grey-light);
+        margin-top: clamp(20px, 4vh, 30px);
+        pointer-events: none;
+    }
+
+    .home .item {
+        display: none;
+    }
+    
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        gap: clamp(15px, 2vh, 20px);
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(20px, 4vh, 30px);
+    }
+
+    .footer-top h5 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(30px, 5vh, 40px);
+    }
+
+    .footer-contact {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        margin: clamp(20px, 4vh, 30px);
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-bottom: clamp(40px, 8vh, 60px);
+        text-align: center;
+    }
+
+    .footer-bottom-left {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(15px, 2vh, 20px);
     }
 
 }
