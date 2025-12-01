@@ -31,6 +31,7 @@
 }
 
 body {
+    overflow-x: hidden;
     color: var(--black);
     background-color: var(--light);
 }
@@ -181,7 +182,7 @@ header {
     display: flex;
     align-items: center;
     background-color: var(--black-50);
-    padding: 15px clamp(20px, 3.5vw, 50px);
+    padding: 15px clamp(5px, 2vw, 50px);
     width: 100%;
     position: fixed;
     top: 0;
@@ -190,12 +191,16 @@ header {
     z-index: 1000;
 }
 
+.nav-left {
+    margin-right: clamp(15px, 2vw, 40px);
+}
+
 .nav-center {
     margin-left: auto;
-    margin-right: clamp(20px, 5.5vw, 80px);
+    margin-right: clamp(5px, 3vw, 80px);
     display: flex;
     align-items: center;
-    gap: clamp(15px, 2.5vw, 35px);
+    gap: clamp(0px, 1.5vw, 35px);
 }
 
 .nav-right {
@@ -212,11 +217,20 @@ header {
 
 .item {
     text-transform: uppercase;
-    padding: 12px 10px 12px 15px;
+    padding: 12px clamp(2px, 0.5vw, 10px) 12px clamp(2px, 1vw, 15px);
+    font-size: clamp(12px, 1.1vw, 16px);
 }
 
 .menu-item.home .item {
-    padding: 12px 15px;
+    padding: 12px clamp(2px, 1vw, 15px);
+}
+
+.nav-right p {
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.nav-right a {
+    min-width: 40px;
 }
 
 .submenu {
@@ -260,11 +274,11 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 490px;
+    min-height: clamp(300px, 40vw, 490px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    gap: 25px;
+    gap: clamp(10px, 2vw, 25px);
 }
 
 .title h3 {
@@ -300,6 +314,7 @@ footer {
 
 .footer-top h5 {
     color: var(--white);
+    margin-right: clamp(20px, 4vw, 60px);
 }
 
 .footer-divider {
@@ -383,6 +398,7 @@ footer {
 
 /* BUTTONS */
 button {
+    white-space: nowrap;
     padding: 12px 30px;
     border-radius: 20px;
     font-family: var(--text);
@@ -463,6 +479,12 @@ button {
     color: var(--sec-active)
 }
 
+/* DECORATIVE ELEMENTS */
+.deco {
+    position: absolute;
+    z-index: 1;
+}
+
 /* TEXT GROUP */
 .group {
     max-width: 500px;
@@ -491,12 +513,13 @@ button {
 
 .stats {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     gap: 12px;
 }
 
 .stats h2 {
     color: var(--tertiary);
+    line-height: .9;
 }
 
 .statstext {
@@ -507,8 +530,6 @@ button {
     font-weight: 700;
     color: var(--black);
     text-transform: uppercase;
-    position: relative;
-    top: -20px;
 }
 
 /* COMPANIES */
@@ -524,8 +545,19 @@ button {
     object-fit: contain;
 }
 
-/* DESKTOP */
-@media screen and (min-width: 768px) {}
-
 /* MOBILE */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .nav-center, .nav-right a, .nav-right p {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+}
