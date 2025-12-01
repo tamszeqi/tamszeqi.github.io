@@ -250,6 +250,10 @@ div.person {
 
     /*section 2*/
     /*banner*/
+    div.banner-img-container {
+        width: 50%;
+    }
+
     div.banner {
         margin-bottom: 50px;
     }
@@ -257,8 +261,6 @@ div.person {
     div.banner-text h5 {
         font-size: 24px;
         line-height: normal;
-
-
     }
 
     div.banner-text p {
@@ -316,6 +318,7 @@ div.person {
     }
 
     /**section2*/
+
     div.methodstep {
         display: flex;
         flex-direction: column;
@@ -327,7 +330,6 @@ div.person {
         width: 100%;
     }
 
-    div.step-by-step {}
 }
 
 

@@ -1,16 +1,25 @@
-/* .error-page-content {
-    background-image: url(../images/404bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 body {
     background-color: #FFECBD;
 }
 
 .title {
     background-image: url('../images/header-404.jpg');
+}
+
+.wrapper {
+    position: relative;
+}
+
+.deco-left {
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.deco-right {
+    position: absolute;
+    top: 400px;
+    right: 0;
 }
 
 .error-page-content {
