@@ -79,12 +79,12 @@
 }
 
 .redmug {
-    width: 45%;
+    max-width: 45%;
 }
 
 @media screen and (max-width: 1300px) {
     .grass {
-        top: 300px;
+        top: 200px;
     }
 }
 
@@ -100,11 +100,24 @@
     .point {
         gap: 90px;
     }
+
+    .section3 {
+        gap: 30px;
+    }
+
+    .redmug {
+        max-width: 400px;
+    }
 }
 
 
 
 @media screen and (max-width: 768px) {
+    .grass {
+        left: -60px;
+        top: 250px;
+    }
+
     .point {
         display: block;
     }
