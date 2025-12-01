@@ -1,8 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-    max-width: 1440px;
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
+
 
 .title {
     background-image: linear-gradient(to top,
@@ -19,6 +20,7 @@ body {
     /* 给他可以两派 */
     justify-content: flex-start;
     /* 靠左 */
+    margin-bottom: 100px;
 }
 
 /* 图片 */
@@ -34,7 +36,7 @@ body {
 /* 右边的内容 */
 .touchcontent {
     margin-top: 120px;
-    width: 400px;
+
 }
 
 /* h3 */
@@ -72,26 +74,20 @@ body {
     /* icon高度跟宽度跟随figma */
 }
 
-.socialbox img {
-    display: block;
-}
 
 /* 第二个section */
 .Greenbox {
-    max-width: 1082px;
-    /* 表格的大小跟随figma */
     background-color: #899064;
-    padding: 65px 0px;
-    margin: auto;
+    padding: 65px 45px 35px 40px;
     border-radius: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 /* 文字整体 */
 .greenupper {
     align-items: flex-start;
     margin-bottom: 12px;
-    margin-left: 55px;
+    margin-left: 5px;
     margin-top: -35px;
 }
 
@@ -110,10 +106,9 @@ body {
 
 /* form的section */
 .contact-form {
-    max-width: 976px;
-    /* 限制大小跟随figma */
     text-align: left;
-    margin-left: 55px;
+    margin: auto;
+    width: 100%
 }
 
 /* style 里面的东西 */
@@ -148,6 +143,14 @@ body {
 
 
 /* === 第三个section === */
+.questionbox {
+    background-color: #D8C799;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+
 .boxquestion {
     /* 整体的asjust */
     display: flex;
@@ -155,6 +158,8 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     text-align: left;
+    margin-bottom: 40px;
+
 }
 
 .faqcontainer {
@@ -164,17 +169,16 @@ body {
 .question {
     width: calc(50% - 15px);
     /* 每个共享一半再去掉gap的数目 */
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
-    padding: 15px 20px;
-    background-color: #D8C799;
+}
+
+.questionbox p {
     color: var(--black);
 }
 
 .answer {
     color: var(#858178);
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -193,7 +197,163 @@ img.deco-right {
     z-index: -1;
 }
 
+p.subtitle {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
 
 
 
-@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 768px) {
+
+    /* title header */
+    .title {
+        text-align: center;
+        margin: auto;
+    }
+
+    .getintouch {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+
+    }
+
+    .coffeeboy {
+        display: none;
+    }
+
+    .touchcontent {
+        width: 100%;
+        margin-top: 0;
+
+    }
+
+    .socialbox {
+        justify-content: center;
+    }
+
+    .socialbox img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* ============ SECTION 2: FORM ============ */
+    .Greenbox {
+        position: relative;
+        width: 100%;
+        padding: 50px 10px 20px 10px;
+        margin-bottom: 100px;
+    }
+
+    .greenupper {
+        margin-left: 10px;
+        text-align: flex-start;
+    }
+
+    .contact-form {
+        text-align: flex-start;
+        width: 90%;
+        align-items: center;
+    }
+
+    /* name + email 改为上下 */
+    .form-row.name-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ============ SECTION 3: FAQ ============ */
+    .boxquestion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+    .subtitle {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .questionbox {
+        text-align: center;
+    }
+
+    .question {
+        width: 100%;
+    }
+}
+
+/* ============ DECO ============ */
+/*flower size*/
+div.deco {
+    width: 20%;
+}
+
+div.leaf2 {
+    top: 470px;
+    right: -10px;
+    z-index: -1;
+    width: 15%;
+}
+
+/*mid flower*/
+div.deco.leaf1.mid {
+    left: 0px;
+    bottom: -950px;
+    z-index: -1;
+    width: 20%;
+}
+
+div.deco.leaf2.mid {
+    top: 1150px;
+    right: 0px;
+    width: 20%;
+}
+
+/*lst flower*/
+div.deco.leaf1.lst {
+    bottom: -1950px;
+    left: 5px;
+    z-index: 1;
+    width: 30%;
+}
+
+div.deco.leaf2.lst {
+    top: 2050px;
+    right: 5px;
+    z-index: 1;
+    width: 20%;
+}
+
+
+
+@media (min-width: 775px) {
+    .touchcontent {
+        margin-left: -150px;
+
+    }
+
+    .coffeeboy {
+        width: 600px;
+        height: auto;
+    }
+
+
+    /* FAQ 两栏保持 */
+    .question {
+        width: calc(50% - 15px);
+    }
+
+    .boxquestion {
+        margin-bottom: 5px;
+    }
+}

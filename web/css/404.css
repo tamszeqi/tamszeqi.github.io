@@ -14,12 +14,23 @@ body {
     position: absolute;
     top: 150px;
     left: 0;
+    z-index: -2;
 }
 
-.deco-right {
+.deco-right1 {
     position: absolute;
-    top: 400px;
+    top: 450px;
     right: 0;
+    z-index: -2;
+
+}
+
+.deco-right2 {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: -2;
+
 }
 
 .error-page-content {
@@ -28,7 +39,7 @@ body {
 
 .error-page-content img {
     margin-bottom: -90px;
-    margin-top: -120px;
+    margin-top: -90px;
 }
 
 /* DESCRIPTION TEXT */

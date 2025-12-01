@@ -197,6 +197,7 @@ div.t-content {
 }
 
 img.deco {
+    position: relative;
     width: 100px;
     height: 5px;
 }

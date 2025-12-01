@@ -11,6 +11,7 @@
     width: 50%;
     top: 350px;
     left: -80px;
+    z-index: -2;
 }
 
 .section1 h3 {
