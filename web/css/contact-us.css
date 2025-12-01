@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    max-width: 1440px;
-}
-
 .title {
     background-image: linear-gradient(to top,
             var(--black-50),
@@ -196,4 +190,153 @@ img.deco-right {
 
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    /* title header */
+    .title {
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* ============ SECTION 1: GET IN TOUCH ============ */
+    .getintouch {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .coffeeboy {
+        width: 100%;
+        height: auto;
+        position: static;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    .touchcontent {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .socialbox {
+        justify-content: center;
+    }
+
+    .socialbox img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* ============ SECTION 2: FORM ============ */
+    .Greenbox {
+        padding: 40px 20px;
+        margin-bottom: 60px;
+    }
+
+    .greenupper {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* name + email 改为上下 */
+    .form-row.name-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ============ SECTION 3: FAQ ============ */
+    .boxquestion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    /* footer 调整 */
+    footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom-right {
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Get in touch */
+    .coffeeboy {
+        width: 400px;
+        height: auto;
+        left: -40px;
+    }
+
+    .touchcontent {
+        width: 300px;
+        margin-top: 60px;
+    }
+
+    /* form */
+    .Greenbox {
+        padding: 50px 40px;
+    }
+
+    .greenupper {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        margin-left: 0;
+    }
+
+    /* FAQ 两栏 */
+    .question {
+        width: calc(50% - 10px);
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .getintouch {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .coffeeboy {
+        width: 864px;
+        height: auto;
+        left: -180px;
+    }
+
+    .touchcontent {
+        width: 400px;
+    }
+
+    /* FAQ 两栏保持 */
+    .question {
+        width: calc(50% - 15px);
+    }
+}
