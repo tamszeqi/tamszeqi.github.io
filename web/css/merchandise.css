@@ -152,7 +152,8 @@
     }
 
     .clothes {
-        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .clothes img {
