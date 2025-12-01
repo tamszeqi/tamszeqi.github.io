@@ -6,32 +6,38 @@
 /* === 第一个 section: Get In Touch === */
 .getintouch {
     display: flex;
+    /* 给他可以两派 */
     gap: 88px;
-    margin-bottom: 140px;
+    /* content跟照片的间距 */
+    margin-bottom: 70px;
+    /* 跟section 2的距离 */
     justify-content: flex-start;
-    position: relative;
+    /* 靠左 */
 }
 
 /* 图片 */
 .coffeeboy {
     width: 864px;
     height: 787px;
+    /* 照片高度宽度跟figma一样 */
     position: relative;
     left: -200px;
+    /* 给他往左靠 */
 }
 
-/* 文字内容 */
+/* 右边的内容 */
 .touchcontent {
     margin-top: 120px;
     width: 400px;
 }
 
-/* h3 间距 */
+/* h3 */
 .touchcontent h3 {
     margin: 10px 0 20px;
+    /* 上下左右都有一点位置 */
 }
 
-/* subtitle 间距 */
+/* 文字跟icon的间距*/
 .subtitle {
     margin-bottom: 30px;
 }
@@ -40,54 +46,69 @@
 .social {
     display: flex;
     flex-direction: column;
-    gap: 18px;
 }
 
 /* 每个 socialbox */
 .socialbox {
     display: flex;
     align-items: flex-start;
+    /* 靠左 */
     gap: 20px;
+    /* icon跟文字的距离 */
     margin-bottom: 45px;
 }
 
-.socialbox p {
-    line-height: 1.3;
-}
 
 /* social 图标 */
 .socialbox img {
     width: 75px;
     height: 58px;
+    /* icon高度跟宽度跟随figma */
 }
 
 
 
-/* ====== DROP A LINE GREEN BOX ====== */
+/* 第二个section */
 .Greenbox {
     max-width: 1082px;
+    /* 表格的大小跟随figma */
     background-color: #899064;
     padding: 70px 0;
     margin: auto;
     border-radius: 20px;
+    margin-bottom: 110px;
 }
 
+/* 文字整体 */
 .greenupper {
-    margin: auto;
+    align-items: flex-start;
     margin-bottom: 12px;
-    text-align: center;
+    margin-left: 55px;
+    margin-top: -45px;
 }
 
+/* 针对h5和p换颜色因为common css 另外还set空间*/
 .greenupper h5 {
     color: var(--white);
+    margin-bottom: 10px;
 }
 
+.greenupper p {
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+/*  */
+
+/* form的section */
 .contact-form {
     max-width: 976px;
+    /* 限制大小跟随figma */
     text-align: left;
     margin-left: 55px;
 }
 
+/* style 里面的东西 */
 .form-row textarea {
     width: 100%;
     padding: 12px 15px;
@@ -98,7 +119,7 @@
 
 .form-row input {
     width: 100%;
-    padding: 12px 60px;
+    padding: 12px 15px;
     margin-bottom: 23px;
     border-radius: 6px;
     border: none;
@@ -114,10 +135,8 @@
     gap: 11px;
 }
 
-.form-row.name-email input {
-    padding: 12px 15px;
-    box-sizing: border-box;
-}
+/*  */
+
 
 
 /* === FAQ SECTION === */
@@ -151,13 +170,5 @@
 }
 
 
-/*deco*/
-img.deco-size {
-    width: 50%;
-}
 
-img.deco-right {
-    position: absolute;
-    right: -300px;
-    top: -350px;
-}
+@media screen and (max-width: 768px) {}
