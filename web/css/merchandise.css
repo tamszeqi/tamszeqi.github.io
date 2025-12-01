@@ -1,5 +1,4 @@
 .title {
-    background-image: url('../images/header-merchandise.jpg');
     background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-merchandise.jpg');
 }
 
@@ -7,11 +6,11 @@
     padding: 0px 170px 100px 170px;
 }
 
-.section1 {
-    background-image: url('../images/grass.png');
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: bottom left;
+.grass {
+    position: absolute;
+    width: 50%;
+    top: 350px;
+    left: -80px;
 }
 
 .section1 h3 {
@@ -44,6 +43,7 @@
 .greenmug {
     margin-top: 20px;
     text-align: center;
+    position: relative;
 }
 
 .greenmug img {
@@ -60,13 +60,6 @@
     width: 33%;
 }
 
-.section2 {
-    background-image: url('../images/grass2.png');
-    background-repeat: no-repeat;
-    background-size: 550px;
-    background-position: bottom left;
-}
-
 .section2 p {
     margin-top: 50px;
 }
@@ -75,7 +68,7 @@
     padding: 100px 170px 100px 0px;
     background-image: url('../images/flower.png');
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 30%;
     background-position: bottom right;
 }
 
@@ -83,10 +76,72 @@
     display: flex;
     align-items: center;
     gap: 100px;
-
-
 }
 
 .redmug {
     width: 45%;
+}
+
+@media screen and (max-width: 1300px) {
+    .grass {
+        top: 300px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .grass {
+        top: 200px;
+    }
+
+    .wrapper1 {
+        padding: 0px 70px 100px 70px;
+    }
+
+    .point {
+        gap: 90px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .point {
+        display: block;
+    }
+
+    .section3 {
+        display: block;
+
+    }
+
+    .group {
+        margin-top: 50px;
+    }
+
+    .wrapper2 {
+        padding: 100px 70px 100px 70px;
+    }
+
+    .section1 .b-green,
+    .section2 .b-green {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .redmug {
+        width: 400px;
+        margin-left: -70px;
+    }
+
+    .greenmug img {
+        width: 400px;
+    }
+
+    .clothes {
+        display: block;
+    }
+
+    .clothes img {
+        width: 400px;
+    }
 }
