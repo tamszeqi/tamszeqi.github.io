@@ -171,28 +171,35 @@
     position: relative;
 }
 
+.inquiry-info.mobile {
+    display: none;
+}
+
+.inquiry-info.desktop {
+    position: absolute;
+    top: -5px;
+    left: 35px;
+}
+
 .inquiry-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: -5px;
-    left: clamp(15px, 2.4vw, 35px);
 }
 
 .inquiry-icon {
     background-color: var(--white);
     border-radius: 50%;
-    width: clamp(40px, 3.5vw, 50px);
+    width: 50px;
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: clamp(10px, 1.4vw, 20px);
+    margin-bottom: 20px;
 }
 
 .inquiry-icon img {
-    width: clamp(25px, 2.4vw, 35px);
+    width: 35px;
 }
 
 .inquiry-info h6 {
@@ -250,6 +257,31 @@
 .checklist .check p {
     margin: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .diagonal {
+        display: none;
+    }
+
+    .inquiry-info.mobile {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: clamp(25px, 3.5vw, 50px);
+        gap: 5px;
+    }
+
+    .inquiry-info.mobile .inquiry-icon {
+        margin: 0;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .inquiry-info.mobile h6 {
+        margin: 0;
+    }
+
 }
 
 /* MOBILE */
