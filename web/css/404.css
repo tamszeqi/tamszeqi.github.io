@@ -1,5 +1,5 @@
 body {
-    background-color: #FFECBD;
+    background-color: var(--normal);
 }
 
 .title {
@@ -22,7 +22,6 @@ body {
     top: 450px;
     right: 0;
     z-index: -2;
-
 }
 
 .deco-right2 {
@@ -30,7 +29,6 @@ body {
     top: 100px;
     right: 0;
     z-index: -2;
-
 }
 
 .error-page-content {
@@ -78,4 +76,19 @@ body {
     cursor: pointer;
     margin-top: -93px;
     margin-right: -21px;
+}
+
+@media screen and (max-width: 768px) {
+    .deco-left {
+        max-width: 33.33%;
+    }
+
+    .deco-right1 {
+        max-width: 33.33%;
+        top: 200px;
+    }
+
+    .deco-right2 {
+        max-width: 33.33%;
+    }
 }
