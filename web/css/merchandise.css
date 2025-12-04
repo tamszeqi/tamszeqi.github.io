@@ -9,10 +9,6 @@
     border-radius: 0px 0px 20px 20px;
 }
 
-.special-items p {
-    margin-top: 40px;
-}
-
 .point {
     display: flex;
     margin: 20px 0px 10px 0px;
@@ -32,7 +28,6 @@
 .greenmug {
     margin-top: 20px;
     text-align: center;
-    position: relative;
 }
 
 .greenmug img {
