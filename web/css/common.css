@@ -3,73 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* === RESET / NORMALIZE === */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-    color: var(--black);
-    background-color: var(--light);
-}
-
-.wrapper {
-    padding: clamp(50px, 7vw, 100px) clamp(20px, 12vw, 170px);
-    border-radius: 30px;
-}
-
-.dark {
-    background-color: var(--dark);
-}
-
-.normal {
-    background-color: var(--normal);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-img {
-    max-width: 100%;
-}
-
-button {
-    border: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* === ROOT VARIABLES === */
 :root {
     /* BRAND */
@@ -114,7 +47,74 @@ a {
     --text: "Poppins", sans-serif;
 }
 
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--black);
+    background-color: var(--light);
+}
+
+.wrapper {
+    padding: clamp(50px, 7vw, 100px) clamp(20px, 12vw, 170px);
+    border-radius: 30px;
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* === GLOBAL TYPOGRAPHY  === */
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading);
     color: var(--black);
@@ -462,6 +462,22 @@ button {
 .deco {
     position: absolute;
     z-index: 1;
+
+    /*
+    use clamp for width, e.g.
+    width: clamp(120px, 15vw, 300px);
+
+    and for right positioning (because it will move to the left as the width changes) e.g.
+    right: clamp(-50px, -5vw, -10px);
+
+    how to use clamp:
+    1st value is minimum size, 3rd value is maximum size,
+    2nd value ask AI what vw to put
+    */
+}
+
+.flipped {
+    transform: scaleX(-1);
 }
 
 /* TEXT GROUP */
