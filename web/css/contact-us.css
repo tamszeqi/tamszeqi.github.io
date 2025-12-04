@@ -110,31 +110,14 @@ div.wrapper {
     width: 100%
 }
 
-/* style 里面的东西 */
-.form-row textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 23px;
-    border-radius: 6px;
-    border: none;
-}
-
-.form-row input {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 23px;
-    border-radius: 6px;
-    border: none;
-}
-
-.fr-row button {
-    margin-top: 10px;
-}
-
 /* 名字和 Email 平分一行 */
 .form-row.name-email {
     display: flex;
     gap: 11px;
+}
+
+.fr-row button {
+    margin-top: 10px;
 }
 
 /*  */
