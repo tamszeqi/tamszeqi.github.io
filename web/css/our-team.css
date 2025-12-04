@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: clamp(50px, 7vw, 100px) 0 clamp(100px, 23.6vw, 340px) 0;
+    padding: clamp(50px, 7vw, 100px) 0 clamp(160px, 22vw, 340px) 0;
     position: relative;
 }
 
@@ -67,7 +67,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(40px, 5.5vw, 80px) clamp(30px, 7vw, 100px);
+    gap: clamp(40px, 5.5vw, 80px) 40px;
     padding: 0 clamp(20px, 12vw, 170px);
 }
 
@@ -77,10 +77,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: calc((100% - 80px) / 3);
+    min-width: 200px;
 }
 
 .teammate-photo {
-    width: clamp(280px, 22.5vw, 325px);
+    width: clamp(200px, 22.5vw, 325px);
     aspect-ratio: 9 / 10;
     background-size: cover;
     background-position: center;
@@ -111,9 +113,9 @@
 .role {
     display: flex;
     flex-direction: column;
-    min-width: clamp(250px, 19.8vw, 285px);
+    min-width: clamp(200px, 18vw, 285px);
     gap: clamp(5px, 0.7vw, 10px);
-    padding: clamp(15px, 1.7vw, 25px);
+    padding: clamp(12px, 2vw, 25px);
     text-align: center;
     background-color: var(--white);
     border-radius: 20px;
@@ -259,6 +261,65 @@
     width: 100%;
 }
 
+/* TABLET PORTRAIT & MOBILE */
+@media screen and (max-width: 768px) {
+
+    .section2 {
+        padding-top: clamp(30px, 8vw, 80px);
+    }
+
+    .section3 {
+        padding: 0 clamp(15px, 6vw, 60px);
+    }
+
+    .intro, .s3 {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .deco {
+        width: 30%;
+    }
+
+    .companies {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: clamp(20px, 3vw, 40px);
+    }
+
+}
+
+/* TABLET LANDSCAPE */
+@media screen and (max-width: 1024px) {
+
+    .section2 {
+        padding-top: clamp(30px, 8vw, 80px);
+    }
+
+    .section3 {
+        padding: 0 clamp(15px, 6vw, 60px);
+    }
+
+}
+
+/* ADJUSTMENTS */
+
+@media screen and (max-width: 790px) {
+
+    .teammate {
+        width: calc((100% - 40px) / 2);
+    }
+
+}
+
+@media screen and (max-width: 517px) {
+
+    
+}
+
 @media screen and (max-width: 1200px) {
 
     .diagonal {
@@ -280,29 +341,6 @@
 
     .inquiry-info.mobile h6 {
         margin: 0;
-    }
-
-}
-
-/* MOBILE */
-@media screen and (max-width: 768px) {
-
-    .intro, .s3 {
-        flex-direction: column;
-    }
-
-    .image {
-        width: 100%;
-    }
-
-    .deco {
-        width: 30%;
-    }
-
-    .companies {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: clamp(20px, 3vw, 40px);
     }
 
 }

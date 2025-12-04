@@ -628,10 +628,6 @@ button {
 /* TABLET PORTRAIT & MOBILE */
 @media screen and (max-width: 768px) {
 
-    .wrapper {
-        padding: clamp(30px, 8vw, 80px) clamp(15px, 6vw, 60px);
-    }
-
     /* HEADER */
     header {
         justify-content: space-between;
@@ -748,8 +744,12 @@ button {
 /* TABLET LANDSCAPE */
 @media screen and (max-width: 1024px) {
 
-    .wrapper {
+    .wrapper, footer {
         padding: clamp(30px, 8vw, 80px) clamp(15px, 6vw, 60px);
+    }
+
+    .footer-bottom-right {
+        bottom: 150px;
     }
 
 }
