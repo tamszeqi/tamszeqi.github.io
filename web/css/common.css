@@ -106,6 +106,9 @@ a {
     --black-50: #1D1D1D80;
     --white-20: #FFFFF033;
 
+    /* OTHERS */
+    --faq: #D8C799;
+
     /* FONTS */
     --heading: "Abril Fatface", serif;
     --text: "Poppins", sans-serif;
