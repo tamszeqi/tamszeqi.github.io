@@ -14,7 +14,7 @@
     flex-shrink: 1;
     min-height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .intro .group {
@@ -43,12 +43,12 @@
     right: -5px;
 }
 
-.block, .inquiries, .teammate, .section2 .group {
+.block, .inquiries, .teammate, .team .group {
     position: relative;
     z-index: 2;
 }
 
-.section2 {
+.team {
     margin: 0 clamp(-170px, -12vw, -20px);
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
     position: relative;
 }
 
-.section2 .group {
+.team .group {
     text-align: center;
     max-width: clamp(320px, 52vw, 750px);
 }
@@ -123,6 +123,27 @@
     position: absolute;
     bottom: clamp(-40px, -2.8vw, -30px);
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.deco.left-top {
+    top: -120px;
+    left: clamp(-245px, -16vw, -180px);
+    transform: scaleX(-1) rotate(-40deg);
+    width: clamp(220px, 35vw, 640px);
+}
+
+.deco.left-bottom {
+    top: -120px;
+    left: clamp(-190px, -12vw, -60px);
+    transform: rotate(20deg);
+    width: clamp(250px, 40vw, 740px);
+}
+
+.deco.right {
+    bottom: 60px;
+    right: clamp(-250px, -15vw, -80px);
+    transform: rotate(-60deg);
+    width: clamp(250px, 40vw, 740px);
 }
 
 .block-group {
@@ -213,12 +234,12 @@
     color: var(--white);
 }
 
-.section3 {
+.join-and-benefits {
     padding: 0 clamp(20px, 12vw, 170px);
     border-radius: 30px 30px 0 0;
 }
 
-.s3 {
+.benefits {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -226,7 +247,7 @@
     padding: clamp(50px, 7vw, 100px) 0;
 }
 
-.s3 .group {
+.benefits .group {
     width: auto;
     flex-shrink: 1;
     max-width: none;
@@ -264,15 +285,15 @@
 /* TABLET PORTRAIT & MOBILE */
 @media screen and (max-width: 768px) {
 
-    .section2 {
+    .team {
         padding-top: clamp(30px, 8vw, 80px);
     }
 
-    .section3 {
+    .join-and-benefits {
         padding: 0 clamp(15px, 6vw, 60px);
     }
 
-    .intro, .s3 {
+    .intro, .benefits {
         flex-direction: column;
     }
 
@@ -295,12 +316,16 @@
 /* TABLET LANDSCAPE */
 @media screen and (max-width: 1024px) {
 
-    .section2 {
+    .team {
         padding-top: clamp(30px, 8vw, 80px);
     }
 
-    .section3 {
+    .join-and-benefits {
         padding: 0 clamp(15px, 6vw, 60px);
+    }
+
+    .deco.left-top {
+        left: clamp(-150px, -12vw, -80px);
     }
 
 }

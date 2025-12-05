@@ -59,7 +59,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     color: var(--black);
     background-color: var(--light);
 }
@@ -518,17 +518,13 @@ button {
     use clamp for width, e.g.
     width: clamp(120px, 15vw, 300px);
 
-    and for right positioning (because it will move to the left as the width changes) e.g.
+    and for left or right positioning (because it will move as the width changes) e.g.
     right: clamp(-50px, -5vw, -10px);
 
     how to use clamp:
     1st value is minimum size, 3rd value is maximum size,
     2nd value ask AI what vw to put
     */
-}
-
-.flipped {
-    transform: scaleX(-1);
 }
 
 /* TEXT GROUP */
