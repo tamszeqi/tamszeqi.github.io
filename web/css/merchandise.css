@@ -67,9 +67,16 @@
     max-width: 45%;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1024px) {
     .point {
         gap: 90px;
+        justify-content: center;
+    }
+
+    .special-items .b-green,
+    .lifestyle-items .b-green {
+        justify-self: center;
+        margin-left: 0;
     }
 
     .limited-mug {
@@ -103,6 +110,7 @@
     .lifestyle-items .b-green {
         margin-left: 0;
         margin-top: 40px;
+        justify-self: auto;
     }
 
     .redmug {
