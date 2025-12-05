@@ -76,7 +76,7 @@ div.wrapper {
 
 /* 第二个section */
 .Greenbox {
-    background-color: #899064;
+    background-color: var(--tertiary);
     padding: 65px 45px 35px 40px;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -126,7 +126,7 @@ div.wrapper {
 
 /* === 第三个section === */
 .questionbox {
-    background-color: #D8C799;
+    background-color: var(--faq);
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -162,7 +162,7 @@ div.wrapper {
 }
 
 .answer {
-    color: var(#858178);
+    color: var(--grey-dark);
     background-color: #FFFFFF;
     padding: 15px 20px;
     border: none;
@@ -195,7 +195,7 @@ p.subtitle {
 }
 
 
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 768px) {
 
 
     /* title header */
@@ -321,7 +321,7 @@ div.deco.leaf2.lst {
 
 
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1024px) {
 
     .getintouch {
         max-width: 950px;
@@ -332,7 +332,8 @@ div.deco.leaf2.lst {
     }
 
     .coffeeboy {
-        width: 100%;
+        width: 80%;
+        height: auto;
     }
 
     .subtitle {
