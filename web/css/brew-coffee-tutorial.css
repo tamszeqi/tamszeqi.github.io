@@ -94,6 +94,7 @@ div.intro {
     flex-direction: column;
     justify-content: center;
     gap: 6%;
+    width: 50%;
 }
 
 .banner h5,
@@ -125,10 +126,22 @@ div.method h3 {
 }
 
 /*Tutorial Steps*/
-div.step-by-step {
+.step-by-step {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    /* Aligns number-step and paragraph to the top */
     gap: 20px;
+    /* Add some space between the number and the text */
+}
+
+.step-by-step p {
+    /* To help long text flow properly */
+    flex-grow: 1;
+}
+
+div.number-step {
+    /* Prevent the circle from shrinking */
+    flex-shrink: 0;
 }
 
 div.titleblock {
@@ -146,12 +159,18 @@ div.number-base {
     width: 50px;
     height: 50px;
     border-radius: 100px;
-    text-align: center;
-    padding-top: 5px;
+    display: flex;
+    /* Set the container as a flex container */
+    justify-content: center;
+    /* Center the item horizontally (on the main axis) */
+    align-items: center;
 }
 
 div.number-base h5 {
     color: var(--light);
+    margin: 0;
+    /* Important: Remove default h5 margins */
+    line-height: 1;
 }
 
 div.stepsection1,
@@ -213,8 +232,8 @@ div.person {
 }
 
 /**Media Query*/
-/*big screen*/
-@media (max-width: 1280px) {
+/*desktop smaller screen and tablet landscape size*/
+@media (max-width: 1025px) {
     .wrapper {
         padding: 100px 120px;
     }
@@ -297,6 +316,7 @@ div.person {
 
 }
 
+/*768px (tablet portrait size and mobile landscape size)*/
 @media(max-width:768px) {
     .wrapper {
         padding: 100px 70px;
@@ -319,6 +339,27 @@ div.person {
     }
 
     /**section2*/
+    div.banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.banner-img-container {
+        width: 100%;
+        /* Make it full width of the banner */
+        height: 200px;
+        /* <--- ADD A FIXED HEIGHT HERE (Adjust as needed) */
+        /* Also fix the border radius for the new stacked layout */
+        border-radius: 30px 30px 0px 0px;
+
+        /* Optional: improve background image display */
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.banner-text {
+        width: 100%;
+    }
 
     div.methodstep {
         display: flex;
@@ -333,8 +374,7 @@ div.person {
 
 }
 
-
-@media(min-width:1280px) {
+@media(min-width:1025px) {
     img.relative-s {
         display: none;
     }
@@ -346,7 +386,7 @@ div.person {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:769px) {
     div.section1-s {
         display: none;
     }
