@@ -44,7 +44,6 @@
 }
 
 .block, .inquiries, .teammate, .team .group {
-    position: relative;
     z-index: 2;
 }
 
