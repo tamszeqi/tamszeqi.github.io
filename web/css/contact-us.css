@@ -25,12 +25,14 @@ div.wrapper {
 
 /* 图片 */
 .coffeeboy {
-    width: 764px;
-    height: 787px;
+    width: 100%;
+    max-width: 764px;
+    max-height: fit-content;
     /* 照片高度宽度跟figma一样 */
-    position: relative;
-    left: -200px;
+    margin-left: -200px;
     /* 给他往左靠 */
+    padding-right: clamp(10px, 7vw, 85px);
+    align-self: center;
 }
 
 /* 右边的内容 */
@@ -143,10 +145,14 @@ div.wrapper {
     flex-wrap: wrap;
     text-align: left;
     margin-bottom: 40px;
+    justify-content: center;
 }
 
-.faqcontainer {
+.faqcontainer .group {
+    margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    max-width: none;
 }
 
 .question {
@@ -207,9 +213,11 @@ p.subtitle {
     .getintouch {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
-        margin-left: 120px;
-
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
     .coffeeboy {
@@ -223,8 +231,10 @@ p.subtitle {
     }
 
     .socialbox {
-        align-items: center;
-        text-align: start;
+        width: 230px;
+        margin: 0 auto 45px auto;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     .socialbox img {
@@ -327,26 +337,11 @@ div.deco.leaf2.lst {
 
 @media screen and (max-width: 1024px) {
 
-    .getintouch {
-        max-width: 950px;
-    }
-
-    .touchcontent {
-        margin-left: -100px;
-    }
-
+    /* 图片 */
     .coffeeboy {
         width: 80%;
-        height: auto;
-    }
-
-    .subtitle {
-        margin-bottom: 5px;
-    }
-
-    .socialbox {
-        gap: 5px;
-
+        max-height: fit-content;
+        margin-left: -200px;
     }
 
     /* FAQ 两栏保持 */

@@ -27,7 +27,7 @@ p.category {
 
 
 /*Section 1*/
-div.section1 {
+div.first-section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,7 +53,7 @@ img.icon {
 div.preparation {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 30px;
     margin-top: 10px;
 }
 
@@ -173,8 +173,8 @@ div.number-base h5 {
     line-height: 1;
 }
 
-div.stepsection1,
-div.stepsection2 {
+div.step-first-section,
+div.step-second-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -188,11 +188,11 @@ div.methodstep {
 }
 
 /*Section 3*/
-div.section3 {
+div.third-section {
     text-align: center;
 }
 
-div.section3 h3 {
+div.third-section h3 {
     margin-bottom: 32px;
 }
 
@@ -239,32 +239,18 @@ div.person {
     }
 
 
-    /*section 1*/
-    div.textblock {
-        width: 70%;
-    }
+    /**section 1*/
 
-    img.relative {
+    div.first-section {
         display: none;
     }
 
+    div.textblock {
+        width: 100%;
+    }
+
     img.relative-s {
-        position: relative;
-        left: -100px;
-        width: 50%;
-        z-index: -1;
-        max-height: 100%;
-    }
-
-
-    div.preparation {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    div.equipment,
-    div.coffeebean {
+        position: static;
         width: 100%;
     }
 
@@ -298,8 +284,8 @@ div.person {
         margin-bottom: 30px;
     }
 
-    div.stepsection1,
-    div.stepsection2 {
+    div.step-first-section,
+    div.step-second-section {
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -323,22 +309,19 @@ div.person {
     }
 
 
-    /**section 1*/
-
-    div.section1 {
-        display: none;
+    /**first section*/
+    div.preparation {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
-    div.textblock {
+    div.equipment,
+    div.coffeebean {
         width: 100%;
     }
 
-    img.relative-s {
-        position: static;
-        width: 100%;
-    }
-
-    /**section2*/
+    /**second section*/
     div.banner {
         display: flex;
         flex-direction: column;
@@ -367,14 +350,18 @@ div.person {
         gap: 50px;
     }
 
-    div.stepsection1,
-    div.stepsection2 {
+    div.step-first-section,
+    div.step-second-section {
         width: 100%;
     }
 
 }
 
 @media(min-width:1025px) {
+    div.first-section-s {
+        display: none;
+    }
+
     img.relative-s {
         display: none;
     }
@@ -386,10 +373,4 @@ div.person {
     }
 }
 
-@media(min-width:769px) {
-    div.section1-s {
-        display: none;
-    }
-
-
-}
+@media(min-width:769px) {}
