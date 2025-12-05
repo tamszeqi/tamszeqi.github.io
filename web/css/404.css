@@ -10,25 +10,39 @@ body {
     position: relative;
 }
 
-.deco-left {
+.deco {
     position: absolute;
+    inset: 0;
+    /* expand .deco to cover the whole wrapper */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.deco>div {
+    position: absolute;
+}
+
+.deco-left-up {
     top: 150px;
     left: 0;
-    z-index: -2;
 }
 
-.deco-right1 {
-    position: absolute;
+.deco-left-down {
     top: 450px;
-    right: 0;
-    z-index: -2;
+    left: 0;
 }
 
-.deco-right2 {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    z-index: -2;
+.deco-right-up {
+    right: clamp(-40px, -3vw, 0px);
+    top: clamp(80px, 12vw, 180px);
+    transform: scaleX(-1);
+}
+
+/* right lower leaf */
+.deco-right-down {
+    right: clamp(-40px, -4vw, 0px);
+    top: clamp(420px, 34vw, 450px);
+    transform: scaleX(-1);
 }
 
 .error-page-content {
@@ -55,16 +69,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .deco-left {
+    .deco-left-up {
         max-width: 33.33%;
     }
 
-    .deco-right1 {
+    .deco-left-down {
+        max-width: 33.33%;
+    }
+
+    .deco-right-up {
         max-width: 33.33%;
         top: 200px;
     }
 
-    .deco-right2 {
+    .deco-right-down {
         max-width: 33.33%;
     }
 }
