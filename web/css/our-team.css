@@ -33,16 +33,6 @@
     gap: clamp(15px, 4vw, 100px);
 }
 
-.leaf1 {
-    top: -100px;
-    left: -5px;
-}
-
-.leaf2 {
-    top: 820px;
-    right: -5px;
-}
-
 .block, .inquiries, .teammate, .team .group {
     z-index: 2;
 }
@@ -125,24 +115,24 @@
 }
 
 .deco.left-top {
-    top: -120px;
-    left: clamp(-245px, -16vw, -180px);
+    top: -140px;
+    left: -280px;
     transform: scaleX(-1) rotate(-40deg);
-    width: clamp(220px, 35vw, 640px);
+    width: 40%;
 }
 
 .deco.left-bottom {
-    top: -120px;
-    left: clamp(-190px, -12vw, -60px);
+    top: -140px;
+    left: -240px;
     transform: rotate(20deg);
-    width: clamp(250px, 40vw, 740px);
+    width: 50%;
 }
 
 .deco.right {
-    bottom: 60px;
-    right: clamp(-250px, -15vw, -80px);
+    bottom: 0;
+    right: -325px;
     transform: rotate(-60deg);
-    width: clamp(250px, 40vw, 740px);
+    width: 50%;
 }
 
 .block-group {
@@ -300,10 +290,6 @@
         width: 100%;
     }
 
-    .deco {
-        width: 30%;
-    }
-
     .companies {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -317,14 +303,16 @@
 
     .team {
         padding-top: clamp(30px, 8vw, 80px);
+        margin-left: clamp(-60px, -6vw, -15px);
+        margin-right: clamp(-60px, -6vw, -15px);
+    }
+
+    .full-team {
+        padding: 0 clamp(20px, 4vw, 40px);
     }
 
     .join-and-benefits {
         padding: 0 clamp(15px, 6vw, 60px);
-    }
-
-    .deco.left-top {
-        left: clamp(-150px, -12vw, -80px);
     }
 
 }
