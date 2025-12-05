@@ -67,7 +67,7 @@
     max-width: 45%;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1024px) {
     .point {
         gap: 90px;
     }
