@@ -327,12 +327,20 @@ div.deco.leaf1.lst {
 }
 
 div.deco.leaf2.lst {
-    top: 2450px;
+    top: 2300px;
     right: -100px;
     z-index: 1;
-    width: 26%;
+    width: 25%;
 }
 
+
+div.deco.leaf3.lst {
+    top: 2100px;
+    right: -200px;
+    z-index: 1;
+    width: 35%;
+    transform: scaleX(-1) rotate(-10deg);
+}
 
 
 @media screen and (max-width: 1024px) {
