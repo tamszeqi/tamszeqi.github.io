@@ -17,6 +17,13 @@
 
 .kopi-cards {
     display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.kopi-c {
+    margin-left: -20px;
+    margin-right: 20px;
 }
 
 .kopi-items {
@@ -24,9 +31,36 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+}
+
+.price-tag {
+    position: absolute;
+    background: #899064;
+    top: 50px;
+    right: 30px;
+    padding: 0px 25px;
+    border-radius: 15px;
+}
+
+p.price {
+    color: var(--white);
+}
+
+.price-tag p.subtitle {
+    color: var(--white);
 }
 
 .kopi-items img {
     margin-top: 100px;
     margin-bottom: auto;
+}
+
+.kopi-items h4 {
+    display: inline-block;
+    margin: 0 auto;
+    background: #470000;
+    color: white;
+    padding: 20px 120px;
+    border-radius: 35px;
 }
