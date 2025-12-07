@@ -390,7 +390,8 @@ button {
     line-height: 22.4px;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--light)
+    color: var(--light);
+    cursor: pointer;
 }
 
 .b-brown {
