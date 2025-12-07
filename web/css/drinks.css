@@ -1,0 +1,32 @@
+.title {
+    background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-drinks.jpg');
+}
+
+.drinks {
+    padding-top: 30px;
+}
+
+.drinks-subtitle {
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.kopi-subtitle {
+    justify-items: center;
+}
+
+.kopi {
+    display: flex;
+}
+
+.kopi-items {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.kopi-items img {
+    margin-top: 100px;
+    margin-bottom: auto;
+}
