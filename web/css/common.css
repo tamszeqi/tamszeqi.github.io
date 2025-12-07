@@ -563,6 +563,32 @@ button {
     text-transform: uppercase;
 }
 
+/* SQUARE IMAGE BUTTONS */
+.sqr-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sqr-img-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(33.33% - clamp(10px, 1.7vw, 20px));
+    min-height: clamp(200px, 25vw, 290px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: clamp(20px, 3.5vw, 40px);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sqr-img-btn h4 {
+    color: var(--white);
+}
+
 /* COMPANIES */
 .companies {
     margin-top: 100px;
@@ -727,6 +753,16 @@ button {
     /* DECORATIVE ELEMENTS */
     .deco {
         display: none;
+    }
+
+    /* SQUARE IMAGE BUTTONS */
+    .sqr-group {
+        flex-direction: column;
+        gap: clamp(15px, 2.5vw, 30px);
+    }
+
+    .sqr-img-btn {
+        width: 100%;
     }
 
 }

@@ -1,0 +1,15 @@
+.title {
+    background-image:  linear-gradient(var(--black-50), var(--black-50)), url('../images/header-working-at-kopidiam.jpg');
+}
+
+.mission {
+    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-mission.jpg');
+}
+
+.vision {
+    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-vision.jpg');
+}
+
+.values {
+    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-values.jpg');
+}
