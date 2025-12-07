@@ -1,0 +1,8 @@
+.title {
+    background-image: linear-gradient(to top,
+            var(--black-50),
+            var(--black-50)),
+
+        url('../images/header-our-story.jpg');
+    width: 105.6%;
+}
