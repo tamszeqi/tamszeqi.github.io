@@ -157,6 +157,11 @@ h6 {
     line-height: clamp(24px, 2vw, 28.8px);
 }
 
+p.price {
+    font-size: clamp(18px, 2vw, 40px);
+    line-height: clamp(28px, 3.5vw, 56px);
+}
+
 p.subtitle {
     font-size: clamp(18px, 1.4vw, 20px);
     line-height: clamp(25.2px, 2vw, 28px);
@@ -591,7 +596,7 @@ button {
 
 /* COMPANIES */
 .companies {
-    margin-top: 100px;
+    margin-top: clamp(40px, 7vw, 100px);
     display: flex;
     justify-content: space-between;
 }
@@ -600,6 +605,33 @@ button {
     width: 100%;
     max-width: clamp(100px, 15vw, 180px);
     object-fit: contain;
+}
+
+/* CHECKLIST */
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.check-icon-wrapper {
+    width: clamp(30px, 2.8vw, 40px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checklist .check p {
+    margin: 0;
+    width: 100%;
 }
 
 /* DESKTOP */
@@ -763,6 +795,13 @@ button {
 
     .sqr-img-btn {
         width: 100%;
+    }
+
+    /* COMPANIES */
+    .companies {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: clamp(20px, 3vw, 40px);
     }
 
 }

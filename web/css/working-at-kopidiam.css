@@ -2,6 +2,138 @@
     background-image:  linear-gradient(var(--black-50), var(--black-50)), url('../images/header-working-at-kopidiam.jpg');
 }
 
+.culture {
+    padding: clamp(50px, 7vw, 100px) clamp(20px, 12vw, 170px) 0 clamp(20px, 12vw, 170px);
+    border-radius: 0;
+}
+
+.culture-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: clamp(20px, 6vw, 115px);
+}
+
+.culture-contents .group {
+    max-width: none;
+    align-self: center;
+}
+
+.culture-contents .group p:not(.small) {
+    margin-bottom: 0;
+}
+
+.image {
+    width: 45%;
+    flex-shrink: 1;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.companies {
+    padding-bottom: clamp(50px, 7vw, 100px)
+}
+
+.paths {
+    margin: 0 clamp(-170px, -12vw, -20px);
+    padding-bottom: clamp(50px, 10vw, 140px);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paths .group {
+    max-width: clamp(300px, 45vw, 580px);
+}
+
+.retail {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: clamp(20px, 6vw, 115px);
+    background-color: var(--normal);
+    padding: clamp(20px, 4vw, 50px);
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.retail .image {
+    width: 60%;
+}
+
+.retail-desc {
+    align-self: center;
+    padding-left: clamp(15px, 3vw, 40px);
+}
+
+.retail-desc h5 {
+    margin-bottom: clamp(15px, 2vw, 25px);
+}
+
+.retail-desc button {
+    margin-top: clamp(40px, 4.2vw, 60px);
+}
+
+.centered {
+    text-align: center;
+}
+
+.benefits {
+    display: flex;
+    align-items: stretch;
+}
+
+.benefits .image {
+    width: 47%;
+    border-radius: 0 0 30px 0;
+}
+
+.benefits .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: clamp(35px, 3.5vw, 50px);
+    padding-right: clamp(60px, 7vw, 100px);
+    max-width: none;
+    background-color: var(--secondary);
+    border-top-left-radius: 30px;
+    margin: clamp(-40px, -2.8vw, -30px) 0 clamp(30px, 2.8vw, 40px) 0;
+}
+
+.benefits .group h4, .benefits .group p:not(.small) {
+    color: var(--white);
+}
+
+.benefits .group p.desc {
+    color: var(--white);
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.check-icon-wrapper {
+    background-color: var(--white-20);
+}
+
+.philosophy .group {
+    max-width: clamp(320px, 52vw, 750px);
+}
+
+.philosophy .group p:not(.small) {
+    margin-bottom: 50px;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sqr-group {
+    width: 100%;
+}
+
 .mission {
     background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-mission.jpg');
 }
@@ -12,4 +144,84 @@
 
 .values {
     background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-values.jpg');
+}
+
+.statsbar {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: clamp(50px, 8vw, 90px);
+    width: 100%;
+}
+
+.stats {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* TABLET PORTRAIT & MOBILE */
+@media screen and (max-width: 768px) {
+
+    .culture-contents, .retail {
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .retail .image {
+        width: 100% !important;
+    }
+
+    .benefits .image {
+        width: 20%;
+    }
+
+}
+
+/* TABLET LANDSCAPE */
+@media screen and (max-width: 1024px) {
+
+    .culture {
+        padding: clamp(30px, 8vw, 80px) clamp(15px, 6vw, 60px) 0 clamp(15px, 6vw, 60px);
+    }
+
+    .companies {
+        padding-bottom: clamp(50px, 7vw, 100px);
+    }
+
+    .paths {
+        margin-left: clamp(-60px, -6vw, -15px);
+        margin-right: clamp(-60px, -6vw, -15px);
+    }
+
+    .retail .image {
+        width: 40%;
+    }
+
+    .retail-desc {
+        align-self: center;
+        padding: 0;
+    }
+
+}
+
+/* ADJUSTMENTS */
+@media screen and (max-width: 1385px) {
+
+    .retail .image {
+        width: 50%;
+    }
+
+}
+
+/* ADJUSTMENTS */
+@media screen and (max-width: 325px) {
+
+    .statsbar {
+        flex-direction: column;
+    }
+
 }

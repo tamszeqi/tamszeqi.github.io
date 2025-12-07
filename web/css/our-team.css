@@ -4,7 +4,7 @@
 
 .intro {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
     gap: clamp(20px, 6vw, 115px);
 }
@@ -243,32 +243,9 @@
     align-self: center;
 }
 
-.checklist {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(15px, 2vw, 30px);
-}
-
-.check {
-    display: flex;
-    align-items: center;
-    gap: clamp(15px, 2vw, 30px);
-}
-
 .check-icon-wrapper {
-    width: clamp(30px, 2.8vw, 40px);
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
     background-color: var(--normal);
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checklist .check p {
-    margin: 0;
-    width: 100%;
 }
 
 /* TABLET PORTRAIT & MOBILE */
@@ -288,12 +265,6 @@
 
     .image {
         width: 100%;
-    }
-
-    .companies {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: clamp(20px, 3vw, 40px);
     }
 
 }
@@ -325,11 +296,6 @@
         width: calc((100% - 40px) / 2);
     }
 
-}
-
-@media screen and (max-width: 517px) {
-
-    
 }
 
 @media screen and (max-width: 1200px) {
