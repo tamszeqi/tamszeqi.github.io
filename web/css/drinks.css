@@ -104,7 +104,7 @@ p.price {
     margin-top: -90px;
     background: #470000;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 35px;
 }
 
@@ -114,4 +114,85 @@ p.price {
 
 .teh-tarik {
     margin-bottom: 80px;
+}
+
+/*cocoa section*/
+.cocoa {
+    justify-items: center;
+    text-align: center;
+}
+
+.cocoa-subtitle h3 {
+    margin-bottom: 20px;
+}
+
+.cocoa-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 100px;
+    justify-content: center;
+}
+
+.cocoa-items {
+    position: relative;
+    align-content: flex-end;
+    width: 33.33%;
+}
+
+.cocoa-items img {
+    margin-top: 100px;
+}
+
+.cocoa-items h5 {
+    margin: 0 60px;
+    background: #470000;
+    color: white;
+    padding: 20px 0;
+    border-radius: 35px;
+}
+
+.cocoa-items .price-tag {
+    top: 80px;
+}
+
+.yuanyang {
+    margin-bottom: -150px;
+}
+
+/*refreshing section*/
+.refreshing {
+    justify-items: center;
+    text-align: center;
+}
+
+.refreshing-subtitle h3 {
+    margin-bottom: 20px;
+}
+
+.refreshing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+    justify-content: center;
+}
+
+.refreshing-items {
+    position: relative;
+    align-content: flex-end;
+    width: 25%;
+}
+
+.refreshing-items img {
+    margin-top: 100px;
+}
+
+.refreshing-items h5 {
+    background: #470000;
+    color: white;
+    padding: 20px 0;
+    border-radius: 35px;
+}
+
+.refreshing-items .price-tag {
+    top: 80px;
 }
