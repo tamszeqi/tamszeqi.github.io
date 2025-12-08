@@ -98,15 +98,18 @@
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper light">
         <div class="wrapper-joinnow-email">
             <h3>Email verification</h3>
-            <p class="bodytext">For verification purposes, please enter your email in the space give below before
+            <p class="bodytext">For verification purposes, please enter your email in the
+                space give below before
                 continuing with your account registration.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Email">
+            <div class="email">
+                <div class="search-bar">
+                    <input type="text" placeholder="Email">
+                </div>
+                <button class="b-green">VERIFY</button>
             </div>
-            <button class="b-green">VERIFY</button>
             <p class="bold">(Example: abc@gmail.com):</p>
         </div>
     </div>
@@ -156,19 +159,25 @@
 
             <div class="password">
                 <h3>Password</h3>
-                <input type="password" id="password" placeholder="Password:" required>
-                <img src="images/visible.png" alt="visible-eye-icon">
-                <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
-                <img src="images/invisible.png" alt="invisible-eye-icon">
+                <div class="password-inputs">
+                    <div class="password-visible">
+                        <input type="password" id="password" placeholder="Password:" required>
+                        <img src="images/visible.png" alt="visible-eye-icon">
+                    </div>
+                    <div class="password-confirm">
+                        <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
+                        <img src="images/invisible.png" alt="invisible-eye-icon">
+                    </div>
+                </div>
                 <p>Password criteria: <br>
                     • Have 10 or more characters<br>
                     • Contain alphabet and numeric characters<br>
                     • Contain at least 1 special character (e.g. !, @, #, #, $,%, ^) </p>
             </div>
         </div>
-        <div class="checkbox">
+        <div class="terms-and-conditions">
             <label class="agree-container">
-                <input type="checkbox" id="agree">
+                <input type="checkbox" class="checkbox" id="agree">
                 <p>
                     I agree to the <a href="#">Privacy policy</a> and <a href="#">Terms of Use</a>.</p>
             </label>

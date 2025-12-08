@@ -22,6 +22,9 @@
     height: auto;
 }
 
+.content-company .small {
+    color: var(--tertiary);
+}
 
 .right-side {
     display: flex;
@@ -83,23 +86,68 @@
     transform: scaleX(-1) rotate(-190deg);
 }
 
-
 .leaf3 {
-    top: 40%;
-    right: -120px;
-    transform: rotate(-90deg);
+    top: 400px;
+    right: -420px;
+    width: 50%;
+    transform: scaleX(-1) rotate(5deg);
 }
 
 .leaf4 {
-    bottom: 50px;
-    left: -100px;
-    transform: rotate(45deg);
+    top: 550px;
+    right: -300px;
+    width: 40%;
+    transform: scaleX(-1)rotate(45deg);
 }
 
 .leaf5 {
-    bottom: -80px;
-    right: -80px;
-    transform: rotate(-45deg);
+    top: 900px;
+    left: -350px;
+    width: 50%;
+    transform: scaleY(-1) rotate(40deg);
+}
+
+/* 第二section */
+.sec-kopidiam {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-stories {
+    flex: 1;
+    background-color: var(--dark);
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+
+.content-stories .small {
+    color: var(--tertiary);
+
+}
+
+.bar {
+    flex: 1;
+    border-radius: 50px;
+}
+
+
+.deco.leaf6 {
+    bottom: -60px;
+    right: -20px;
+    z-index: 1;
+    width: 30%;
+}
+
+
+/* third section */
+.content-us .small {
+    color: var(--tertiary);
+
 }
 
 .statsbar {
@@ -107,9 +155,107 @@
     gap: clamp(15px, 4vw, 100px);
 }
 
+.third-us {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+}
 
-.coffee-hand {
+
+.staff-img {
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.content-us {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* fourth sec */
+.wrapper.dark {
     position: relative;
-    width: 50%;
-    right: -760px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.four-title {
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.four-content {
+    background-color: var(--secondary);
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*  中间 Daniel Lim 的头像 */
+.image-foodblooger img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.blooger-1,
+.blooger-2,
+.blooger-3,
+.blooger-4 {
+    position: absolute;
+    z-index: 1;
+}
+
+.food-blooger {
+    width: 70px;
+    height: 70px;
+}
+
+/* 左上角那个男的 */
+.blooger-1 {
+    top: 20%;
+    left: 10%;
+}
+
+/* 右上角那个戴眼镜的 */
+.blooger-2 {
+    top: 25%;
+    right: 10%;
+}
+
+/* 左下角那个穿白衣服的 */
+.blooger-3 {
+    bottom: 15%;
+    left: 5%;
+}
+
+/* 右下角那个女生 */
+.blooger-4 {
+    bottom: 10%;
+    right: 8%;
+}
+
+/* === 6. 装饰叶子位置 === */
+.deco.leaf7 {
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.deco.leaf8 {
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    transform: rotate(180deg);
+    /* 旋转一下 */
 }
