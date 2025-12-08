@@ -464,6 +464,32 @@ button {
     color: var(--sec-active)
 }
 
+/* SQUARE IMAGE BUTTONS */
+.sqr-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sqr-img-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(33.33% - clamp(10px, 1.7vw, 20px));
+    min-height: clamp(200px, 25vw, 290px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: clamp(20px, 3.5vw, 40px);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sqr-img-btn h4 {
+    color: var(--white);
+}
+
 /* SEARCH BAR */
 .search-bar {
     max-width: 430px;
@@ -562,37 +588,11 @@ button {
 .statstext {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
-    line-height: 19.6px;
+    font-size: clamp(12px, 0.9vw, 14px);
+    line-height: clamp(16.8px, 1.4vw, 19.6px);
     font-weight: 700;
     color: var(--black);
     text-transform: uppercase;
-}
-
-/* SQUARE IMAGE BUTTONS */
-.sqr-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sqr-img-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: calc(33.33% - clamp(10px, 1.7vw, 20px));
-    min-height: clamp(200px, 25vw, 290px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    gap: clamp(20px, 3.5vw, 40px);
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.sqr-img-btn h4 {
-    color: var(--white);
 }
 
 /* COMPANIES */

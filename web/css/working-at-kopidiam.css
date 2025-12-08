@@ -48,6 +48,70 @@
     max-width: clamp(300px, 45vw, 580px);
 }
 
+.paths .group p:not(.small) {
+    margin-bottom: 50px;
+}
+
+.career-paths {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: clamp(15px, 2.5vw, 30px);
+    margin-bottom: clamp(20px, 3.5vw, 40px);
+}
+
+.career-paths .retail-teams {
+    background-color: var(--tertiary) !important;
+    position: relative;
+    z-index: 1;
+}
+
+.career-paths .retail-teams::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--tertiary);
+    transform: translateX(-50%) rotate(45deg);
+    left: 50%;
+    bottom: -10px;
+    border-radius: 5px;
+    z-index: -1; 
+}
+
+.retail-teams .paths-text {
+    color: var(--white);
+}
+
+.career-paths .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--tertiary);
+    border-radius: 20px;
+    background-color: transparent;
+    padding: clamp(10px, 1.5vw, 20px);
+    width: 0; /* Forces all boxes to be equal */
+    min-width: 0;
+    flex: 1;
+    gap: 15px;
+}
+
+.career-paths .box img {
+    width: clamp(30px, 3.5vw, 50px);
+}
+
+.paths-text {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(12px, 0.9vw, 14px);
+    line-height: clamp(16.8px, 1.4vw, 19.6px);
+    color: var(--black);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
 .retail {
     display: flex;
     justify-content: space-between;
@@ -171,8 +235,20 @@
         width: 100%;
     }
 
+    .career-paths {
+        flex-wrap: wrap;
+    }
+
+    .career-paths .box {
+        flex: 0 0 30%; 
+    }
+
     .retail .image {
         width: 100% !important;
+    }
+
+    .career-paths .retail-teams::after {
+        display: none;
     }
 
     .benefits {
@@ -229,7 +305,22 @@
 
 }
 
-/* ADJUSTMENTS */
+@media screen and (max-width: 400px) {
+
+    .career-paths .box {
+        flex: 0 0 47%;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .career-paths .box {
+        flex: 0 0 100%;
+    }
+
+}
+
 @media screen and (max-width: 325px) {
 
     .statsbar {
