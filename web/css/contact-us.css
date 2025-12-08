@@ -113,7 +113,7 @@ div.wrapper {
 }
 
 /* 名字和 Email 平分一行 */
-.form-row.name-email {
+.name-email {
     display: flex;
     gap: 11px;
 }
@@ -266,7 +266,7 @@ p.subtitle {
     }
 
     /* name + email 改为上下 */
-    .form-row.name-email {
+    .name-email {
         flex-direction: column;
         gap: 0;
     }
