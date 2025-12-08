@@ -29,11 +29,6 @@
     justify-content: center;
 }
 
-.kopi-c {
-    margin-left: -20px;
-    margin-right: 20px;
-}
-
 .kopi-items {
     text-align: center;
     display: flex;
@@ -64,11 +59,15 @@ p.price {
 }
 
 .kopi-items h5 {
-    margin: 0 50px;
+    margin: 0 40px;
     background: #470000;
     color: white;
     padding: 20px;
     border-radius: 35px;
+}
+
+.kopi-items .price-tag {
+    top: 30px;
 }
 
 /*Teh section*/
@@ -101,7 +100,6 @@ p.price {
 
 .teh-items h5 {
     margin: 0 50px;
-    margin-top: -90px;
     background: #470000;
     color: white;
     padding: 20px 0;
@@ -109,11 +107,7 @@ p.price {
 }
 
 .teh-items .price-tag {
-    top: 80px;
-}
-
-.teh-tarik {
-    margin-bottom: 80px;
+    top: 40px;
 }
 
 /*cocoa section*/
@@ -144,7 +138,7 @@ p.price {
 }
 
 .cocoa-items h5 {
-    margin: 0 60px;
+    margin: 0 40px;
     background: #470000;
     color: white;
     padding: 20px 0;
@@ -156,13 +150,14 @@ p.price {
 }
 
 .yuanyang {
-    margin-bottom: -150px;
+    margin-bottom: -80px;
 }
 
 /*refreshing section*/
 .refreshing {
     justify-items: center;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .refreshing-subtitle h3 {
@@ -194,5 +189,69 @@ p.price {
 }
 
 .refreshing-items .price-tag {
-    top: 80px;
+    right: -20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .price-tag {
+        padding: 0 18px;
+    }
+
+    .yuanyang {
+        margin-bottom: -50px;
+    }
+
+    .cocoa-items h5,
+    .kopi-items h5,
+    .teh-items h5 {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .drinks-subtitle p.subtitle {
+        text-align: center;
+    }
+
+    .kopi-cards {
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .price-tag {
+        padding: 8px 20px;
+    }
+
+    .teh-cards {
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .teh-items {
+        width: auto;
+    }
+
+    .cocoa-cards {
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .cocoa-items {
+        width: auto;
+    }
+
+    .cocoa-items h5 {
+        margin: auto;
+    }
+
+    .refreshing-cards {
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .refreshing-items {
+        width: auto;
+    }
+
+
 }

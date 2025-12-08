@@ -6,3 +6,66 @@
         url('../images/header-our-story.jpg');
     width: 105.6%;
 }
+
+
+.about-company {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.latte {
+    width: 100%;
+    height: auto;
+}
+
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 77%;
+}
+
+.content-company {
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.slogan {
+    background-color: var(--secondary);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 40px;
+    border-radius: 0 30px 30px 30px;
+    position: relative;
+}
+
+.slogan p {
+    color: var(--white);
+}
+
+
+
+.company {
+    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/company-story.jpg');
+}
+
+.about {
+    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/about-us.jpg');
+}
+
+.testimonials {
+    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/testimonials.jpg');
+}
+
+.statsbar {
+    justify-content: flex-start;
+    gap: clamp(15px, 4vw, 100px);
+}
