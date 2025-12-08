@@ -11,7 +11,7 @@
 .about-company {
     display: grid;
     grid-template-columns: 45% 55%;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
     position: relative;
     padding-bottom: 50px;
@@ -52,7 +52,6 @@
 }
 
 
-
 .company {
     background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/company-story.jpg');
 }
@@ -63,6 +62,39 @@
 
 .testimonials {
     background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/testimonials.jpg');
+}
+
+.leaf1 {
+    top: 190px;
+    left: -250px;
+    width: 40%;
+    transform: scaleX(-1) rotate(-140deg);
+}
+
+.leaf2 {
+    top: 290px;
+    left: -265px;
+    width: 40%;
+    transform: scaleX(-1) rotate(-190deg);
+}
+
+
+.leaf3 {
+    top: 40%;
+    right: -120px;
+    transform: rotate(-90deg);
+}
+
+.leaf4 {
+    bottom: 50px;
+    left: -100px;
+    transform: rotate(45deg);
+}
+
+.leaf5 {
+    bottom: -80px;
+    right: -80px;
+    transform: rotate(-45deg);
 }
 
 .statsbar {
