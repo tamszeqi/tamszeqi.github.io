@@ -3,7 +3,13 @@ body {
 }
 
 .title {
-    background-image: url('../images/header-404.jpg');
+    background-image:
+        linear-gradient(to top,
+            var(--black-50),
+            var(--black-50)),
+        url('../images/header-404.jpg');
+    width: 105.6%;
+
 }
 
 .wrapper {
