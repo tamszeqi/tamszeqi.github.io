@@ -64,6 +64,11 @@
     background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/testimonials.jpg');
 }
 
+.sqr-group {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .leaf1 {
     top: 190px;
     left: -250px;
