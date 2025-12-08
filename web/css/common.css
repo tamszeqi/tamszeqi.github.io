@@ -93,36 +93,42 @@ a {
 
 /* === GLOBAL TYPOGRAPHY  === */
 .abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading);
     color: var(--black);
     font-weight: 400;
 }
 
-body, p {
+body,
+p {
     font-family: var(--text);
     color: var(--grey-dark);
     font-weight: 400;
@@ -689,7 +695,8 @@ textarea {
         background: transparent;
     }
 
-    header::before { /* paint the ghost box Brown/Black, stretch it to fill the header size, and tuck it between the Logo and the Menu */
+    header::before {
+        /* paint the ghost box Brown/Black, stretch it to fill the header size, and tuck it between the Logo and the Menu */
         content: "";
         position: absolute;
         top: 0;
@@ -701,23 +708,23 @@ textarea {
     }
 
     .nav-center {
-    	display: none;
-    	flex-direction: column;
-    	background-color: var(--tertiary);
-    	position: fixed;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	text-align: center;
-    	z-index: -2;
+        display: none;
+        flex-direction: column;
+        background-color: var(--tertiary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: -2;
         padding: clamp(80px, 12vh, 100px) 0;
         height: 100vh;
         overflow-y: auto;
-	}
+    }
 
-	.nav-center.active {
-    	display: flex;
-	}
+    .nav-center.active {
+        display: flex;
+    }
 
     .menu-toggle {
         display: block;
@@ -743,7 +750,7 @@ textarea {
     .home .item {
         display: none;
     }
-    
+
     .submenu {
         display: flex;
         flex-direction: column;
@@ -820,7 +827,8 @@ textarea {
 /* TABLET LANDSCAPE */
 @media screen and (max-width: 1024px) {
 
-    .wrapper, footer {
+    .wrapper,
+    footer {
         padding: clamp(30px, 8vw, 80px) clamp(15px, 6vw, 60px);
     }
 
