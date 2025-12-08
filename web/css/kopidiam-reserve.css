@@ -1,0 +1,11 @@
+.title {
+    background-image:
+        linear-gradient(to top,
+            var(--black-50),
+            /* Black, 70% opaque at the bottom */
+            var(--black-50))
+        /* Black, 0% opaque (transparent) at the top */
+        ,
+        /* 2. List your image URL SECOND */
+        url(../images/coffeebean-header.jpg);
+}
