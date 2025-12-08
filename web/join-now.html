@@ -100,7 +100,7 @@
 
     <div class="wrapper light">
         <div class="wrapper-joinnow-email">
-            <h3>Email verification</h3>
+            <h3 class="email-v">Email verification</h3>
             <p class="bodytext">For verification purposes, please enter your email in the
                 space give below before
                 continuing with your account registration.</p>
@@ -110,63 +110,64 @@
                 </div>
                 <button class="b-green">VERIFY</button>
             </div>
-            <p class="bold">(Example: abc@gmail.com):</p>
+            <p class="bold">(Example: abc@gmail.com)</p>
         </div>
     </div>
 
     <div class="wrapper dark">
         <div class="wrapper-signup">
-            <div class="signup">
-                <h3>Sign Up</h3>
-                <form action="/action_page.php"></form>
-                <div class="name">
-                    <input type="text" id="name" name="name" placeholder="Name:" required>
-                </div>
-                <div class="state">
-                    <input list="states" id="state" name="state" placeholder="State:" required>
+            <div class="wrapper-input">
+                <div class="signup">
+                    <h3>Sign Up</h3>
+                    <form action="/action_page.php"></form>
+                    <div class="name">
+                        <input type="text" id="name" name="name" placeholder="Name:" required>
+                    </div>
+                    <div class="state">
+                        <input list="states" id="state" name="state" placeholder="State:" required>
 
-                    <datalist id="states">
-                        <option value="Johor"></option>
-                        <option value="Kedah"></option>
-                        <option value="Kelantan"></option>
-                        <option value="Melaka"></option>
-                        <option value="Negeri Sembilan"></option>
-                        <option value="Pahang"></option>
-                        <option value="Penang"></option>
-                        <option value="Perak"></option>
-                        <option value="Perlis"></option>
-                        <option value="Sabah"></option>
-                        <option value="Sarawak"></option>
-                        <option value="Selangor"></option>
-                        <option value="Terengganu"></option>
-                        <option value="Kuala Lumpur"></option>
-                        <option value="Putrajaya"></option>
-                        <option value="Labuan"></option>
-                    </datalist>
+                        <datalist id="states">
+                            <option value="Johor"></option>
+                            <option value="Kedah"></option>
+                            <option value="Kelantan"></option>
+                            <option value="Melaka"></option>
+                            <option value="Negeri Sembilan"></option>
+                            <option value="Pahang"></option>
+                            <option value="Penang"></option>
+                            <option value="Perak"></option>
+                            <option value="Perlis"></option>
+                            <option value="Sabah"></option>
+                            <option value="Sarawak"></option>
+                            <option value="Selangor"></option>
+                            <option value="Terengganu"></option>
+                            <option value="Kuala Lumpur"></option>
+                            <option value="Putrajaya"></option>
+                            <option value="Labuan"></option>
+                        </datalist>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bday">
-                <h3>Birthday Details</h3>
                 <div class="bday">
-                    <input type="date" id="bday" name="Birthday" placeholder="Birthday:" required>
+                    <h3>Birthday Details</h3>
+                    <div class="bday">
+                        <input type="text" id="bday" name="Birthday" placeholder="Birthday:" required>
+                    </div>
+                    <p>Note: <br>
+                        • You must be at least 13 years old to join Rewards.<br>
+                        • Birthday is required to receive Birthday Reward(s).<br>
+                        • Birthday cannot be changed after submission.</p>
                 </div>
-                <p>Note: <br>
-                    • You must be at least 13 years old to join Rewards.<br>
-                    • Birthday is required to receive Birthday Reward(s).<br>
-                    • Birthday cannot be changed after submission.</p>
             </div>
-
             <div class="password">
                 <h3>Password</h3>
                 <div class="password-inputs">
-                    <div class="password-visible">
+                    <div class="password-icon">
                         <input type="password" id="password" placeholder="Password:" required>
-                        <img src="images/visible.png" alt="visible-eye-icon">
+                        <img src="images/invisible.png" alt="visible-eye-icon">
                     </div>
-                    <div class="password-confirm">
+                    <div class="Cpassword-icon">
                         <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
-                        <img src="images/invisible.png" alt="invisible-eye-icon">
+                        <img src="images/invisible.png" class="Cpass-icon" alt="invisible-eye-icon">
                     </div>
                 </div>
                 <p>Password criteria: <br>

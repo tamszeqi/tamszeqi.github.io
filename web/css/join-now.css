@@ -15,6 +15,15 @@ body {
     width: 105.6%;
 }
 
+.email-v {
+    margin-bottom: 40px;
+}
+
+.bodytext {
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
 .wrapper-joinnow-email {
     padding-bottom: 50px;
 }
@@ -37,6 +46,10 @@ body {
     margin: auto;
 }
 
+.wrapper-input input {
+    margin-bottom: 25px;
+}
+
 .signup {
     align-items: flex-start;
     margin-bottom: 12px;
@@ -51,12 +64,25 @@ body {
 
 .wrapper-signup p {
     color: var(--white);
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
-
 
 .password-inputs {
     display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.password-icon {
+    position: relative;
+    max-width: 100%;
+}
+
+.password-inputs img {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -30px;
 }
 
 .terms-and-conditions {
@@ -66,12 +92,5 @@ body {
 
 .agree-container {
     display: flex;
-    gap: 10px;
-}
-
-.password-visible,
-.password-confirm {
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
