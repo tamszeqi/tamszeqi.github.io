@@ -106,3 +106,10 @@
     justify-content: flex-start;
     gap: clamp(15px, 4vw, 100px);
 }
+
+
+.coffee-hand {
+    position: relative;
+    width: 50%;
+    right: -760px;
+}
