@@ -99,6 +99,13 @@
     </div>
 
     <div class="wrapper light">
+        <!-- deco email -->
+        <div class="deco">
+            <div class="up-right-leaf">
+                <img src="images/leaf.png" alt="join-now-deco">
+            </div>
+        </div>
+
         <div class="wrapper-joinnow-email">
             <h3 class="email-v">Email verification</h3>
             <p class="bodytext">For verification purposes, please enter your email in the
@@ -115,66 +122,83 @@
     </div>
 
     <div class="wrapper dark">
+        <!-- deco signup -->
+        <div class="deco">
+            <div class="left-flower">
+                <img src="images/flower.png" alt="join-now-deco">
+            </div>
+            <div class="down-right-leaf">
+                <img src="images/leaf.png" alt="join-now-deco">
+            </div>
+        </div>
         <div class="wrapper-signup">
-            <div class="wrapper-input">
-                <div class="signup">
-                    <h3>Sign Up</h3>
-                    <form action="/action_page.php"></form>
-                    <div class="name">
-                        <input type="text" id="name" name="name" placeholder="Name:" required>
-                    </div>
-                    <div class="state">
-                        <input list="states" id="state" name="state" placeholder="State:" required>
+            <form action="/action_page.php">
+                <div class="wrapper-input">
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <div class="name">
+                            <input type="text" id="name" name="name" placeholder="Name:" required>
+                        </div>
+                        <div class="state">
+                            <input list="states" id="state" name="state" placeholder="State:" required>
 
-                        <datalist id="states">
-                            <option value="Johor"></option>
-                            <option value="Kedah"></option>
-                            <option value="Kelantan"></option>
-                            <option value="Melaka"></option>
-                            <option value="Negeri Sembilan"></option>
-                            <option value="Pahang"></option>
-                            <option value="Penang"></option>
-                            <option value="Perak"></option>
-                            <option value="Perlis"></option>
-                            <option value="Sabah"></option>
-                            <option value="Sarawak"></option>
-                            <option value="Selangor"></option>
-                            <option value="Terengganu"></option>
-                            <option value="Kuala Lumpur"></option>
-                            <option value="Putrajaya"></option>
-                            <option value="Labuan"></option>
-                        </datalist>
+                            <datalist id="states">
+                                <option value="Johor"></option>
+                                <option value="Kedah"></option>
+                                <option value="Kelantan"></option>
+                                <option value="Melaka"></option>
+                                <option value="Negeri Sembilan"></option>
+                                <option value="Pahang"></option>
+                                <option value="Penang"></option>
+                                <option value="Perak"></option>
+                                <option value="Perlis"></option>
+                                <option value="Sabah"></option>
+                                <option value="Sarawak"></option>
+                                <option value="Selangor"></option>
+                                <option value="Terengganu"></option>
+                                <option value="Kuala Lumpur"></option>
+                                <option value="Putrajaya"></option>
+                                <option value="Labuan"></option>
+                            </datalist>
+                        </div>
                     </div>
-                </div>
 
-                <div class="bday">
-                    <h3>Birthday Details</h3>
                     <div class="bday">
-                        <input type="text" id="bday" name="Birthday" placeholder="Birthday:" required>
-                    </div>
-                    <p>Note: <br>
-                        • You must be at least 13 years old to join Rewards.<br>
-                        • Birthday is required to receive Birthday Reward(s).<br>
-                        • Birthday cannot be changed after submission.</p>
-                </div>
-            </div>
-            <div class="password">
-                <h3>Password</h3>
-                <div class="password-inputs">
-                    <div class="password-icon">
-                        <input type="password" id="password" placeholder="Password:" required>
-                        <img src="images/invisible.png" alt="visible-eye-icon">
-                    </div>
-                    <div class="Cpassword-icon">
-                        <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
-                        <img src="images/invisible.png" class="Cpass-icon" alt="invisible-eye-icon">
+                        <h3>Birthday Details</h3>
+                        <div class="bday">
+                            <input type="text" id="bday" name="Birthday" placeholder="Birthday:" required>
+                        </div>
+                        <p>Note: <br>
+                            • You must be at least 13 years old to join Rewards.<br>
+                            • Birthday is required to receive Birthday Reward(s).<br>
+                            • Birthday cannot be changed after submission.</p>
                     </div>
                 </div>
-                <p>Password criteria: <br>
-                    • Have 10 or more characters<br>
-                    • Contain alphabet and numeric characters<br>
-                    • Contain at least 1 special character (e.g. !, @, #, #, $,%, ^) </p>
-            </div>
+                <div class="password">
+                    <h3>Password</h3>
+
+                    <div class="password-row">
+                        <!-- Password -->
+                        <div class="password-box">
+                            <input type="password" id="password" placeholder="Password:" required>
+                            <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="password-box">
+                            <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
+                            <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
+                        </div>
+                    </div>
+
+                    <p>Password criteria: <br>
+                        • Have 10 or more characters<br>
+                        • Contain alphabet and numeric characters<br>
+                        • Contain at least 1 special character (e.g. !, @, #, #, $,%, ^)
+                    </p>
+                </div>
+
+            </form>
         </div>
         <div class="terms-and-conditions">
             <label class="agree-container">
@@ -187,6 +211,89 @@
         <button class="b-brown">SUBMIT</button>
 
     </div>
+
+    <footer>
+        <div class="footer-top">
+            <!-- top section: slogan+button -->
+            <h5>Escape the Noise, Enjoy the Coffee</h5>
+            <button class="b-green">FIND OUR NEAREST STORE</button>
+        </div>
+        <hr class="footer-divider">
+        <!-- middle section -->
+        <div class="footer-content">
+            <!-- left column -->
+            <div class="footer-left">
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <img src="images/location.png" alt="location-icon">
+                        <p>Lot G-12, KLCC</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="email-icon">
+                        <p>info@kopidiam.my</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phone.png" alt="phone-icon">
+                        <p>+6012-345 6789</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a class="footer-social-link" href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    <a class="footer-social-link" href="#"><img src="images/instagram.png" alt="instagram"></a>
+                    <a class="footer-social-link" href="#"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+            <!-- middle column -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Our Story</a>
+                    <a href="#">Ethical Sourcing</a>
+                    <a href="#">KopiDiam Reserve</a>
+                    <a href="#">Join Our Team</a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="#">Find a Store</a>
+                    <a href="#">Full Menu</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Foods</a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="#">Rewards Program</a>
+                    <a href="#">Mobile Order & Pay</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="footer-bottom-left">
+            <div class="footer-logo">
+                <img class="logo" src="images/logo-green.png" alt="KopiDiam Logo">
+            </div>
+            <p class="small">Copyright © 2024 KopiDiam. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+            <a class="small back-to-top" href="#page-top">BACK TO TOP</a>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
 </body>
 
 </html>

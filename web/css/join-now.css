@@ -12,7 +12,42 @@ body {
             var(--black-50)),
 
         url('../images/header-join-now.jpg');
-    width: 105.6%;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.deco {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.deco>div {
+    position: absolute;
+    width: 40%
+}
+
+.up-right-leaf {
+    top: -120px;
+    right: -200px;
+    transform: scaleX(-1) rotate(10deg);
+}
+
+.down-right-leaf {
+    bottom: -180px;
+    right: -200px;
+    transform: scaleX(-1) rotate(10deg);
+}
+
+.left-flower {
+    top: 100px;
+    left: -250px;
+    transform: rotate(-10deg);
 }
 
 .email-v {
@@ -20,12 +55,22 @@ body {
 }
 
 .bodytext {
-    max-width: 30%;
+    max-width: 40%;
     margin-bottom: 50px;
 }
 
 .wrapper-joinnow-email {
     padding-bottom: 50px;
+}
+
+.search-bar {
+    flex: 1;
+    /* expand to fill available space */
+}
+
+.search-bar input {
+    width: 100%;
+    /* input fills the full bar */
 }
 
 .email {
@@ -59,7 +104,7 @@ body {
 
 .wrapper-signup h3 {
     color: var(--white);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .wrapper-signup p {
@@ -67,30 +112,69 @@ body {
     margin-bottom: 50px;
 }
 
-.password-inputs {
+/* Parent row — puts two boxes side by side */
+.password-row {
     display: flex;
-    gap: 10px;
-    align-items: center;
+    gap: 15px;
+    /* spacing between boxes */
     margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
-.password-icon {
+/* Make each password box equal width */
+.password-box {
     position: relative;
-    max-width: 100%;
+    flex: 1;
+    min-width: 350px;
 }
 
-.password-inputs img {
-    cursor: pointer;
+/* Input styling */
+.password-box input {
+    width: 100%;
+    height: 50px;
+    /* matches screenshot height */
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 45px;
+    /* space for eye icon */
+    font-size: 16px;
+}
+
+/* Eye icon inside input */
+.password-box .eye-icon {
     position: absolute;
-    margin-left: -30px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .terms-and-conditions {
     gap: 10px;
     margin-top: 10px;
+    align-self: center;
 }
 
 .agree-container {
     display: flex;
     gap: 10px;
+    align-items: center;
+    margin: 30px 0
+}
+
+@media screen and (max-width: 768px) {
+    .left-flower {
+        max-width: 33.33%;
+    }
+
+    .down-right-leaf {
+        max-width: 33.33%;
+    }
+
+    .up-right-leaf {
+        max-width: 33.33%;
+    }
 }
