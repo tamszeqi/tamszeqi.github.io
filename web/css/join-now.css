@@ -20,6 +20,12 @@ body {
     background-color: var(--tertiary);
     max-width: fit-content;
     border-radius: 20px;
-    justify-content: center;
-    align-items: center;
+    padding: 65px 45px 35px 40px;
+    margin-bottom: 100px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
