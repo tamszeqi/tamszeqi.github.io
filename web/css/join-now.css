@@ -12,7 +12,6 @@ body {
             var(--black-50)),
 
         url('../images/header-join-now.jpg');
-    width: 100%;
 }
 
 .wrapper {

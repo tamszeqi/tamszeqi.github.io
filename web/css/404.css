@@ -8,8 +8,6 @@ body {
             var(--black-50),
             var(--black-50)),
         url('../images/header-404.jpg');
-    width: 105.6%;
-
 }
 
 .wrapper {
