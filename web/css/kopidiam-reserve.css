@@ -1,3 +1,11 @@
+p.tertiary-b,
+p.category {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--tertiary);
+}
+
 .title {
     background-image:
         linear-gradient(to top,
@@ -8,4 +16,271 @@
         ,
         /* 2. List your image URL SECOND */
         url(../images/coffeebean-header.jpg);
+}
+
+/**section1*/
+div.intro {
+    text-align: center;
+}
+
+div.info-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+img.decoline {
+    height: 300px;
+}
+
+img.icon {
+    width: 20%;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--light);
+    border: 1px solid var(--grey-dark);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/*section2&3*/
+button.b-green {
+    display: flex;
+    margin: auto
+}
+
+img.fnb {
+    width: 20%;
+}
+
+/**section2*/
+div.base {
+
+    background-color: var(--tertiary);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.price,
+p.subtitle {
+    color: var(--white);
+}
+
+div.fnb-card {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--faq);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+div.fnb-card h4 {
+    display: flex;
+    align-items: center;
+}
+
+img.fnb {
+    width: 60%;
+    z-index: 1001;
+}
+
+.first {
+    position: relative;
+    right: 0px;
+
+}
+
+div.b-kopidiam,
+div.b-kopibising,
+div.b-caramellatte {
+    position: absolute;
+    bottom: -760px;
+}
+
+div.b-kopidiam {
+    position: absolute;
+    left: 200px;
+}
+
+div.b-kopibising {
+    position: absolute;
+    left: 600px;
+}
+
+div.b-caramellatte {
+    position: absolute;
+    left: 1000px;
+}
+
+div.b-miloahkow,
+div.b-threelayermilktea,
+div.b-purecoffee {
+    position: absolute;
+    bottom: -1100px;
+
+}
+
+div.b-miloahkow {
+    position: absolute;
+    left: 200px;
+}
+
+div.b-threelayermilktea {
+    position: absolute;
+    left: 600px;
+}
+
+div.b-purecoffee {
+    position: absolute;
+    left: 1000px;
+}
+
+div.coffeenbeverage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.coffeenbeverage .fnb-card:first-child {
+    grid-column: span 2;
+}
+
+.coffeenbeverage .fnb-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+.coffeenbeverage .fnb-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.coffeenbeverage .fnb-card:nth-child(4) {
+    grid-column: span 2;
+}
+
+/* 2. Target the second-to-last container and make it span 3 columns */
+.coffeenbeverage .fnb-card:nth-last-child(2) {
+    grid-column: span 2;
+}
+
+/* 3. Target the last container and make it span 3 columns */
+.coffeenbeverage .fnb-card:last-child {
+    grid-column: span 2;
+}
+
+/*foodpastry*/
+div.foodpastry {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.foodpastry .fnb-card:first-child {
+    grid-column: span 2;
+}
+
+.foodpastry .fnb-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+/* 3. Target the last container and make it span 3 columns */
+.foodpastry .fnb-card:last-child {
+    grid-column: span 2;
+}
+
+/*section4*/
+/* Container for the overall layout (to center text and gallery) */
+.store-gallery-section {
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+    /* Important to keep the side images visible but contained */
+    position: relative;
+    /* To position the arrows */
+}
+
+/* ---------------------------------- */
+/* The Gallery and Slides */
+/* ---------------------------------- */
+
+.gallery-wrapper {
+    overflow: hidden;
+    /* This hides the parts of the container that overflow */
+    position: relative;
+
+    /* Set a max width for the overall visible area */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the visible area */
+
+    /* Remove padding: 0 50px; if you want the arrows closer to the edge */
+}
+
+.slides-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    /* Optional: Hide the scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    /* CRITICAL: Add padding to the SIDES of the slides container.
+       This padding creates the space where the side images will show. */
+    padding: 0 15%;
+    /* Example: 15% on each side of the container */
+}
+
+.slide {
+    /* CRITICAL: Set slide width to take up less than 100% of the viewport.
+       Example: 70% of the viewport (or parent's width) */
+    flex: 0 0 100%;
+
+    /* Keep the centering */
+    scroll-snap-align: center;
+
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    /* Add a small gap between slides */
+}
+
+/* ---------------------------------- */
+/* Navigation Arrows */
+/* ---------------------------------- */
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    padding: 20px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+button.b-brown {
+    display: flex;
+    margin: auto
 }
