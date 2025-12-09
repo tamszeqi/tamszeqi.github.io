@@ -1,0 +1,12 @@
+body {
+    background-color: var(--light);
+}
+
+.title {
+    background-image: linear-gradient(to top,
+            var(--black-50),
+            var(--black-50)),
+
+        url('../images/header-mobile-order-and-pay.jpg');
+    width: 100%;
+}
