@@ -180,13 +180,13 @@
                     <div class="password-row">
                         <!-- Password -->
                         <div class="password-box">
-                            <input type="password" id="password" placeholder="Password:" required>
+                            <input type="input" id="password" placeholder="Password:" required>
                             <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
                         </div>
 
                         <!-- Confirm Password -->
                         <div class="password-box">
-                            <input type="password" id="Cpassword" placeholder="Confirm Password:" required>
+                            <input type="input" id="Cpassword" placeholder="Confirm Password:" required>
                             <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
                         </div>
                     </div>
@@ -279,21 +279,8 @@
         </div>
     </footer>
 
-    <script>
-        const toggleButton = document.getElementById("menu-toggle");
-        const menu = document.getElementById("mobile-menu");
+    <script src="js/menu.js"></script>
 
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active");
-
-            // Change icon
-            if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;"; // × (cross)
-            } else {
-                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
-            }
-        });
-    </script>
 </body>
 
 </html>
