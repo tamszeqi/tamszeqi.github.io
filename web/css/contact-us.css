@@ -296,57 +296,55 @@ p.subtitle {
 
 /* ============ DECO ============ */
 /*flower size*/
-div.deco {
-    width: 20%;
-}
 
-div.leaf2 {
-    top: 470px;
-    right: -190px;
+div.top-right-leaf {
+    top: 80%;
+    right: -5%;
     z-index: -1;
     width: 35%;
     transform: scaleX(-1) rotate(10deg);
 }
 
 /*mid flower*/
-div.deco.leaf1.mid {
-    left: -180px;
-    bottom: -990px;
+div.mid-left-leaf {
+    left: -12%;
+    bottom: -140%;
     z-index: -1;
     width: 35%;
-    transform: rotate(9deg);
+    transform: rotate(-10deg);
 }
 
-div.deco.leaf2.mid {
-    top: 1250px;
-    right: -185px;
-    width: 30%;
+div.mid-right-leaf {
+    top: 165%;
+    right: -4%;
+    width: 15%;
     transform: scaleY(-1) scaleX(-1);
 }
 
 /*lst flower*/
-div.deco.leaf1.lst {
-    bottom: -1950px;
-    left: -250px;
+div.last-left-leaf {
+    bottom: -255%;
+    left: -15%;
     z-index: 1;
     width: 35%;
     transform: scaleY(-1)rotate(20deg);
 }
 
-div.deco.leaf2.lst {
-    top: 2300px;
-    right: -100px;
+div.last-right-down {
+    top: 330%;
+    right: -1%;
     z-index: 1;
-    width: 25%;
+    width: 12%;
+    transform: scaleX(-1) rotate(10deg);
 }
 
 
-div.deco.leaf3.lst {
-    top: 2100px;
-    right: -200px;
+div.last-right-up {
+    top: 312%;
+    right: -5%;
     z-index: 1;
-    width: 35%;
-    transform: scaleX(-1) rotate(-10deg);
+    width: 13%;
+    transform: scaleX(-1) rotate(-12deg);
 }
 
 
