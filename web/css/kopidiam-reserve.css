@@ -1,6 +1,5 @@
 p.tertiary-b,
 p.category {
-    margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--tertiary);
@@ -18,15 +17,36 @@ p.category {
         url(../images/coffeebean-header.jpg);
 }
 
-/**section1*/
-div.intro {
-    text-align: center;
+.dark {
+    border-radius: 0px 0px 30px 30px;
 }
 
-div.info-cards {
+/**section1*/
+div.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+div div.intro h3 {
+    margin-bottom: 15px;
+}
+
+div.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+div.info {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    align-items: center;
+    gap: 6%;
 }
 
 img.decoline {
@@ -35,16 +55,18 @@ img.decoline {
 
 img.icon {
     width: 20%;
+    margin-bottom: 10px;
 }
 
-div.card {
+div.info-card-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     background-color: var(--light);
     border: 1px solid var(--grey-dark);
     padding: 30px;
     border-radius: 20px;
+    height: 330px;
 }
 
 /*section2&3*/
@@ -55,20 +77,30 @@ button.b-green {
 }
 
 img.fnb {
-    width: 20%;
+    width: 30%;
+    z-index: -1001;
+    position: absolute;
 }
 
 /**section2*/
-div.base {
+div.second-section,
+div.third-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
 
+div.base {
+    position: absolute;
     background-color: var(--tertiary);
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 p.price,
@@ -82,75 +114,97 @@ div.fnb-card {
     background-color: var(--faq);
     border-radius: 20px;
     padding: 20px;
-
+    position: relative;
+    height: 20vw;
 }
 
 div.fnb-card h4 {
     display: flex;
     align-items: center;
     z-index: 10;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50%;
 }
 
 img.fnb {
     width: 60%;
-    z-index: 1001;
+    z-index: 1;
 }
 
-.first {
-    position: relative;
+/*---------------------------*/
+/*image*/
+/*---------------------------*/
+img.first {
     right: 0px;
-
 }
 
+img.second {
+    right: 0px;
+}
+
+img.third {
+    right: -50px;
+}
+
+/*---------------------------*/
+/*Coffeenbeverage base*/
+/*---------------------------*/
+/*coffeenbeverage first row*/
 div.b-kopidiam,
 div.b-kopibising,
 div.b-caramellatte {
     position: absolute;
-    bottom: -760px;
+    top: -50px;
+    z-index: 1001;
 }
 
 div.b-kopidiam {
     position: absolute;
-    left: 200px;
+    left: 50px;
 }
 
 div.b-kopibising {
     position: absolute;
-    left: 600px;
+    left: 50px;
 }
 
 div.b-caramellatte {
     position: absolute;
-    left: 1000px;
+    left: 50px;
 }
 
 div.b-miloahkow,
 div.b-threelayermilktea,
 div.b-purecoffee {
     position: absolute;
-    bottom: -1100px;
+    top: -50px;
 
 }
 
 div.b-miloahkow {
     position: absolute;
-    left: 200px;
+    left: 50px;
 }
 
 div.b-threelayermilktea {
     position: absolute;
-    left: 600px;
+    left: 50px;
 }
 
 div.b-purecoffee {
     position: absolute;
-    left: 1000px;
+    left: 50px;
 }
 
+/*coffeenbeverage first row*/
 div.coffeenbeverage {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 63px 33px;
 }
 
 .coffeenbeverage .fnb-card:first-child {
@@ -169,17 +223,42 @@ div.coffeenbeverage {
     grid-column: span 2;
 }
 
-/* 2. Target the second-to-last container and make it span 3 columns */
-.coffeenbeverage .fnb-card:nth-last-child(2) {
+.coffeenbeverage .fnb-card:nth-child(5) {
     grid-column: span 2;
+
 }
 
-/* 3. Target the last container and make it span 3 columns */
 .coffeenbeverage .fnb-card:last-child {
     grid-column: span 2;
 }
 
+/*---------------------------*/
+/*Food Pastry base*/
+/*---------------------------*/
 /*foodpastry*/
+div.b-quaso,
+div.b-currypuff,
+div.b-chickenpie {
+    position: absolute;
+    top: -50px;
+
+}
+
+div.b-quaso {
+    position: absolute;
+    left: 50px;
+}
+
+div.b-currypuff {
+    position: absolute;
+    left: 50px;
+}
+
+div.b-chickenpie {
+    position: absolute;
+    left: 50px;
+}
+
 div.foodpastry {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -194,12 +273,26 @@ div.foodpastry {
     grid-column: span 2;
 }
 
+.foodpastry .fnb-card:nth-child(3) {
+    grid-column: span 2;
+}
+
 /* 3. Target the last container and make it span 3 columns */
 .foodpastry .fnb-card:last-child {
     grid-column: span 2;
 }
 
-/*section4*/
+/* ---------------------------------- */
+/* Section 4 */
+/* ---------------------------------- */
+div.fourth-section>div.wrapper {
+    padding-bottom: 40px;
+}
+
+div.fourth-section>div.dark {
+    border-radius: 30px 30px 0px 0px;
+}
+
 /* Container for the overall layout (to center text and gallery) */
 .store-gallery-section {
     text-align: center;
@@ -213,7 +306,6 @@ div.foodpastry {
 /* ---------------------------------- */
 /* The Gallery and Slides */
 /* ---------------------------------- */
-
 
 .gallery-wrapper {
     overflow: hidden;
@@ -302,4 +394,20 @@ button.b-brown {
     display: flex;
     margin: auto;
     margin-top: 41px;
+    margin-bottom: 120px;
+}
+
+
+@media (max-width: 1024px) {
+    .coffeenbeverage-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 90vw;
+    }
 }
