@@ -24,7 +24,7 @@
     align-self: center;
 }
 
-.group p:not(.small) {
+.intro .group p:not(.small) {
     margin-bottom: clamp(20px, 2vw, 25px);
 }
 
@@ -45,6 +45,7 @@
     align-items: center;
     padding: clamp(50px, 7vw, 100px) 0 clamp(160px, 22vw, 340px) 0;
     position: relative;
+    overflow-x: clip;
 }
 
 .team .group {
@@ -115,22 +116,22 @@
 }
 
 .deco.left-top {
-    top: -140px;
-    left: -280px;
+    top: -13%;
+    left: -25%;
     transform: scaleX(-1) rotate(-40deg);
     width: 40%;
 }
 
 .deco.left-bottom {
-    top: -140px;
-    left: -240px;
+    top: -1%;
+    left: 1%;
     transform: rotate(20deg);
     width: 50%;
 }
 
 .deco.right {
-    bottom: 0;
-    right: -325px;
+    bottom: 20%;
+    right: -27%;
     transform: rotate(-60deg);
     width: 50%;
 }
