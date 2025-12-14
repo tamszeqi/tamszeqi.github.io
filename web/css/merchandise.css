@@ -58,12 +58,13 @@
     align-items: center;
     gap: 100px;
     position: relative;
+    overflow-x: clip;
 }
 
 .deco {
-    width: 30%;
-    right: -100px;
-    bottom: 10px;
+    width: 20%;
+    right: -3%;
+    bottom: 5%;
 }
 
 .redmug {
@@ -92,8 +93,7 @@
     }
 
     .deco {
-        right: -50px;
-        bottom: -10px;
+        bottom: -7%;
     }
 }
 
@@ -140,8 +140,4 @@
         width: 400px;
     }
 
-    .deco {
-        width: 35%;
-        bottom: 5px;
-    }
 }
