@@ -275,8 +275,12 @@ p.subtitle {
     }
 
     /* ============ SECTION 3: FAQ ============ */
+
     .boxquestion {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .subtitle {
@@ -287,6 +291,10 @@ p.subtitle {
 
     .questionbox {
         text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
     }
 
     .question {
@@ -325,7 +333,7 @@ div.mid-right-leaf {
 div.last-left-leaf {
     bottom: -255%;
     left: -15%;
-    z-index: 1;
+    z-index: 2;
     width: 35%;
     transform: scaleY(-1)rotate(20deg);
 }
@@ -333,7 +341,7 @@ div.last-left-leaf {
 div.last-right-down {
     top: 330%;
     right: -1%;
-    z-index: 1;
+    z-index: 2;
     width: 12%;
     transform: scaleX(-1) rotate(10deg);
 }
@@ -342,7 +350,7 @@ div.last-right-down {
 div.last-right-up {
     top: 312%;
     right: -5%;
-    z-index: 1;
+    z-index: 2;
     width: 13%;
     transform: scaleX(-1) rotate(-12deg);
 }
