@@ -56,11 +56,9 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
 }
 
 body {
-    overflow-x: hidden !important;
     color: var(--black);
     background-color: var(--light);
 }
@@ -92,30 +90,6 @@ a {
 }
 
 /* === GLOBAL TYPOGRAPHY  === */
-.abril-fatface-regular {
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 h1,
 h2,
 h3,
@@ -175,19 +149,19 @@ p.subtitle {
 }
 
 p {
-    font-size: clamp(14px, 1.1vw, 16px);
-    line-height: clamp(21px, 1.6vw, 22.4px);
+    font-size: 16px;
+    line-height: 22.4px;
 }
 
 p.bold {
-    font-size: clamp(14px, 1.1vw, 16px);
-    line-height: clamp(21px, 1.6vw, 22.4px);
+    font-size: 16px;
+    line-height: 22.4px;
     font-weight: 700;
 }
 
 p.small {
-    font-size: clamp(12px, 0.9vw, 14px);
-    line-height: clamp(16.8px, 1.4vw, 19.6px);
+    font-size: 14px;
+    line-height: 19.6px;
 }
 
 /* === SITEWIDE ELEMENTS  === */

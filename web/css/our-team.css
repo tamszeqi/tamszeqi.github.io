@@ -24,7 +24,7 @@
     align-self: center;
 }
 
-.group p:not(.small) {
+.intro .group p:not(.small) {
     margin-bottom: clamp(20px, 2vw, 25px);
 }
 
@@ -45,6 +45,7 @@
     align-items: center;
     padding: clamp(50px, 7vw, 100px) 0 clamp(160px, 22vw, 340px) 0;
     position: relative;
+    overflow-x: clip;
 }
 
 .team .group {
