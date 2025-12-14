@@ -16,51 +16,48 @@ body {
 }
 
 .deco {
-    position: absolute;
-    inset: 0;
-    /* expand .deco to cover the whole wrapper */
     z-index: -2;
+    width: 12%;
     pointer-events: none;
 }
 
-.deco>div {
-    position: absolute;
-    width: 40%
-}
-
-.deco-left-up {
-    top: 5%;
+.deco.left-up {
+    top: 15%;
     left: -2%;
-    transform: rotate(10deg);
+    transform: scaleX(-1) rotate(-55deg);
 }
 
-.deco-left-down {
-    top: 50%;
-    left: -2.5%;
+.deco.left-down {
+    top: 35%;
+    left: 1%;
     transform: rotate(40deg);
-
 }
 
-.deco-right-up {
+.deco.right-up {
     right: -2%;
-    top: 10%;
+    top: 25%;
     transform: scaleX(-1) rotate(10deg);
 }
 
-/* right lower leaf */
-.deco-right-down {
-    top: 70%;
-    right: -2%;
-    transform: scaleX(-1) rotate(45deg);
+.deco.right-down {
+    top: 60%;
+    right: 1%;
+    transform: scaleX(-1) rotate(40deg);
 }
 
 .error-page-content {
     text-align: center;
 }
 
-.error-page-content img {
-    margin-bottom: -90px;
-    margin-top: -90px;
+.error-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four {
+    font-size: 400px;
+    line-height: 1;
 }
 
 /* DESCRIPTION TEXT */
