@@ -534,7 +534,6 @@ textarea {
 .deco {
     position: absolute;
     z-index: 1;
-    /* use % to set width */
 }
 
 /* TEXT GROUP */

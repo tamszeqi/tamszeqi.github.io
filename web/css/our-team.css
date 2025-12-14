@@ -116,24 +116,24 @@
 }
 
 .deco.left-top {
-    top: -13%;
-    left: -25%;
+    top: -5%;
+    left: -4%;
     transform: scaleX(-1) rotate(-40deg);
-    width: 40%;
+    width: 15%;
 }
 
 .deco.left-bottom {
-    top: -1%;
+    top: -5%;
     left: 1%;
     transform: rotate(20deg);
-    width: 50%;
+    width: 20%;
 }
 
 .deco.right {
-    bottom: 20%;
-    right: -27%;
+    bottom: 10%;
+    right: -2%;
     transform: rotate(-60deg);
-    width: 50%;
+    width: 15%;
 }
 
 .block-group {
