@@ -131,7 +131,7 @@ div.fnb-card h4 {
 }
 
 img.fnb {
-    width: 60%;
+    width: 65%;
     z-index: 1;
 }
 
@@ -150,6 +150,25 @@ img.third {
     right: -50px;
 }
 
+img.img--kopi-bising {
+    top: 50px;
+    width: 70%;
+}
+
+img.img--milo-ahkow {
+    top: -50px;
+    right: -20px;
+}
+
+img.img--three-layer-milk-tea {
+    top: -50px;
+    right: -20px;
+}
+
+img.img--pure-coffee {
+    top: 50px;
+}
+
 /*---------------------------*/
 /*Coffeenbeverage base*/
 /*---------------------------*/
@@ -159,7 +178,6 @@ div.b-kopibising,
 div.b-caramellatte {
     position: absolute;
     top: -50px;
-    z-index: 1001;
 }
 
 div.b-kopidiam {
@@ -201,34 +219,35 @@ div.b-purecoffee {
 }
 
 /*coffeenbeverage first row*/
-div.coffeenbeverage {
+div.coffeenbeverage,
+div.foodpastry {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 63px 33px;
 }
 
-.coffeenbeverage .fnb-card:first-child {
+.fnb-card:first-child {
     grid-column: span 2;
 }
 
-.coffeenbeverage .fnb-card:nth-child(2) {
+.fnb-card:nth-child(2) {
     grid-column: span 2;
 }
 
-.coffeenbeverage .fnb-card:nth-child(3) {
+.fnb-card:nth-child(3) {
     grid-column: span 2;
 }
 
-.coffeenbeverage .fnb-card:nth-child(4) {
+.fnb-card:nth-child(4) {
     grid-column: span 2;
 }
 
-.coffeenbeverage .fnb-card:nth-child(5) {
+.fnb-card:nth-child(5) {
     grid-column: span 2;
 
 }
 
-.coffeenbeverage .fnb-card:last-child {
+.fnb-card:last-child {
     grid-column: span 2;
 }
 
@@ -259,28 +278,6 @@ div.b-chickenpie {
     left: 50px;
 }
 
-div.foodpastry {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-}
-
-.foodpastry .fnb-card:first-child {
-    grid-column: span 2;
-}
-
-.foodpastry .fnb-card:nth-child(2) {
-    grid-column: span 2;
-}
-
-.foodpastry .fnb-card:nth-child(3) {
-    grid-column: span 2;
-}
-
-/* 3. Target the last container and make it span 3 columns */
-.foodpastry .fnb-card:last-child {
-    grid-column: span 2;
-}
 
 /* ---------------------------------- */
 /* Section 4 */
@@ -325,7 +322,6 @@ div.fourth-section>div.dark {
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
 
     /* CRITICAL: Use viewport width units for padding to match the screen edge */
     /* Remove the fixed padding: 0 15%; from the previous version. */
@@ -350,7 +346,7 @@ div.fourth-section>div.dark {
     flex: 0 0 70vw;
     height: 100vh;
     /* CRITICAL: Define a height for the slide container. 
-                     Using 'vh' (viewport height) is common for hero sections. */
+    Using 'vh' (viewport height) is common for hero sections. */
     scroll-snap-align: center;
     border-radius: 10px;
     overflow: hidden;
@@ -399,15 +395,158 @@ button.b-brown {
 
 
 @media (max-width: 1024px) {
-    .coffeenbeverage-group {
+
+    /*--------------------*/
+    /*Section 1*/
+    /*--------------------*/
+    div.info-card-content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        gap: 100px;
+        padding: 50px 100px 50px 100px;
+    }
+
+    div.info-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    div.info-card-content img {
+        position: static;
+    }
+
+    div.info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    div.info>img.decoline {
+        display: none;
+    }
+
+    /*--------------------*/
+    /*Section 2 & 3*/
+    /*--------------------*/
+    div.base {
+        position: static;
+        border-radius: 0px;
+        height: 60px;
+        width: 60px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    div.fnb-card h4 {
+        top: 35%;
+        text-align: left;
+    }
+
+    div.fnb-card {
+        display: flex;
+        flex-direction: column;
+        height: 30vw;
+    }
+
+    .fnb-card:first-child {
+        grid-column: span 3;
+    }
+
+    .fnb-card:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .fnb-card:nth-child(3) {
+        grid-column: span 3;
+    }
+
+    .fnb-card:nth-child(4) {
+        grid-column: span 3;
+    }
+
+    .fnb-card:nth-child(5) {
+        grid-column: span 3;
+
+    }
+
+    .fnb-card:last-child {
+        grid-column: span 3;
+    }
+
+    .slide {
+        height: 70vh;
     }
 }
 
 
 @media (max-width: 768px) {
+    /*--------------------*/
+    /*Section 1*/
+    /*--------------------*/
+
+
+
+    div.info-card-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+        padding: 50px;
+    }
+
+    div.info-card-content img {
+        margin: auto;
+    }
+
+
+
+    /*--------------------*/
+    /*Section 2 & 3*/
+    /*--------------------*/
+    div.base {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 30px;
+        width: 100px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    div.coffeenbeverage,
+    div.foodpastry {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 63px 33px;
+    }
+
+    img.fnb {
+        top: -20px;
+        width: 35%;
+        z-index: 1;
+    }
+
+    img.first {
+        right: 0px;
+    }
+
+    img.second {
+        right: 0px;
+    }
+
+    img.third {
+        right: 0px;
+    }
+
+    /*--------------------*/
+    /*Section 4*/
+    /*--------------------*/
     .slide {
-        flex: 0 0 90vw;
+        height: 50vh;
     }
 }
