@@ -19,7 +19,7 @@ body {
     position: absolute;
     inset: 0;
     /* expand .deco to cover the whole wrapper */
-    z-index: 1;
+    z-index: -2;
     pointer-events: none;
 }
 
@@ -29,28 +29,28 @@ body {
 }
 
 .deco-left-up {
-    top: 50px;
-    left: -200px;
+    top: 5%;
+    left: -2%;
     transform: rotate(10deg);
 }
 
 .deco-left-down {
-    top: 300px;
-    left: -200px;
+    top: 50%;
+    left: -2.5%;
     transform: rotate(40deg);
 
 }
 
 .deco-right-up {
-    right: -200px;
-    top: 50px;
+    right: -2%;
+    top: 10%;
     transform: scaleX(-1) rotate(10deg);
 }
 
 /* right lower leaf */
 .deco-right-down {
-    top: 300px;
-    right: -200px;
+    top: 70%;
+    right: -2%;
     transform: scaleX(-1) rotate(45deg);
 }
 
