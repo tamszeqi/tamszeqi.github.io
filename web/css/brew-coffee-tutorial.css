@@ -27,7 +27,7 @@ p.category {
 
 
 /*Section 1*/
-div.first-section {
+div.our-signature-coffee {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -173,8 +173,8 @@ div.number-base h5 {
     line-height: 1;
 }
 
-div.step-first-section,
-div.step-second-section {
+div.step--our-signature-coffee,
+div.step--step-by-step-brewing-instructions {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -188,11 +188,11 @@ div.methodstep {
 }
 
 /*Section 3*/
-div.third-section {
+div.you-did-it {
     text-align: center;
 }
 
-div.third-section h3 {
+div.you-did-it h3 {
     margin-bottom: 32px;
 }
 
@@ -241,7 +241,7 @@ div.person {
 
     /**section 1*/
 
-    div.first-section {
+    div.our-signature-coffee {
         display: none;
     }
 
@@ -291,8 +291,8 @@ div.person {
         margin-bottom: 30px;
     }
 
-    div.step-first-section,
-    div.step-second-section {
+    div.step--our-signature-coffee,
+    div.step--step-by-step-brewing-instructions {
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -367,15 +367,15 @@ div.person {
         gap: 50px;
     }
 
-    div.step-first-section,
-    div.step-second-section {
+    div.step--our-signature-coffee,
+    div.step-step-by-step-brewing-instructions {
         width: 100%;
     }
 
 }
 
 @media(min-width:1025px) {
-    div.first-section-responsive-small {
+    div.our-signature-coffee--responsive-small {
         display: none;
     }
 
