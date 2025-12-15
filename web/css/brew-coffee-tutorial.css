@@ -249,7 +249,7 @@ div.person {
         width: 100%;
     }
 
-    img.relative-s {
+    div.picntext img {
         position: static;
         width: 50%;
     }
@@ -334,7 +334,7 @@ div.person {
         gap: 30px;
     }
 
-    img.relative-s {
+    div.picntext img {
         width: 100%;
     }
 
@@ -375,11 +375,11 @@ div.person {
 }
 
 @media(min-width:1025px) {
-    div.first-section-s {
+    div.first-section-responsive-small {
         display: none;
     }
 
-    img.relative-s {
+    img.relative-reponsive-small {
         display: none;
     }
 
