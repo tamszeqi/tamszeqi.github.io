@@ -53,11 +53,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: clamp(150px, 25vw, 400px);
 }
 
-.four {
-    font-size: 400px;
+.four { /* em is a measurement that's relative to the font size, if font size = 400px, 2em = 800px */
+    font-size: 1em; /* The text inherits the font size from the parent */
     line-height: 1;
+}
+
+.error-number img {
+    width: 0.65em; /* The image scales with the text */
 }
 
 /* DESCRIPTION TEXT */
