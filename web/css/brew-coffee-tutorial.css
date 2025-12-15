@@ -375,11 +375,11 @@ div.person {
 }
 
 @media(min-width:1025px) {
-    div.our-signature-coffee--responsive-small {
+    div.our-signature-coffee--responsive-mobile {
         display: none;
     }
 
-    img.relative-reponsive-small {
+    img.relative-reponsive-mobile {
         display: none;
     }
 
