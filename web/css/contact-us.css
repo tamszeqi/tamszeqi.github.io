@@ -158,7 +158,7 @@ input {
 }
 
 .faqcontainer .group {
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     justify-content: center;
     max-width: 800px;
@@ -182,7 +182,6 @@ input {
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    border: none;
 }
 
 p.subtitle {
@@ -229,7 +228,7 @@ div.mid-right-leaf {
     transform: scaleY(-1) scaleX(-1);
 }
 
-.faq{
+.faq {
     z-index: 1;
 }
 
@@ -331,7 +330,7 @@ div.last-right-up {
     .boxquestion {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         gap: 20px;
     }
 
