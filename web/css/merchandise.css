@@ -19,6 +19,15 @@
     gap: 150px;
 }
 
+.special-items .b-green,
+.lifestyle-items .b-green {
+    margin-left: auto;
+    display: block;
+}
+
+.lifestyle-items .b-green {
+    margin-top: 40px;
+}
 
 .greenmug {
     margin-top: 20px;
@@ -68,6 +77,13 @@
         justify-content: center;
     }
 
+    .special-items .b-green,
+    .lifestyle-items .b-green {
+        justify-self: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
     .limited-mug {
         gap: 30px;
     }
@@ -77,8 +93,8 @@
     }
 
     .deco {
-        bottom: -2%;
-        right: 2%;
+        bottom: -8%;
+        right: 0;
         width: 18%;
     }
 }
@@ -99,6 +115,13 @@
 
     .group {
         margin-top: 50px;
+    }
+
+    .special-items .b-green,
+    .lifestyle-items .b-green {
+        margin-left: 0;
+        margin-top: 40px;
+        justify-self: auto;
     }
 
     .redmug {
