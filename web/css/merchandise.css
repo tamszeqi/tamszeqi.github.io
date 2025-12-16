@@ -93,7 +93,9 @@
     }
 
     .deco {
-        bottom: -7%;
+        bottom: -2%;
+        right: 2%;
+        width: 18%;
     }
 }
 
