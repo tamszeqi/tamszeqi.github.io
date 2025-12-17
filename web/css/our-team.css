@@ -246,6 +246,7 @@
 
 .check-icon-wrapper {
     background-color: var(--normal);
+    padding: 5px;
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.25);
 }
 

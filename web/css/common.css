@@ -738,6 +738,10 @@ textarea {
         gap: clamp(15px, 2vh, 20px);
     }
 
+    body.no-scroll {
+        overflow: hidden;
+    }
+
     /* FOOTER */
     .footer-top {
         flex-direction: column;
