@@ -307,7 +307,7 @@ footer {
     color: var(--white);
 }
 
-.contact-item {
+.contact-item a {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -359,6 +359,11 @@ footer {
     position: absolute;
     bottom: 90px;
     right: 0;
+}
+
+#join-team,
+#FAQ {
+    scroll-margin-top: 120px;
 }
 
 /* BUTTONS */
