@@ -10,7 +10,7 @@ p.category {
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: clamp(100px, 14vw, 200px);
 }
 
 .title {
@@ -27,7 +27,7 @@ p.category {
 
 
 /*Section 1*/
-div.our-signature-coffee {
+div.our-signature-coffee--section-desktop {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,11 +121,36 @@ div.banner-text {
 }
 
 /*Title*/
-div.method h3 {
+div.titleblock h3 {
     margin-bottom: 60px;
 }
 
+/*brewing */
+div.brewing-instructions {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
 /*Tutorial Steps*/
+.step-set.hidden {
+    display: none;
+}
+
+/* Showing the active step set */
+.step-set.active {
+    display: grid;
+}
+
+.step-set {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-column-gap: 50px;
+    gap: 30px;
+}
+
 .step-by-step {
     display: flex;
     align-items: flex-start;
@@ -171,20 +196,6 @@ div.number-base h5 {
     margin: 0;
     /* Important: Remove default h5 margins */
     line-height: 1;
-}
-
-div.step--our-signature-coffee,
-div.step--step-by-step-brewing-instructions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-}
-
-div.methodstep {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
 }
 
 /*Section 3*/
@@ -241,7 +252,7 @@ div.person {
 
     /**section 1*/
 
-    div.our-signature-coffee {
+    div.our-signature-coffee--section-desktop {
         display: none;
     }
 
@@ -281,7 +292,7 @@ div.person {
     }
 
     /*method*/
-    div.method {
+    div.brewing-instructions {
         display: flex;
         flex-direction: column;
         gap: 70px;
@@ -291,12 +302,6 @@ div.person {
         margin-bottom: 30px;
     }
 
-    div.step--our-signature-coffee,
-    div.step--step-by-step-brewing-instructions {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
 
     /*section 3*/
     img.deco {
@@ -335,7 +340,8 @@ div.person {
     }
 
     div.picntext img {
-        width: 100%;
+        width: 75%;
+        margin: auto;
     }
 
     /**second section*/
@@ -346,13 +352,8 @@ div.person {
 
     div.banner-img-container {
         width: 100%;
-        /* Make it full width of the banner */
         height: 200px;
-        /* <--- ADD A FIXED HEIGHT HERE (Adjust as needed) */
-        /* Also fix the border radius for the new stacked layout */
         border-radius: 30px 30px 0px 0px;
-
-        /* Optional: improve background image display */
         background-size: cover;
         background-position: center;
     }
@@ -361,21 +362,24 @@ div.person {
         width: 100%;
     }
 
-    div.methodstep {
+    div.methodstep>div#pour-over-steps.step-set.active {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
 
-    div.step--our-signature-coffee,
-    div.step-step-by-step-brewing-instructions {
-        width: 100%;
+    .step-set.active {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-column-gap: 0;
+        gap: 20px;
     }
 
 }
 
 @media(min-width:1025px) {
-    div.our-signature-coffee--responsive-mobile {
+    div.our-signature-coffee--section-mobile {
         display: none;
     }
 
