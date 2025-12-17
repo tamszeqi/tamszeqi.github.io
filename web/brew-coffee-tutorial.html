@@ -99,7 +99,7 @@
 
 
     <div class="wrapper">
-        <div class="our-signature-coffee">
+        <div class="our-signature-coffee--section-desktop">
             <img class="relative" src="./images/kopidiam-bct.png" alt="Signature Coffee - Kopi Diam">
             <div class="textblock">
                 <p class="category">Our signature Coffee</p>
@@ -125,7 +125,6 @@
                                     French
                                     press or pour-over device, a kettle, and a mug.</p>
                             </div>
-                            <p class="tertiary-b">Learn More</p>
                         </div>
                         <div class="coffeebean">
                             <div class="textgrp">
@@ -133,14 +132,13 @@
                                 <h6>Coffee Beans & Grind</h6>
                                 <p>Use KopiDiam single-origin or small-lot blend.</p>
                             </div>
-                            <p class="tertiary-b">Learn More</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="our-signature-coffee--responsive-mobile">
+        <div class="our-signature-coffee--section-mobile">
 
             <div class="textblock">
                 <p class="category">Our signature Coffee</p>
@@ -171,7 +169,6 @@
                                     French
                                     press or pour-over device, a kettle, and a mug.</p>
                             </div>
-                            <p class="tertiary-b">Learn More</p>
                         </div>
                         <div class="coffeebean">
                             <div class="textgrp">
@@ -179,7 +176,6 @@
                                 <h6>Coffee Beans & Grind</h6>
                                 <p>Use KopiDiam single-origin or small-lot blend.</p>
                             </div>
-                            <p class="tertiary-b">Learn More</p>
                         </div>
                     </div>
                 </div>
@@ -195,102 +191,142 @@
                     <p>Contact Number: 012-3457890</p>
                 </div>
             </div>
+            <section class="brewing-instructions" data-method="pour-over">
 
-            <div class="method">
-                <div class="titleblock">
-                    <p class="category">Method 1</p>
-                    <h3>Step-by-Step Brewing Instructions</h3>
-                    <button class="b-green">View French Press</button>
-                </div>
-                <div class="methodstep">
-                    <div class="step--our-signature-coffee">
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>1</h5>
+                <div class="method">
+                    <div class="titleblock">
+                        <p class="category">Method 1</p>
+                        <h3>Step-by-Step Brewing Instructions</h3>
+                        <button id="method-toggle" onclick="toggleMethod()" class="b-green">View French Press</button>
+                    </div>
+                    <div class="methodstep">
+                        <div id="pour-over-steps" class="step-set active">
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>1</h5>
+                                    </div>
                                 </div>
+                                <p>Boil water and let it cool slightly (~92-96°C).</p>
                             </div>
-                            <p>Boil water and let it cool slightly (~92-96°C).</p>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>2</h5>
+                                    </div>
+
+                                </div>
+                                <p>Place filter in dripper and rinse with hot water.</p>
+                            </div>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>3</h5>
+                                    </div>
+
+                                </div>
+                                <p>Add coffee to filter and gently shake to level.</p>
+                            </div>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>4</h5>
+                                    </div>
+
+                                </div>
+                                <p>Pour a little water to bloom for 30 seconds.</p>
+                            </div>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>5</h5>
+                                    </div>
+
+                                </div>
+                                <p>Slowly pour remaining water in circular motion until desired volume is reached.</p>
+                            </div>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>6</h5>
+                                    </div>
+
+                                </div>
+                                <p>Remove filter and serve.</p>
+                            </div>
                         </div>
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>2</h5>
+                        <div id="french-press-steps" class="step-set hidden">
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>1</h5>
+                                    </div>
                                 </div>
-
+                                <p>Add coarse coffee to the French press.</p>
                             </div>
-                            <p>Place filter in dripper and rinse with hot water.</p>
-                        </div>
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>3</h5>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>2</h5>
+                                    </div>
+
                                 </div>
-
+                                <p>Let steep for 4 minutes.</p>
                             </div>
-                            <p>Add coffee to filter and gently shake to level.</p>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>3</h5>
+                                    </div>
+                                </div>
+                                <p>Press plunger slowly and pour into your mug.</p>
+                            </div>
+                            <div class="step-by-step">
+                                <div class="number-step">
+                                    <div class="number-base">
+                                        <h5>4</h5>
+                                    </div>
+                                </div>
+                                <p>Press plunger slowly and pour into your mug.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="step--step-by-step-brewing-instructions">
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>4</h5>
-                                </div>
-
-                            </div>
-                            <p>Pour a little water to bloom for 30 seconds.</p>
-                        </div>
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>5</h5>
-                                </div>
-
-                            </div>
-                            <p>Slowly pour remaining water in circular motion until desired volume is reached.</p>
-                        </div>
-                        <div class="step-by-step">
-                            <div class="number-step">
-                                <div class="number-base">
-                                    <h5>6</h5>
-                                </div>
-
-                            </div>
-                            <p>Remove filter and serve.</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </section>
         </div>
 
-        <div class="you-did-it">
-            <p class="category">You did it!</p>
-            <h3>Sip, Relax, Diam Diam...</h3>
-            <div class="testimonial">
-                <img class="deco" src="./images/decoline-bct.png" alt="Deco">
-                <div class="t-content">
-                    <img class="quotation" src="./images/quotation.png" alt="Quotation">
-                    <p>Take a moment for yourself and savor a cup of KopiDiam. Let the rich aromas, smooth flavors, and
-                        carefully
-                        crafted blends guide you to a quiet, mindful pause in your day. Whether you're starting your
-                        morning
-                        or
-                        taking a mid-afternoon break, sip slowly, relax, and diam diam—because the best moments are
-                        often
-                        enjoyed
-                        quietly.</p>
-                    <div class="person">
-                        <h6>Tam Sze Qi</h6>
-                        <p class="fullcap">FOUNDER & CREATIVE DIRECTOR</p>
-                    </div>
-                </div>
-                <img class="deco" src="./images/decoline-bct.png" alt="Deco">
 
-            </div>
-        </div>
     </div>
 
+    <div class="you-did-it">
+        <p class="category">You did it!</p>
+        <h3>Sip, Relax, Diam Diam...</h3>
+        <div class="testimonial">
+            <img class="deco" src="./images/decoline-bct.png" alt="Deco">
+            <div class="t-content">
+                <img class="quotation" src="./images/quotation.png" alt="Quotation">
+                <p>Take a moment for yourself and savor a cup of KopiDiam. Let the rich aromas, smooth
+                    flavors, and
+                    carefully
+                    crafted blends guide you to a quiet, mindful pause in your day. Whether you're starting
+                    your
+                    morning
+                    or
+                    taking a mid-afternoon break, sip slowly, relax, and diam diam—because the best moments
+                    are
+                    often
+                    enjoyed
+                    quietly.</p>
+                <div class="person">
+                    <h6>Tam Sze Qi</h6>
+                    <p class="fullcap">FOUNDER & CREATIVE DIRECTOR</p>
+                </div>
+            </div>
+            <img class="deco" src="./images/decoline-bct.png" alt="Deco">
+
+        </div>
+    </div>
+    </div>
     <footer>
         <div class="footer-top">
             <!-- top section: slogan+button -->
@@ -346,6 +382,7 @@
                 </div>
             </div>
         </div>
+
         <!-- bottom -->
         <div class="footer-bottom-left">
             <div class="footer-logo">
@@ -357,7 +394,7 @@
             <a class="small back-to-top" href="#page-top">BACK TO TOP</a>
         </div>
     </footer>
-
+    <script src="js/brew-coffee-tutorial.js"></script>
     <script src="js/menu.js"></script>
 
 </body>
