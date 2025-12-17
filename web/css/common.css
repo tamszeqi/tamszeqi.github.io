@@ -361,9 +361,12 @@ footer {
     right: 0;
 }
 
-#join-team,
+#join-team {
+    scroll-margin-top: 24vh;
+}
+
 #FAQ {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 20vh;
 }
 
 /* BUTTONS */
