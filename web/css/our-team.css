@@ -215,9 +215,13 @@
     width: 35px;
 }
 
-.inquiry-info h6 {
+.inquiry-info p.subtitle {
     color: var(--white);
-    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.inquiry-info.mobile p.subtitle {
+    margin: 0;
 }
 
 .inquiry-info p {
@@ -317,10 +321,6 @@
         margin: 0;
         background-color: transparent;
         width: auto;
-    }
-
-    .inquiry-info.mobile h6 {
-        margin: 0;
     }
 
 }
