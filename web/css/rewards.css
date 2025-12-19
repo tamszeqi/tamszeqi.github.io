@@ -15,7 +15,7 @@ body {
     position: relative;
 }
 
-/* ===== REWARDS SECTION ===== */
+/* rewards section*/
 
 .top-paragraph {
     text-align: center;
@@ -76,6 +76,70 @@ body {
 
 .earn-stars h3 {
     margin-bottom: 40px;
+}
+
+
+/* More choices, more rewards */
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+}
+
+/* Heading text */
+.choices .text h3 {
+    margin-bottom: 15px;
+}
+
+.choices .text p {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* Grid container */
+.stars-rewards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Individual reward card */
+.square {
+    background-color: var(--sec-hover);
+    border-radius: 30px;
+    padding: 45px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    min-height: 340px;
+}
+
+/* Alternate darker cards */
+.square:nth-child(odd) {
+    background-color: var(--tertiary);
+}
+
+/* Reward image */
+.square img {
+    width: 140px;
+    height: auto;
+}
+
+/* Stars heading */
+.square h5 {
+    color: var(--white);
+    margin-top: 10px;
+}
+
+/* Reward description */
+.square p {
+    color: var(--white);
+    max-width: 220px;
+    margin: 0 auto;
 }
 
 /* === QUESTIONS SECTION === */
@@ -147,6 +211,15 @@ body {
         padding: 40px 30px;
         min-height: auto;
     }
+
+
+    .stars-rewards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .square {
+        min-height: 320px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -158,5 +231,23 @@ body {
     .question-number {
         font-size: 32px;
         min-width: 50px;
+    }
+
+    .choices {
+        gap: 60px;
+    }
+
+    .stars-rewards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .square {
+        padding: 40px 25px;
+        min-height: auto;
+    }
+
+    .square img {
+        width: 120px;
     }
 }
