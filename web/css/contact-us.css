@@ -14,6 +14,23 @@ div.wrapper {
 }
 
 /* === 第一个 section: Get In Touch === */
+.store-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.store-intro .small {
+    color: var(--tertiary);
+
+    margin-bottom: 10px;
+}
+
+.store-intro h3 {
+    margin-bottom: 20px;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
+}
+
 .getintouch {
     display: flex;
     /* 给他可以两派 */
