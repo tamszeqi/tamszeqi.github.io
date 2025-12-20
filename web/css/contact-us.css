@@ -177,11 +177,23 @@ input {
 }
 
 .answer {
+    display: none;
     color: var(--grey-dark);
     background-color: #FFFFFF;
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
+}
+
+.question.active .answer {
+    display: block;
+    animation: fadeIn 0.5s ease;
+
+}
+
+.question.active .questionbox {
+    border-radius: 10px 10px 0 0;
+    background-color: #Ceb880;
 }
 
 p.subtitle {
@@ -194,6 +206,15 @@ p.subtitle {
     width: 15px;
     display: flex;
     align-items: center;
+}
+
+.arrow img {
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.question.active .arrow img {
+    transform: rotate(180deg);
 }
 
 /* ============ DECO ============ */
