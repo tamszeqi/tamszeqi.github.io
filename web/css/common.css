@@ -169,6 +169,11 @@ p.small {
 .logo {
     min-width: 120px;
     width: clamp(150px, 15vw, 212px);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.03);
 }
 
 /* HEADER */
@@ -197,6 +202,34 @@ header {
     gap: clamp(0px, 1.5vw, 35px);
 }
 
+.item {
+    text-transform: uppercase;
+    padding: 12px clamp(2px, 0.5vw, 10px) 12px clamp(2px, 1vw, 15px);
+    font-size: clamp(12px, 1.1vw, 16px);
+    pointer-events: none;
+}
+
+.menu-item.home .item {
+    padding: 12px clamp(2px, 1vw, 15px);
+    pointer-events: auto;
+}
+
+.submenu a:hover {
+    color: var(--normal);
+}
+
+.item:hover {
+    color: var(--normal);
+}
+
+.item img {
+    transition: transform 0.2s;
+}
+
+.item img:hover {
+    transform: rotate(180deg);
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -204,28 +237,15 @@ header {
 }
 
 .nav-right p {
+    font-size: clamp(12px, 1.2vw, 16px);
     font-weight: 700;
     line-height: 22.4px;
     color: var(--white);
+    transition: transform 0.3s;
 }
 
-.item {
-    text-transform: uppercase;
-    padding: 12px clamp(2px, 0.5vw, 10px) 12px clamp(2px, 1vw, 15px);
-    font-size: clamp(12px, 1.1vw, 16px);
-    cursor: pointer;
-}
-
-.menu-item.home .item {
-    padding: 12px clamp(2px, 1vw, 15px);
-}
-
-.nav-right p {
-    font-size: clamp(12px, 1.2vw, 16px);
-}
-
-.nav-right a {
-    min-width: 40px;
+.nav-right p:hover {
+    transform: scale(1.05);
 }
 
 .menu-toggle {
@@ -270,6 +290,14 @@ footer {
     background-color: var(--secondary);
     padding: clamp(30px, 3vw, 40px) clamp(20px, 12vw, 170px);
     position: relative;
+}
+
+footer a {
+    transition: transform 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.05);
 }
 
 .footer-top {
@@ -337,6 +365,14 @@ footer {
     margin: 45px 0;
 }
 
+.footer-socials a {
+    transition: transform 0.3s;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+}
+
 .footer-social-link {
     display: flex;
     justify-content: center;
@@ -359,6 +395,11 @@ footer {
     position: absolute;
     bottom: 90px;
     right: 0;
+    transition: transform 0.3s;
+}
+
+.footer-bottom-right:hover {
+    transform: rotate(-90deg) scale(1.05);
 }
 
 #join-team {
@@ -381,6 +422,11 @@ button {
     text-transform: uppercase;
     color: var(--light);
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
 }
 
 .b-brown {
@@ -427,6 +473,7 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 19.6px;
+    transform: scale(1.05);
 }
 
 .tb.brown {
