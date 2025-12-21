@@ -179,14 +179,15 @@
                     <div class="password-row">
                         <!-- Password -->
                         <div class="password-box">
-                            <input type="input" id="password" placeholder="Password" required>
-                            <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
+                            <input type="password" placeholder="Password" required>
+                            <img src="images/invisible.png" class="eye-icon" onclick="togglePassword(this)"
+                                alt="toggle-icon">
                         </div>
-
                         <!-- Confirm Password -->
                         <div class="password-box">
-                            <input type="input" id="Cpassword" placeholder="Confirm Password" required>
-                            <img src="images/invisible.png" class="eye-icon" alt="toggle-icon">
+                            <input type="password" placeholder="Confirm Password" required>
+                            <img src="images/invisible.png" class="eye-icon" onclick="togglePassword(this)"
+                                alt="toggle-icon">
                         </div>
                     </div>
 
@@ -289,6 +290,20 @@
         </div>
     </footer>
 
+    <!-- password eye-icon -->
+    <script>
+        function togglePassword(icon) {
+            const input = icon.previousElementSibling;
+
+            if (input.type === "password") {
+                input.type = "text";
+                icon.src = "images/visible.png";
+            } else {
+                input.type = "password";
+                icon.src = "images/invisible.png";
+            }
+        }
+    </script>
 
     <script src="js/menu.js"></script>
 
