@@ -10,6 +10,8 @@ body {
         url('../images/header-mobile-order-and-pay.jpg');
 }
 
+
+/* top wrapper */
 .top {
     display: flex;
     flex-direction: column;
@@ -51,4 +53,36 @@ body {
 .orderahead.text a {
     text-decoration: underline;
     font-weight: 500;
+}
+
+/* middle part */
+.light>h3 {
+    text-align: center;
+    max-width: 40%;
+    justify-content: center;
+}
+
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(40px, 6vw, 80px);
+    margin-top: 2%;
+    margin-bottom: clamp(60px, 8vw, 100px);
+}
+
+.firststep,
+.secondstep,
+.thirdstep,
+.fourthstep,
+.fifthstep,
+.sixthstep,
+.seventhstep {
+    display: flex;
+    background-color: #FFF6DE;
+    border-radius: 24px;
+    max-width: 277px;
+    min-height: 173px;
+    padding: 24px;
+    align-items: center;
 }
