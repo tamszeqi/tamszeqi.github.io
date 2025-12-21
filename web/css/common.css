@@ -520,6 +520,7 @@ input {
 
 textarea {
     width: 100%;
+    outline: none;
     margin-bottom: 23px;
     border-radius: 6px;
     font-family: var(--text);
