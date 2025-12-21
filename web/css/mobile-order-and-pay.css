@@ -9,3 +9,46 @@ body {
 
         url('../images/header-mobile-order-and-pay.jpg');
 }
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(80px, 10vw, 140px);
+}
+
+.orderahead,
+.morerewards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(40px, 6vw, 80px);
+}
+
+/*images*/
+.order-ahead-img,
+.more-rewards-img {
+    width: 45%;
+    max-width: 520px;
+}
+
+/* === TEXT BLOCKS === */
+.orderahead.text,
+.morerewards.text {
+    width: 45%;
+    max-width: 480px;
+}
+
+.orderahead.text h3,
+.morerewards.text h3 {
+    margin-bottom: 20px;
+}
+
+.orderahead.text p,
+.morerewards.text p {
+    color: var(--grey-dark);
+}
+
+.orderahead.text a {
+    text-decoration: underline;
+    font-weight: 500;
+}
