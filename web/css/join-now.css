@@ -135,7 +135,16 @@ body {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.75;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.password-box .eye-icon:hover {
+    opacity: 1;
+}
+
+.password-box .eye-icon:active {
+    transform: translateY(-50%) scale(0.9);
 }
 
 .terms-and-conditions {
