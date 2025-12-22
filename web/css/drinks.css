@@ -27,6 +27,7 @@
 .kopi-cards {
     display: flex;
     justify-content: center;
+    gap: 60px;
 }
 
 .kopi-items {
@@ -59,7 +60,7 @@ p.price {
 }
 
 .kopi-items h5 {
-    margin: 0 40px;
+    margin: 0 15px;
     background: #470000;
     color: white;
     padding: 20px;
