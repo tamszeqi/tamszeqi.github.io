@@ -51,9 +51,9 @@
 
 .paths .deco.left {
     transform: scaleX(-1) rotate(-55deg);
-    width: 50%;
-    top: -5%;
-    left: -30%;
+    width: 25%;
+    top: -3%;
+    left: -12%;
 }
 
 .paths .deco.right {
@@ -63,7 +63,7 @@
     right: -4%;
 }
 
-.paths .group, .career-paths, .retail {
+.paths .group, .career-paths, .career {
     z-index: 1;
 }
 
@@ -83,13 +83,34 @@
     margin-bottom: clamp(20px, 3.5vw, 40px);
 }
 
-.career-paths .retail-teams {
-    background-color: var(--tertiary) !important;
+.career-paths .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--tertiary);
+    border-radius: 20px;
+    background-color: transparent;
+    padding: clamp(10px, 1.5vw, 20px);
+    width: 0;
+    min-width: 0;
+    flex: 1;
+    gap: 15px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.career-paths .box:hover {
+    transform: scale(1.05);
+}
+
+.career-paths .box.active {
+    background-color: var(--tertiary);
     position: relative;
     z-index: 1;
 }
 
-.career-paths .retail-teams::after { /* ghost element */
+.career-paths .box.active::after { /* arrow */
     content: "";
     position: absolute;
     width: 30px;
@@ -102,24 +123,23 @@
     z-index: -1; 
 }
 
-.retail-teams .paths-text {
-    color: var(--white);
+.career-paths .box .icon-green {
+    display: block;
+}
+.career-paths .box .icon-white {
+    display: none;
 }
 
-.career-paths .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--tertiary);
-    border-radius: 20px;
-    background-color: transparent;
-    padding: clamp(10px, 1.5vw, 20px);
-    width: 0; /* Forces all boxes to be equal */
-    min-width: 0;
-    flex: 1;
-    gap: 15px;
-    cursor: pointer;
+.career-paths .box.active .icon-green {
+    display: none;
+}
+
+.career-paths .box.active .icon-white {
+    display: block;
+}
+
+.career-paths .box.active .paths-text {
+    color: var(--white);
 }
 
 .career-paths .box img {
@@ -136,7 +156,7 @@
     white-space: nowrap;
 }
 
-.retail {
+.career {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -147,20 +167,20 @@
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
-.retail .image {
-    width: 60%;
+.career .image {
+    width: 50%;
 }
 
-.retail-desc {
+.career-desc {
     align-self: center;
     padding-left: clamp(15px, 3vw, 40px);
 }
 
-.retail-desc h5 {
+.career-desc h5 {
     margin-bottom: clamp(15px, 2vw, 25px);
 }
 
-.retail-desc button {
+.career-desc button {
     margin-top: clamp(40px, 4.2vw, 60px);
 }
 
@@ -171,6 +191,7 @@
 .benefits {
     display: flex;
     align-items: stretch;
+    position: relative;
 }
 
 .benefits .image {
@@ -221,18 +242,18 @@
 }
 
 .deco.left-top {
-    top: -130px;
-    left: -310px;
+    top: -5%;
+    left: -5%;
     transform: scaleX(-1) rotate(-40deg);
-    width: 40%;
+    width: 13%;
     z-index: -1;
 }
 
 .deco.left-bottom {
-    top: -130px;
-    left: -270px;
+    top: -5%;
+    left: -2%;
     transform: rotate(20deg);
-    width: 50%;
+    width: 15%;
     z-index: -1;
 }
 
