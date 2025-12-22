@@ -2,6 +2,7 @@
 const toggleButton = document.getElementById('method-toggle');
 const pourOverSteps = document.getElementById('pour-over-steps');
 const frenchPressSteps = document.getElementById('french-press-steps');
+const methodLabel = document.getElementById('method-label');
 
 function toggleMethod() {
     // 1. Check which method is currently active
@@ -20,6 +21,8 @@ function toggleMethod() {
         // b. Change button text
         toggleButton.textContent = 'VIEW POUR OVER';
 
+        methodLabel.textContent = 'Method 2';
+
     } else {
         // --- SWITCH TO POUR OVER ---
 
@@ -32,5 +35,7 @@ function toggleMethod() {
 
         // b. Change button text
         toggleButton.textContent = 'VIEW FRENCH PRESS';
+
+        methodLabel.textContent = 'Method 1';
     }
 }

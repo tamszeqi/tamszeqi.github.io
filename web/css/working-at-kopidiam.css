@@ -35,6 +35,10 @@
     padding-bottom: clamp(50px, 7vw, 100px)
 }
 
+.dark {
+    overflow-x: clip;
+}
+
 .paths {
     margin: 0 clamp(-170px, -12vw, -20px);
     padding-bottom: clamp(90px, 14vw, 140px);
@@ -48,15 +52,15 @@
 .paths .deco.left {
     transform: scaleX(-1) rotate(-55deg);
     width: 50%;
-    top: -210px;
-    left: -250px;
+    top: -5%;
+    left: -30%;
 }
 
 .paths .deco.right {
     transform: rotate(-55deg);
-    width: 43%;
-    bottom: -240px;
-    right: -290px;
+    width: 15%;
+    bottom: -12%;
+    right: -4%;
 }
 
 .paths .group, .career-paths, .retail {
@@ -197,6 +201,7 @@
 }
 
 .check-icon-wrapper {
+    padding: 5px;
     background-color: var(--white-20);
 }
 

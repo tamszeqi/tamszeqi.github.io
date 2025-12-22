@@ -69,6 +69,11 @@
     position: relative;
     width: calc((100% - 80px) / 3);
     min-width: 200px;
+    transition: transform 0.3s;
+}
+
+.teammate:hover {
+    transform: scale(1.05);
 }
 
 .teammate-photo {
@@ -171,6 +176,11 @@
     position: absolute;
     top: clamp(-23px, -1.6vw, -10px);
     right: clamp(-65px, -4.5vw, -20px);
+    transition: transform 0.3s;
+}
+
+.inquiries-card:hover {
+    transform: scale(1.05);
 }
 
 .inquiries {
