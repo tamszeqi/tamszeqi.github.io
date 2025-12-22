@@ -15,6 +15,18 @@
     margin-bottom: 20px;
 }
 
+.drinks-img {
+    overflow: hidden;
+}
+
+.drinks-img img {
+    transition: transform 0.4s ease;
+}
+
+.drinks-img img:hover {
+    transform: scale(1.1);
+}
+
 /*Kopi section*/
 .kopi-subtitle {
     justify-items: center;
@@ -54,7 +66,7 @@ p.price {
     color: var(--white);
 }
 
-.kopi-items img {
+.kopi-items .drinks-img {
     margin-top: 100px;
     margin-bottom: auto;
 }
