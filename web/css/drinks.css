@@ -180,7 +180,7 @@ p.price {
 .refreshing-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 100px;
+    gap: 30px 120px;
     justify-content: center;
 }
 
@@ -219,6 +219,10 @@ p.price {
     .teh-items h5 {
         margin: 0 20px;
     }
+
+    p.price {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -234,6 +238,7 @@ p.price {
     .price-tag {
         padding: 0 20px;
     }
+
 
     .teh-cards {
         flex-direction: column;
