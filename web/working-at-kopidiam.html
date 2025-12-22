@@ -62,7 +62,7 @@
                     <img class="arrow-down" src="images/arrow-icon-down.png" alt="arrow-down">
                 </div>
                 <div class="submenu">
-                    <a href="working-at-kopidiam.html">Working at KopiDiam</a>
+                    <a class="done" href="working-at-kopidiam.html">Working at KopiDiam</a>
                     <a class="done" href="our-team.html">Our Team</a>
                 </div>
             </div>
@@ -81,7 +81,9 @@
         </nav>
         <div class="nav-right">
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-            <p>+6012-345 6789</p>
+            <a href="tel:+60379721333">
+                <p>+6012-345 6789</p>
+            </a>
         </div>
     </header>
 
@@ -107,11 +109,21 @@
             <img class="image" src="images/top-view-baristas.jpg" alt="top-view-baristas">
         </div>
         <div class="companies">
-            <img src="images/rainforest-alliance.png" alt="rainforest-alliance">
-            <img src="images/book-xcess.png" alt="book-xcess">
-            <img src="images/boh.png" alt="boh">
-            <img src="images/royal-selangor.png" alt="royal-selangor">
-            <img src="images/inside-scoop.png" alt="inside-scoop">
+            <a href="https://rainforest-alliance.org" target="blank">
+                <img src="images/rainforest-alliance.png" alt="rainforest-alliance">
+            </a>
+            <a href="https://www.bookxcess.com" target="blank">
+                <img src="images/book-xcess.png" alt="book-xcess">
+            </a>
+            <a href="https://bohtea.com" target="blank">
+                <img src="images/boh.png" alt="boh">
+            </a>
+            <a href="https://www.royalselangor.com" target="blank">
+                <img src="images/royal-selangor.png" alt="royal-selangor">
+            </a>
+            <a href="https://www.insidescoop.com.my" target="blank">
+                <img src="images/inside-scoop.png" alt="inside-scoop">
+            </a>
         </div>
         <div class="wrapper paths dark">
             <div class="deco left">
@@ -124,62 +136,123 @@
                 <p class="small">CAREER PATHS</p>
                 <h4>Explore Our Teams</h4>
                 <p>Whether you're a people person, a coffee expert, or a creative mind, there's a place for you to grow
-                    on our team.</p>
+                    in our team.</p>
             </div>
             <div class="career-paths">
-                <div class="retail-teams box">
-                    <img src="images/retail-teams.png" alt="shop-icon">
+                 <div class="box active" onclick="openTab(this, 'content-retail')">
+                    <img class="icon-green" src="images/retail-green.png" alt="icon">
+                    <img class="icon-white" src="images/retail-white.png" alt="icon">
                     <div class="paths-text">
                         <span>RETAIL</span>
                         <span>TEAMS</span>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/roastery-production.png" alt="cup-icon">
+                <div class="box" onclick="openTab(this, 'content-roastery')">
+                    <img class="icon-green" src="images/roastery-green.png" alt="icon">
+                    <img class="icon-white" src="images/roastery-white.png" alt="icon">
                     <div class="paths-text">
                         <span>ROASTERY &</span>
                         <span>PRODUCTION</span>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/corporate-creative.png" alt="bulb-icon">
+                <div class="box" onclick="openTab(this, 'content-corporate')">
+                    <img class="icon-green" src="images/corporate-green.png" alt="icon">
+                    <img class="icon-white" src="images/corporate-white.png" alt="icon">
                     <div class="paths-text">
                         <span>CORPORATE &</span>
                         <span>CREATIVE</span>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/digital-technology.png" alt="tech-icon">
+                <div class="box" onclick="openTab(this, 'content-digital')">
+                    <img class="icon-green" src="images/digital-green.png" alt="icon">
+                    <img class="icon-white" src="images/digital-white.png" alt="icon">
                     <div class="paths-text">
                         <span>DIGITAL &</span>
                         <span>TECHNOLOGY</span>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/coffee-sourcing.png" alt="beans-icon">
+                <div class="box" onclick="openTab(this, 'content-sourcing')">
+                    <img class="icon-green" src="images/sourcing-green.png" alt="icon">
+                    <img class="icon-white" src="images/sourcing-white.png" alt="icon">
                     <div class="paths-text">
                         <span>COFFEE</span>
                         <span>SOURCING</span>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/marketing-events.png" alt="calendar-icon">
+                <div class="box" onclick="openTab(this, 'content-marketing')">
+                    <img class="icon-green" src="images/marketing-green.png" alt="icon">
+                    <img class="icon-white" src="images/marketing-white.png" alt="icon">
                     <div class="paths-text">
                         <span>MARKETING &</span>
                         <span>EVENTS</span>
                     </div>
                 </div>
             </div>
-            <div class="retail">
-                <div class="retail-desc">
+            <!-- 1. RETAIL (visible by default) -->
+            <div id="content-retail" class="career tab-content">
+                <div class="career-desc">
                     <h5>Working In Our Cafes</h5>
                     <p>Be the face of KopiDiam. Our retail teams are passionate hosts who create a welcoming sanctuary
                         for our guests, crafting perfect coffee and building community one cup at a time.<br><br>You'll
                         receive comprehensive training in the art of coffee, with clear career paths to help you grow
                         from a talented team member into a future leader within our cafes and beyond.</p>
-                    <button class="tb green">Read more</button>
                 </div>
-                <img class="image" src="images/serving-coffee.jpg" alt="serving-coffee">
+                <img class="image" src="images/retail.jpg" alt="retail">
+            </div>
+            <!-- 2. ROASTERY -->
+            <div id="content-roastery" class="career tab-content" style="display: none;">
+                <div class="career-desc">
+                    <h5>The Art of Roasting</h5>
+                    <p>Master the heat and the bean. Our roasters and production team are the guardians of quality, 
+                        turning green beans into the perfect roast profile that defines KopiDiam.<br><br>
+                        Join a team dedicated to precision, science, and the sensory art of coffee. You will work with state-of-the-art 
+                        equipment and ensure every bag of beans meets our gold standard.</p>
+                </div>
+                <img class="image" src="images/roastery.jpg" alt="roastery">
+            </div>
+            <!-- 3. CORPORATE -->
+            <div id="content-corporate" class="career tab-content" style="display: none;">
+                <div class="career-desc">
+                    <h5>Headquarters & Strategy</h5>
+                    <p>Drive the brand forward. From HR and Finance to our Creative Studio, our corporate team 
+                        builds the infrastructure that allows our cafes to thrive.<br><br>
+                        We look for strategic thinkers and creative problem solvers who share our passion for 
+                        people and coffee. Help us shape the future of KopiDiam.</p>
+                </div>
+                <img class="image" src="images/corporate.jpg" alt="corporate">
+            </div>
+            <!-- 4. DIGITAL -->
+            <div id="content-digital" class="career tab-content" style="display: none;">
+                <div class="career-desc">
+                    <h5>Tech & Innovation</h5>
+                    <p>Innovating the future of coffee. Our tech team builds the digital experiences that connect 
+                        our customers to their daily brew, from our mobile app to our loyalty platforms.<br><br>
+                        If you love coding, data analysis, or UX design, join us in creating seamless digital 
+                        solutions that enhance the human connection of coffee.</p>
+                </div>
+                <img class="image" src="images/digital.jpg" alt="digital">
+            </div>
+            <!-- 5. SOURCING -->
+            <div id="content-sourcing" class="career tab-content" style="display: none;">
+                <div class="career-desc">
+                    <h5>Global Coffee Sourcing</h5>
+                    <p>Traveling the globe for the perfect cup. Our sourcing team builds relationships with farmers 
+                        and ensures we are purchasing ethically and sustainably.<br><br>
+                        This role is for those with a deep understanding of agronomy and a passion for 
+                        fair trade. You will be the bridge between the farm and the cafe.</p>
+                </div>
+                <img class="image" src="images/sourcing.jpg" alt="sourcing">
+            </div>
+            <!-- 6. MARKETING -->
+            <div id="content-marketing" class="career tab-content" style="display: none;">
+                <div class="career-desc">
+                    <h5>Brand & Storytelling</h5>
+                    <p>Sharing our story with the world. Our marketing team crafts the campaigns, events, and 
+                        stories that bring the KopiDiam brand to life.<br><br>
+                        From social media management to organizing community coffee tastings, you will be 
+                        the voice that engages and excites our loyal customers.</p>
+                </div>
+                <img class="image" src="images/marketing.jpg" alt="marketing">
             </div>
         </div>
     </div>
@@ -228,17 +301,17 @@
                 entire workplace culture.</p>
         </div>
         <div class="sqr-group">
-            <div class="sqr-img-btn mission">
+            <div class="sqr-img mission">
                 <h4>Our Mission</h4>
-                <img src="images/large-arrow-side.png" alt="arrow-side">
+                <p>To create a welcoming space where every guest feels valued.</p>
             </div>
-            <div class="sqr-img-btn vision">
+            <div class="sqr-img vision">
                 <h4>Our Vision</h4>
-                <img src="images/large-arrow-side.png" alt="arrow-side">
+                <p>To be a global leader in sustainable coffee culture.</p>
             </div>
-            <div class="sqr-img-btn values">
+            <div class="sqr-img values">
                 <h4>Our Values</h4>
-                <img src="images/large-arrow-side.png" alt="arrow-side">
+                <p>Integrity, Sustainability, Excellence, and Respect.</p>
             </div>
         </div>
         <div class="statsbar">
@@ -353,6 +426,7 @@
 
 
     <script src="js/menu.js"></script>
+    <script src="js/working-at-kopidiam.js"></script>
 
 </body>
 

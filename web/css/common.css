@@ -466,6 +466,8 @@ button:hover {
     border: 4px solid var(--sec-active);
 }
 
+/* text buttons
+
 .tb {
     padding: 0;
     background-color: transparent;
@@ -500,13 +502,15 @@ button:hover {
     color: var(--sec-active)
 }
 
-/* SQUARE IMAGE BUTTONS */
+*/
+
+/* DARK SQUARE IMAGE */
 .sqr-group {
     display: flex;
     justify-content: space-between;
 }
 
-.sqr-img-btn {
+.sqr-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -517,13 +521,23 @@ button:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    gap: clamp(20px, 3.5vw, 40px);
+    gap: 25px;
     border-radius: 20px;
-    cursor: pointer;
+    padding: 20px;
+    transition: transform 0.3s;
 }
 
-.sqr-img-btn h4 {
+.sqr-img:hover {
+    transform: scale(1.05);
+}
+
+.sqr-img h4 {
     color: var(--white);
+}
+
+.sqr-img p {
+    color: var(--white);
+    min-height: 25%;
 }
 
 /* SEARCH BAR */
@@ -650,6 +664,11 @@ textarea {
     width: 100%;
     max-width: clamp(100px, 15vw, 180px);
     object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.companies img:hover {
+    transform: scale(1.1);
 }
 
 /* CHECKLIST */
@@ -837,13 +856,13 @@ textarea {
         display: none;
     }
 
-    /* SQUARE IMAGE BUTTONS */
+    /* DARK SQUARE IMAGE */
     .sqr-group {
         flex-direction: column;
         gap: clamp(15px, 2.5vw, 30px);
     }
 
-    .sqr-img-btn {
+    .sqr-img {
         width: 100%;
     }
 
@@ -858,6 +877,10 @@ textarea {
 
 /* TABLET LANDSCAPE */
 @media screen and (max-width: 1024px) {
+
+    .sqr-img p {
+        min-height: 35%;
+    }
 
     .wrapper,
     footer {
