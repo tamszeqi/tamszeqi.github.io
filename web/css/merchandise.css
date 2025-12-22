@@ -32,21 +32,33 @@
 .greenmug {
     margin-top: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 .greenmug img {
     width: 50%;
+    transition: transform 0.4s ease;
 }
 
+.greenmug img:hover {
+    transform: scale(1.1);
+}
 
 .clothes {
     display: flex;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .clothes img {
     width: 33%;
+    transition: transform 0.4s ease;
 }
+
+.clothes img:hover {
+    transform: scale(1.1);
+}
+
 
 .lifestyle-items p {
     margin-top: 50px;
@@ -69,6 +81,14 @@
 
 .redmug {
     max-width: 45%;
+}
+
+.redmug img {
+    width: 100%;
+}
+
+.phone-size {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -142,4 +162,11 @@
         width: 400px;
     }
 
+    .phone-size {
+        display: block;
+    }
+
+    .desktop-size {
+        display: none
+    }
 }
