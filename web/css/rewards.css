@@ -12,14 +12,18 @@ body {
 
 .normal {
     border-radius: 0;
-    position: relative;
+    border-radius: 0px 0px 30px 30px;
 }
 
 /* Earn Stars section */
-.wrapper.dark.top {
+.dark.top {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 clamp(-170px, -12vw, -20px);
+    position: relative;
+    top: 100px;
+
 }
 
 .earn-stars {
@@ -106,7 +110,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 80px;
+    gap: 20px;
     text-align: center;
 }
 
@@ -165,8 +169,8 @@ body {
 }
 
 /* === QUESTIONS SECTION === */
-.questions-section h2 {
-    margin-bottom: 30px;
+.questions-section h3 {
+    margin: 50px 0 20px;
 }
 
 .questions-list {
