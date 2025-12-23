@@ -204,13 +204,13 @@ input {
 
 .question.active .answer {
     display: block;
-    animation: fadeIn 0.5s ease;
+    animation: transform 0.5s ease;
 
 }
 
 .question.active .questionbox {
     border-radius: 10px 10px 0 0;
-    background-color: #Ceb880;
+
 }
 
 p.subtitle {

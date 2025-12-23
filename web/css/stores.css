@@ -16,22 +16,13 @@ div.wrapper {
 /* ---  HEADQUARTERS  --- */
 .store-intro {
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .store-intro .small {
     color: var(--tertiary);
-    margin-bottom: 10px;
-}
-
-.store-intro h3 {
-    margin-bottom: 20px;
-    font-size: clamp(32px, 5vw, 48px);
-
 }
 
 .headquarters {
-    margin-top: 20px;
     margin-bottom: 100px;
 
 }
@@ -46,6 +37,7 @@ div.wrapper {
     height: auto;
     border-radius: 20px;
     object-fit: cover;
+    margin-top: 25px;
 
 }
 
@@ -58,13 +50,6 @@ div.wrapper {
 
 .detail-column {
     flex: 1;
-}
-
-
-.detail-column.middle-line {
-    border-left: 2px solid var(--tertiary);
-    border-right: 2px solid var(--tertiary);
-    padding: 0 30px;
 }
 
 
@@ -234,7 +219,7 @@ div.wrapper {
     transform: translateY(-5px);
 }
 
-.delivery-card h4 {
+.delivery-card h6 {
     color: var(--white);
     margin-bottom: 20px;
 }
