@@ -29,3 +29,20 @@ window.addEventListener('load', () => {
     slides[1].scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'center' });
     currentSlideIndex = 1;
 });
+
+
+// Wait until the entire page content is loaded
+window.addEventListener('load', function () {
+    // Get the elements we need
+    const galleryContainer = document.getElementById('galleryContainer');
+    const firstSlide = document.getElementById('slide-1');
+
+    // Check if the elements exist to avoid errors
+    if (galleryContainer && firstSlide) {
+        // Calculate the width of the first slide plus its horizontal margins (10px on each side)
+        const scrollOffset = firstSlide.offsetWidth + 20;
+
+        // Set the initial scroll position of the container
+        galleryContainer.scrollLeft = scrollOffset;
+    }
+});
