@@ -21,3 +21,20 @@ header {
 .submenu {
     color: var(--white);
 }
+
+/* TABLET PORTRAIT & MOBILE */
+@media screen and (max-width: 768px) {
+
+    button {
+        display: none;
+    }
+
+    header::before {
+        background-color: var(--normal);
+    }
+
+    .menu-toggle {
+        filter: invert(80%);
+    }
+
+}
