@@ -284,7 +284,6 @@ div.b-chickenpie {
 div.b-quaso {
     position: absolute;
     left: 50px;
-    top: -30px;
 }
 
 div.b-currypuff {
@@ -297,6 +296,9 @@ div.b-chickenpie {
     left: 50px;
 }
 
+img.img--quaso {
+    top: -20px;
+}
 
 /* ---------------------------------- */
 /* Section 4 */
@@ -500,11 +502,10 @@ button.b-brown {
         height: 70vh;
     }
 
-    div.b-quaso {
-        position: absolute;
-        left: 50px;
-        top: 0px;
+    img.fnb {
+        right: -70px;
     }
+
 }
 
 
