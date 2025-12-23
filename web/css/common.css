@@ -636,6 +636,11 @@ textarea {
     display: flex;
     align-items: flex-end;
     gap: 12px;
+    transition: transform 0.3s;
+}
+
+.stats:hover {
+    transform: scale(1.1);
 }
 
 .stats h2 {
