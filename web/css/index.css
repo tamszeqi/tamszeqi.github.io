@@ -23,12 +23,12 @@ header {
 }
 
 .title.home-t {
-    min-height: clamp(300px, 70vh, 765px);
+    min-height: 100vh;
     background-image:  linear-gradient(var(--black-50), var(--black-50)), url('../images/header-home.jpg');
 }
 
 .home-t p {
-    max-width: 650px;
+    max-width: 750px;
     padding: 0 50px 0 50px;
     color: var(--white);
 }
