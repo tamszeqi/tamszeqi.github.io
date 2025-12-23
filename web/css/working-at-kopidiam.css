@@ -101,7 +101,7 @@
 }
 
 .career-paths .box:hover {
-    transform: scale(1.05);
+    transform: translateY(-15px);
 }
 
 .career-paths .box.active {
