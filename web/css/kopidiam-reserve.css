@@ -224,6 +224,7 @@ div.foodpastry {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 63px 33px;
+    align-items: center;
 }
 
 .fnb-card:first-child {
@@ -476,6 +477,8 @@ button.b-brown {
 
     .fnb-card:last-child {
         grid-column: span 3;
+        display: flex;
+        justify-content: center;
     }
 
     .slide {
