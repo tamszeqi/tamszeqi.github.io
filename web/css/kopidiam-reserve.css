@@ -7,6 +7,14 @@ body {
     /* Optional but good practice */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.kopidiam-food-reserve-section {
+    margin-bottom: 100px;
+}
+
 p.tertiary-b,
 p.category {
     text-transform: uppercase;
@@ -288,6 +296,9 @@ div.b-chickenpie {
     left: 50px;
 }
 
+img.img--quaso {
+    top: -20px;
+}
 
 /* ---------------------------------- */
 /* Section 4 */
@@ -448,7 +459,7 @@ button.b-brown {
         height: 60px;
         width: 60px;
         border-radius: 8px;
-        padding: 10px;
+        padding: 35px;
     }
 
     div.fnb-card h4 {
@@ -490,6 +501,11 @@ button.b-brown {
     .slide {
         height: 70vh;
     }
+
+    img.fnb {
+        right: -70px;
+    }
+
 }
 
 

@@ -14,58 +14,68 @@ div.wrapper {
 }
 
 /* ---  HEADQUARTERS  --- */
+/* 题目 */
 .store-intro {
     text-align: center;
+    max-width: 974px;
+    margin: auto;
 }
 
+/* 小标题颜色 */
 .store-intro .small {
     color: var(--tertiary);
 }
 
+/* 整个box总部 */
 .headquarters {
-    margin-bottom: 100px;
-
-}
-
-.headquarters h2 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* 总部地图 */
 .map-container-large img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    object-fit: cover;
     margin-top: 25px;
-
+    transition: transform 0.3s ease;
 }
 
+.map-container-large img:hover {
+    transform: scale(1.02);
+}
+
+/* zongbu details box */
 .hq-details {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    gap: 30px;
 }
 
+/* zongbu details */
 .detail-column {
     flex: 1;
 }
 
 
 /* ---STORE LOCATIONS --- */
+/* Store Row de box */
 .store-row {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 120px
 }
 
+/*give him align  */
+.store-row h4 {
+    margin-bottom: 30px;
+}
 
+/* half half with words */
 .store-map {
     flex: 1;
 }
 
+/* img for the place */
 .store-map img {
     width: 100%;
     border-radius: 20px;
@@ -76,28 +86,26 @@ div.wrapper {
     transform: scale(1.02);
 }
 
-
+/* words */
 .store-info {
     flex: 1;
 }
 
-.store-info h3 {
-    margin-bottom: 30px;
-}
-
-
+/* info de box */
 .info-list {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
+/* words */
 .info-item {
     display: flex;
     align-items: flex-start;
     gap: 15px;
 }
 
+/* icon */
 .info-item img {
     width: 25px;
     height: auto;
@@ -105,46 +113,46 @@ div.wrapper {
 }
 
 
-.store-row.reverse {
-    flex-direction: row-reverse;
-}
-
 
 /* --- PROMOTION  --- */
+
+/* container */
 .promotion-section {
     margin-top: 150px;
     margin-bottom: 100px;
 }
 
-
+/* tajuk */
 .text-center {
     text-align: center;
 }
 
+/* h3 de juli */
 .promotion-section h3 {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-
+/* promocard de contaienr */
 .promo-grid {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 80px;
-    flex-wrap: wrap;
 }
 
-
+/* === 卡片盒子 === */
 .promo-card {
     background-color: var(--dark);
-    width: 300px;
-    height: 350px;
+    width: 344px;
+    height: 298px;
     border-radius: 20px;
     position: relative;
     padding: 20px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
     transition: transform 0.3s ease;
 }
 
@@ -152,6 +160,7 @@ div.wrapper {
     transform: translateY(-10px);
 }
 
+/* === PRICE TAG  === */
 .price-tag {
     position: absolute;
     top: -30px;
@@ -165,25 +174,35 @@ div.wrapper {
     justify-content: center;
     align-items: center;
     color: var(--white);
+    z-index: 2;
 }
 
-
+/* === DETAILS & IMAGE=== */
 .promo-details {
     width: 100%;
 }
 
 .promo-details h4 {
     margin-bottom: 10px;
+    width: 60%;
+    z-index: 2;
+    position: relative;
 }
 
 .promo-details img {
-    width: 100%;
-    height: 180px;
-    margin-bottom: -30px;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    margin-bottom: -10px;
+
 }
 
-
 /* ---  DELIVERY  --- */
+/* whole delivery box gap */
 .delivery-section {
     margin-top: 150px;
     margin-bottom: 100px;
@@ -195,23 +214,23 @@ div.wrapper {
     color: var(--grey-dark);
 }
 
+/* card de box */
 .delivery-grid {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .delivery-card {
     background-color: var(--tertiary);
-    flex: 1;
-    padding: 40px 30px;
+    width: 344px;
+    height: 298px;
     border-radius: 20px;
+    padding: 40px 30px;
     color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    min-height: 350px;
     transition: transform 0.3s ease;
 }
 
