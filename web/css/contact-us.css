@@ -204,7 +204,7 @@ input {
 
 .question.active .answer {
     display: block;
-    animation: fadeIn 0.5s ease;
+    animation: transform 0.5s ease;
 
 }
 
