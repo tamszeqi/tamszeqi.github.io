@@ -101,7 +101,7 @@ p.price {
 }
 
 .teh-items img {
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .teh-cards {
@@ -121,6 +121,7 @@ p.price {
 
 .teh-items .price-tag {
     top: 40px;
+    right: -20px;
 }
 
 /*cocoa section*/
@@ -160,6 +161,7 @@ p.price {
 
 .cocoa-items .price-tag {
     top: 80px;
+    right: -20px;
 }
 
 .yuanyang {
