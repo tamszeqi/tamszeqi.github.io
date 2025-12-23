@@ -183,4 +183,8 @@ body {
         width: 25px;
         height: 25px;
     }
+
+    .bodytext {
+        max-width: 90%;
+    }
 }
