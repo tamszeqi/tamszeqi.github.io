@@ -89,6 +89,7 @@ div.wrapper {
 /* words */
 .store-info {
     flex: 1;
+    margin-top: -120px;
 }
 
 /* info de box */
@@ -192,8 +193,8 @@ div.wrapper {
 .promo-details img {
     position: absolute;
     bottom: -30px;
-    right: -30px;
-    width: 280px;
+    right: -100px;
+    width: 260px;
     height: auto;
     object-fit: contain;
     z-index: 1;
@@ -250,9 +251,6 @@ div.wrapper {
 
 /* Order Now  */
 .order-link {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
     color: var(--white);
 }
 
