@@ -17,8 +17,9 @@ div.wrapper {
 /* 题目 */
 .store-intro {
     text-align: center;
-    max-width: 974px;
+    max-width: 900px;
     margin: auto;
+    margin-bottom: -25px;
 }
 
 /* 小标题颜色 */
@@ -26,10 +27,11 @@ div.wrapper {
     color: var(--tertiary);
 }
 
-/* 整个box总部 */
-.headquarters {
-    margin-bottom: 50px;
+.store-intro h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 
 /* 总部地图 */
 .map-container-large img {
@@ -43,18 +45,32 @@ div.wrapper {
     transform: scale(1.02);
 }
 
+.headquarters h4 {
+    margin-bottom: 10px;
+}
+
 /* zongbu details box */
 .hq-details {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    /* stretch 的意思就是不管content ada多少，大家都拉到一样高 */
+    align-items: stretch;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
 }
 
-/* zongbu details */
 .detail-column {
     flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    border-right: 2px solid var(--grey-dark);
 }
 
+
+.detail-column:last-child {
+    border-right: none;
+}
 
 /* ---STORE LOCATIONS --- */
 /* Store Row de box */
@@ -62,12 +78,12 @@ div.wrapper {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin-bottom: 120px
+    margin-bottom: 40px
 }
 
 /*give him align  */
 .store-row h4 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* half half with words */
@@ -89,7 +105,7 @@ div.wrapper {
 /* words */
 .store-info {
     flex: 1;
-    margin-top: -120px;
+    margin-top: -210px;
 }
 
 /* info de box */
@@ -113,59 +129,65 @@ div.wrapper {
     margin-top: 3px;
 }
 
-
+/* yishang done liao  */
 
 /* --- PROMOTION  --- */
-
-/* container */
 .promotion-section {
     margin-top: 150px;
-    margin-bottom: 100px;
-}
-
-/* tajuk */
-.text-center {
     text-align: center;
 }
 
-/* h3 de juli */
+.promotion-section .small {
+    color: var(--sec-default);
+}
+
 .promotion-section h3 {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
+
 }
 
-/* promocard de contaienr */
+.promotion-section p {
+    margin: auto;
+    text-align: center;
+    color: var(--grey-dark);
+}
+
+/* biaoti wan cheng */
 .promo-grid {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 80px;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 110px;
+    margin-bottom: 230px;
 }
 
-/* === 卡片盒子 === */
+
 .promo-card {
     background-color: var(--dark);
-    width: 344px;
-    height: 298px;
+    width: 340px;
+    min-width: 340px;
+    height: 300px;
     border-radius: 20px;
     position: relative;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 60px;
+    justify-content: center;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .promo-card:hover {
     transform: translateY(-10px);
 }
 
-/* === PRICE TAG  === */
 .price-tag {
     position: absolute;
-    top: -30px;
-    left: 20px;
+    top: -40px;
+    left: 40px;
     background-color: var(--sec-default);
     width: 80px;
     height: 80px;
@@ -175,39 +197,69 @@ div.wrapper {
     justify-content: center;
     align-items: center;
     color: var(--white);
-    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
-/* === DETAILS & IMAGE=== */
+
 .promo-details {
     width: 100%;
+
 }
 
 .promo-details h4 {
-    margin-bottom: 10px;
-    width: 60%;
-    z-index: 2;
+    margin: 0;
+    color: var(--black);
+    width: 45%;
+    text-align: left;
     position: relative;
+    z-index: 5;
+    margin-top: -90px;
 }
 
 .promo-details img {
     position: absolute;
-    bottom: -30px;
-    right: -100px;
-    width: 260px;
-    height: auto;
+    z-index: 2;
     object-fit: contain;
-    z-index: 1;
-    margin-bottom: -10px;
-
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
 }
+
+
+
+/* Milo */
+.promo-card:nth-of-type(1) .promo-details img {
+    width: 250px;
+    bottom: -30px;
+    right: -105px;
+}
+
+/* Curry Puff */
+.promo-card:nth-of-type(2) .promo-details img {
+    width: 380px;
+    bottom: -45px;
+    right: -75px;
+}
+
+/* Kopi O */
+.promo-card:nth-of-type(3) .promo-details img {
+    width: 300px;
+    bottom: -40px;
+    right: -30px;
+}
+
+/* 因为图片全部大小不一样然后调位置会不一样所以我就用 nth-of-type 单独调 /
+/ 其实意思就是每张卡 第一张等于1 要调1就可以写那个class名字 然后他的value要调整的
+然后1，2，3顺序的意思 */
+
+/* yihsnagwancheng */
 
 /* ---  DELIVERY  --- */
 /* whole delivery box gap */
 .delivery-section {
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 130px;
+    margin-bottom: 145px;
 }
+
 
 .subtitle-text {
     max-width: 700px;
@@ -215,11 +267,16 @@ div.wrapper {
     color: var(--grey-dark);
 }
 
+.delivery-content-box {
+    margin-bottom: 60px;
+}
+
 /* card de box */
 .delivery-grid {
     display: flex;
     justify-content: center;
     gap: 40px;
+
 }
 
 .delivery-card {
@@ -231,8 +288,9 @@ div.wrapper {
     color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s ease;
+    text-align: left;
+
 }
 
 .delivery-card:hover {
@@ -247,6 +305,7 @@ div.wrapper {
 .delivery-card p {
     color: var(--white);
     margin-bottom: 30px;
+    text-align: left;
 }
 
 /* Order Now  */
@@ -344,4 +403,28 @@ div.wrapper {
     background-color: var(--white);
     flex: 1;
     min-width: 40px;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 1024px) {
+
+    .hq-details {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .detail-column {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-right: none;
+        border-bottom: 1px solid var(--grey-light);
+    }
+
+
+    .detail-column:last-child {
+        border-bottom: none;
+    }
+
 }
