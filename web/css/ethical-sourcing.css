@@ -17,3 +17,63 @@ p.category {
         /* 2. List your image URL SECOND */
         url(../images/header-ethical-sourcing.jpg);
 }
+
+/*----------------------------*/
+/*Section 1: Trade Containers*/
+/*----------------------------*/
+div.trade-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+    background-color: var(--white);
+}
+
+div.trade-coffeebean-img {
+    background-image: url(../images/es-trade-coffeebean.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+div.trade-cocoa-img {
+    background-image: url(../images/es-trade-cocoa.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+div.trade-tea-img {
+    background-image: url(../images/es-trade-tea.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*----------------------------*/
+/*Section 2: Eco-farming*/
+/*----------------------------*/
+
+/*----------------------------*/
+/*Section 3: Worker Welfare*/
+/*----------------------------*/
+
+/*----------------------------*/
+/*Section 4: Eco System Care*/
+/*----------------------------*/
+
+/*----------------------------*/
+/*Section 5: Traceable Supply*/
+/*----------------------------*/
+
+@media(max-width: 1025px) {}
+
+@media(max-width: 768px) {}
+
+@media(min-width: 769px) {}
