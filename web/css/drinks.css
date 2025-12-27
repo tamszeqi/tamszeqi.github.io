@@ -283,5 +283,15 @@ p.price {
         width: auto;
     }
 
+    .teh-items .price-tag {
+        right: 20px;
+    }
 
+    .cocoa-items .price-tag {
+        right: 0;
+    }
+
+    .refreshing-items .price-tag {
+        right: 0;
+    }
 }
