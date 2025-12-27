@@ -899,6 +899,13 @@ textarea {
         gap: clamp(20px, 3vw, 40px);
     }
 
+    /* STATS BAR */
+    .statsbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: clamp(30px, 3.5vw, 50px);
+    }
+
 }
 
 /* TABLET LANDSCAPE */
