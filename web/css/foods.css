@@ -1,3 +1,74 @@
 .title {
     background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-foods.jpg');
 }
+
+.foods-subtitle {
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.foods-subtitle h3 {
+    margin-bottom: 20px;
+}
+
+.nasi-lemak {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.deco {
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+}
+
+.brown-card {
+    background-color: #D8C799;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 260px;
+}
+
+.price-tag {
+    position: absolute;
+    background: #899064;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+p.price {
+    color: var(--white);
+}
+
+.price-tag p.subtitle {
+    color: var(--white);
+}
+
+/* rice dishes*/
+.rice-dishes-items {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.curryfish {
+    position: absolute;
+    left: -80px;
+    top: 40px;
+}
+
+.chickenrice {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+}
