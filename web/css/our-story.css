@@ -395,7 +395,7 @@
     height: 95px;
 }
 
-/* 装饰元素 */
+
 .leaf7 {
     top: -15px;
     left: -30px;
@@ -412,160 +412,163 @@
     transform: rotate(150deg);
 }
 
-/* 平板版本 */
+
 @media screen and (max-width: 1024px) {
     .about-company {
         flex-direction: column;
         gap: 40px;
         text-align: center;
     }
-    
+
     .third-us {
         flex-direction: column-reverse;
         gap: 40px;
         text-align: center;
     }
-    
+
     .left-side,
     .right-side,
     .staff-img,
     .content-us {
         width: 100%;
     }
-    
-    /* 调整装饰元素在平板版本 */
-    .leaf1, .leaf2, .leaf3, .leaf4, .leaf5 {
-        width: 8%;
+
+
+    .leaf1,
+    .leaf2,
+    .leaf3,
+    .leaf4,
+    .leaf5 {
+        width: 60px;
     }
-    
+
     .leaf6 {
-        width: 100px;
+        width: 90px;
     }
-    
-    .leaf7, .leaf8 {
-        width: 80px;
+
+    .leaf7,
+    .leaf8 {
+        width: 60px;
     }
-    
+
     .sec-kopidiam {
         flex-direction: column;
         width: 100%;
         margin-left: 0;
         gap: 30px;
     }
-    
+
     .content-stories {
         width: 100%;
         transform: none;
         padding: 50px 30px;
         text-align: center;
     }
-    
+
     .bar {
         width: 100%;
         height: 300px;
         margin: 0;
     }
-    
+
     .sqr-group {
         flex-direction: column;
         margin-top: -80px;
         padding: 0 20px;
     }
-    
+
     .sqr-img-btn {
         width: 100%;
         height: 200px;
         margin-bottom: 20px;
     }
-    
+
     .statsbar {
         justify-content: center;
         gap: 30px;
     }
 }
 
-/* 手机版本 */
 @media screen and (max-width: 768px) {
     .about-company {
         gap: 30px;
         padding: 30px 0;
     }
-    
+
     .latte {
         display: none;
     }
-    
-    /* 隐藏装饰元素在手机版本 */
+
     .deco {
         display: none;
     }
-    
+
     .sec-kopidiam {
         margin: 80px 0;
     }
-    
+
     .content-stories {
         padding: 40px 20px;
     }
-    
+
     .bar {
         height: 250px;
     }
-    
+
     .third-us {
         gap: 30px;
         margin: -50px 0;
     }
-    
+
     .sqr-group {
         margin-top: -100px;
         padding: 0 15px;
     }
-    
+
     .sqr-img-btn {
         height: 180px;
         margin-bottom: 15px;
     }
-    
+
     .statsbar {
         flex-direction: row;
         justify-content: space-between;
         gap: 15px;
     }
-    
+
     .stats {
         flex: 1;
         padding: 15px 10px;
     }
-    
+
     .stats h2 {
         font-size: 28px;
     }
-    
+
     .statstext {
         font-size: 9px;
     }
-    
+
     .content-company h3,
     .content-stories h3,
     .content-us h3,
     .four-title h2 {
         font-size: 22px;
     }
-    
+
     .four-content {
         padding: 40px 20px;
         margin: 0 15px;
     }
-    
+
     .slogan {
         padding: 20px 25px;
     }
-    
+
     .wrapper.dark {
         padding: 60px 15px;
     }
-    
+
     .blooger-1,
     .blooger-2,
     .blooger-3,
