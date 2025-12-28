@@ -214,3 +214,32 @@ p.price {
 .croissant .pastry-price-tag {
     right: 70px;
 }
+
+/*tablet hide*/
+.tablet {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nasi-lemak {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .nasi-lemak-img img {
+        max-width: 80%;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .desktop p.small {
+        display: none;
+    }
+
+    .desktop h4 {
+        display: none;
+    }
+}
