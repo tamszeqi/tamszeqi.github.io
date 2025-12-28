@@ -134,14 +134,14 @@ p.price {
 .noodles {
     display: flex;
     gap: 50px;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
 }
 
 .noodles-flower {
     position: absolute;
-    right: 60px;
-    bottom: -25px;
+    right: 80px;
+    bottom: 30px;
 }
 
 .noodles-dishes-items {
@@ -205,4 +205,12 @@ p.price {
 
 .curry-puff {
     position: relative;
+}
+
+.curry-puff .pastry-price-tag {
+    right: 10px;
+}
+
+.croissant .pastry-price-tag {
+    right: 70px;
 }
