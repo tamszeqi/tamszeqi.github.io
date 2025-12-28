@@ -28,10 +28,23 @@ h6.green {
     color: var(--tertiary);
 }
 
+div.dark {
+    border-radius: 30px;
+}
+
+p.blacktxt {
+    color: var(--black);
+}
 
 /*----------------------------*/
 /*Section 1: Trade Containers*/
 /*----------------------------*/
+div.trade>div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 div.trade-container-group {
     display: flex;
     flex-direction: row;
@@ -55,10 +68,8 @@ div.trade-img-icon {
 }
 
 div.icon-base,
-div.icon-base-tablet {
+div.icon-base-responsive {
     position: absolute;
-    bottom: -20px;
-    right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +86,12 @@ img.trade-img {
 img.trade-icon {
     width: 50%;
     position: absolute;
+}
+
+div.icon-base {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
 }
 
 div.trade-textblock {
@@ -203,7 +220,7 @@ div.support {
     gap: 12px;
     z-index: 2;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: clamp(50px, 10.4vw, 150px);
 }
 
 div.support-container {
@@ -216,6 +233,12 @@ div.support-container {
     gap: 12px;
     height: 100%;
 
+}
+
+div.support-container-textblock {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 .support-container:first-child {
@@ -385,9 +408,10 @@ div.traceable-supply>div.wrapper {
         position: relative;
     }
 
-    div.icon-base-tablet {
-        right: -500px;
-        top: 0px;
+    div.icon-base-responsive {
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
 
     div.icon-base {
@@ -430,20 +454,114 @@ div.traceable-supply>div.wrapper {
     /*----------------------------*/
     /*Section 4: Eco System Care*/
     /*----------------------------*/
-    div.ecosystem-img {
-        flex-wrap: wrap;
-        width: 100%;
-    }
 
     div.support {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 
-
-
     img.eco-deco {
         display: none;
+    }
+
+    div.ecosystem-img {
+        display: none;
+    }
+
+    /* The Gallery and Slides */
+
+    .store-gallery-section {
+        text-align: center;
+        padding: 50px 0;
+        overflow: hidden;
+        /* Important to keep the side images visible but contained */
+        position: relative;
+        /* To position the arrows */
+    }
+
+    .gallery-wrapper {
+        overflow: hidden;
+        position: relative;
+        /* CRITICAL: Set width to 100% and remove max-width/centering. */
+        width: 100%;
+        /* Use viewport width to span the whole screen */
+        margin: 0;
+        /* Ensure no margin/padding is inherited from a parent wrapper */
+
+        /* REMOVE: max-width: 1200px; */
+        /* REMOVE: margin: 0 auto; */
+    }
+
+    .slides-container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+
+        /* CRITICAL: Use viewport width units for padding to match the screen edge */
+        /* Remove the fixed padding: 0 15%; from the previous version. */
+        /* Instead, we set the initial scroll offset using a large negative margin */
+        /* Note: If you want the center slide to be the second one, you may need JS
+       to set the initial scroll position after the page loads. */
+
+        /* To push the first element off the left edge and center the second element
+       We apply padding equal to half the visible slide width to the left.
+       (If the slide is 70vw, the visible space is 30vw, so half is 15vw) */
+        padding-left: 15vw;
+        padding-right: 15vw;
+        /* Keep this to ensure proper snapping on the last slide */
+
+        /* Optional: Hide the scrollbar */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+    .slide {
+        flex: 0 0 70vw;
+        height: 50vh;
+        /* CRITICAL: Define a height for the slide container. 
+    Using 'vh' (viewport height) is common for hero sections. */
+        scroll-snap-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        /* CRITICAL: Ensures the image crops cleanly to the border-radius */
+        margin: 0 10px;
+    }
+
+    .slide img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ---------------------------------- */
+    /* Navigation Arrows */
+    /* ---------------------------------- */
+
+    .nav-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+        z-index: 10;
+        padding: 20px;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    div.ecosystem-img-card>div.wrapper>div.dark {
+        padding: 200px 50px 50px 50px;
     }
 
     /*----------------------------*/
@@ -462,6 +580,12 @@ div.traceable-supply>div.wrapper {
     /*----------------------------*/
     /*Section 1: Trade Containers*/
     /*----------------------------*/
+    div.trade-container-group {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
     div.trade-container {
         display: flex;
         flex-direction: column;
@@ -472,12 +596,15 @@ div.traceable-supply>div.wrapper {
         width: 100%;
     }
 
-    div.icon-base,
-    div.icon-base-tablet {
+    div.icon-base-responsive {
         position: absolute;
-        bottom: -20px;
-        right: 30px;
+        top: -30px;
+        right: -10px;
+        border-radius: 100px;
+        width: 90px;
+        height: 90px;
     }
+
 
     img.trade-img {
         width: 100%;
@@ -502,6 +629,10 @@ div.traceable-supply>div.wrapper {
         flex-direction: column;
     }
 
+    img.eco-farming-img-responsive {
+        border-radius: 20px;
+    }
+
     div.eco-farming-list {
         display: flex;
         flex-direction: column;
@@ -509,7 +640,7 @@ div.traceable-supply>div.wrapper {
 
     div.label {
         display: flex;
-        gap: 22px;
+        gap: 50px;
         align-items: center;
         flex-direction: column;
         align-content: center;
@@ -523,13 +654,20 @@ div.traceable-supply>div.wrapper {
     div.label-list {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
     }
 
     div.label-list p {
         text-align: center;
     }
 
+    img.eco-farming-img {
+        display: none;
+    }
+
+    img.eco-farming-img-responsive {
+        height: 100%;
+    }
 
     /*----------------------------*/
     /*Section 3: Worker Welfare*/
@@ -559,8 +697,18 @@ div.traceable-supply>div.wrapper {
     /*Section 4: Eco System Care*/
     /*----------------------------*/
     div.ecosystem-img {
+        display: flex;
+        flex-wrap: wrap;
         width: 80%;
+        justify-content: center;
     }
+
+    div.ecosystem-img-gallery {
+        display: none;
+    }
+
+
+
 
     /*----------------------------*/
     /*Section 5: Traceable Supply*/
@@ -577,4 +725,20 @@ div.traceable-supply>div.wrapper {
 
 }
 
-@media(min-width: 769px) {}
+
+/*min-width*/
+@media(min-width: 1025px) {
+    div.icon-base-responsive {
+        display: none;
+    }
+
+    div.ecosystem-img-gallery {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    img.eco-farming-img-responsive {
+        display: none;
+    }
+}

@@ -117,7 +117,7 @@
                                 <p>LOCATION: KOTA BELUD, SABAH</p>
                                 <h6>Bukit Awan Coffee Estate</h6>
                             </div>
-                            <div class="icon-base-tablet">
+                            <div class="icon-base-responsive">
                                 <img class="trade-icon" src="./images/es-coffeebean-icon.png" alt="Coffee Bean Icon">
                             </div>
                         </div>
@@ -132,8 +132,8 @@
                                 <p>LOCATION: RAUB, PAHANG</p>
                                 <h6>Sungai Manggis Cacao Cooperative</h6>
                             </div>
-                            <div class="icon-base-tablet">
-                                <img class="trade-icon" src="./images/es-coffeebean-icon.png" alt="Coffee Bean Icon">
+                            <div class="icon-base-responsive">
+                                <img class="trade-icon" src="./images/es-cocoa-icon.png" alt="Coffee Bean Icon">
                             </div>
                         </div>
 
@@ -148,8 +148,8 @@
                                 <p>LOCATION: CAMERON HIGHLANDS</p>
                                 <h6>Tanah Emerald Tea Gardens</h6>
                             </div>
-                            <div class="icon-base-tablet">
-                                <img class="trade-icon" src="./images/es-coffeebean-icon.png" alt="Coffee Bean Icon">
+                            <div class="icon-base-responsive">
+                                <img class="trade-icon" src="./images/es-tea-icon.png" alt="Coffee Bean Icon">
                             </div>
                         </div>
                     </div>
@@ -163,6 +163,8 @@
                 <div class="wrapper">
                     <div class="upperpart">
                         <img class="eco-farming-img" src="./images/es-pour-water.png" alt="Pour Water">
+                        <img class="eco-farming-img-responsive" src="./images/es-pourwater-responsive.jpg"
+                            alt="Pour Water">
                         <div class="eco-farming-textblock">
                             <p class="category">eco farming</p>
                             <h4>Sustainable & Chemical-Responsible Farming</h4>
@@ -243,28 +245,29 @@
                         <h6 class="green">01.</h6>
                         <div class="support-container-textblock">
                             <h6>Safe Working Conditions</h6>
-                            <p>Provide protective gear and safe environments to reduce injuries.</p>
+                            <p class="blacktxt">Provide protective gear and safe environments to reduce injuries.</p>
                         </div>
                     </div>
                     <div class="support-container">
                         <h6 class="green">02.</h6>
                         <div class="support-container-textblock">
                             <h6>Fair Wages</h6>
-                            <p>Pay workers fairly for their skills and effort.</p>
+                            <p class="blacktxt">Pay workers fairly for their skills and effort.</p>
                         </div>
                     </div>
                     <div class="support-container">
                         <h6 class="green">03.</h6>
                         <div class="support-container-textblock">
                             <h6>Community Support</h6>
-                            <p>Support local projects to improve community well-being.</p>
+                            <p class="blacktxt">Support local projects to improve community well-being.</p>
                         </div>
                     </div>
                     <div class="support-container">
                         <h6 class="green">04.</h6>
                         <div class="support-container-textblock">
                             <h6>Healthcare & Education</h6>
-                            <p>Give workers and their families access to basic healthcare and learning opportunities.
+                            <p class="blacktxt">Give workers and their families access to basic healthcare and learning
+                                opportunities.
                             </p>
                         </div>
                     </div>
@@ -272,14 +275,14 @@
                         <h6 class="green">05.</h6>
                         <div class="support-container-textblock">
                             <h6>Proper Housing</h6>
-                            <p>Ensure clean, safe, and comfortable living spaces.</p>
+                            <p class="blacktxt">Ensure clean, safe, and comfortable living spaces.</p>
                         </div>
                     </div>
                     <div class="support-container">
                         <h6 class="green">06.</h6>
                         <div class="support-container-textblock">
                             <h6>Recognition & Incentives</h6>
-                            <p>Reward workers to motivate and appreciate their efforts.</p>
+                            <p class="blacktxt">Reward workers to motivate and appreciate their efforts.</p>
                         </div>
                     </div>
                 </div>
@@ -292,11 +295,34 @@
             <p class="category">ecosystem care</p>
             <div class="ecosystem-img-card">
                 <div class="ecosystem-img">
-                    <img class="eco-img" src="./images/es-soil.jpg" alt="">
-                    <img class="eco-img" src="./images/es-tea.jpg" alt="">
-                    <img class="eco-img" src="./images/es-planting.jpg" alt="">
-                    <img class="eco-img" src="./images/es-coffee-bean.jpg" alt="">
+                    <img class="eco-img" src="./images/es-soil.jpg" alt="Soil">
+                    <img class="eco-img" src="./images/es-tea.jpg" alt="Tea">
+                    <img class="eco-img" src="./images/es-planting.jpg" alt="Planting">
+                    <img class="eco-img" src="./images/es-coffee-bean.jpg" alt="Coffee Bean">
                 </div>
+                <div class="ecosystem-img-gallery">
+                    <div class="gallery-wrapper">
+                        <div class="slides-container" id="galleryContainer">
+                            <div class="slide" id="slide-1">
+                                <img src="./images/es-soil.jpg" alt="Soil">
+                            </div>
+                            <div class="slide" id="slide-2">
+                                <img src="./images/es-tea.jpg" alt="Tea">
+                            </div>
+                            <div class="slide" id="slide-3">
+                                <img src="./images/es-planting.jpg" alt="Planting">
+                            </div>
+                            <div class="slide" id="slide-4">
+                                <img src="./images/es-coffee-bean.jpg" alt="Coffee Bean">
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows (Optional, but good UX) -->
+                        <button class="nav-arrow prev-btn" onclick="scrollSlide(-1)">&#10094;</button>
+                        <button class="nav-arrow next-btn" onclick="scrollSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+
                 <div class="wrapper">
                     <div class="dark">
                         <h4>Biodiversity & Ecosystem Protection</h4>
@@ -333,15 +359,15 @@
                     <div class="traceable-list">
                         <div class="list-item">
                             <img class="checklist" src="./images/es-checklist.png" alt="Checklist">
-                            <p>Clear sourcing information</p>
+                            <p class="blacktxt">Clear sourcing information</p>
                         </div>
                         <div class="list-item">
                             <img class="checklist" src="./images/es-checklist.png" alt="Checklist">
-                            <p>Honest labels</p>
+                            <p class="blacktxt">Honest labels</p>
                         </div>
                         <div class="list-item">
                             <img class="checklist" src="./images/es-checklist.png" alt="Checklist">
-                            <p>Verifiable sustainability practices.</p>
+                            <p class="blacktxt">Verifiable sustainability practices.</p>
                         </div>
                     </div>
                 </div>
@@ -428,7 +454,7 @@
 
 
     <script src="js/menu.js"></script>
-
+    <script src="js/kopidiam-reserve.js"></script>
 </body>
 
 </html>
