@@ -22,6 +22,7 @@ div.wrapper {
     margin-bottom: -25px;
 }
 
+
 /* 小标题颜色 */
 .store-intro .small {
     color: var(--tertiary);
@@ -342,46 +343,47 @@ div.wrapper {
 /* === 2. 标题 (Tajuk) === */
 .way-content-box h3 {
     color: var(--white) !important;
-    text-align: center;
-    margin: 0;
 }
 
 .floating-images {
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
     z-index: 2;
 }
-
 
 
 .small-circle {
     width: 110px;
     height: 110px;
-    top: -50px;
-    left: 5%;
+    top: -55px;
+    left: -20px;
 }
-
 
 .medium-circle {
     width: 160px;
     height: 160px;
-    top: -120px;
-    left: 22%;
+    top: -130px;
+    left: 20%;
 }
 
 
 .second-circle {
     width: 130px;
     height: 130px;
-    top: -60px;
-    right: 25%;
+    top: -65px;
+    right: 30%;
 }
-
 
 .large-circle {
     width: 220px;
     height: 220px;
-    top: -150px;
-    right: 5%;
+    top: -160px;
+    right: -40px;
 }
 
 
@@ -408,6 +410,77 @@ div.wrapper {
     background-color: var(--white);
     flex: 1;
     opacity: 0.6;
+}
+
+
+/* deco */
+
+div.first-left {
+    top: 35%;
+    left: -4%;
+    width: 15%;
+    width: 15%;
+    transform: rotate(130deg);
+}
+
+
+div.first-right {
+    top: 80%;
+    right: -17%;
+    width: 18%;
+    z-index: 2;
+    width: 35%;
+    transform: rotate(-20deg);
+}
+
+
+div.first-right-down {
+    top: -15%;
+    right: -5%;
+    width: 14%;
+    transform: scaleX(-1) rotate(15deg);
+}
+
+div.first-left-down {
+    bottom: -10%;
+    left: -5%;
+    width: 15%;
+    transform: rotate(-15deg);
+}
+
+
+div.first-last {
+    bottom: -15%;
+    right: -4%;
+    width: 20%;
+    transform: rotate(-10deg);
+}
+
+.second-up {
+    top: 20%;
+    left: -10%;
+}
+
+.third {
+    bottom: 20%;
+    right: -10%;
+}
+
+.last-up {
+    bottom: 50%;
+    left: -2%;
+    width: 50%;
+}
+
+.last-down {
+    top: 75%;
+    right: -12%;
+}
+
+.last-right {
+    top: 50%;
+    right: -15%;
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {}

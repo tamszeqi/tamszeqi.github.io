@@ -3,10 +3,6 @@
 }
 
 .drinks {
-    padding-top: 30px;
-}
-
-.drinks {
     border-radius: 0 0 30px 30px;
 }
 
@@ -59,7 +55,7 @@
     background: #899064;
     top: 50px;
     right: 30px;
-    padding: 0px 25px;
+    padding: 8px 20px;
     border-radius: 15px;
 }
 
@@ -215,7 +211,7 @@ p.price {
 
 @media screen and (max-width: 1024px) {
     .price-tag {
-        padding: 0 18px;
+        padding: 8px 18px;
     }
 
     .yuanyang {
@@ -238,13 +234,21 @@ p.price {
         text-align: center;
     }
 
+    .kopi-subtitle p {
+        text-align: center;
+    }
+
+    .teh-subtitle p {
+        text-align: center;
+    }
+
     .kopi-cards {
         flex-direction: column;
         justify-self: center;
     }
 
     .price-tag {
-        padding: 0 20px;
+        padding: 8px 15px;
     }
 
 
@@ -279,5 +283,15 @@ p.price {
         width: auto;
     }
 
+    .teh-items .price-tag {
+        right: 20px;
+    }
 
+    .cocoa-items .price-tag {
+        right: 0;
+    }
+
+    .refreshing-items .price-tag {
+        right: 0;
+    }
 }
