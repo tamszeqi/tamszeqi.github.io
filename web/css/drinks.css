@@ -15,10 +15,6 @@
     margin-bottom: 20px;
 }
 
-.drinks-img {
-    overflow: hidden;
-}
-
 .drinks-img img {
     transition: transform 0.4s ease;
 }
@@ -41,6 +37,7 @@
     justify-content: center;
     gap: 60px;
     margin-top: 20px;
+    align-items: flex-end;
 }
 
 .kopi-items {
@@ -48,15 +45,19 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    padding-top: 120px;
+    height: 480px;
+    justify-content: flex-end;
 }
 
 .price-tag {
     position: absolute;
     background: #899064;
-    top: 50px;
+    top: 100px;
     right: 30px;
     padding: 8px 20px;
     border-radius: 15px;
+    z-index: 5;
 }
 
 p.price {
@@ -65,11 +66,6 @@ p.price {
 
 .price-tag p.subtitle {
     color: var(--white);
-}
-
-.kopi-items .drinks-img {
-    margin-top: 100px;
-    margin-bottom: auto;
 }
 
 .kopi-items h5 {
@@ -82,6 +78,8 @@ p.price {
 
 .kopi-items .price-tag {
     top: 30px;
+    right: 30px;
+    z-index: 5;
 }
 
 /*Teh section*/

@@ -2,6 +2,10 @@
     background-image: linear-gradient(var(--black-50), var(--black-50)), url('../images/header-foods.jpg');
 }
 
+.foods {
+    border-radius: 0 0 30px 30px;
+}
+
 .foods-subtitle {
     justify-items: center;
     margin-bottom: 100px;
@@ -29,8 +33,29 @@
     position: relative;
     border-radius: 20px;
     padding: 10px;
-    width: 300px;
+    width: 30%;
     height: 260px;
+}
+
+.white-card {
+    background-color: #FFFFF0;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px 80px;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.pastry-price-tag {
+    position: absolute;
+    background: #899064;
+    bottom: 80px;
+    right: 80px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    text-align: center;
+    height: fit-content;
 }
 
 .price-tag {
@@ -51,13 +76,21 @@ p.price {
     color: var(--white);
 }
 
+.pastry-price-tag p.subtitle {
+    color: var(--white);
+}
+
+.pastry-items h6 {
+    margin-bottom: 10px;
+}
+
 /* rice dishes*/
 .rice-dishes-items {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 
 }
 
@@ -71,4 +104,113 @@ p.price {
     position: absolute;
     top: 30px;
     right: -10px;
+}
+
+.friedrice {
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+
+.nasipattaya {
+    position: absolute;
+    right: 40px;
+    top: -10px
+}
+
+.nasigoreng {
+    position: absolute;
+    right: 20px;
+    top: -10px;
+}
+
+.duckrice {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+}
+
+/*noodles*/
+.noodles {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.noodles-flower {
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+}
+
+.noodles-dishes-items {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.laksa-img {
+    position: absolute;
+    right: 65px;
+    top: -50px;
+}
+
+.meegoreng {
+    position: absolute;
+    right: 40px;
+}
+
+.maggigoreng {
+    position: absolute;
+    right: -20px;
+    top: 35px;
+}
+
+.currymee {
+    position: absolute;
+    left: -85px;
+    top: -40px;
+}
+
+.charkueyteow {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.fishbeehoon {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+/*pastry*/
+.pastry-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.chicken-pie {
+    position: relative;
+}
+
+.croissant {
+    position: relative;
+}
+
+.curry-puff {
+    position: relative;
+}
+
+.curry-puff .pastry-price-tag {
+    right: 10px;
+}
+
+.croissant .pastry-price-tag {
+    right: 70px;
 }

@@ -38,6 +38,8 @@ p.category {
     border-radius: 0px 0px 30px 30px;
 }
 
+
+
 /**section1*/
 div.intro {
     display: flex;
@@ -104,7 +106,7 @@ div.coffeenbeverage-section,
 div.kopidiam-food-reserve-section {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: clamp(50px, 6.9vw, 100px);
 }
 
 div.base {
@@ -167,23 +169,29 @@ img.third {
     right: -50px;
 }
 
+img.img--kopi-diam {
+    top: 0px;
+    right: -20px;
+}
+
 img.img--kopi-bising {
     top: 50px;
     width: 70%;
 }
 
 img.img--milo-ahkow {
-    top: -50px;
+    top: 0px;
     right: -20px;
 }
 
 img.img--three-layer-milk-tea {
-    top: -50px;
+    top: -30px;
     right: -20px;
 }
 
 img.img--pure-coffee {
-    top: 50px;
+    top: 60px;
+
 }
 
 /*---------------------------*/
@@ -453,6 +461,12 @@ button.b-brown {
     /*--------------------*/
     /*Section 2 & 3*/
     /*--------------------*/
+
+    img.img--kopi-diam {
+        top: -20px;
+        right: -20px;
+    }
+
     div.base {
         position: static;
         border-radius: 0px;
@@ -510,6 +524,12 @@ button.b-brown {
 
 
 @media (max-width: 768px) {
+    div.wrapper-distance {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     /*--------------------*/
     /*Section 1*/
     /*--------------------*/
