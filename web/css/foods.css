@@ -33,15 +33,15 @@
     position: relative;
     border-radius: 20px;
     padding: 10px;
-    width: 30%;
-    height: 17vw;
+    width: 31%;
+    height: 17.5vw;
 }
 
 .white-card {
     background-color: #FFFFF0;
     position: relative;
     border-radius: 20px;
-    padding: 3vw 6.4vw;
+    padding: 3vw 6.1vw;
     text-align: center;
     width: fit-content;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
@@ -50,8 +50,8 @@
 .pastry-price-tag {
     position: absolute;
     background: #899064;
-    bottom: 100px;
-    right: 50px;
+    bottom: 7vw;
+    right: 1vw;
     padding: 2.5% 5.5%;
     border-radius: 15px;
     text-align: center;
@@ -72,6 +72,10 @@ p.price {
     color: var(--white);
 }
 
+.foods-subtitle {
+    text-align: center;
+}
+
 .price-tag p.subtitle {
     color: var(--white);
 }
@@ -82,6 +86,10 @@ p.price {
 
 .pastry-items h6 {
     margin-bottom: 10px;
+}
+
+.noodles-dishes-items img {
+    max-width: 85%;
 }
 
 /* rice dishes*/
@@ -103,7 +111,7 @@ p.price {
 .chickenrice {
     position: absolute;
     top: 20px;
-    right: -10px;
+    right: 0;
 }
 
 .friedrice {
@@ -120,7 +128,7 @@ p.price {
 
 .nasigoreng {
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 5px;
 }
 
@@ -140,7 +148,7 @@ p.price {
 
 .noodles-flower {
     position: absolute;
-    right: 80px;
+    right: 20px;
     bottom: 30px;
 }
 
@@ -155,7 +163,7 @@ p.price {
 .laksa-img {
     position: absolute;
     right: 65px;
-    top: -50px;
+    top: -35px;
 }
 
 .meegoreng {
@@ -165,26 +173,26 @@ p.price {
 
 .maggigoreng {
     position: absolute;
-    right: -20px;
-    top: 35px;
+    right: 10px;
+    top: 50px;
 }
 
 .currymee {
     position: absolute;
-    left: -85px;
-    top: -40px;
+    left: -40px;
+    top: 0;
 }
 
 .charkueyteow {
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: 20px;
 }
 
 .fishbeehoon {
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: 40px;
+    right: 20px;
 }
 
 /*pastry*/
@@ -192,11 +200,15 @@ p.price {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    gap: 50px;
 }
 
 .chicken-pie {
     position: relative;
+}
+
+.chicken-pie .pastry-price-tag {
+    padding: 2.5% 4%;
 }
 
 .croissant {
@@ -208,11 +220,11 @@ p.price {
 }
 
 .curry-puff .pastry-price-tag {
-    right: -10px;
+    right: -2vw;
 }
 
 .croissant .pastry-price-tag {
-    right: 40px;
+    right: -1vw;
 }
 
 /*tablet hide*/
@@ -265,5 +277,74 @@ p.price {
     .noodles-flower {
         right: 10px;
         bottom: 10px;
+    }
+
+    .price-tag {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .pastry-price-tag {
+        bottom: 7vw;
+        right: 3vw;
+    }
+
+    .laksa-img {
+        right: 50px;
+        top: -20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rice-dishes-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .brown-card {
+        height: 32vw;
+        width: 50%;
+    }
+
+    p.price {
+        line-height: 25px;
+    }
+
+    .noodles-dishes-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .pastry-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .chicken-pie {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .croissant {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .curry-puff {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .white-card {
+        padding: 3vw 18vw;
+    }
+
+    .pastry-items img {
+        max-width: 85%;
     }
 }
