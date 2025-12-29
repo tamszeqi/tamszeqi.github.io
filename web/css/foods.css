@@ -45,7 +45,7 @@
     height: 17.5vw;
 }
 
-.white-card {
+.white-card-foods {
     background-color: #FFFFF0;
     position: relative;
     border-radius: 20px;
@@ -373,7 +373,7 @@ p.price {
         text-align: center;
     }
 
-    .white-card {
+    .white-card-foods {
         padding: 3vw 18vw;
     }
 
