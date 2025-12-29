@@ -245,6 +245,10 @@ p.price {
         justify-self: center;
     }
 
+    .kopi-items h5 {
+        margin: 0 -5px;
+    }
+
     .price-tag {
         padding: 8px 15px;
     }
@@ -269,7 +273,7 @@ p.price {
     }
 
     .cocoa-items h5 {
-        margin: auto;
+        margin: 0 -10px;
     }
 
     .refreshing-cards {
@@ -279,6 +283,10 @@ p.price {
 
     .refreshing-items {
         width: auto;
+    }
+
+    .refreshing-items h5 {
+        margin: 0 -22px;
     }
 
     .teh-items .price-tag {

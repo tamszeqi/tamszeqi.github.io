@@ -195,8 +195,8 @@ p.price {
 
 .currymee {
     position: absolute;
-    left: -40px;
-    top: 0;
+    left: -10px;
+    top: -5px;
 }
 
 .charkueyteow {
@@ -322,6 +322,10 @@ p.price {
     .pastry {
         text-align: center;
     }
+
+    .currymee {
+        top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -333,8 +337,8 @@ p.price {
     }
 
     .brown-card {
-        height: 32vw;
-        width: 50%;
+        height: 36vw;
+        width: 55%;
     }
 
     p.price {
@@ -374,7 +378,7 @@ p.price {
     }
 
     .pastry-items img {
-        max-width: 85%;
+        max-width: 70%;
     }
 
     .pastry-price-tag {
