@@ -143,6 +143,16 @@ h1 {
     background-image: url(../images/pouring-coffee.jpg);
 }
 
+.inquiry-info.mobile {
+    display: none;
+}
+
+.inquiry-info.desktop {
+    position: absolute;
+    left: 27.9%;
+    bottom: 25%;
+}
+
 .core .group {
     width: 50%;
 }
@@ -185,7 +195,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: clamp(30px, 7vw, 90px);
-    padding: 60px 120px;
+    padding: clamp(30px, 6vh, 60px) clamp(20px, 9vw, 120px);
 }
 
 .card {
@@ -201,6 +211,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
+    min-width: 200px;
 }
 
 .yenxin {
@@ -248,6 +259,11 @@ h1 {
 
 .news {
     padding-top: 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.news .group {
+    max-width: none;
 }
 
 .news-top {
@@ -256,7 +272,6 @@ h1 {
     align-items: center;
     justify-content: space-between;
 }
-
 
 /* TABLET PORTRAIT & MOBILE */
 @media screen and (max-width: 768px) {
@@ -294,6 +309,16 @@ h1 {
         width: 100% !important;
     }
 
+    .inquiry-info.desktop {
+        display: none;
+    }
+
+    .inquiry-info.mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 
 /* TABLET LANDSCAPE */
@@ -311,11 +336,19 @@ h1 {
         height: 100%;
     }
 
-    .core {
-        flex-direction: column;
+    .core-values, .sanctuary {
         padding-top: clamp(30px, 8vw, 80px);
         margin-left: clamp(-60px, -6vw, -15px);
         margin-right: clamp(-60px, -6vw, -15px);
+    }
+
+    .inquiry-info.desktop {
+        left: 31.7%;
+        bottom: 30%;
+    }
+
+    .core {
+        flex-direction: column;
     }
 
     .core .group {
@@ -333,6 +366,58 @@ h1 {
 }
 
 /* ADJUSTMENTS */
+@media screen and (max-width: 1270px) {
+
+    .green-sqr {
+        bottom: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .green-sqr {
+        bottom: 38%;
+        right: 12%;
+    }
+
+}
+
+@media screen and (max-width: 1137px) {
+
+    .green-sqr {
+        bottom: 44%;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+
+    .green-sqr {
+        bottom: 25% !important;
+        right: 7% !important;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .green-sqr {
+        bottom: 30% !important;
+        right: 8% !important;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .green-sqr {
+        bottom: 35% !important;
+        right: 10% !important;
+    }
+
+}
+
 @media screen and (max-width: 1270px) {
 
     .intro {
@@ -370,6 +455,14 @@ h1 {
 
     .value-icon {
         width: 10%;
+    }
+
+    .member {
+        flex-direction: column;
+    }
+
+    .no-card {
+        flex-direction: column-reverse;
     }
 
 }
