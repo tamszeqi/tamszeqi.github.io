@@ -210,21 +210,6 @@
     align-items: center;
 }
 
-.inquiry-icon {
-    background-color: var(--white);
-    border-radius: 50%;
-    width: 50px;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.inquiry-icon img {
-    width: 35px;
-}
-
 .inquiry-info p.subtitle {
     color: var(--white);
     font-weight: 700;
