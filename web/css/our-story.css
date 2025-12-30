@@ -54,6 +54,8 @@
 
 .slogan::before {
     content: '"';
+    /* 这个是在我的slogan后加入” */
+    /* 其实也可以在html写 只是我觉得这个比较方便 */
     position: absolute;
     top: -20px;
     right: -30px;
@@ -62,22 +64,9 @@
 
 .slogan p {
     color: var(--white);
-    font-style: italic;
     margin: 0;
 }
 
-/* 装饰叶子 */
-.deco {
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.4;
-}
-
-.flowersize {
-    width: 100%;
-    height: auto;
-}
 
 /* 三个卡片 */
 .sqr-group {
