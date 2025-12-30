@@ -52,7 +52,7 @@ p.blacktxt {
 }
 
 .trade-icon {
-    min-width: 30px;
+    min-width: 30 px;
 }
 
 /*----------------------------*/
@@ -501,8 +501,20 @@ div.traceable-supply>div.wrapper {
     /*----------------------------*/
     /*Section 1: Trade Containers*/
     /*----------------------------*/
-    
-        
+    .green-sqr {
+        width: 10vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .trade-icon {
+        width: 50%;
+    }
+
+
     /*----------------------------*/
     /*Section 2: Eco-farming*/
     /*----------------------------*/

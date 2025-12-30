@@ -15,7 +15,7 @@
     gap: 80px;
     align-items: center;
     position: relative;
-    padding: 60px 0;
+    padding: 60px;
 }
 
 .left-side {
@@ -33,14 +33,11 @@
 
 .content-company .small {
     color: var(--tertiary);
-    font-weight: 600;
-    letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
 .content-company h3 {
     margin-bottom: 25px;
-    color: var(--black);
 }
 
 .content-company p {
@@ -57,6 +54,8 @@
 
 .slogan::before {
     content: '"';
+    /* 这个是在我的slogan后加入” */
+    /* 其实也可以在html写 只是我觉得这个比较方便 */
     position: absolute;
     top: -20px;
     right: -30px;
@@ -65,57 +64,9 @@
 
 .slogan p {
     color: var(--white);
-    font-style: italic;
     margin: 0;
 }
 
-/* 装饰叶子 */
-.deco {
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.4;
-}
-
-.flowersize {
-    width: 100%;
-    height: auto;
-}
-
-.leaf1 {
-    top: 10%;
-    left: -3%;
-    width: 80px;
-    transform: rotate(-25deg);
-}
-
-.leaf2 {
-    top: 35%;
-    left: -5%;
-    width: 60px;
-    transform: rotate(-45deg);
-}
-
-.leaf3 {
-    top: 20%;
-    right: -5%;
-    width: 90px;
-    transform: rotate(35deg);
-}
-
-.leaf4 {
-    top: 50%;
-    right: -7%;
-    width: 70px;
-    transform: rotate(65deg);
-}
-
-.leaf5 {
-    bottom: 15%;
-    left: -5%;
-    width: 85px;
-    transform: rotate(110deg);
-}
 
 /* 三个卡片 */
 .sqr-group {
@@ -189,13 +140,10 @@
 
 .content-stories .small {
     color: var(--tertiary);
-    font-weight: 600;
-    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 .content-stories h3 {
-    color: var(--black);
     margin-bottom: 30px;
 }
 
@@ -210,20 +158,13 @@
     border-radius: 30px;
 }
 
-.leaf6 {
-    bottom: -30px;
-    right: -40px;
-    width: 120px;
-    opacity: 0.3;
-    transform: rotate(25deg);
-}
 
 /* 第三部分 - 关于我们 */
 .third-us {
     display: flex;
     gap: 80px;
     align-items: center;
-    margin: -100px 0;
+    margin: -100px;
 }
 
 .staff-img {
@@ -238,13 +179,9 @@
 
 .content-us .small {
     color: var(--tertiary);
-    font-weight: 600;
-    letter-spacing: 2px;
 }
 
-.content-us h3 {
-    color: var(--black);
-}
+
 
 .content-us p {
     color: var(--grey-dark);
@@ -297,8 +234,6 @@
 
 .four-title .small {
     color: var(--tertiary);
-    font-weight: 600;
-    letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
@@ -396,21 +331,6 @@
 }
 
 
-.leaf7 {
-    top: -15px;
-    left: -30px;
-    width: 80px;
-    opacity: 0.25;
-    transform: rotate(-15deg);
-}
-
-.leaf8 {
-    bottom: -25px;
-    right: -35px;
-    width: 100px;
-    opacity: 0.25;
-    transform: rotate(150deg);
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -433,23 +353,6 @@
         width: 100%;
     }
 
-
-    .leaf1,
-    .leaf2,
-    .leaf3,
-    .leaf4,
-    .leaf5 {
-        width: 60px;
-    }
-
-    .leaf6 {
-        width: 90px;
-    }
-
-    .leaf7,
-    .leaf8 {
-        width: 60px;
-    }
 
     .sec-kopidiam {
         flex-direction: column;
