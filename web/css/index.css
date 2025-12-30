@@ -89,6 +89,8 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 150px;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 0;
 }
 
 .group p:not(.small) {
@@ -123,6 +125,154 @@ h1 {
     width: 50%;
 }
 
+.core {
+    display: flex;
+    gap: clamp(20px, 6vw, 115px);
+}
+
+.core-values {
+    margin: 0 clamp(-170px, -12vw, -20px);
+    padding: clamp(50px, 7vw, 100px) clamp(20px, 12vw, 170px);
+}
+
+.banner {
+    margin-top: -14%;
+}
+
+.banner-img-container {
+    background-image: url(../images/pouring-coffee.jpg);
+}
+
+.inquiry-info.mobile {
+    display: none;
+}
+
+.inquiry-info.desktop {
+    position: absolute;
+    left: 27.9%;
+    bottom: 25%;
+}
+
+.core .group {
+    width: 50%;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+}
+
+.value {
+    display: flex;
+    gap: 20px;
+}
+
+.value-icon {
+    width: 25%;
+    min-width: 30px;
+}
+
+.value-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team > .group {
+    text-align: center;
+    max-width: clamp(320px, 52vw, 750px);
+    margin-bottom: 60px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: clamp(30px, 7vw, 90px);
+    padding: clamp(30px, 6vh, 60px) clamp(20px, 9vw, 120px);
+}
+
+.card {
+    background-color: var(--dark);
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.teammate-photo {
+    width: clamp(200px, 22.5vw, 325px);
+    aspect-ratio: 9 / 10;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    min-width: 200px;
+}
+
+.yenxin {
+    background-image: url(../images/angyenxin.png);
+}
+
+.szeqi {
+    background-image: url(../images/tamszeqi.png);
+}
+
+.team-button {
+    margin-top: 30px;
+}
+
+.sanctuary {
+    background-image: url(../images/top-view-coffee.jpg);
+    margin: 0 clamp(-170px, -12vw, -20px);
+    padding: clamp(50px, 7vw, 100px) clamp(20px, 12vw, 170px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sanctuary .group {
+    background-color: var(--tertiary);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.sanctuary .group p, .sanctuary .group h4 {
+    color: var(--white);
+}
+
+.sanctuary .group .desc {
+    margin-bottom: 40px;
+}
+
+.check-icon-wrapper {
+    padding: 5px;
+    background-color: var(--white-20);
+}
+
+.news {
+    padding-top: 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.news .group {
+    max-width: none;
+}
+
+.news-top {
+    margin-top: clamp(50px, 7vw, 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* TABLET PORTRAIT & MOBILE */
 @media screen and (max-width: 768px) {
 
@@ -155,6 +305,20 @@ h1 {
         aspect-ratio: 3 / 2;
     }
 
+    .core .group {
+        width: 100% !important;
+    }
+
+    .inquiry-info.desktop {
+        display: none;
+    }
+
+    .inquiry-info.mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 
 /* TABLET LANDSCAPE */
@@ -172,9 +336,88 @@ h1 {
         height: 100%;
     }
 
+    .core-values, .sanctuary {
+        padding-top: clamp(30px, 8vw, 80px);
+        margin-left: clamp(-60px, -6vw, -15px);
+        margin-right: clamp(-60px, -6vw, -15px);
+    }
+
+    .inquiry-info.desktop {
+        left: 31.7%;
+        bottom: 30%;
+    }
+
+    .core {
+        flex-direction: column;
+    }
+
+    .core .group {
+        width: 70%;
+    }
+
+    .values {
+        width: 100%;
+    }
+
+    .value-icon {
+        width: 15%;
+    }
+
 }
 
 /* ADJUSTMENTS */
+@media screen and (max-width: 1270px) {
+
+    .green-sqr {
+        bottom: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .green-sqr {
+        bottom: 38%;
+        right: 12%;
+    }
+
+}
+
+@media screen and (max-width: 1137px) {
+
+    .green-sqr {
+        bottom: 44%;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+
+    .green-sqr {
+        bottom: 25% !important;
+        right: 7% !important;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .green-sqr {
+        bottom: 30% !important;
+        right: 8% !important;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .green-sqr {
+        bottom: 35% !important;
+        right: 10% !important;
+    }
+
+}
+
 @media screen and (max-width: 1270px) {
 
     .intro {
@@ -199,6 +442,27 @@ h1 {
 
     .overlap-over {
         bottom: -2%;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .values {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value-icon {
+        width: 10%;
+    }
+
+    .member {
+        flex-direction: column;
+    }
+
+    .no-card {
+        flex-direction: column-reverse;
     }
 
 }
