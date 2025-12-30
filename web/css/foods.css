@@ -40,7 +40,7 @@
     background-color: #D8C799;
     position: relative;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 5px;
     width: 31%;
     height: 17.5vw;
     transition: transform 0.4s ease;
@@ -140,8 +140,8 @@ p.price {
 
 .nasipattaya {
     position: absolute;
-    right: 40px;
-    top: 5px
+    right: 20px;
+    top: -20px
 }
 
 .nasigoreng {
@@ -346,6 +346,36 @@ p.price {
         margin-top: 30px;
     }
 
+    .nasipattaya {
+        top: 0;
+    }
+
+    .friedrice {
+        top: 20px;
+    }
+
+    .duckrice {
+        top: 30px;
+    }
+
+    .curryfish {
+        left: -50px;
+        top: 30px;
+    }
+
+    .currymee {
+        top: 5px;
+    }
+
+    .maggigoreng {
+        top: 40px;
+    }
+
+    .meegoreng {
+        right: 20px;
+        top: 40px;
+    }
+
     .brown-card {
         height: 36vw;
         width: 55%;
@@ -392,14 +422,14 @@ p.price {
     }
 
     .pastry-price-tag {
-        right: -3vw;
+        right: -1vw;
     }
 
     .curry-puff .pastry-price-tag {
-        right: -3vw;
+        right: -1vw;
     }
 
     .croissant .pastry-price-tag {
-        right: -3vw;
+        right: -1vw;
     }
 }
