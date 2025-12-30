@@ -9,14 +9,9 @@
 .store-intro {
     text-align: center;
     max-width: 900px;
+    /* 为了限制那个sub的长度才选择放max-width */
     margin: auto;
-    margin-top: 70px;
     margin-bottom: 60px;
-}
-
-.store-section {
-    padding-top: 0;
-    margin-top: -120px;
 }
 
 
@@ -25,6 +20,7 @@
     color: var(--tertiary);
 }
 
+/* 因为都是粘着所以放margin让他有距离 */
 .store-intro h3 {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -34,30 +30,31 @@
 /* 总部地图 */
 .map-container-large img {
     width: 100%;
-    height: auto;
-    margin-top: 40px;
+    /* 这个照片是自己有border 所以我使用png */
 }
 
 .map-container-large img:hover {
     transform: scale(1.02);
+    /* 让他变大一丢丢 */
 }
 
 .headquarters h4 {
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin-bottom: 60px;
 }
 
-/* 总部详细信息框 */
+/* 总部信息框 */
 .hq-details {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin-top: 30px;
+    /* 填满那行 根据我给的位置 likecontainer的宽度 */
+    margin-top: 10px;
     margin-bottom: 60px;
 }
 
 .detail-column {
     flex: 1;
+    /* 让他们每个details都能分到位置 所以写flex:1 */
     text-align: center;
     padding: 0 20px;
     border-right: 2px solid var(--grey-dark);
@@ -86,11 +83,11 @@
 /* 地图部分 */
 .store-map {
     flex: 1;
+    /* 同样意思 分一部分给他 这里的意思是文字一部分照片一部分 */
 }
 
 .store-map img {
     width: 100%;
-    border-radius: 20px;
 }
 
 .store-map img:hover {
@@ -100,7 +97,7 @@
 /* words */
 .store-info {
     flex: 1;
-    margin-top: 0;
+    /* 对应那个照片 一人一半 */
 }
 
 /* info de box */
@@ -120,8 +117,7 @@
 /* icon */
 .info-item img {
     width: 25px;
-    height: auto;
-    margin-top: 3px;
+    /* 用png应为是icon */
 }
 
 /* yishang done liao  */
@@ -143,9 +139,13 @@
 
 }
 
+.tajuk-promotion {
+    margin-bottom: 90px;
+}
+
 .promotion-section p {
     margin: auto;
-    text-align: center;
+    max-width: 600px;
     color: var(--grey-dark);
 }
 
@@ -171,10 +171,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: transform 0.4s ease;
 }
 
 .promo-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.1);
+    /* 统一性那个jiaxuan的food 的animation */
 }
 
 .price-tag {
@@ -188,11 +190,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     color: var(--white);
     z-index: 10;
 }
 
+.price-tag .price {
+    color: var(--white);
+    line-height: 40px;
+}
+
+.price-tag .currency {
+    color: var(--white);
+}
 
 .promo-details {
     width: 100%;
@@ -200,9 +209,7 @@
 }
 
 .promo-details h4 {
-    margin: 0;
     color: var(--black);
-    width: 45%;
     text-align: left;
     position: relative;
     z-index: 5;
@@ -214,7 +221,6 @@
     z-index: 2;
     object-fit: contain;
 }
-
 
 
 /* Milo */
@@ -408,7 +414,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    max-width: 900px;
     margin: auto;
     width: 100%;
     justify-content: center;
