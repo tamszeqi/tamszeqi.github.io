@@ -79,41 +79,6 @@
     height: auto;
 }
 
-.leaf1 {
-    top: 10%;
-    left: -3%;
-    width: 80px;
-    transform: rotate(-25deg);
-}
-
-.leaf2 {
-    top: 35%;
-    left: -5%;
-    width: 60px;
-    transform: rotate(-45deg);
-}
-
-.leaf3 {
-    top: 20%;
-    right: -5%;
-    width: 90px;
-    transform: rotate(35deg);
-}
-
-.leaf4 {
-    top: 50%;
-    right: -7%;
-    width: 70px;
-    transform: rotate(65deg);
-}
-
-.leaf5 {
-    bottom: 15%;
-    left: -5%;
-    width: 85px;
-    transform: rotate(110deg);
-}
-
 /* 三个卡片 */
 .sqr-group {
     display: flex;
@@ -204,13 +169,6 @@
     border-radius: 30px;
 }
 
-.leaf6 {
-    bottom: -30px;
-    right: -40px;
-    width: 120px;
-    opacity: 0.3;
-    transform: rotate(25deg);
-}
 
 /* 第三部分 - 关于我们 */
 .third-us {
@@ -384,21 +342,6 @@
 }
 
 
-.leaf7 {
-    top: -15px;
-    left: -30px;
-    width: 80px;
-    opacity: 0.25;
-    transform: rotate(-15deg);
-}
-
-.leaf8 {
-    bottom: -25px;
-    right: -35px;
-    width: 100px;
-    opacity: 0.25;
-    transform: rotate(150deg);
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -421,23 +364,6 @@
         width: 100%;
     }
 
-
-    .leaf1,
-    .leaf2,
-    .leaf3,
-    .leaf4,
-    .leaf5 {
-        width: 60px;
-    }
-
-    .leaf6 {
-        width: 90px;
-    }
-
-    .leaf7,
-    .leaf8 {
-        width: 60px;
-    }
 
     .sec-kopidiam {
         flex-direction: column;
