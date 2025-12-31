@@ -37,7 +37,7 @@
 }
 
 .brown-card {
-    background-color: #D8C799;
+    background-color: var(--dark-brown);
     position: relative;
     border-radius: 20px;
     padding: 10px 5px;
@@ -51,7 +51,7 @@
 }
 
 .white-card-foods {
-    background-color: #FFFFF0;
+    background-color: var(--white);
     position: relative;
     border-radius: 20px;
     padding: 3vw 6.1vw;
@@ -67,7 +67,7 @@
 
 .pastry-price-tag {
     position: absolute;
-    background: #899064;
+    background: var(--tertiary);
     bottom: 7vw;
     right: -1vw;
     padding: 2.5% 5.5%;
@@ -78,7 +78,7 @@
 
 .price-tag {
     position: absolute;
-    background: #899064;
+    background: var(--tertiary);
     bottom: 20px;
     right: 20px;
     padding: 2.5% 5.5%;

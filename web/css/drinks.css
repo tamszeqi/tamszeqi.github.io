@@ -51,7 +51,7 @@
 
 .price-tag {
     position: absolute;
-    background: #899064;
+    background: var(--tertiary);
     top: 100px;
     right: 30px;
     padding: 8px 1.5vw;
@@ -68,8 +68,8 @@ p.price {
 }
 
 .kopi-items h5 {
-    background: #470000;
-    color: white;
+    background: var(--secondary);
+    color: var(--white);
     padding: 20px;
     border-radius: 35px;
 }
@@ -110,8 +110,8 @@ p.price {
 }
 
 .teh-items h5 {
-    background: #470000;
-    color: white;
+    background: var(--secondary);
+    color: var(--white);
     padding: 20px 0;
     border-radius: 35px;
 }
@@ -149,8 +149,8 @@ p.price {
 }
 
 .cocoa-items h5 {
-    background: #470000;
-    color: white;
+    background: var(--secondary);
+    color: var(--white);
     padding: 20px 0;
     border-radius: 35px;
 }
@@ -193,8 +193,8 @@ p.price {
 }
 
 .refreshing-items h5 {
-    background: #470000;
-    color: white;
+    background: var(--secondary);
+    color: var(--white);
     padding: 20px 0;
     border-radius: 35px;
     margin: 0 -40px;

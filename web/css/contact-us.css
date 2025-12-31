@@ -154,7 +154,7 @@ input {
 }
 
 .questionbox {
-    background-color: var(--faq);
+    background-color: var(--dark-brown);
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -196,7 +196,7 @@ input {
 .answer {
     display: none;
     color: var(--grey-dark);
-    background-color: #FFFFFF;
+    background-color: var(--white);
     padding: 15px 20px;
     border: none;
     border-radius: 10px;

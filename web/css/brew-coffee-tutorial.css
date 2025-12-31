@@ -176,7 +176,7 @@ div.testimonial {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #D8C799;
+    background-color: var(--dark-brown);
     border-radius: 30px;
     padding: 70px;
     gap: 5%;

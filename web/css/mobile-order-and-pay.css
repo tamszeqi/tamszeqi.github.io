@@ -90,7 +90,7 @@ body {
 
 /* STEP CARDS */
 .step {
-    background-color: #FFF6DE;
+    background-color: var(--light-brown);
     border-radius: 24px;
     width: 100%;
     max-width: 280px;
