@@ -127,6 +127,7 @@ body {
 
 /* BOTTOM STEP */
 .seventhstep {
+    opacity: 1;
     text-align: center;
     grid-column: 2;
     justify-self: center;
