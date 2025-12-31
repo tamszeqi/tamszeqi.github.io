@@ -67,57 +67,16 @@
     margin: 0;
 }
 
-
-/* 三个卡片 */
-.sqr-group {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 40px;
-    gap: 25px;
-    margin-top: -100px;
-}
-
-.sqr-img-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 32%;
-    min-height: 250px;
-    background-size: cover;
-    background-position: center;
-    gap: 20px;
-    border-radius: 15px;
-    padding: 15px;
-    transition: transform 0.3s ease;
-}
-
-.sqr-img-btn:hover {
-    transform: translateY(-10px);
-}
-
-.sqr-img-btn h4 {
-    color: var(--white);
-    margin-bottom: 15px;
-}
-
-.sqr-img-btn p {
-    color: var(--white);
-    opacity: 0.9;
-    margin: 0;
-}
-
 .company {
-    background-image: url('../images/company-story.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/company-story.jpg');
 }
 
 .about {
-    background-image: url('../images/about-us.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/about-us.jpg');
 }
 
 .testimonials {
-    background-image: url('../images/testimonials.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/testimonials.jpg');
 }
 
 /* 第二部分 - 公司故事 */
@@ -226,6 +185,7 @@
     text-align: center;
     margin: 120px 0 0 0;
     border-radius: 25px 25px 0 0;
+    overflow-x: clip;
 }
 
 .four-title {
@@ -255,11 +215,11 @@
     font-style: italic;
 }
 
-.image-foodblooger {
+.image-foodblogger {
     margin: 30px 0 20px 0;
 }
 
-.image-foodblooger img {
+.image-foodblogger img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -277,56 +237,56 @@
 }
 
 /* 浮动头像 */
-.blooger-1,
-.blooger-2,
-.blooger-3,
-.blooger-4 {
+.blogger-1,
+.blogger-2,
+.blogger-3,
+.blogger-4 {
     position: absolute;
 }
 
-.food-blooger {
+.food-blogger {
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
 
-.blooger-1 {
+.blogger-1 {
     top: 15%;
     left: 8%;
 }
 
-.blooger-1 .food-blooger {
+.blogger-1 .food-blogger {
     width: 90px;
     height: 90px;
 }
 
-.blooger-2 {
+.blogger-2 {
     top: 20%;
     right: 8%;
 }
 
-.blooger-2 .food-blooger {
+.blogger-2 .food-blogger {
     width: 110px;
     height: 110px;
 }
 
-.blooger-3 {
+.blogger-3 {
     bottom: 20%;
     left: 5%;
 }
 
-.blooger-3 .food-blooger {
+.blogger-3 .food-blogger {
     width: 70px;
     height: 70px;
 }
 
-.blooger-4 {
+.blogger-4 {
     bottom: 15%;
     right: 10%;
     z-index: 100;
 }
 
-.blooger-4 .food-blooger {
+.blogger-4 .food-blogger {
     width: 95px;
     height: 95px;
 }
@@ -353,12 +313,15 @@ div.last-right-leaf {
 
 }
 
+.about-us {
+    position: relative;
+    overflow-x: clip;
+}
 
 div.top-right-leaf {
-    top: -45%;
-    right: 1%;
-    z-index: 100;
-    width: 12%;
+    top: -40%;
+    right: -5%;
+    width: 20%;
     transform: scaleX(-1) rotate(5deg);
 }
 
@@ -503,10 +466,10 @@ div.top-right-leaf {
         padding: 60px 15px;
     }
 
-    .blooger-1,
-    .blooger-2,
-    .blooger-3,
-    .blooger-4 {
+    .blogger-1,
+    .blogger-2,
+    .blogger-3,
+    .blogger-4 {
         display: none;
     }
 }
