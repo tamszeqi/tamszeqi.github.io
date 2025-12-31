@@ -129,9 +129,8 @@ header {
 
 /* --- PROMOTION  --- */
 .promotion-section {
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
-    padding: 0 40px;
 }
 
 .promotion-section .small {
@@ -158,13 +157,11 @@ header {
 /* biaoti wan cheng */
 .promo-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 100%;
 }
 
 
@@ -233,24 +230,24 @@ header {
 
 /* Milo */
 .promo-card:nth-of-type(1) .promo-details img {
-    width: 70%;
+    width: 250px;
     bottom: -30px;
-    right: -30%;
+    right: -105px;
     z-index: 3;
 }
 
 /* Curry Puff */
 .promo-card:nth-of-type(2) .promo-details img {
-    width: 110%;
+    width: 380px;
     bottom: -45px;
-    right: -22%;
+    right: -75px;
 }
 
 /* Kopi O */
 .promo-card:nth-of-type(3) .promo-details img {
-    width: 85%;
+    width: 300px;
     bottom: -40px;
-    right: -10%;
+    right: -30px;
     z-index: 1;
 }
 
@@ -263,8 +260,8 @@ header {
 /* ---  DELIVERY  --- */
 /* whole delivery box gap */
 .delivery-section {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 
@@ -334,8 +331,7 @@ header {
     background-color: var(--secondary);
     border-radius: 30px;
     height: 573px;
-    width: 90%;
-    max-width: 1100px;
+    width: 1100px;
     margin: auto;
     position: relative;
     z-index: 1;
@@ -349,7 +345,7 @@ header {
 /* 标题样式 */
 .titlekopidiam {
     text-align: center;
-    margin: 80px 0 0 0;
+    margin-top: 80px;
     z-index: 10;
     position: relative;
 }
@@ -502,8 +498,8 @@ header {
 
     .promotion-section {
         padding: 0 20px;
-        margin-bottom: 80px;
-        margin-top: 80px;
+        margin-bottom: 100px;
+        margin-top: 50px;
     }
 
     .promotion-section p {
@@ -512,40 +508,19 @@ header {
 
     .promo-grid {
         display: grid;
+        /* 分格子 */
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 5px;
+        /* 这个是example like这个是负责切蛋糕,决定这一排要有几列，每列有多宽 反正人话就是决定layout怎么切多宽多高*/
+        grid-template-rows: auto;
+        gap: 30px;
         justify-items: center;
         max-width: 800px;
         margin: 40px auto 60px auto;
     }
 
-    .promo-card {
-        width: 220px;
-        max-width: 220px;
-        min-width: 220px;
-        height: 200px;
-        padding: 20px;
-    }
-
-    .price-tag {
-        width: 50px;
-        height: 50px;
-        top: -35px;
-        left: 25px;
-    }
-
-    .price-tag .price {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    .price-tag .currency {
-        font-size: 10px;
-    }
-
     .promo-card:nth-child(3) {
         grid-column: 1 / -1;
+        /* 决定自己要坐哪里,多大 */
         justify-self: center;
         margin-top: 40px;
     }
@@ -555,8 +530,8 @@ header {
     }
 
     .delivery-section {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 35px;
+        margin-bottom: 50px;
     }
 
     .delivery-grid {
@@ -595,8 +570,8 @@ header {
     }
 
     .kopidiam-way-section {
-        margin-top: 150px;
-        margin-bottom: 120px;
+        margin-top: 100px;
+        margin-bottom: 80px;
     }
 
 
@@ -768,8 +743,9 @@ header {
         min-width: auto;
     }
 
+    /* 这里也是针对一个group里的孩子一个一个调(xiangtongmingzi/meimingzi) */
     .promo-card:nth-of-type(1) .promo-details img {
-        width: 170px;
+        width: 250px;
         right: -20px;
     }
 
@@ -797,7 +773,6 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     .delivery-card h6 {
