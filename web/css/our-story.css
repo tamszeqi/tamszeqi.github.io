@@ -1,19 +1,25 @@
+/* 页面标题背景 */
 .title {
-    background-image: linear-gradient(to top,
-            var(--black-50),
-            var(--black-50)),
-
-        url('../images/header-our-story.jpg');
+    background-image: linear-gradient(to top, var(--black-50), var(--black-50)), url('../images/header-our-story.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
+/* 第一部分 - 公司介绍 */
+.first-about {
+    margin-bottom: 80px;
+}
 
 .about-company {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    gap: 100px;
+    display: flex;
+    gap: 80px;
     align-items: center;
     position: relative;
-    padding-bottom: 50px;
+    padding: 60px;
+}
+
+.left-side {
+    width: 50%;
 }
 
 .latte {
@@ -21,240 +27,455 @@
     height: auto;
 }
 
+.right-side {
+    width: 50%;
+}
+
 .content-company .small {
     color: var(--tertiary);
+    margin-bottom: 15px;
 }
 
-.right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 77%;
+.content-company h3 {
+    margin-bottom: 25px;
 }
 
-.content-company {
-    margin-bottom: 30px;
-}
-
-.content {
-    margin-top: 30px;
+.content-company p {
+    color: var(--grey-dark);
+    margin-bottom: 40px;
 }
 
 .slogan {
-    background-color: var(--secondary);
-    width: 100%;
-    max-width: 500px;
-    padding: 30px 40px;
-    border-radius: 0 30px 30px 30px;
+    background: var(--secondary);
+    padding: 35px 45px;
+    border-radius: 25px;
     position: relative;
+}
+
+.slogan::before {
+    content: '"';
+    /* 这个是在我的slogan后加入” */
+    /* 其实也可以在html写 只是我觉得这个比较方便 */
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    color: var(--tertiary);
 }
 
 .slogan p {
     color: var(--white);
+    margin: 0;
 }
 
 
-.company {
-    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/company-story.jpg');
-}
-
-.about {
-    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/about-us.jpg');
-}
-
-.testimonials {
-    background-image: linear-gradient(var(--black-50), var(--black-60)), url('../images/testimonials.jpg');
-}
-
+/* 三个卡片 */
 .sqr-group {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.leaf1 {
-    top: 50%;
-    left: -6%;
-    width: 18%;
-    transform: scaleX(-1) rotate(-140deg);
-}
-
-.leaf2 {
-    top: 70%;
-    left: -8%;
-    width: 15%;
-    transform: scaleX(-1) rotate(-185deg);
-}
-
-.leaf3 {
-    top: 70%;
-    right: -30%;
-    width: 25%;
-    transform: scaleX(-1) rotate(9deg);
-}
-
-.leaf4 {
-    top: 90%;
-    right: -20%;
-    width: 20%;
-    transform: scaleX(-1)rotate(50deg);
-}
-
-.leaf5 {
-    top: 135%;
-    left: -22%;
-    width: 20%;
-    transform: scaleY(-1) rotate(40deg);
-}
-
-/* 第二section */
-.sec-kopidiam {
     display: flex;
-    position: relative;
-    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0px 50px;
+    gap: 30px;
+    margin-top: -120px;
 }
 
-.content-stories {
-    flex: 1;
-    background-color: var(--dark);
-    padding: 10px 40px;
+.sqr-img-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    width: 32%;
+    min-height: 290px;
+    background-size: cover;
+    background-position: center;
+    gap: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
 }
 
+.sqr-img-btn:hover {
+    transform: translateY(-10px);
+}
+
+.sqr-img-btn h4 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.sqr-img-btn p {
+    color: var(--white);
+    opacity: 0.9;
+    margin: 0;
+}
+
+.company {
+    background-image: url('../images/company-story.jpg');
+}
+
+.about {
+    background-image: url('../images/about-us.jpg');
+}
+
+.testimonials {
+    background-image: url('../images/testimonials.jpg');
+}
+
+/* 第二部分 - 公司故事 */
+.sec-kopidiam {
+    display: flex;
+    gap: 0;
+    margin: 120px 0;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.content-stories {
+    background: var(--dark);
+    padding: 60px 50px;
+    width: 50%;
+    border-radius: 30px;
+    transform: translateY(50px);
+}
 
 .content-stories .small {
     color: var(--tertiary);
+    margin-bottom: 20px;
+}
 
+.content-stories h3 {
+    margin-bottom: 30px;
+}
+
+.content-stories p {
+    color: var(--grey-dark);
 }
 
 .bar {
-    flex: 1;
-    border-radius: 50px;
+    width: 50%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 
-.deco.leaf6 {
-    bottom: -60px;
-    right: -20px;
-    z-index: 1;
-    width: 30%;
-}
-
-
-/* third section */
-.content-us .small {
-    color: var(--tertiary);
-
-}
-
-.statsbar {
-    justify-content: flex-start;
-    gap: clamp(15px, 4vw, 100px);
-}
-
+/* 第三部分 - 关于我们 */
 .third-us {
     display: flex;
+    gap: 80px;
     align-items: center;
-    gap: 60px;
-    margin-top: 50px;
+    margin: -100px;
 }
-
 
 .staff-img {
     width: 45%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .content-us {
     width: 55%;
-    display: flex;
-    flex-direction: column;
 }
 
-/* fourth sec */
+.content-us .small {
+    color: var(--tertiary);
+}
+
+
+
+.content-us p {
+    color: var(--grey-dark);
+}
+
+.statsbar {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.stats:hover {
+    transform: none;
+}
+
+.stats h2 {
+    color: var(--tertiary);
+}
+
+.statstext {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+/* 第四部分 - 客户评价 */
 .wrapper.dark {
+    background: var(--dark);
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding: 100px 170px;
     text-align: center;
+    margin: 150px 0 0 0;
+    border-radius: 30px 30px 0 0;
 }
 
 .four-title {
-    margin-bottom: 50px;
-    z-index: 2;
-    position: relative;
+    margin-bottom: 30px;
+}
+
+.four-title .small {
+    color: var(--tertiary);
+    margin-bottom: 15px;
+}
+
+.four-title h2 {
+    color: var(--black);
 }
 
 .four-content {
-    background-color: var(--secondary);
+    background: var(--secondary);
     color: var(--white);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 60px 80px;
+    padding: 30px 120px;
     border-radius: 30px;
-    position: relative;
-    z-index: 2;
 }
 
+.four-content p:first-child {
+    margin-bottom: 40px;
+    font-style: italic;
+}
 
-/*  中间 Daniel Lim 的头像 */
+.image-foodblooger {
+    margin: 30px 0 20px 0;
+}
+
 .image-foodblooger img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
+.four-content h6 {
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.four-content p:last-child {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* 浮动头像 */
 .blooger-1,
 .blooger-2,
 .blooger-3,
 .blooger-4 {
     position: absolute;
-    z-index: 1;
 }
 
 .food-blooger {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.blooger-1 {
+    top: 15%;
+    left: 8%;
+}
+
+.blooger-1 .food-blooger {
+    width: 90px;
+    height: 90px;
+}
+
+.blooger-2 {
+    top: 20%;
+    right: 8%;
+}
+
+.blooger-2 .food-blooger {
+    width: 110px;
+    height: 110px;
+}
+
+.blooger-3 {
+    bottom: 20%;
+    left: 5%;
+}
+
+.blooger-3 .food-blooger {
     width: 70px;
     height: 70px;
 }
 
-/* 左上角那个男的 */
-.blooger-1 {
-    top: 20%;
-    left: 10%;
-}
-
-/* 右上角那个戴眼镜的 */
-.blooger-2 {
-    top: 25%;
+.blooger-4 {
+    bottom: 15%;
     right: 10%;
 }
 
-/* 左下角那个穿白衣服的 */
-.blooger-3 {
-    bottom: 15%;
-    left: 5%;
+.blooger-4 .food-blooger {
+    width: 95px;
+    height: 95px;
 }
 
-/* 右下角那个女生 */
-.blooger-4 {
-    bottom: 10%;
-    right: 8%;
+
+
+
+@media screen and (max-width: 1024px) {
+    .about-company {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .third-us {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .left-side,
+    .right-side,
+    .staff-img,
+    .content-us {
+        width: 100%;
+    }
+
+
+    .sec-kopidiam {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    .content-stories {
+        width: 100%;
+        transform: none;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .bar {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+
+    .sqr-group {
+        flex-direction: column;
+        margin-top: -80px;
+        padding: 0 20px;
+    }
+
+    .sqr-img-btn {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .statsbar {
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
-/* === 6. 装饰叶子位置 === */
-.deco.leaf7 {
-    top: 0;
-    left: 0;
-    width: 200px;
-}
+@media screen and (max-width: 768px) {
+    .about-company {
+        gap: 30px;
+        padding: 30px 0;
+    }
 
-.deco.leaf8 {
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    transform: rotate(180deg);
-    /* 旋转一下 */
+    .latte {
+        display: none;
+    }
+
+    .deco {
+        display: none;
+    }
+
+    .sec-kopidiam {
+        margin: 80px 0;
+    }
+
+    .content-stories {
+        padding: 40px 20px;
+    }
+
+    .bar {
+        height: 250px;
+    }
+
+    .third-us {
+        gap: 30px;
+        margin: -50px 0;
+    }
+
+    .sqr-group {
+        margin-top: -100px;
+        padding: 0 15px;
+    }
+
+    .sqr-img-btn {
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .statsbar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .stats {
+        flex: 1;
+        padding: 15px 10px;
+    }
+
+    .stats h2 {
+        font-size: 28px;
+    }
+
+    .statstext {
+        font-size: 9px;
+    }
+
+    .content-company h3,
+    .content-stories h3,
+    .content-us h3,
+    .four-title h2 {
+        font-size: 22px;
+    }
+
+    .four-content {
+        padding: 40px 20px;
+        margin: 0 15px;
+    }
+
+    .slogan {
+        padding: 20px 25px;
+    }
+
+    .wrapper.dark {
+        padding: 60px 15px;
+    }
+
+    .blooger-1,
+    .blooger-2,
+    .blooger-3,
+    .blooger-4 {
+        display: none;
+    }
 }

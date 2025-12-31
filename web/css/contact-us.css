@@ -395,9 +395,7 @@ div.last-right-up {
 
     /* 图片 */
     .coffeeboy {
-        width: 80%;
-        max-height: fit-content;
-        margin-left: -200px;
+        display: none;
     }
 
     /* FAQ 两栏保持 */
@@ -408,4 +406,16 @@ div.last-right-up {
     .boxquestion {
         margin-bottom: 5px;
     }
+
+    .touchcontent {
+        margin: auto;
+        text-align: center;
+    }
+
+    .socialbox {
+        margin: 0 auto 45px auto;
+        justify-content: center;
+        text-align: center;
+    }
+
 }

@@ -29,17 +29,12 @@ body {
 
 .earn-stars {
     text-align: center;
-    max-width: 900px;
+    max-width: fit-content;
     margin: 0 auto;
 }
 
 .earn-stars h3 {
     margin-bottom: 30px;
-}
-
-.earn-stars p {
-    max-width: 720px;
-    margin: 0 auto;
 }
 
 /* rewards section*/
@@ -78,8 +73,17 @@ body {
     gap: 20px;
 }
 
+.bday-treat {
+    padding: 0 0 10px;
+}
+
 .mobile-ordering {
-    padding: 0 0 40px;
+    padding: 0 0 50px;
+}
+
+.get-to-free {
+    margin-top: -10px;
+    padding: 0 0 45px;
 }
 
 /* Card title */
@@ -248,15 +252,12 @@ body {
     position: absolute;
     inset: 0;
     pointer-events: none;
+    z-index: -1;
 }
 
 .deco>div {
     position: absolute;
     width: 40%
-}
-
-.deco {
-    z-index: -1;
 }
 
 .bottom-flower {
@@ -313,6 +314,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .earn-stars {
+        max-width: 100%;
+        padding: 0 30px;
+        margin-bottom: 70px;
+    }
+
     .bottom-flower {
         max-width: 33.33%;
     }
