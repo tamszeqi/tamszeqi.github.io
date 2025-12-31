@@ -7,12 +7,13 @@
 }
 
 .drinks-subtitle {
-    justify-items: center;
     margin-bottom: 100px;
 }
 
 .drinks-subtitle h3 {
     margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .drinks-img img {
@@ -30,6 +31,7 @@
 
 .kopi-subtitle h3 {
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .kopi-cards {
@@ -88,6 +90,7 @@ p.price {
 
 .teh-subtitle h3 {
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .teh-items {
@@ -268,7 +271,7 @@ p.price {
     }
 
     .teh-items h5 {
-        margin: 0 11%;
+        margin: 0 10.5%;
     }
 
     .cocoa-cards {
