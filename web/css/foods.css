@@ -401,16 +401,19 @@ p.price {
     .chicken-pie {
         justify-items: center;
         text-align: center;
+        align-items: center;
     }
 
     .croissant {
         justify-items: center;
         text-align: center;
+        align-items: center;
     }
 
     .curry-puff {
         justify-items: center;
         text-align: center;
+        align-items: center;
     }
 
     .white-card-foods {
