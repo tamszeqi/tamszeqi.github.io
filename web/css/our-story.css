@@ -58,14 +58,14 @@
 
 .slogan p {
     color: var(--white);
-    margin: 0;
+    margin: 0; /* 让文字紧贴slogan框边缘不要有额外间距 */
 }
 
 /* 三个卡片 */
 .sqr-group {
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 50px;
     gap: 30px;
     margin-top: -140px;
 }
@@ -98,7 +98,7 @@
 .sqr-img-btn p {
     color: var(--white);
     opacity: 0.9;
-    margin: 0;
+    margin: 0; /* 默认margin，让文字与title铁铁 */
 }
 
 .company {
@@ -116,8 +116,8 @@
 /* 第二部分 - 公司故事 */
 .sec-kopidiam {
     display: flex;
-    gap: 0;
-    margin: 120px 0 250px 0;
+    gap: 0; /*文字框和图片无缝连接中间不要space  */
+    margin: 120px 0 250px;
     position: relative;
     width: 100%;
 }
@@ -216,8 +216,8 @@
     position: relative;
     padding: 80px 140px;
     text-align: center;
-    margin: 120px 0 0 0;
-    border-radius: 25px 25px 0 0;
+    margin: 120px 0;
+    border-radius: 25px 25px 0 0; /*底部直角连接footer */
     overflow-x: clip;
 }
 
@@ -238,7 +238,7 @@
     background: var(--secondary);
     color: var(--white);
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 25px 100px;
     border-radius: 25px;
 }
@@ -265,7 +265,7 @@
 
 .four-content p:last-child {
     color: rgba(255, 255, 255, 0.8);
-    margin: 0;
+    margin: 0; /* 最后段落不要底部间距不要有extra的空白 */
     letter-spacing: 1px;
 }
 
