@@ -16,7 +16,7 @@ header {
     max-width: 900px;
     /* 为了限制那个sub的长度才选择放max-width */
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 
@@ -44,7 +44,7 @@ header {
 }
 
 .headquarters h4 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 /* 总部信息框 */
@@ -54,7 +54,7 @@ header {
     align-items: stretch;
     /* 填满那行 根据我给的位置 likecontainer的宽度 */
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .detail-column {
@@ -77,12 +77,12 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 /*give him align  */
 .store-row h4 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /* 地图部分 */
@@ -129,7 +129,7 @@ header {
 
 /* --- PROMOTION  --- */
 .promotion-section {
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ header {
 }
 
 .tajuk-promotion {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .promotion-section p {
@@ -160,8 +160,8 @@ header {
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
-    margin-top: 60px;
-    margin-bottom: 120px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 
@@ -260,8 +260,8 @@ header {
 /* ---  DELIVERY  --- */
 /* whole delivery box gap */
 .delivery-section {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 
@@ -323,8 +323,8 @@ header {
 /* ---  KOPIDIAM WAY --- */
 .kopidiam-way-section {
     position: relative;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 150px;
+    margin-bottom: 120px;
 }
 
 .way-content-box {
@@ -345,7 +345,7 @@ header {
 /* 标题样式 */
 .titlekopidiam {
     text-align: center;
-    margin: 80px 0 0 0;
+    margin-top: 80px;
     z-index: 10;
     position: relative;
 }
@@ -422,23 +422,26 @@ header {
         gap: 60px;
     }
 
+
+
     .store-section {
-        margin-top: -80px;
+        margin-top: -60px;
     }
 
     .store-intro {
-        margin-bottom: 40px;
-        padding-top: 40px;
+        margin-bottom: 35px;
+        padding-top: 35px;
     }
 
     .headquarters h4 {
         margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .hq-details {
         flex-direction: column;
         margin-top: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .detail-column {
@@ -461,7 +464,7 @@ header {
 
     .store-row {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         text-align: left;
         margin-bottom: 40px;
     }
@@ -495,8 +498,8 @@ header {
 
     .promotion-section {
         padding: 0 20px;
-        margin-bottom: 140px;
-        margin-top: 60px;
+        margin-bottom: 100px;
+        margin-top: 50px;
     }
 
     .promotion-section p {
@@ -505,16 +508,19 @@ header {
 
     .promo-grid {
         display: grid;
+        /* 分格子 */
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        /* 这个是example like这个是负责切蛋糕,决定这一排要有几列，每列有多宽 反正人话就是决定layout怎么切多宽多高*/
+        grid-template-rows: auto;
         gap: 30px;
         justify-items: center;
         max-width: 800px;
-        margin: 50px auto 80px auto;
+        margin: 40px auto 60px auto;
     }
 
     .promo-card:nth-child(3) {
         grid-column: 1 / -1;
+        /* 决定自己要坐哪里,多大 */
         justify-self: center;
         margin-top: 40px;
     }
@@ -524,8 +530,8 @@ header {
     }
 
     .delivery-section {
-        margin-top: 40px;
-        margin-bottom: 60px;
+        margin-top: 35px;
+        margin-bottom: 50px;
     }
 
     .delivery-grid {
@@ -549,21 +555,29 @@ header {
     .delivery-card h6 {
         color: var(--white);
         margin-bottom: 20px;
-        text-align: left;
+        text-align: center;
     }
 
     .delivery-card p {
         color: var(--white);
         margin-bottom: 30px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .order-link {
+        text-align: center;
+        display: block;
     }
 
     .kopidiam-way-section {
-        margin-top: 120px;
-        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-bottom: 80px;
     }
 
-    /* 隐藏圆圈在平板版本 */
+
+    .deco {
+        display: none;
+    }
 }
 
 /* 手机版本 */
@@ -571,10 +585,10 @@ header {
 
 
     .store-intro {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         text-align: left;
         padding: 0 15px;
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     .store-intro h3 {
@@ -589,7 +603,7 @@ header {
     .headquarters {
         text-align: left;
         padding: 0 15px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .headquarters h4 {
@@ -601,7 +615,7 @@ header {
 
     .hq-details {
         text-align: left;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .detail-column {
@@ -618,7 +632,7 @@ header {
     .store-row {
         flex-direction: column;
         gap: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         text-align: left;
         padding: 0 15px;
     }
@@ -665,8 +679,8 @@ header {
 
     /* 第二section - promotion文字缩小加padding */
     .promotion-section {
-        margin-top: 50px;
-        margin-bottom: 80px;
+        margin-top: 40px;
+        margin-bottom: 60px;
         padding: 0 20px;
     }
 
@@ -720,7 +734,7 @@ header {
         align-items: center;
         gap: 25px;
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         padding: 0 15px;
     }
 
@@ -729,6 +743,7 @@ header {
         min-width: auto;
     }
 
+    /* 这里也是针对一个group里的孩子一个一个调(xiangtongmingzi/meimingzi) */
     .promo-card:nth-of-type(1) .promo-details img {
         width: 250px;
         right: -20px;
@@ -758,28 +773,27 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
     }
 
     .delivery-card h6 {
-        text-align: left;
+        text-align: center;
     }
 
     .delivery-card p {
         font-size: 14px;
         line-height: 1.6;
         margin-bottom: 35px;
-        text-align: left;
+        text-align: center;
     }
 
     .kopidiam-way-section {
-        margin-top: 80px;
-        margin-bottom: 60px;
+        margin-top: 60px;
+        margin-bottom: 50px;
     }
 
     .delivery-section {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         padding: 0 15px;
     }
 
@@ -788,7 +802,6 @@ header {
         padding: 0 10px;
     }
 
-    /* 隐藏圆圈在手机版本 */
     .floating-images {
         display: none;
     }
