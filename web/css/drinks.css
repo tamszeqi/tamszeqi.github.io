@@ -250,7 +250,7 @@ p.price {
     }
 
     .kopi-items h5 {
-        margin: 0 -5px;
+        margin: 0 5%;
     }
 
     .price-tag {
@@ -268,7 +268,7 @@ p.price {
     }
 
     .teh-items h5 {
-        margin: 0 20px;
+        margin: 0 11%;
     }
 
     .cocoa-cards {
@@ -281,7 +281,7 @@ p.price {
     }
 
     .cocoa-items h5 {
-        margin: 0 -10px;
+        margin: 0 3%;
     }
 
     .refreshing-cards {
@@ -294,7 +294,7 @@ p.price {
     }
 
     .refreshing-items h5 {
-        margin: 0 -22px;
+        margin: 0 1%;
     }
 
     .teh-items .price-tag {
