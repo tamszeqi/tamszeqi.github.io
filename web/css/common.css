@@ -760,7 +760,8 @@ textarea {
     width: 35px;
 }
 
-.green-sqr .price, .green-sqr .subtitle {
+.green-sqr .price,
+.green-sqr .subtitle {
     color: var(--white);
 }
 
@@ -1068,9 +1069,4 @@ textarea {
         bottom: 150px;
     }
 
-}
-
-.done {
-    font-weight: 700;
-    color: var(--primary);
 }
