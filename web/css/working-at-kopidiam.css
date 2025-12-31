@@ -262,15 +262,15 @@
 }
 
 .mission {
-    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-mission.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/our-mission.jpg');
 }
 
 .vision {
-    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-vision.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/our-vision.jpg');
 }
 
 .values {
-    background-image:  linear-gradient(var(--black-60), var(--black-60)), url('../images/our-values.jpg');
+    background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/our-values.jpg');
 }
 
 .statsbar {
