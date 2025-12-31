@@ -31,6 +31,8 @@
     width: 50%;
 }
 
+
+
 .content-company .small {
     color: var(--tertiary);
     margin-bottom: 15px;
@@ -52,18 +54,50 @@
     position: relative;
 }
 
-.slogan::before {
-    content: '"';
-    /* 这个是在我的slogan后加入” */
-    /* 其实也可以在html写 只是我觉得这个比较方便 */
-    position: absolute;
-    top: -20px;
-    right: -30px;
-    color: var(--tertiary);
-}
+
 
 .slogan p {
     color: var(--white);
+    margin: 0;
+}
+
+/* 三个卡片 */
+.sqr-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    gap: 30px;
+    margin-top: -140px;
+}
+
+.sqr-img-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32%;
+    min-height: 290px;
+    background-size: cover;
+    background-position: center;
+    gap: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sqr-img-btn:hover {
+    transform: translateY(-10px);
+}
+
+.sqr-img-btn h4 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.sqr-img-btn p {
+    color: var(--white);
+    opacity: 0.9;
     margin: 0;
 }
 
@@ -83,17 +117,16 @@
 .sec-kopidiam {
     display: flex;
     gap: 0;
-    margin: 120px 0;
+    margin: 120px 0 250px 0;
     position: relative;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
 }
 
 .content-stories {
     background: var(--dark);
-    padding: 60px 50px;
+    padding: 100px 90px;
     width: 50%;
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0;
     transform: translateY(50px);
 }
 
@@ -112,9 +145,9 @@
 
 .bar {
     width: 50%;
-    height: 450px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
 }
 
 
@@ -333,10 +366,15 @@ div.top-right-leaf {
         text-align: center;
     }
 
+    .latte {
+        display: none;
+    }
+
     .third-us {
         flex-direction: column-reverse;
         gap: 40px;
         text-align: center;
+        padding: 0 50px;
     }
 
     .left-side,
@@ -346,6 +384,14 @@ div.top-right-leaf {
         width: 100%;
     }
 
+    .staff-img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .content-us {
+        padding: 0 40px;
+    }
 
     .sec-kopidiam {
         flex-direction: column;
@@ -357,26 +403,27 @@ div.top-right-leaf {
     .content-stories {
         width: 100%;
         transform: none;
-        padding: 50px 30px;
+        padding: 60px 40px;
         text-align: center;
     }
 
     .bar {
-        width: 100%;
-        height: 300px;
-        margin: 0;
+        display: none;
     }
 
     .sqr-group {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
         margin-top: -80px;
         padding: 0 20px;
     }
 
     .sqr-img-btn {
-        width: 100%;
+        width: 280px;
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .statsbar {
@@ -415,6 +462,11 @@ div.top-right-leaf {
     .third-us {
         gap: 30px;
         margin: -50px 0;
+        padding: 0 20px;
+    }
+
+    .content-us {
+        padding: 0 20px;
     }
 
     .sqr-group {
