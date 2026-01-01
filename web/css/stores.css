@@ -315,6 +315,11 @@ header {
     color: var(--white);
 }
 
+.order-link.bold {
+    font-weight: 700;
+    /* 因为他是link所以就必须单独弄fontweight */
+}
+
 .order-link:hover {
     text-decoration: underline;
 }
