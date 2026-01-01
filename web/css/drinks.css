@@ -108,7 +108,7 @@ p.price {
 .teh-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px 100px;
+    gap: 50px 100px;
     justify-content: center;
     margin-top: 20px;
 }
@@ -247,6 +247,8 @@ p.price {
     .kopi-cards {
         flex-direction: column;
         justify-self: center;
+        gap: 90px;
+        max-width: 80%;
     }
 
     .kopi-items {
@@ -265,6 +267,8 @@ p.price {
     .teh-cards {
         flex-direction: column;
         justify-self: center;
+        gap: 40px;
+        max-width: 85%;
     }
 
     .teh-items {
@@ -272,12 +276,13 @@ p.price {
     }
 
     .teh-items h5 {
-        margin: 0 10.5%;
+        margin: 0 6%;
     }
 
     .cocoa-cards {
         flex-direction: column;
         justify-self: center;
+        max-width: 80%;
     }
 
     .cocoa-items {
@@ -291,6 +296,7 @@ p.price {
     .refreshing-cards {
         flex-direction: column;
         justify-self: center;
+        max-width: 80%;
     }
 
     .refreshing-items {
@@ -302,7 +308,7 @@ p.price {
     }
 
     .teh-items .price-tag {
-        right: 20px;
+        right: 10px;
     }
 
     .cocoa-items .price-tag {

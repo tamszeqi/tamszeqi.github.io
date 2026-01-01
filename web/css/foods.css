@@ -129,13 +129,14 @@ p.price {
 
 .chickenrice {
     position: absolute;
-    right: 20px;
+    right: -5px;
+    top: 25px;
 }
 
 .friedrice {
     position: absolute;
-    right: 20px;
-    top: 70px;
+    right: -5px;
+    top: 48x;
 }
 
 .nasipattaya {
@@ -358,6 +359,12 @@ p.price {
 
     .friedrice {
         top: 20px;
+        right: -20px;
+    }
+
+    .chickenrice {
+        right: -20px;
+        top: 10px;
     }
 
     .duckrice {
@@ -403,6 +410,7 @@ p.price {
         align-items: center;
         justify-content: center;
         gap: 50px;
+        margin-bottom: 50px;
     }
 
     .chicken-pie {
