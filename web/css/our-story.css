@@ -173,7 +173,9 @@
     color: var(--tertiary);
 }
 
-
+.content-us h3 {
+    font-size: 28px; /* 缩小第三section标题 */
+}
 
 .content-us p {
     color: var(--grey-dark);
@@ -457,6 +459,7 @@ div.top-right-leaf {
     .content-stories {
         padding: 40px 20px;
         width: 100%;
+        border-radius: 30px; /* 在小屏幕恢复完整圆角 */
     }
 
     .third-us {
