@@ -396,6 +396,11 @@ header {
     overflow-x: clip;
 }
 
+.wrapper.dark {
+    background: var(--dark);
+    border-radius: 0 0 30px 30px; /* 上面直角，下面圆角 */
+}
+
 .third-up {
 
     bottom: 45%;
