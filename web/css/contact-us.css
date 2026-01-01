@@ -1,7 +1,7 @@
 div.wrapper {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 100px; /* 恢复desktop版本的gap */
 }
 
 
@@ -299,6 +299,10 @@ div.last-right-up {
 
 @media screen and (max-width: 768px) {
 
+    /* 缩小整体section间距 */
+    div.wrapper {
+        gap: 20px;
+    }
 
     /* title header */
     .title {
@@ -314,6 +318,8 @@ div.last-right-up {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        margin-top: 100px; /* 大幅往下移 */
+        margin-bottom: 20px; /* 大幅减少下面空白 */
     }
 
     .coffeeboy {
@@ -321,9 +327,8 @@ div.last-right-up {
     }
 
     .touchcontent {
-        margin-bottom: -90px;
-        margin-top: 0;
-
+        margin-bottom: 0; /* 移除额外的margin */
+        margin-top: 0; /* 移除额外的margin */
     }
 
     .socialbox {
@@ -343,7 +348,7 @@ div.last-right-up {
         position: relative;
         width: 100%;
         padding: 50px 10px 20px 10px;
-        margin-bottom: 100px;
+        margin-bottom: 10px; /* 超级小的底部间距 */
     }
 
     .greenupper {
