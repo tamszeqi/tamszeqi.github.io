@@ -51,8 +51,8 @@ p.blacktxt {
     padding: 15px;
 }
 
-.trade-icon {
-    min-width: 30 px;
+img.trade-icon {
+    aspect-ratio: 1/1;
 }
 
 /*----------------------------*/
@@ -338,6 +338,7 @@ div.traceable-supply>div.wrapper {
         right: 10%;
     }
 
+
 }
 
 @media(max-width: 1130px) {
@@ -354,7 +355,13 @@ div.traceable-supply>div.wrapper {
 
 @media(max-width: 1025px) {
 
-
+    /*----------------------------*/
+    /*Section 1: Trade Containers*/
+    /*----------------------------*/
+    img.trade-icon {
+        width: 30px;
+        height: 30px;
+    }
 
     /*----------------------------*/
     /*Section 2: Eco-farming*/
@@ -510,10 +517,10 @@ div.traceable-supply>div.wrapper {
         padding: 10px;
     }
 
-    .trade-icon {
-        width: 50%;
+    img.trade-icon {
+        height: 100%;
+        aspect-ratio: 1/1;
     }
-
 
     /*----------------------------*/
     /*Section 2: Eco-farming*/
