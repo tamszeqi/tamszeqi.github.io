@@ -23,6 +23,7 @@ header {
 /* 小标题颜色 */
 .store-intro .small {
     color: var(--tertiary); /* 使用common.css的青色变量 */
+    font-weight: 700; /* 让绿色category name变bold */
 }
 
 /* 因为都是粘着所以放margin让他有距离 */
@@ -130,6 +131,7 @@ header {
 
 .promotion-section .small {
     color: var(--sec-default); /* 使用common.css的绿色按钮变量 */
+    font-weight: 700; /* 让绿色category name变bold */
 }
 
 .promotion-section h3 {
@@ -512,23 +514,21 @@ header {
     }
 
     .promo-grid {
-        display: grid;
-        /* 分格子 */
-        grid-template-columns: 1fr 1fr;
-        /* 这个是example like这个是负责切蛋糕,决定这一排要有几列，每列有多宽 反正人话就是决定layout怎么切多宽多高*/
-        grid-template-rows: auto;
-        gap: 30px;
-        justify-items: center;
-        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
         margin: 40px auto 60px auto;
+        padding: 0 15px;
     }
 
-    .promo-card:nth-child(3) {
-        grid-column: 1 / -1;
-        /* 决定自己要坐哪里,多大 */
-        justify-self: center;
-        margin-top: 40px;
+    .promo-card {
+        width: 340px; /* 保持原本的box形状 */
+        min-width: 340px;
+        height: 300px; /* 保持原本高度 */
     }
+
+
 
     .promo-card:nth-of-type(1) .promo-details img {
         width: 300px;
@@ -559,7 +559,7 @@ header {
 
     .delivery-card h6 {
         color: var(--white);
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* 减少间距让title和p靠近一点 */
         text-align: center;
     }
 
@@ -748,6 +748,21 @@ header {
         min-width: auto;
     }
 
+    /* 调整手机版price-tag的gap和字体 */
+    .price-tag {
+        gap: 0; /* 移除gap，让价格和货币符号更紧贴 */
+    }
+
+    .price-tag .price {
+        font-size: clamp(18px, 2vw, 40px); /* 使用和desktop一样的字体大小 */
+        line-height: 1.1; /* 减少行高，缩小gap */
+    }
+
+    .price-tag .currency {
+        font-size: clamp(12px, 1.5vw, 16px); /* 货币符号字体 */
+        line-height: 1; /* 减少行高 */
+    }
+
     /* 这里也是针对一个group里的孩子一个一个调(xiangtongmingzi/meimingzi) */
     .promo-card:nth-of-type(1) .promo-details img {
         width: 250px;
@@ -782,12 +797,13 @@ header {
 
     .delivery-card h6 {
         text-align: center;
+        margin-bottom: 15px; /* 减少间距让title和p靠近一点 */
     }
 
     .delivery-card p {
         font-size: 14px;
         line-height: 1.6;
-        margin-bottom: 35px;
+        margin-bottom: 25px; /* 减少文字下方间距 */
         text-align: center;
     }
 
