@@ -1,25 +1,31 @@
-/* 页面标题背景 */
+/* 页面标题背景 - 设置header图片和遮罩 */
 .title {
     background-image: linear-gradient(to top, var(--black-50), var(--black-50)), url('../images/header-our-story.jpg');
     background-size: cover;
     background-position: center;
 }
 
-/* 第一部分 - 公司介绍 */
+/* 第一section*/
 .first-about {
     margin-bottom: 60px;
+    /* 与下面section保持距离 */
 }
 
+/* 左右and the图片和文字 */
 .about-company {
     display: flex;
     gap: 60px;
+    /* 图片和文字之间的间距 */
     align-items: center;
     position: relative;
+    /* 为”position做准备 */
     padding: 40px;
 }
 
+/* 左边图片 */
 .left-side {
     width: 50%;
+    /* 占一半宽度 */
 }
 
 .latte {
@@ -27,15 +33,18 @@
     height: auto;
 }
 
+/* 右边文字 */
 .right-side {
     width: 50%;
 }
 
 
-
 .content-company .small {
     color: var(--tertiary);
+    /* 使用青色 */
     margin-bottom: 15px;
+    font-weight: 700;
+    /* 青色categories name变bold */
 }
 
 .content-company h3 {
@@ -47,29 +56,49 @@
     margin-bottom: 40px;
 }
 
+
 .slogan {
     background: var(--secondary);
     padding: 25px 35px;
     border-radius: 20px;
     position: relative;
+    /* 为”position做准备 */
 }
 
-
+/* 这个是“ */
+.slogan::after {
+    content: '"';
+    /* 可以写在html 就是直接加在html 这个” 也可以这样做 就可以直接写可是唯一的缺点就是额不可以加很长的文字啊还是什么 不然变html了 */
+    position: absolute;
+    top: -10px;
+    right: -35px;
+    color: var(--tertiary);
+    /* 使用common.css的绿色变量 */
+    font-size: 60px;
+    /* 大字体 */
+    font-family: var(--heading);
+    /* 使用common.css的标题字体变量，让引号更好看 */
+    opacity: 0.8;
+    /* 半透明效果 */
+}
 
 .slogan p {
     color: var(--white);
+    /* 使用common.css的白色变量 */
     margin: 0;
+    /* 重要：移除默认margin，让文字紧贴slogan框边缘，避免额外空白 */
 }
 
 /* 三个卡片 */
 .sqr-group {
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 50px;
     gap: 30px;
     margin-top: -140px;
 }
 
+/* solo-card */
 .sqr-img-btn {
     display: flex;
     flex-direction: column;
@@ -86,6 +115,7 @@
     transition: transform 0.3s ease;
 }
 
+
 .sqr-img-btn:hover {
     transform: translateY(-10px);
 }
@@ -99,7 +129,9 @@
     color: var(--white);
     opacity: 0.9;
     margin: 0;
+    /* 移除原本默认的margin，让文字与标题贴 */
 }
+
 
 .company {
     background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/company-story.jpg');
@@ -113,26 +145,30 @@
     background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/testimonials.jpg');
 }
 
-/* 第二部分 - 公司故事 */
+/* 第二部分 */
 .sec-kopidiam {
     display: flex;
     gap: 0;
-    margin: 120px 0 250px 0;
+    /* 文字框和图片无缝连接中间不要gap */
+    margin: 120px 0 250px;
     position: relative;
     width: 100%;
 }
 
+/* 文字 */
 .content-stories {
     background: var(--dark);
     padding: 100px 90px;
     width: 50%;
     border-radius: 0 30px 30px 0;
+    /* 这个是跟回figma的设计 */
     transform: translateY(50px);
 }
 
 .content-stories .small {
     color: var(--tertiary);
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .content-stories h3 {
@@ -143,6 +179,7 @@
     color: var(--grey-dark);
 }
 
+/* 图片 */
 .bar {
     width: 50%;
     height: 100%;
@@ -151,7 +188,7 @@
 }
 
 
-/* 第三部分 - 关于我们 */
+/* 第三部分  */
 .third-us {
     display: flex;
     gap: 60px;
@@ -159,11 +196,13 @@
     margin: -80px;
 }
 
+/* 员工图片 */
 .staff-img {
     width: 45%;
     height: auto;
     border-radius: 20px;
 }
+
 
 .content-us {
     width: 55%;
@@ -171,15 +210,14 @@
 
 .content-us .small {
     color: var(--tertiary);
+    font-weight: 700;
 }
 
-.content-us h3 {
-    font-size: 28px; /* 缩小第三section标题 */
-}
 
 .content-us p {
     color: var(--grey-dark);
 }
+
 
 .statsbar {
     display: flex;
@@ -187,6 +225,7 @@
     margin-top: 30px;
 }
 
+/* solo卡片 */
 .stats {
     display: flex;
     align-items: center;
@@ -196,32 +235,33 @@
     border-radius: 12px;
 }
 
-.stats:hover {
-    transform: none;
-}
+
 
 .stats h2 {
     color: var(--tertiary);
 }
 
+
 .statstext {
     display: flex;
     flex-direction: column;
-    font-weight: 600;
     color: var(--black);
     text-transform: uppercase;
 }
 
-/* 第四部分 - 客户评价 */
+/* 第四部分 */
 .wrapper.dark {
     background: var(--dark);
     position: relative;
     padding: 80px 140px;
     text-align: center;
-    margin: 120px 0 0 0;
+    margin: 120px 0;
+    margin-bottom: -5px;
     border-radius: 25px 25px 0 0;
     overflow-x: clip;
+    /* 防止那些照片造成navi bar so就用deco的方式以此类推这么做 */
 }
+
 
 .four-title {
     margin-bottom: 30px;
@@ -230,6 +270,7 @@
 .four-title .small {
     color: var(--tertiary);
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .four-title h2 {
@@ -240,7 +281,7 @@
     background: var(--secondary);
     color: var(--white);
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 25px 100px;
     border-radius: 25px;
 }
@@ -249,9 +290,6 @@
     margin-bottom: 40px;
 }
 
-.image-foodblogger {
-    margin: 30px 0 20px 0;
-}
 
 .image-foodblogger img {
     width: 100px;
@@ -264,12 +302,7 @@
     margin-bottom: 5px;
 }
 
-.four-content p:last-child {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-}
 
-/* 浮动头像 */
 .blogger-1,
 .blogger-2,
 .blogger-3,
@@ -277,50 +310,36 @@
     position: absolute;
 }
 
-.food-blogger {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
 .blogger-1 {
     top: 15%;
     left: 8%;
     z-index: 100;
-}
-
-.blogger-1 .food-blogger {
     width: 90px;
     height: 90px;
 }
 
+
+
 .blogger-2 {
     top: 20%;
     right: 8%;
-}
-
-.blogger-2 .food-blogger {
     width: 110px;
     height: 110px;
 }
 
+
 .blogger-3 {
     bottom: 20%;
     left: 5%;
-}
-
-.blogger-3 .food-blogger {
     width: 70px;
     height: 70px;
 }
+
 
 .blogger-4 {
     bottom: 15%;
     right: 10%;
     z-index: 100;
-}
-
-.blogger-4 .food-blogger {
     width: 95px;
     height: 95px;
 }
@@ -379,12 +398,6 @@ div.top-right-leaf {
         padding: 0 50px;
     }
 
-    .left-side,
-    .right-side,
-    .staff-img,
-    .content-us {
-        width: 100%;
-    }
 
     .staff-img {
         max-width: 500px;
@@ -435,6 +448,8 @@ div.top-right-leaf {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* 这里的话我选择把字体调小因为字太大很影响 看起来不好看 */
     .about-company {
         gap: 30px;
         padding: 30px 0;
@@ -459,7 +474,8 @@ div.top-right-leaf {
     .content-stories {
         padding: 40px 20px;
         width: 100%;
-        border-radius: 30px; /* 在小屏幕恢复完整圆角 */
+        border-radius: 30px;
+
     }
 
     .third-us {
@@ -515,6 +531,10 @@ div.top-right-leaf {
 
     .slogan {
         padding: 20px 25px;
+    }
+
+    .slogan::after {
+        display: none;
     }
 
     .wrapper.dark {
