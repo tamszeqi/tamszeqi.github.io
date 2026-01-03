@@ -90,9 +90,6 @@ body {
 
 /* STEP CARDS */
 .step {
-    --x: 0px;
-    --y: 40px;
-
     background-color: var(--light-brown);
     border-radius: 24px;
     width: 100%;
@@ -104,15 +101,8 @@ body {
     align-items: center;
     text-align: center;
 
-    opacity: 0;
-    transform: translate(var(--x), var(--y));
-
     position: relative;
     z-index: 2;
-
-    animation: stepReveal 0.8s ease forwards;
-    animation-timeline: view();
-    animation-range: entry 15% cover 35%;
 }
 
 /* CENTER IMAGE */
@@ -133,13 +123,6 @@ body {
     justify-self: center;
 }
 
-/* ANIMATION */
-.step {
-    animation: stepReveal 0.8s ease forwards;
-    animation-timeline: view();
-    animation-range: entry 15% cover 35%;
-}
-
 .firststep,
 .thirdstep,
 .fifthstep {
@@ -155,14 +138,6 @@ body {
 .steps-image-top {
     display: none;
 }
-
-@keyframes stepReveal {
-    to {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-}
-
 
 .dark-bottom {
     overflow: hidden;
