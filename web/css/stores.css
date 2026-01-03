@@ -1,7 +1,9 @@
 .title {
-    background-image: url('../images/header-stores.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to top,
+            var(--black-50),
+            var(--black-50)),
+
+        url('../images/header-stores.jpg');
 }
 
 /* 修复navigation bar问题 */
@@ -164,8 +166,10 @@ header {
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
-    flex-wrap: wrap; /* 允许换行，避免固定宽度造成navigation bar */
-    padding: 0 120px; /* 再增加左右padding */
+    flex-wrap: wrap;
+    /* 允许换行，避免固定宽度造成navigation bar */
+    padding: 0 120px;
+    /* 再增加左右padding */
 }
 
 
@@ -520,7 +524,8 @@ header {
     }
 
     .promotion-section {
-        padding: 0 80px; /* 进一步增加左右padding避免navigation bar */
+        padding: 0 80px;
+        /* 进一步增加左右padding避免navigation bar */
         margin-bottom: 100px;
         margin-top: 50px;
     }
@@ -534,7 +539,8 @@ header {
         align-items: center;
         gap: 25px;
         margin: 40px auto 60px auto;
-        padding: 0 50px; /* 进一步增加promo-grid的padding */
+        padding: 0 50px;
+        /* 进一步增加promo-grid的padding */
     }
 
 
