@@ -65,21 +65,10 @@
     /* 为”position做准备 */
 }
 
-/* 这个是“ */
-.slogan::after {
-    content: '"';
-    /* 可以写在html 就是直接加在html 这个” 也可以这样做 就可以直接写可是唯一的缺点就是额不可以加很长的文字啊还是什么 不然变html了 */
-    position: absolute;
-    top: -10px;
-    right: -35px;
-    color: var(--tertiary);
-    /* 使用common.css的绿色变量 */
-    font-size: 60px;
-    /* 大字体 */
-    font-family: var(--heading);
-    /* 使用common.css的标题字体变量，让引号更好看 */
-    opacity: 0.8;
-    /* 半透明效果 */
+/* ” */
+.quote::after {
+    top: -30px;
+    right: -50px;
 }
 
 .slogan p {
@@ -531,10 +520,6 @@ div.top-right-leaf {
 
     .slogan {
         padding: 20px 25px;
-    }
-
-    .slogan::after {
-        display: none;
     }
 
     .wrapper.dark {

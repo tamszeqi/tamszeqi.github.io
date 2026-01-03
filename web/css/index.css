@@ -219,6 +219,17 @@ h1 {
     text-align: center;
     max-width: clamp(320px, 52vw, 750px);
     margin-bottom: 60px;
+    position: relative;
+}
+
+.quote.sq::after {
+    bottom: 40%;
+    right: 4%;
+}
+
+.quote.yx::after {
+    bottom: 40%;
+    left: 56%;
 }
 
 .member {
@@ -402,6 +413,18 @@ h1 {
         bottom: 30%;
     }
 
+    .intro {
+        gap: 120px;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+
+    .intro {
+        gap: 100px;
+    }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -417,49 +440,6 @@ h1 {
 
     .green-sqr {
         bottom: 44%;
-    }
-
-}
-
-@media screen and (max-width: 585px) {
-
-    .green-sqr {
-        bottom: 25% !important;
-        right: 7% !important;
-    }
-
-}
-
-@media screen and (max-width: 530px) {
-
-    .green-sqr {
-        bottom: 30% !important;
-        right: 8% !important;
-    }
-
-}
-
-@media screen and (max-width: 430px) {
-
-    .green-sqr {
-        bottom: 35% !important;
-        right: 10% !important;
-    }
-
-}
-
-@media screen and (max-width: 1270px) {
-
-    .intro {
-        gap: 120px;
-    }
-
-}
-
-@media screen and (max-width: 1170px) {
-
-    .intro {
-        gap: 100px;
     }
 
 }
@@ -493,6 +473,33 @@ h1 {
 
     .no-card {
         flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+
+    .green-sqr {
+        bottom: 25% !important;
+        right: 7% !important;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .green-sqr {
+        bottom: 30% !important;
+        right: 8% !important;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .green-sqr {
+        bottom: 35% !important;
+        right: 10% !important;
     }
 
 }

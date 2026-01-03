@@ -735,6 +735,19 @@ textarea {
     right: 10%;
 }
 
+/* QUOTATION MARK */
+.quote::after {
+    content: '”';
+    /* 可以写在html 就是直接加在html 这个” 也可以这样做 就可以直接写可是唯一的缺点就是额不可以加很长的文字啊还是什么 不然变html了 */
+    position: absolute;
+    color: var(--tertiary);
+    /* 使用common.css的绿色变量 */
+    font-size: 96px;
+    /* 大字体 */
+    font-family: var(--heading);
+    /* 使用common.css的标题字体变量，让引号更好看 */
+}
+
 /* ROUND PHONE ICON */
 .inquiry-icon {
     background-color: var(--white);
@@ -986,6 +999,11 @@ textarea {
 
     .banner-text {
         width: 100%;
+    }
+
+    /* QUOTATION MARK */
+    .quote::after {
+        display: none;
     }
 
     /* WHITE CARDS */
