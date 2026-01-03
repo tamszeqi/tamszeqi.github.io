@@ -21,8 +21,7 @@ div.wrapper {
 }
 
 .store-intro .small {
-    color: var(--tertiary);
-
+    color: var(--tertiary); /* 使用common.css的青色变量 */
     margin-bottom: 10px;
 }
 
@@ -95,7 +94,7 @@ div.wrapper {
 
 /* 第二个section */
 .greenbox {
-    background-color: var(--tertiary);
+    background-color: var(--tertiary); /* 使用common.css的青色变量 */
     padding: 65px 45px 35px 40px;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -111,12 +110,12 @@ div.wrapper {
 
 /* 针对h5和p换颜色因为common css 另外还set空间*/
 .greenupper h5 {
-    color: var(--white);
+    color: var(--white); /* 使用common.css的白色变量 */
     margin-bottom: 15px;
 }
 
 .greenupper p {
-    color: var(--white);
+    color: var(--white); /* 使用common.css的白色变量 */
     margin-bottom: 25px;
 }
 
@@ -155,7 +154,7 @@ input {
 }
 
 .questionbox {
-    background-color: var(--dark-brown);
+    background-color: var(--dark-brown); /* 使用common.css的深棕色变量 */
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -190,14 +189,14 @@ input {
 }
 
 .questionbox p {
-    color: var(--black);
+    color: var(--black); /* 使用common.css的黑色变量 */
     margin: 0;
 }
 
 .answer {
     display: none;
-    color: var(--grey-dark);
-    background-color: var(--white);
+    color: var(--grey-dark); /* 使用common.css的灰色变量 */
+    background-color: var(--white); /* 使用common.css的白色变量 */
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
