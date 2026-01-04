@@ -218,7 +218,7 @@ h1 {
 .team > .group {
     text-align: center;
     max-width: clamp(320px, 52vw, 750px);
-    margin-bottom: 60px;
+    margin-bottom: clamp(20px, 6vh, 60px);
     position: relative;
 }
 
@@ -360,6 +360,22 @@ h1 {
         gap: 10px;
     }
 
+    .member {
+        flex-direction: column;
+    }
+
+    .member .group {
+        text-align: center;
+    }
+
+    .member .group h4 {
+        margin-bottom: 15px;
+    }
+
+    .no-card {
+        flex-direction: column-reverse;
+    }
+
 }
 
 /* TABLET LANDSCAPE */
@@ -465,14 +481,6 @@ h1 {
 
     .value-icon {
         width: 10%;
-    }
-
-    .member {
-        flex-direction: column;
-    }
-
-    .no-card {
-        flex-direction: column-reverse;
     }
 
 }
