@@ -101,6 +101,18 @@ img.fnb {
     position: absolute;
 }
 
+div.fnb-card {
+    transition: transform 0.3s;
+}
+
+div.fnb-card:hover {
+    transform: scale(1.05);
+}
+
+div.coffeenbev-section, div.food-reserve-section {
+    overflow-x: clip;
+}
+
 /**section2*/
 div.coffeenbeverage-section,
 div.kopidiam-food-reserve-section {

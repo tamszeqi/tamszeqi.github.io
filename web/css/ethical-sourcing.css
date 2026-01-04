@@ -170,7 +170,11 @@ div.support-container {
     padding: 30px;
     gap: 12px;
     height: 100%;
+    transition: transform 0.3s;
+}
 
+div.support-container:hover {
+    transform: scale(1.02);
 }
 
 div.support-container-textblock {
