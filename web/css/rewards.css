@@ -151,6 +151,11 @@ body {
     justify-content: space-between;
     gap: 25px;
     min-height: 340px;
+    transition: transform 0.3s;
+}
+
+.square:hover {
+    transform: scale(1.05);
 }
 
 /* Alternate darker cards */

@@ -47,7 +47,7 @@
     /* 青色categories name变bold */
 }
 
-.content-company h3 {
+.content-company h4 {
     margin-bottom: 25px;
 }
 
@@ -160,7 +160,7 @@
     font-weight: 700;
 }
 
-.content-stories h3 {
+.content-stories h4 {
     margin-bottom: 30px;
 }
 
@@ -183,6 +183,10 @@
     gap: 60px;
     align-items: center;
     margin: -80px;
+}
+
+.third-us h4 {
+    margin-bottom: 30px;
 }
 
 /* 员工图片 */
@@ -211,7 +215,7 @@
 .statsbar {
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    gap: clamp(15px, 4vw, 100px);
     margin-top: 30px;
 }
 
@@ -392,6 +396,7 @@ div.top-right-leaf {
 
     .content-us {
         padding: 0 40px;
+        width: 100%;
     }
 
     .sec-kopidiam {
@@ -487,7 +492,7 @@ div.top-right-leaf {
     }
 
     /* 重置第三section内部元素的margin */
-    .content-us h3,
+    .content-us h4,
     .content-us p {
         margin-top: 0; /* 移除标题和段落的上边距 */
         margin-bottom: 0; /* 大胆移除下边距 */
@@ -526,9 +531,9 @@ div.top-right-leaf {
         font-size: 9px;
     }
 
-    .content-company h3,
-    .content-stories h3,
-    .content-us h3,
+    .content-company h4,
+    .content-stories h4,
+    .content-us h4,
     .four-title h2 {
         font-size: 22px;
     }

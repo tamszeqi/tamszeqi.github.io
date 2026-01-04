@@ -39,6 +39,11 @@ div.wrapper {
     margin-bottom: 100px;
 }
 
+.tab {
+    height: 100% !important;
+    margin-left: 7px;
+}
+
 /* 图片 */
 .coffeeboy {
     width: 100%;
