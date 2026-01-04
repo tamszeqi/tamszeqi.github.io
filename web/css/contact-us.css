@@ -1,7 +1,8 @@
 div.wrapper {
     display: flex;
     flex-direction: column;
-    gap: 100px; /* 恢复desktop版本的gap */
+    gap: 100px;
+    /* 恢复desktop版本的gap */
 }
 
 
@@ -10,7 +11,7 @@ div.wrapper {
             var(--black-50),
             var(--black-50)),
 
-        url('../images/header-contact-us.png');
+        url('../images/header-contact-us.jpg');
 }
 
 /* === 第一个 section: Get In Touch === */
@@ -317,8 +318,10 @@ div.last-right-up {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
-        margin-top: 100px; /* 大幅往下移 */
-        margin-bottom: 20px; /* 大幅减少下面空白 */
+        margin-top: 100px;
+        /* 大幅往下移 */
+        margin-bottom: 20px;
+        /* 大幅减少下面空白 */
     }
 
     .coffeeboy {
@@ -326,8 +329,10 @@ div.last-right-up {
     }
 
     .touchcontent {
-        margin-bottom: 0; /* 移除额外的margin */
-        margin-top: 0; /* 移除额外的margin */
+        margin-bottom: 0;
+        /* 移除额外的margin */
+        margin-top: 0;
+        /* 移除额外的margin */
     }
 
     .socialbox {
@@ -347,7 +352,8 @@ div.last-right-up {
         position: relative;
         width: 100%;
         padding: 50px 10px 20px 10px;
-        margin-bottom: 10px; /* 超级小的底部间距 */
+        margin-bottom: 10px;
+        /* 超级小的底部间距 */
     }
 
     .greenupper {
