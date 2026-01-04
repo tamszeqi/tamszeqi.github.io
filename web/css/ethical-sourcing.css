@@ -304,6 +304,7 @@ div.traceable-supply>div.wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: center;
 }
 
 div.traceable-list {
@@ -334,7 +335,7 @@ div.supply-textblock h4 {
 }
 
 div.supply-textblock>p.desc {
-    margin-bottom: 65px;
+    margin-bottom: clamp(20px, 6vh, 60px);
 }
 
 div.traceable-supply>div.wrapper {
