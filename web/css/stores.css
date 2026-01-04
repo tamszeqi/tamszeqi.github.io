@@ -1,17 +1,9 @@
 .title {
-    background-image:
-        linear-gradient(to top,
+    background-image: linear-gradient(to top,
             var(--black-50),
-            /* Black, 70% opaque at the bottom */
-            var(--black-50))
-        /* Black, 0% opaque (transparent) at the top */
-        ,
-        /* 2. List your image URL SECOND */
-        url(../images/header-stores.jpg);
-}
+            var(--black-50)),
 
-.small {
-    font-weight: bold;
+        url('../images/header-stores.jpg');
 }
 
 /* 修复navigation bar问题 */
@@ -33,7 +25,6 @@ header {
 /* 小标题颜色 */
 .store-intro .small {
     color: var(--tertiary);
-    /* 使用common.css的青色变量 */
     font-weight: 700;
     /* 让绿色category name变bold */
 }
@@ -47,8 +38,6 @@ header {
 /* 总部地图 */
 .map-container-large img {
     width: 100%;
-    border-radius: 30px;
-    /* 这个照片是自己有border 所以我使用png */
 }
 
 .map-container-large img:hover {
@@ -63,24 +52,18 @@ header {
 /* 总部信息框 */
 .hq-details {
     display: flex;
-    /* 弹性布局：让信息栏横向排列 */
     justify-content: space-between;
-    /* 平均分布：信息栏之间空间平均分配 */
     align-items: stretch;
-    /* 拉伸对齐：让所有信息栏高度一致，填满容器高度 */
+    /* 让所有msg高度一样占满那个box */
     margin-top: 10px;
     margin-bottom: 50px;
 }
 
 .detail-column {
     flex: 1;
-    /* 弹性增长：每个信息栏平均分配剩余空间，所以都一样宽 */
     text-align: center;
-    /* 文字居中：让信息栏内的文字水平居中 */
     padding: 0 20px;
-    /* 左右内边距：给每个信息栏左右各留20px空间 */
     border-right: 2px solid var(--grey-dark);
-    /* 右边框：用灰色线条分隔信息栏 */
     margin-bottom: 45px;
 }
 
@@ -89,71 +72,58 @@ header {
     border-right: none;
 }
 
-/* ---STORE LOCATIONS --- */
+
 /* Store Row de box */
 .store-row {
     display: flex;
-    /* 弹性布局：让地图和文字信息并排显示 */
     align-items: flex-start;
-    /* 顶部对齐：让地图和文字从顶部开始对齐 */
     gap: 50px;
-    /* 间距：地图和文字之间留50px空隙 */
     margin-bottom: 80px;
-    /* 底部间距：每个store-row下方留80px空间 */
 }
 
 /* 地图部分 */
 .store-map {
     flex: 1;
-    /* 弹性增长：占一半空间，和store-info平分宽度 */
 }
 
 .store-map img {
     width: 100%;
-    border-radius: 30px;
+
 }
 
 .store-map img:hover {
     transform: scale(1.02);
-    /* 悬停放大：鼠标悬停时图片放大到102% */
+
 }
 
 /* words */
 .store-info {
     flex: 1;
-    /* 弹性增长：占一半空间，和store-map平分宽度 */
 }
 
 /*give him align  */
 .store-row h4 {
     margin-bottom: 40px;
-    /* 标题下方间距：让标题和下面内容保持40px距离 */
+
 }
 
 /* info de box */
 .info-list {
     display: flex;
-    /* 弹性布局：让信息项可以排列 */
     flex-direction: column;
-    /* 垂直排列：让信息项上下排列 */
     gap: 25px;
-    /* 信息项间距：每个信息项之间留25px空隙 */
 }
 
 /* words */
 .info-item {
     display: flex;
-    /* 弹性布局：让图标和文字并排 */
     align-items: flex-start;
-    /* 顶部对齐：图标和文字从顶部开始对齐 */
     gap: 15px;
-    /* 图标和文字间距：图标和文字之间留15px空隙 */
 }
 
 /* icon */
 .info-item img {
     width: 25px;
-    /* 图标宽度：统一设置图标宽度为25px */
     /* 用png应为是icon */
 }
 
@@ -167,7 +137,6 @@ header {
 
 .promotion-section .small {
     color: var(--sec-default);
-    /* 使用common.css的绿色按钮变量 */
     font-weight: 700;
     /* 让绿色category name变bold */
 }
@@ -187,7 +156,6 @@ header {
     margin: auto;
     max-width: 600px;
     color: var(--grey-dark);
-    /* 使用common.css的灰色变量 */
 }
 
 /* biaoti wan cheng */
@@ -198,14 +166,18 @@ header {
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
+    flex-wrap: wrap;
+    /* 允许换行，避免固定宽度造成navigation bar */
+    padding: 0 120px;
+    /* 再增加左右padding */
 }
+
+
 
 
 .promo-card {
     background-color: var(--dark);
-    /* 使用common.css的深色背景变量 */
     width: 340px;
-    min-width: 340px;
     height: 300px;
     border-radius: 20px;
     position: relative;
@@ -226,7 +198,6 @@ header {
     top: -40px;
     left: 40px;
     background-color: var(--sec-default);
-    /* 使用common.css的绿色按钮变量 */
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -234,19 +205,17 @@ header {
     flex-direction: column;
     justify-content: center;
     color: var(--white);
-    /* 使用common.css的白色变量 */
     z-index: 10;
 }
 
 .price-tag .price {
     color: var(--white);
-    /* 使用common.css的白色变量 */
     line-height: 40px;
 }
 
 .price-tag .currency {
     color: var(--white);
-    /* 使用common.css的白色变量 */
+
 }
 
 .promo-details {
@@ -256,7 +225,6 @@ header {
 
 .promo-details h4 {
     color: var(--black);
-    /* 使用common.css的黑色变量 */
     text-align: left;
     position: relative;
     z-index: 5;
@@ -310,8 +278,7 @@ header {
 .subtitle-text {
     max-width: 700px;
     margin: 20px auto 60px auto;
-    color: var(--grey-dark);
-    /* 使用common.css的灰色变量 */
+    color: var(--grey-dark)
 }
 
 .delivery-content-box {
@@ -328,13 +295,11 @@ header {
 
 .delivery-card {
     background-color: var(--tertiary);
-    /* 使用common.css的青色变量 */
     width: 344px;
     height: 298px;
     border-radius: 20px;
     padding: 40px 30px;
     color: var(--white);
-    /* 使用common.css的白色变量 */
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -346,13 +311,11 @@ header {
 
 .delivery-card h6 {
     color: var(--white);
-    /* 使用common.css的白色变量 */
     margin-bottom: 20px;
 }
 
 .delivery-card p {
     color: var(--white);
-    /* 使用common.css的白色变量 */
     margin-bottom: 30px;
     text-align: left;
 }
@@ -360,7 +323,6 @@ header {
 /* Order Now  */
 .order-link {
     color: var(--white);
-    /* 使用common.css的白色变量 */
 }
 
 .order-link.bold {
@@ -378,14 +340,15 @@ header {
     position: relative;
     margin-top: 150px;
     margin-bottom: 120px;
+    padding: 0 20px;
 }
 
 .way-content-box {
     background-color: var(--secondary);
-    /* 使用common.css的红色变量 */
     border-radius: 30px;
     height: 573px;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     margin: auto;
     position: relative;
     z-index: 1;
@@ -396,7 +359,7 @@ header {
     padding: 80px 60px;
 }
 
-/* 标题样式 */
+
 .titlekopidiam {
     text-align: center;
     margin-top: 80px;
@@ -407,7 +370,6 @@ header {
 .titlekopidiam h3,
 .way-content-box h3 {
     color: var(--white);
-    /* 使用common.css的白色变量 */
     text-align: center;
     z-index: 10;
     position: relative;
@@ -418,7 +380,6 @@ header {
 }
 
 
-/* === 6. 文字和线条 === */
 .text-with-lines {
     display: flex;
     align-items: center;
@@ -430,7 +391,6 @@ header {
 
 .text-with-lines p {
     color: var(--white);
-    /* 使用common.css的白色变量 */
     text-align: center;
     width: 746px;
 }
@@ -438,7 +398,6 @@ header {
 .line {
     height: 1px;
     background-color: var(--white);
-    /* 使用common.css的白色变量 */
     flex: 1;
     opacity: 0.6;
 }
@@ -450,7 +409,11 @@ header {
 
 .wrapper.dark {
     background: var(--dark);
-    /* 使用common.css的深色背景变量 */
+    border-radius: 30px;
+}
+
+/* 针对第一个section的wrapper设置special的border radius */
+.wrapper.dark:has(.store-section) {
     border-radius: 0 0 30px 30px;
     /* 上面直角，下面圆角 */
 }
@@ -561,7 +524,8 @@ header {
     }
 
     .promotion-section {
-        padding: 0 20px;
+        padding: 0 80px;
+        /* 进一步增加左右padding避免navigation bar */
         margin-bottom: 100px;
         margin-top: 50px;
     }
@@ -572,21 +536,12 @@ header {
 
     .promo-grid {
         display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 25px;
         margin: 40px auto 60px auto;
-        padding: 0 15px;
+        padding: 0 50px;
+        /* 进一步增加promo-grid的padding */
     }
-
-    .promo-card {
-        width: 340px;
-        /* 保持原本的box形状 */
-        min-width: 340px;
-        height: 300px;
-        /* 保持原本高度 */
-    }
-
 
 
     .promo-card:nth-of-type(1) .promo-details img {
@@ -606,23 +561,20 @@ header {
 
     .delivery-card {
         width: 80%;
-        background-color: var(--tertiary);
         height: 298px;
         border-radius: 20px;
         padding: 40px 30px;
-        color: var(--white);
         display: flex;
         flex-direction: column;
         text-align: left;
     }
 
     .delivery-card h6 {
-        color: var(--white);
+        margin-bottom: 15px;
         text-align: center;
     }
 
     .delivery-card p {
-        color: var(--white);
         margin-bottom: 30px;
         text-align: center;
     }
@@ -740,12 +692,14 @@ header {
         line-height: 1.4;
     }
 
-    /* 第二section - promotion文字缩小加padding */
+
     .promotion-section {
         margin-top: 40px;
         margin-bottom: 60px;
         padding: 0 20px;
+
     }
+
 
     .promotion-section h3 {
         font-size: 20px;
@@ -763,6 +717,8 @@ header {
         width: 95%;
         height: auto;
         padding: 40px 20px;
+        border-radius: 30px;
+        /* 确保跟desktop一样的border radius */
     }
 
     .titlekopidiam {
@@ -805,24 +761,15 @@ header {
         min-width: auto;
     }
 
-    /* 调整手机版price-tag的gap和字体 */
-    .price-tag {
-        gap: 0;
-        /* 移除gap，让价格和货币符号更紧贴 */
-    }
-
+    /* 调整手机版price-tag字体 */
     .price-tag .price {
-        font-size: clamp(18px, 2vw, 40px);
-        /* 使用和desktop一样的字体大小 */
-        line-height: 1.1;
-        /* 减少行高，缩小gap */
+        font-size: clamp(20px, 2.5vw, 44px);
+        /* 恢复并加大字体 */
     }
 
     .price-tag .currency {
-        font-size: clamp(12px, 1.5vw, 16px);
-        /* 货币符号字体 */
-        line-height: 1;
-        /* 减少行高 */
+        font-size: clamp(14px, 2vw, 18px);
+        /* 恢复并加大货币符号字体 */
     }
 
     /* 这里也是针对一个group里的孩子一个一个调(xiangtongmingzi/meimingzi) */
@@ -866,24 +813,14 @@ header {
     .delivery-card p {
         font-size: 14px;
         line-height: 1.6;
-        margin: 30px 15px;
+        margin-bottom: 25px;
+        /* 减少文字下方间距 */
         text-align: center;
     }
 
     .kopidiam-way-section {
         margin-top: 60px;
         margin-bottom: 50px;
-    }
-
-    .delivery-section {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 0 15px;
-    }
-
-    .subtitle-text {
-        font-size: 14px;
-        padding: 0 10px;
     }
 
     .floating-images {

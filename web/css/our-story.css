@@ -65,21 +65,10 @@
     /* 为”position做准备 */
 }
 
-/* 这个是“ */
-.slogan::after {
-    content: '"';
-    /* 可以写在html 就是直接加在html 这个” 也可以这样做 就可以直接写可是唯一的缺点就是额不可以加很长的文字啊还是什么 不然变html了 */
-    position: absolute;
-    top: -10px;
-    right: -35px;
-    color: var(--tertiary);
-    /* 使用common.css的绿色变量 */
-    font-size: 60px;
-    /* 大字体 */
-    font-family: var(--heading);
-    /* 使用common.css的标题字体变量，让引号更好看 */
-    opacity: 0.8;
-    /* 半透明效果 */
+/* ” */
+.quote::after {
+    top: -30px;
+    right: -50px;
 }
 
 .slogan p {
@@ -160,7 +149,7 @@
     background: var(--dark);
     padding: 100px 90px;
     width: 50%;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 0 30px 0;
     /* 这个是跟回figma的设计 */
     transform: translateY(50px);
 }
@@ -184,7 +173,7 @@
     width: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 25px 0 0 25px;
+    border-radius: 30px 0 0 0;
 }
 
 
@@ -221,6 +210,7 @@
 
 .statsbar {
     display: flex;
+    justify-content: flex-start;
     gap: 40px;
     margin-top: 30px;
 }
@@ -230,12 +220,8 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 15px;
-    background: var(--white);
     border-radius: 12px;
 }
-
-
 
 .stats h2 {
     color: var(--tertiary);
@@ -420,6 +406,7 @@ div.top-right-leaf {
         transform: none;
         padding: 60px 40px;
         text-align: center;
+        border-radius: 0;
     }
 
     .bar {
@@ -452,7 +439,14 @@ div.top-right-leaf {
     /* 这里的话我选择把字体调小因为字太大很影响 看起来不好看 */
     .about-company {
         gap: 30px;
-        padding: 30px 0;
+        padding: 20px 15px 40px 15px; /* 进一步减少top padding，参考four-content */
+        margin-bottom: 60px;
+    }
+
+    /* 让第一section的文字区域跟最后section一样宽 */
+    .left-side,
+    .right-side {
+        width: 100%; /* 占满容器宽度，跟最后section一样 */
     }
 
     .latte {
@@ -473,19 +467,28 @@ div.top-right-leaf {
 
     .content-stories {
         padding: 40px 20px;
-        width: 100%;
-        border-radius: 30px;
-
+        width: 100%; /* 跟最后section一样的宽度 */
     }
 
     .third-us {
         gap: 30px;
-        margin: -50px 0;
-        padding: 0 20px;
+        margin: -30px 0; /* 使用负margin大胆压缩上下空白 */
+        padding: 0 15px; /* 完全移除上下padding，只保留左右 */
     }
 
+    /* 让第三section的文字和图片区域跟最后section一样宽 */
+    .staff-img,
     .content-us {
-        padding: 0 20px;
+        width: 100%; /* 占满容器宽度，跟最后section一样 */
+        padding: 0; /* 移除额外padding，因为third-us已经有了 */
+        margin: 0 15px; /* 添加左右margin，跟four-content一样减少宽度 */
+    }
+
+    /* 重置第三section内部元素的margin */
+    .content-us h3,
+    .content-us p {
+        margin-top: 0; /* 移除标题和段落的上边距 */
+        margin-bottom: 0; /* 大胆移除下边距 */
     }
 
     .sqr-group {
@@ -499,6 +502,8 @@ div.top-right-leaf {
     }
 
     .statsbar {
+        margin-top: -10px; /* 使用负margin向上压缩 */
+        margin-bottom: 0; /* 移除statsbar的下边距 */
         flex-direction: row;
         justify-content: space-between;
         gap: 15px;
@@ -531,10 +536,6 @@ div.top-right-leaf {
 
     .slogan {
         padding: 20px 25px;
-    }
-
-    .slogan::after {
-        display: none;
     }
 
     .wrapper.dark {
