@@ -103,6 +103,12 @@ body {
 
     position: relative;
     z-index: 2;
+
+    transition: transform 0.3s;
+}
+
+.step:hover {
+    transform: scale(1.05);
 }
 
 /* CENTER IMAGE */
