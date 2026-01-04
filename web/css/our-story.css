@@ -474,6 +474,7 @@ div.top-right-leaf {
         gap: 30px;
         margin: -30px 0; /* 使用负margin大胆压缩上下空白 */
         padding: 0 15px; /* 完全移除上下padding，只保留左右 */
+        text-align: center; /* 确保整个section居中对齐 */
     }
 
     /* 让第三section的文字和图片区域跟最后section一样宽 */
@@ -481,7 +482,8 @@ div.top-right-leaf {
     .content-us {
         width: 100%; /* 占满容器宽度，跟最后section一样 */
         padding: 0; /* 移除额外padding，因为third-us已经有了 */
-        margin: 0 15px; /* 添加左右margin，跟four-content一样减少宽度 */
+        margin: 0 auto; /* 改为auto居中，而不是左右margin */
+        text-align: center; /* 确保内容居中 */
     }
 
     /* 重置第三section内部元素的margin */
@@ -505,8 +507,10 @@ div.top-right-leaf {
         margin-top: -10px; /* 使用负margin向上压缩 */
         margin-bottom: 0; /* 移除statsbar的下边距 */
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center; /* 改为居中对齐 */
         gap: 15px;
+        margin: 10px auto 0 auto; /* 增加top margin让stats往下一点 */
+        width: fit-content; /* 让statsbar宽度适应内容 */
     }
 
     .stats {
