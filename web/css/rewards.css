@@ -115,7 +115,7 @@ body {
 
 
 /* More choices, more rewards */
-.choices {
+.choice {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -124,12 +124,12 @@ body {
 }
 
 /* Heading text */
-.choices .text h3 {
+.choice .text h3 {
     margin-bottom: 15px;
 }
 
-.choices .text p {
-    max-width: 520px;
+.choice .text p {
+    max-width: 550px;
     margin: 0 auto;
 }
 
@@ -263,23 +263,25 @@ body {
 
 .deco>div {
     position: absolute;
-    width: 40%
 }
 
 .bottom-flower {
+    width: 30%;
     bottom: -25%;
-    right: -5%;
-    transform: scaleX(-1) rotate(10deg);
+    right: -7%;
+    transform: scaleX(-1) rotate(5deg);
 }
 
 .flower-top {
-    top: 4%;
+    width: 28%;
+    top: 2%;
     left: -5%;
     transform: rotate(-10deg);
 }
 
 .leaf-bottom {
-    bottom: 12%;
+    width: 15%;
+    bottom: 20%;
     right: -3%;
     transform: scaleX(-1) rotate(20deg);
 }

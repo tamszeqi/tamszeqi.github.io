@@ -171,29 +171,32 @@ body {
 
 .deco>div {
     position: absolute;
-    width: 40%
 }
 
 .leaf-right-top {
-    top: 29%;
-    right: -1%;
+    width: 13%;
+    top: 38%;
+    right: -5%;
     transform: scaleX(-1) rotate(10deg);
 }
 
 .leaf-left-top {
-    top: 63%;
-    left: -2%;
+    width: 13%;
+    bottom: -5%;
+    left: -5%;
     transform: rotate(13deg);
 }
 
 .btm-right {
-    bottom: -2%;
-    right: -3%;
+    width: 15%;
+    bottom: 10%;
+    right: -5%;
     transform: scaleX(-1) rotate(5deg);
 }
 
 .btm-left {
-    bottom: 5%;
+    width: 15%;
+    bottom: 10%;
     left: -5%;
     transform: rotate(-2deg);
 }
@@ -239,9 +242,6 @@ body {
         margin-top: 40px;
     }
 
-    .deco>div {
-        display: none;
-    }
 }
 
 

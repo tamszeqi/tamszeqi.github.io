@@ -28,23 +28,25 @@ body {
 
 .deco>div {
     position: absolute;
-    width: 40%
 }
 
 .up-right-leaf {
+    width: 15%;
     top: -5%;
     right: -0.5%;
     transform: scaleX(-1) rotate(10deg);
 }
 
 .down-right-leaf {
+    width: 15%;
     bottom: -9%;
     right: -1%;
     transform: scaleX(-1) rotate(10deg);
 }
 
 .left-flower {
-    top: 30%;
+    width: 25%;
+    top: 25%;
     left: -7%;
     transform: rotate(-10deg);
 }
