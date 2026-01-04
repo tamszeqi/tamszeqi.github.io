@@ -38,11 +38,13 @@ header {
 /* 总部地图 */
 .map-container-large img {
     width: 100%;
+    transition: transform 0.4s ease;
+    /* 添加跟promotion一样的transition */
 }
 
 .map-container-large img:hover {
-    transform: scale(1.02);
-    /* 让他变大一丢丢 */
+    transform: scale(1.1);
+    /* 改为跟promotion一样的scale(1.1) */
 }
 
 .headquarters h4 {
@@ -88,12 +90,13 @@ header {
 
 .store-map img {
     width: 100%;
-
+    transition: transform 0.4s ease;
+    /* 添加跟promotion一样的transition */
 }
 
 .store-map img:hover {
-    transform: scale(1.02);
-
+    transform: scale(1.1);
+    /* 改为跟promotion一样的scale(1.1) */
 }
 
 /* words */
@@ -303,10 +306,13 @@ header {
     display: flex;
     flex-direction: column;
     text-align: left;
+    transition: transform 0.4s ease;
+    /* 添加跟promotion一样的transition */
 }
 
 .delivery-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.1);
+    /* 改为跟promotion一样的scale(1.1) */
 }
 
 .delivery-card h6 {
@@ -761,15 +767,26 @@ header {
         min-width: auto;
     }
 
-    /* 调整手机版price-tag字体 */
+    .price-tag {
+        gap: 0;
+        align-items: center;
+    }
+
+
     .price-tag .price {
         font-size: clamp(20px, 2.5vw, 44px);
-        /* 恢复并加大字体 */
+        line-height: 0.7;
+        /* 进一步减少gap */
+
     }
 
     .price-tag .currency {
         font-size: clamp(14px, 2vw, 18px);
         /* 恢复并加大货币符号字体 */
+        line-height: 0.7;
+        /* 进一步减少gap */
+        margin-top: -4px;
+        /* 适中的负margin */
     }
 
     /* 这里也是针对一个group里的孩子一个一个调(xiangtongmingzi/meimingzi) */
