@@ -254,6 +254,11 @@ body {
         margin-top: 40px;
     }
 
+    .morerewards-text {
+        margin-top: -10px;
+        margin-bottom: 60px;
+    }
+
     .order-ahead-img,
     .more-rewards-img {
         display: none;
@@ -283,7 +288,7 @@ body {
         margin-top: -0;
     }
 
-    .steps-image img {
+    .steps-image {
         max-width: 220px;
         display: none;
     }
