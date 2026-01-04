@@ -24,7 +24,7 @@
 }
 
 .nasi-lemak-img img {
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .nasi-lemak-img img:hover {
@@ -44,10 +44,18 @@
     padding: 10px 5px;
     width: 31%;
     height: 17.5vw;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .brown-card:hover {
+    transform: scale(1.1);
+}
+
+.pastry img {
+    transition: transform 0.3s ease;
+}
+
+.pastry img:hover {
     transform: scale(1.1);
 }
 
@@ -59,11 +67,6 @@
     text-align: center;
     width: fit-content;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-    transition: transform 0.4s ease;
-}
-
-.white-card-foods:hover {
-    transform: scale(1.1);
 }
 
 .pastry-price-tag {
@@ -167,7 +170,7 @@ p.price {
 }
 
 .noodles-img img {
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .noodles-img img:hover {
