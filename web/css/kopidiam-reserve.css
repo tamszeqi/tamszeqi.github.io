@@ -579,7 +579,11 @@ button.b-brown {
     div.foodpastry {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 63px 33px;
+        gap: 40px 33px;
+    }
+
+    div.fnb-card {
+        min-height: 170px;
     }
 
     img.fnb {

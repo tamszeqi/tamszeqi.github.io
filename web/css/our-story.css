@@ -82,45 +82,10 @@
 .sqr-group {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
     gap: 30px;
-    margin-top: -140px;
+    margin-top: 50px;
+    flex-wrap: nowrap !important;
 }
-
-/* solo-card */
-.sqr-img-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 32%;
-    min-height: 290px;
-    background-size: cover;
-    background-position: center;
-    gap: 25px;
-    border-radius: 20px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-
-.sqr-img-btn:hover {
-    transform: translateY(-10px);
-}
-
-.sqr-img-btn h4 {
-    color: var(--white);
-    margin-bottom: 15px;
-}
-
-.sqr-img-btn p {
-    color: var(--white);
-    opacity: 0.9;
-    margin: 0;
-    /* 移除原本默认的margin，让文字与标题贴 */
-}
-
 
 .company {
     background-image: linear-gradient(var(--black-60), var(--black-60)), url('../images/company-story.jpg');
@@ -274,6 +239,10 @@
     margin: auto;
     padding: 25px 100px;
     border-radius: 25px;
+}
+
+.four-content p {
+    color: var(--white);
 }
 
 .four-content p:first-child {

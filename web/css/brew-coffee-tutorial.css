@@ -210,7 +210,7 @@ div.person {
 /*desktop smaller screen and tablet landscape size*/
 @media (max-width: 1025px) {
     .wrapper {
-        padding: 100px 120px;
+        padding: clamp(30px, 8vw, 80px) clamp(15px, 6vw, 60px) !important;
     }
 
 

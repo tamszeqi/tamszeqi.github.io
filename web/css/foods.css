@@ -28,7 +28,7 @@
 }
 
 .nasi-lemak-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .deco {
@@ -48,7 +48,7 @@
 }
 
 .brown-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .pastry img {
@@ -56,7 +56,7 @@
 }
 
 .pastry img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .white-card-foods {
@@ -174,7 +174,7 @@ p.price {
 }
 
 .noodles-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .noodles-flower {
