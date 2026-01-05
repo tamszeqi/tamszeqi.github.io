@@ -314,6 +314,13 @@ h1 {
     justify-content: space-between;
 }
 
+.white-card-text .tab {
+    border-radius: 0 !important;
+    object-fit: contain !important;
+    margin-left: 0;
+    min-width: 15px;
+}
+
 /* TABLET PORTRAIT & MOBILE */
 @media screen and (max-width: 768px) {
 
@@ -374,6 +381,10 @@ h1 {
 
     .no-card {
         flex-direction: column-reverse;
+    }
+
+    .white-card-text .tab {
+        min-height: 20px;
     }
 
 }
